@@ -1,3 +1,6 @@
+# for cloud cannon
+# version: 3.0.3
+
 # Title, decription, tagline and URL for your site
 # Can be used in your theme by calling 'site.title' and so on
 title: GoodJobs
@@ -15,10 +18,10 @@ exclude: ['assets']
 author:
   name: Ryan Deussing
   email: ryan@goodjobs.org
-  uri: 
-  bio: 
-  twitter: 
-  github: 
+  uri:
+  bio:
+  twitter:
+  github:
 
 # _config.build.yml overwrites these options when you run `gulp build`
 # Enables future posts (posts with dates in the future) and drafts

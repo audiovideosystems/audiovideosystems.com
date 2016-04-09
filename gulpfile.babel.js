@@ -16,6 +16,8 @@ const reload = browserSync.reload;
 import autoprefixer from 'autoprefixer';
 // Yargs for command line arguments
 import {argv} from 'yargs';
+// Bourbon & Neat
+import neat from 'node-neat';
 
 // 'gulp clean:assets' -- deletes all assets except for images
 // 'gulp clean:images' -- deletes your images
@@ -64,7 +66,8 @@ gulp.task('styles', () =>
   gulp.src('src/assets/scss/style.scss')
     .pipe($.if(!argv.prod, $.sourcemaps.init()))
     .pipe($.sass({
-      precision: 10
+      precision: 10,
+      includePaths: neat.includePaths
     }).on('error', $.sass.logError))
     .pipe($.postcss([
       autoprefixer({browsers: 'last 1 version'})
@@ -89,6 +92,7 @@ gulp.task('styles', () =>
       showFiles: true
     })))
     .pipe(gulp.dest('.tmp/assets/stylesheets'))
+    // .pipe(gulp.dest('src/assets/stylesheets')) // for cloud cannon
     .pipe($.if(!argv.prod, browserSync.stream({match: '**/*.css'})))
 );
 
@@ -100,6 +104,8 @@ gulp.task('scripts', () =>
   // NOTE: The order here is important since it's concatenated in order from
   // top to bottom, so you want vendor scripts etc on top
   gulp.src([
+    'node_modules/jquery/dist/jquery.js',
+    'node_modules/enquire.js/dist/enquire.js',
     'src/assets/javascript/vendor.js',
     'src/assets/javascript/main.js'
   ])
@@ -126,12 +132,13 @@ gulp.task('scripts', () =>
       showFiles: true
     })))
     .pipe(gulp.dest('.tmp/assets/javascript'))
+    // .pipe(gulp.dest('src/assets/javascript')) // for cloud cannon
     .pipe($.if(!argv.prod, browserSync.stream({match: '**/*.js'})))
 );
 
 // 'gulp inject:head' -- injects our style.css file into the head of our HTML
 gulp.task('inject:head', () =>
-  gulp.src('src/_includes/head.html')
+  gulp.src('src/_includes/global/head.html')
     .pipe($.inject(gulp.src('.tmp/assets/stylesheets/*.css',
                             {read: false}), {ignorePath: '.tmp'}))
     .pipe(gulp.dest('src/_includes'))
@@ -183,12 +190,6 @@ gulp.task('html', () =>
     })))
     .pipe($.if(argv.prod, gulp.dest('dist')))
 );
-
-// 'gulp deploy' -- pushes your dist folder to Github
-gulp.task('deploy', () => {
-  return gulp.src('dist/**/*')
-    .pipe($.ghPages());
-});
 
 // 'gulp lint' -- check your JS for formatting errors using XO Space
 gulp.task('lint', () =>
@@ -265,3 +266,27 @@ gulp.task('rebuild', gulp.series('clean:dist', 'clean:assets',
 
 // 'gulp check' -- checks your Jekyll configuration for errors and lint your JS
 gulp.task('check', gulp.series('jekyll:doctor', 'lint'));
+
+//
+// FOR CLOUDCANNON
+//
+
+// 'gulp assets:cloudcannon' -- copies the assets into the dist folder, needs to be
+// done this way because Jekyll overwrites the whole folder otherwise
+gulp.task('assets:cloudcannon', () =>
+  gulp.src('.tmp/assets/**/*')
+    .pipe(gulp.dest('src/assets'))
+);
+
+// 'gulp src:cloudcannon' -- copy to dropbox for cloud cannon
+gulp.task('src:cloudcannon', () =>
+  gulp.src('src/**/*')
+    .pipe(gulp.dest('[Dropbox]'))
+);
+
+// 'gulp cloudcannon' -- build and copy to dropbox for cloud cannon
+gulp.task('cloudcannon', gulp.series(
+  gulp.series('clean:assets', 'clean:gzip'),
+  gulp.series('assets', 'inject:head', 'inject:footer'),
+  gulp.series('jekyll', 'assets:cloudcannon', 'src:cloudcannon')
+));

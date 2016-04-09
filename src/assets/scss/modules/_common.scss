@@ -1,0 +1,75 @@
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+// main.load {
+//   visibility: hidden;
+// }
+// main.loaded {
+//   visibility: visible;
+// }
+
+
+h1, h2, h3, h4, h5 {
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 32px;;
+  margin-bottom: 1em;
+}
+h4 {
+  font-size: 18px;
+}
+
+.container {
+  @include outer-container;
+  // @include media($s) {
+  //   @include pad(1rem);
+  // }
+  // @include media($max-width) {
+  //   @include pad(0);
+  // }
+}
+
+.hide-s {
+  @include media($s){
+    display: none;
+  }
+  @include media($m){
+    display: block;
+  }
+}
+
+.hide-m {
+  @include media($s){
+    display: block;
+  }
+  @include media($m){
+    display: none;
+  }
+}
+
+.hide-l {
+  @include media($s){
+    display: block;
+  }
+  @include media($m){
+    display: block;
+  }
+  @include media($l){
+    display: none;
+  }
+}
+
+
+
+
+
+
+
+
+
+

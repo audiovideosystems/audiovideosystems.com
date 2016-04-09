@@ -1,8 +1,39 @@
-/*
-The main SCSS file for everything, yep
-*/
+// @import url("//hello.myfonts.net/count/301253");
+// @font-face {font-family: 'FranklinGothicURW-Boo';src: url('../fonts/301253_0_0.eot');src: url('../fonts/301253_0_0.eot?#iefix') format('embedded-opentype'),url('../fonts/301253_0_0.woff2') format('woff2'),url('../fonts/301253_0_0.woff') format('woff'),url('../fonts/301253_0_0.ttf') format('truetype');}
+// @font-face {font-family: 'FranklinGothicURW-Dem';src: url('../fonts/301253_1_0.eot');src: url('../fonts/301253_1_0.eot?#iefix') format('embedded-opentype'),url('../fonts/301253_1_0.woff2') format('woff2'),url('../fonts/301253_1_0.woff') format('woff'),url('../fonts/301253_1_0.ttf') format('truetype');}
 
-@import "main";
-@import "base";
-@import "layout";
-@import "syntax-highlighting";
+
+// visual grid
+$visual-grid: true;
+$visual-grid-color: yellow;
+$visual-grid-index: front;
+$visual-grid-opacity: 0.2;
+
+// base
+@import
+  "node_modules/normalize.scss/normalize",
+  "bourbon",
+  "base/base", // includes grid-settings, which must be imported before neat
+  "neat";
+
+// modules
+@import
+  "modules/fonts",
+  "modules/vars",
+  "modules/common",
+  "modules/visual-grid",
+  "modules/articles",
+  "modules/footer",
+  "modules/header",
+  "modules/home",
+  "modules/utilities";
+
+  body:before {
+    display: none;
+  }
+
+  body.grid:before {
+    display: block;
+  }
+
+

@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html>
 
-  {% include head.html %}
+  {% include global/head.html %}
 
-  <body>
+  <body class="{% if page.class %}{{ page.class }}{% endif %}">
 
-    {% include header.html %}
+    {% include global/header.html %}
 
-    <div class="page-content">
-      <div class="wrapper">
-        {{ content }}
-      </div>
-    </div>
 
-    {% include footer.html %}
+      {{ content }}
+
+
+    {% include global/footer.html %}
+
 
   <!-- JS -->
   <!-- inject:js -->
+  <script src="/assets/javascript/index.js"></script>
   <!-- endinject -->
 
   </body>
