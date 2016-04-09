@@ -3,9 +3,9 @@
 
 # Title, decription, tagline and URL for your site
 # Can be used in your theme by calling 'site.title' and so on
-title: GoodJobs
-description: GoodJobs is the best place to post and find jobs with companies and nonprofits using technology as a force for good.
-url: goodjobs.org
+title: A Jekyll Gulp Bourbon site
+description:
+url:
 
 # Used so Jekyll outputs the site correctly so Gulp can do what it wants
 source: src
@@ -17,7 +17,7 @@ exclude: ['assets']
 # NOTE: Don't use @ in front of your Twitter username
 author:
   name: Ryan Deussing
-  email: ryan@goodjobs.org
+  email: ryan@ryandeussing.com
   uri:
   bio:
   twitter:
