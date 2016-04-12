@@ -1,7 +1,6 @@
 .home {
   .container {
     @include pad();
-    background-color: aliceblue;
   }
   img.logo {
     position: absolute;
@@ -11,4 +10,39 @@
   .nav-link a {
     padding-top: em(60);
   }
+
+  .mission {
+    background-color: $green-basic;
+    text-align: center;
+    padding-top: em(100);
+    padding-bottom: em(100);
+  }
+
+  .absolute {
+    .text {
+      @include span-columns(6);
+      text-align: left;
+    }
+    .image {
+      @include span-columns(7);
+    }
+    h6 a {
+      text-decoration: underline;
+    }
+  }
+
+  .brands {
+    background-color: $gray-light;
+    padding-top: em(100);
+    padding-bottom: em(100);
+    .brand {
+      @include span-columns(3);
+      @include omega(5n);
+      text-align: center;
+      h5 {
+        padding: 1em 0;
+      }
+    }
+  }
+
 }

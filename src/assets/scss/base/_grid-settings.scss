@@ -3,7 +3,7 @@
 // neat defaults
 // $column: em(200);
 // $gutter: 30px;
-$grid-columns: 12;
+$grid-columns: 15;
 $max-width: em(1180); // $l - see modules/visual-grid
 
 // breakpoints
@@ -14,7 +14,7 @@ $l: em(769);
 $xl: em(1180);
 $xxl: em(1600);
 
-$s-up: new-breakpoint(min-width $s 12);
-$m-up: new-breakpoint(min-width $m 12);
-$l-up: new-breakpoint(min-width $l 12);
-$xl-up: new-breakpoint(min-width $xl 12);
+$s-up: new-breakpoint(min-width $s 15);
+$m-up: new-breakpoint(min-width $m 15);
+$l-up: new-breakpoint(min-width $l 15);
+$xl-up: new-breakpoint(min-width $xl 15);
