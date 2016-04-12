@@ -3,4 +3,12 @@
     @include pad();
     background-color: aliceblue;
   }
+  img.logo {
+    position: absolute;
+    top: em(30);
+    left: em(30);
+  }
+  .nav-link a {
+    padding-top: em(60);
+  }
 }
