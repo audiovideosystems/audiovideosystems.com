@@ -1,6 +1,14 @@
-// @import url("//hello.myfonts.net/count/301253");
-// @font-face {font-family: 'FranklinGothicURW-Boo';src: url('../fonts/301253_0_0.eot');src: url('../fonts/301253_0_0.eot?#iefix') format('embedded-opentype'),url('../fonts/301253_0_0.woff2') format('woff2'),url('../fonts/301253_0_0.woff') format('woff'),url('../fonts/301253_0_0.ttf') format('truetype');}
-// @font-face {font-family: 'FranklinGothicURW-Dem';src: url('../fonts/301253_1_0.eot');src: url('../fonts/301253_1_0.eot?#iefix') format('embedded-opentype'),url('../fonts/301253_1_0.woff2') format('woff2'),url('../fonts/301253_1_0.woff') format('woff'),url('../fonts/301253_1_0.ttf') format('truetype');}
+@font-face {
+    font-family: 'Maison Neue Medium';
+    src: url('../fonts/MaisonNeueWEB-Medium.woff2') format('woff2'),
+    url('../fonts/MaisonNeueWEB-Medium.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Noe Display';
+    src: url('../fonts/NoeDisplayMedium.eot');
+    src: url('../fonts/NoeDisplayMedium.woff2') format('woff2'), url('../fonts/NoeDisplayMedium.woff') format('woff');
+}
 
 
 // visual grid
@@ -22,9 +30,13 @@ $visual-grid-opacity: 0.2;
   "modules/vars",
   "modules/common",
   "modules/visual-grid",
-  "modules/articles",
   "modules/footer",
   "modules/header",
+  // "modules/simple-hero", // basic hero image
+  "modules/dynamic-hero", // dynamically-sized
+  // "modules/text-section", // just text
+  // "modules/image-section", // full-width image
+  // "modules/combo-section", // image on one side, text on another
   "modules/home",
   "modules/utilities";
 

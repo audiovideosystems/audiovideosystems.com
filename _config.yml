@@ -3,40 +3,29 @@
 
 # Title, decription, tagline and URL for your site
 # Can be used in your theme by calling 'site.title' and so on
-title: A Jekyll Gulp Bourbon site
-description:
-url:
+title: Audio Visual Systems
+description: Audio Video Systems has been the trusted audio/video source for discerning clients since we opened our doors in 1977.
+url: www.audiovideosystems.com
 
 # Used so Jekyll outputs the site correctly so Gulp can do what it wants
 source: src
 destination: dist
 exclude: ['assets']
 
-# Same as the title etc for your site but can instead be
-# called by using 'site.author.name' and so on
-# NOTE: Don't use @ in front of your Twitter username
-author:
-  name: Ryan Deussing
-  email: ryan@ryandeussing.com
-  uri:
-  bio:
-  twitter:
-  github:
-
 # _config.build.yml overwrites these options when you run `gulp build`
 # Enables future posts (posts with dates in the future) and drafts
-future: true
-show_drafts: true
+# future: true
+# show_drafts: true
 # Disables the more accurate related posts for faster generating of the site
-lsi: false
+# lsi: false
 # Only make the last 10 posts so generating isn't slow
-limit_posts: 10
+# limit_posts: 10
 
 # Permalink structure and pagination options
-permalink: none
-paginate: 10
-paginate_path: 'page:num'
-excerpt_separator: '<!--more-->'
+# permalink: none
+# paginate: 10
+# paginate_path: 'page:num'
+# excerpt_separator: '<!--more-->'
 
 # Markdown library and options
 markdown: redcarpet
@@ -47,27 +36,27 @@ highlighter: true
 
 # Extending Jekyll
 gems:
-  - jekyll-archives
-  - jekyll-feed
-  - jekyll-gist
+  # - jekyll-archives
+  # - jekyll-feed
+  # - jekyll-gist
   - jekyll-paginate
-  - jekyll-sitemap
-  - jekyll-seo-tag
+  # - jekyll-sitemap
+  # - jekyll-seo-tag
 
 # Settings for archives
-jekyll-archives:
-  enabled:
-    - year
-    - month
-    - categories
-    - tags
-  layouts:
-    year: 'year-archive'
-    month: 'month-archive'
-    category: 'category-archive'
-    tag: 'tag-archive'
-  permalinks:
-    year: '/archive/:year/'
-    month: '/archive/:year/:month/'
-    category: '/category/:name/'
-    tags: '/tag/:name/'
+# jekyll-archives:
+#   enabled:
+#     - year
+#     - month
+#     - categories
+#     - tags
+#   layouts:
+#     year: 'year-archive'
+#     month: 'month-archive'
+#     category: 'category-archive'
+#     tag: 'tag-archive'
+#   permalinks:
+#     year: '/archive/:year/'
+#     month: '/archive/:year/:month/'
+#     category: '/category/:name/'
+#     tags: '/tag/:name/'
