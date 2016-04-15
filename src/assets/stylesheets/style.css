@@ -957,17 +957,14 @@ section.dynamic-hero {
   padding-bottom: 0px; }
 
 .home .absolute .inner-wrapper {
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%); }
+  padding-top: 12.5rem; }
 
 .home .absolute .text {
   float: left;
   display: block;
   margin-right: 1.877269384%;
   width: 38.8736383696%;
-  text-align: left;
-  height: 600px; }
+  text-align: left; }
   .home .absolute .text:last-child {
     margin-right: 0; }
 
@@ -976,14 +973,12 @@ section.dynamic-hero {
   display: block;
   margin-right: 1.877269384%;
   width: 52.4572742875%;
-  margin-left: 6.7918179589%;
-  background-image: url("/assets/images/home-ipad.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: 0 100%;
-  height: 600px; }
+  margin-left: 6.7918179589%; }
   .home .absolute .image:last-child {
     margin-right: 0; }
+  .home .absolute .image img {
+    padding-top: 6.875rem;
+    vertical-align: bottom; }
 
 .home .absolute h6 a {
   text-decoration: underline; }
