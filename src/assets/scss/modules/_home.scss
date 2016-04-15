@@ -92,4 +92,38 @@
     }
   }
 
+  .carousel {
+    padding-top: rem(110);
+    padding-bottom: rem(110);
+    .main-carousel {
+      @include span-columns(15);
+      .gallery-cell {
+        height: 500px;
+      }
+    }
+    p.caption {
+      clear: both;
+      padding-top: rem(10);
+      margin-bottom: 0;
+      text-align: left;
+      text-transform: uppercase;
+      color: #ababab;
+    }
+    .flickity-page-dots {
+      bottom: 30px;
+    }
+  }
+
+  .testimonial {
+    .inner-wrapper {
+      @include span-columns(13);
+      @include shift(1);
+    }
+    background-color: $rouge-basic;
+    text-align: center;
+    padding-top: em(100);
+    padding-bottom: em(100);
+  }
+
+
 }
