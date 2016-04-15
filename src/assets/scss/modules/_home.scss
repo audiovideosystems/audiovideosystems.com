@@ -19,12 +19,26 @@
   }
 
   .absolute {
+    .container {
+      padding-top: 0px;
+      padding-bottom: 0px;
+    }
+    .inner-wrapper {
+      @include vertical-align();
+    }
     .text {
       @include span-columns(6);
       text-align: left;
+      height: 600px;
     }
     .image {
-      @include span-columns(7);
+      @include span-columns(8);
+      @include shift(1);
+      background-image: url("/assets/images/home-ipad.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: 0 100%;
+      height: 600px;
     }
     h6 a {
       text-decoration: underline;
