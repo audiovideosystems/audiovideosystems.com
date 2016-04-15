@@ -1,4 +1,5 @@
 section.dynamic-hero {
+  position: relative;
   height: 95vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
                     url("/assets/images/home-hero.jpg");
@@ -11,5 +12,15 @@ section.dynamic-hero {
     -webkit-transform: translateY(-35%);
     -ms-transform: translateY(-35%);
     transform: translateY(-35%);
+  }
+  img.arrow {
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    position:absolute;
+    left: 0;
+    right: 0;
+    bottom: -24px;
+    margin: 0 auto;
   }
 }
