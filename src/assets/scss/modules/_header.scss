@@ -9,8 +9,8 @@
   $centered-navigation-color: #fff;
   $centered-navigation-color-hover: rgba(0,0,0,0.8);
   $centered-navigation-height: 60px;
-  $centered-navigation-item-padding: 1em;
-  $centered-navigation-submenu-padding: 1em;
+  $centered-navigation-item-padding: rem(15);
+  $centered-navigation-submenu-padding: rem(15);
   $centered-navigation-submenu-width: 12em;
   $centered-navigation-item-nudge: 2.2em;
   $horizontal-bar-mode: $large-screen;
@@ -275,16 +275,18 @@
 .nav-2 {
   display: block;
   position: absolute;
+  z-index: 1000;
   top: 0;
-  right: em(30);
+  right: rem(30);
   li {
     font-size: em(14);
     display: inline;
     font-family: $heading-font-family;
     a {
+      // display: inline-block;
       text-decoration: underline;
-      line-height: em(60);
-      padding-left: 1em;
+      line-height: rem(60);
+      padding-left: rem(30);
       color: #fff;
     }
   }

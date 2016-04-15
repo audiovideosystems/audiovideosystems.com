@@ -92,7 +92,7 @@ gulp.task('styles', () =>
       showFiles: true
     })))
     .pipe(gulp.dest('.tmp/assets/stylesheets'))
-    // .pipe(gulp.dest('src/assets/stylesheets')) // for cloud cannon
+    .pipe(gulp.dest('src/assets/stylesheets')) // for cloud cannon
     .pipe($.if(!argv.prod, browserSync.stream({match: '**/*.css'})))
 );
 
@@ -132,7 +132,7 @@ gulp.task('scripts', () =>
       showFiles: true
     })))
     .pipe(gulp.dest('.tmp/assets/javascript'))
-    // .pipe(gulp.dest('src/assets/javascript')) // for cloud cannon
+    .pipe(gulp.dest('src/assets/javascript')) // for cloud cannon
     .pipe($.if(!argv.prod, browserSync.stream({match: '**/*.js'})))
 );
 
@@ -160,6 +160,7 @@ gulp.task('images', () =>
       interlaced: true
     })))
     .pipe(gulp.dest('.tmp/assets/images'))
+    .pipe(gulp.dest('src/assets/images')) // for cloud cannon
     .pipe($.size({title: 'images'}))
 );
 
@@ -167,6 +168,7 @@ gulp.task('images', () =>
 gulp.task('fonts', () =>
   gulp.src('src/assets/fonts/**/*')
     .pipe(gulp.dest('.tmp/assets/fonts'))
+    .pipe(gulp.dest('src/assets/fonts')) // for cloud cannon
     .pipe($.size({title: 'fonts'}))
 );
 
@@ -267,26 +269,20 @@ gulp.task('rebuild', gulp.series('clean:dist', 'clean:assets',
 // 'gulp check' -- checks your Jekyll configuration for errors and lint your JS
 gulp.task('check', gulp.series('jekyll:doctor', 'lint'));
 
+
 //
 // FOR CLOUDCANNON
 //
 
-// 'gulp assets:cloudcannon' -- copies the assets into the dist folder, needs to be
-// done this way because Jekyll overwrites the whole folder otherwise
-gulp.task('assets:cloudcannon', () =>
-  gulp.src('.tmp/assets/**/*')
-    .pipe(gulp.dest('src/assets'))
-);
-
-// 'gulp src:cloudcannon' -- copy to dropbox for cloud cannon
+// 'gulp src:cloudcannon' -- copy to dropbox (or another dir/repo) for cloud cannon
 gulp.task('src:cloudcannon', () =>
   gulp.src('src/**/*')
     .pipe(gulp.dest('/Users/ryanaponte/Dropbox/Apps/Cloud\ Cannon/audiovideosystems.com'))
 );
 
-// 'gulp cloudcannon' -- build and copy to dropbox for cloud cannon
-gulp.task('cloudcannon', gulp.series(
+// 'gulp deploy' -- build and copy to dropbox for cloud cannon
+gulp.task('deploy', gulp.series(
   gulp.series('clean:assets', 'clean:gzip'),
   gulp.series('assets', 'inject:head', 'inject:footer'),
-  gulp.series('jekyll', 'assets:cloudcannon', 'src:cloudcannon')
+  gulp.series('jekyll', 'src:cloudcannon')
 ));
