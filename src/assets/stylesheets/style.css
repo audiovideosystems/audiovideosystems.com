@@ -944,6 +944,8 @@ section.dynamic-hero {
     margin-bottom: 0;
     position: relative;
     top: 35%;
+    padding-left: 5%;
+    padding-right: 5%;
     transform: translateY(-35%); }
   section.dynamic-hero img.arrow {
     position: absolute;
