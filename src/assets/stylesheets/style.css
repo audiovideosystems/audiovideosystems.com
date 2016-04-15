@@ -593,7 +593,7 @@ body:before {
   height: 100%;
   left: 0;
   margin: 0 auto;
-  max-width: 73.75em;
+  max-width: 63.75em;
   opacity: 0.2;
   pointer-events: none;
   position: fixed;
@@ -621,7 +621,7 @@ h1, h2, h3, h4, h5 {
   font-weight: normal; }
 
 .container {
-  max-width: 73.75em;
+  max-width: 63.75em;
   margin-left: auto;
   margin-right: auto; }
   .container::after {
@@ -757,7 +757,7 @@ img.logo {
     .centered-navigation .centered-navigation-mobile-menu:focus, .centered-navigation .centered-navigation-mobile-menu:hover {
       color: rgba(0, 0, 0, 0.8); }
   .centered-navigation .centered-navigation-wrapper {
-    max-width: 73.75em;
+    max-width: 63.75em;
     margin-left: auto;
     margin-right: auto;
     position: relative;
@@ -929,6 +929,11 @@ section.dynamic-hero {
   background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("/assets/images/home-hero.jpg");
   background-size: cover;
   background-position: center; }
+  section.dynamic-hero h1 {
+    margin-bottom: 0;
+    position: relative;
+    top: 35%;
+    transform: translateY(-35%); }
 
 .home .container {
   padding: 1.877269384%; }
