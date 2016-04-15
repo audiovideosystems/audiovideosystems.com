@@ -1,6 +1,5 @@
 .home {
   .container {
-    @include pad();
   }
   img.logo {
     position: absolute;
@@ -12,6 +11,10 @@
   }
 
   .mission {
+    .inner-wrapper {
+      @include span-columns(13);
+      @include shift(1);
+    }
     background-color: $green-basic;
     text-align: center;
     padding-top: em(100);
@@ -28,12 +31,13 @@
       padding-top: rem(200);
     }
     .text {
-      @include span-columns(6);
+      @include span-columns(5);
+      @include shift(1);
       text-align: left;
       // height: 600px;
     }
     .image {
-      @include span-columns(8);
+      @include span-columns(7);
       @include shift(1);
       // background-image: url("/assets/images/home-ipad.png");
       // background-repeat: no-repeat;
@@ -52,14 +56,38 @@
 
   .brands {
     background-color: $gray-light;
-    padding-top: em(100);
+    padding-top: em(80);
     padding-bottom: em(100);
+    h2 {
+      text-align: center;
+      margin-bottom: 1em;
+    }
     .brand {
       @include span-columns(3);
       @include omega(5n);
       text-align: center;
       h5 {
         padding: 1em 0;
+      }
+    }
+  }
+
+  .featured-brands {
+    background-color: $gray-dark;
+    .container {
+      padding-top: rem(80);
+      padding-bottom: rem(80);
+    }
+    .inner-wrapper {
+      @include span-columns(13);
+      @include shift(1);
+      .one, .two {
+        @include span-columns(6);
+        @include shift;
+        text-align: center;
+        img {
+          height: rem(22);
+        }
       }
     }
   }

@@ -6,7 +6,7 @@
 @font-face {
   font-family: 'Noe Display';
   src: url("../fonts/NoeDisplayMedium.eot");
-  src: url("../fonts/NoeDisplayMedium.woff2") format("woff2"), url("../fonts/NoeDisplayMedium.woff") format("woff"); }
+  src: url("../fonts/NoeDisplayMedium.woff") format("woff"); }
 
 /*! normalize.scss v0.1.0 | MIT License | based on git.io/normalize */
 /**
@@ -558,8 +558,11 @@ h6 {
   color: rgba(0, 0, 0, 0.8);
   text-align: left; }
 
-p {
-  margin: 0 0 0.75em; }
+p.body {
+  font-family: 'Maison Neue Medium';
+  font-size: 0.875rem;
+  line-height: 1.7;
+  color: rgba(0, 0, 0, 0.8); }
 
 a {
   color: rgba(0, 0, 0, 0.8);
@@ -593,7 +596,7 @@ body:before {
   height: 100%;
   left: 0;
   margin: 0 auto;
-  max-width: 63.75em;
+  max-width: 73.75em;
   opacity: 0.2;
   pointer-events: none;
   position: fixed;
@@ -621,7 +624,7 @@ h1, h2, h3, h4, h5 {
   font-weight: normal; }
 
 .container {
-  max-width: 63.75em;
+  max-width: 73.75em;
   margin-left: auto;
   margin-right: auto; }
   .container::after {
@@ -757,7 +760,7 @@ img.logo {
     .centered-navigation .centered-navigation-mobile-menu:focus, .centered-navigation .centered-navigation-mobile-menu:hover {
       color: rgba(0, 0, 0, 0.8); }
   .centered-navigation .centered-navigation-wrapper {
-    max-width: 63.75em;
+    max-width: 73.75em;
     margin-left: auto;
     margin-right: auto;
     position: relative;
@@ -935,9 +938,6 @@ section.dynamic-hero {
     top: 35%;
     transform: translateY(-35%); }
 
-.home .container {
-  padding: 1.877269384%; }
-
 .home img.logo {
   position: absolute;
   top: 1.875em;
@@ -951,6 +951,14 @@ section.dynamic-hero {
   text-align: center;
   padding-top: 6.25em;
   padding-bottom: 6.25em; }
+  .home .mission .inner-wrapper {
+    float: left;
+    display: block;
+    margin-right: 1.877269384%;
+    width: 86.4163640821%;
+    margin-left: 6.7918179589%; }
+    .home .mission .inner-wrapper:last-child {
+      margin-right: 0; }
 
 .home .absolute .container {
   padding-top: 0px;
@@ -963,7 +971,8 @@ section.dynamic-hero {
   float: left;
   display: block;
   margin-right: 1.877269384%;
-  width: 38.8736383696%;
+  width: 32.0818204106%;
+  margin-left: 6.7918179589%;
   text-align: left; }
   .home .absolute .text:last-child {
     margin-right: 0; }
@@ -972,7 +981,7 @@ section.dynamic-hero {
   float: left;
   display: block;
   margin-right: 1.877269384%;
-  width: 52.4572742875%;
+  width: 45.6654563285%;
   margin-left: 6.7918179589%; }
   .home .absolute .image:last-child {
     margin-right: 0; }
@@ -985,8 +994,11 @@ section.dynamic-hero {
 
 .home .brands {
   background-color: #f4f5f5;
-  padding-top: 6.25em;
+  padding-top: 5em;
   padding-bottom: 6.25em; }
+  .home .brands h2 {
+    text-align: center;
+    margin-bottom: 1em; }
   .home .brands .brand {
     float: left;
     display: block;
@@ -1001,6 +1013,31 @@ section.dynamic-hero {
       clear: left; }
     .home .brands .brand h5 {
       padding: 1em 0; }
+
+.home .featured-brands {
+  background-color: #e1dfde; }
+  .home .featured-brands .container {
+    padding-top: 5rem;
+    padding-bottom: 5rem; }
+  .home .featured-brands .inner-wrapper {
+    float: left;
+    display: block;
+    margin-right: 1.877269384%;
+    width: 86.4163640821%;
+    margin-left: 6.7918179589%; }
+    .home .featured-brands .inner-wrapper:last-child {
+      margin-right: 0; }
+    .home .featured-brands .inner-wrapper .one, .home .featured-brands .inner-wrapper .two {
+      float: left;
+      display: block;
+      margin-right: 1.877269384%;
+      width: 38.8736383696%;
+      margin-left: 6.7918179589%;
+      text-align: center; }
+      .home .featured-brands .inner-wrapper .one:last-child, .home .featured-brands .inner-wrapper .two:last-child {
+        margin-right: 0; }
+      .home .featured-brands .inner-wrapper .one img, .home .featured-brands .inner-wrapper .two img {
+        height: 1.375rem; }
 
 img, aside img {
   max-width: 100%; }
