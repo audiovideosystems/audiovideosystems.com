@@ -1,3 +1,29 @@
-<footer class="site-footer">
+<footer class="footer">
+  <div class="container">
+    <div class="footer__inner-wrapper">
+      <div class="footer__alpha">
+        <a href="">Connect</a>
+      </div>
+      <div class="footer__beta">
+        <p>Subscribe to our Mailing List</p>
+        <form id="email-list" class="form-inline" method="post" action="http://formspree.io/test@test.com">
+          <div class="form-group">
+            <input type="email" name="email" class="form-control" id="email" placeholder="email address" required>
+            <!-- CONFIG -->
+            <input class="is-hidden" type="text" name="_gotcha">
+            <input id="_subject" class="is-hidden" type="hidden" name="_subject" value="GoodJobs Subscription">
+            <!-- /CONFIG -->
+            <button type="submit" class="btn btn-primary">subscribe</button>
+          </div>
 
+          <p class="footer__address">&copy; 2016 Audio Video Systems 25 Adams Court Plainview NY 11803</p>
+        </form>
+      </div>
+      <div class="footer__omega">
+        <a href="">Support</a>
+        <a href="">Contact</a>
+        <a href="">Careers</a>
+      </div>
+    </div>
+  </div>
 </footer>

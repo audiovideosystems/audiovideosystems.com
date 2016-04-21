@@ -24,6 +24,29 @@
     }
   });
 
+  // email signups
+  var $emailList = $('#email-list');
+  $emailList.submit(function(e) {
+    e.preventDefault();
+    $.ajax({
+      url: '//formspree.io/test@test.com',
+      method: 'POST',
+      data: $(this).serialize(),
+      dataType: 'json',
+      beforeSend: function() {
+        $emailList.append('<div class="alert alert--loading">Sending…</div>');
+      },
+      success: function(data) {
+        $emailList.find('.alert--loading').hide();
+        $emailList.find('button[type=submit]').prop('disabled', true);
+        $emailList.append('<div class="alert alert--success">All set, you\'re subscribed!</div>');
+      },
+      error: function(err) {
+        $contactForm.find('.alert--loading').hide();
+        $contactForm.append('<div class="alert alert--error">Oops, there was an error. Try again?</div>');
+      }
+    });
+  });
 
   // centered nav
   // $(window).resize(function() {

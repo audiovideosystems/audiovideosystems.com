@@ -1,130 +1,61 @@
-// Uncomment this for a sticky footer.
-//
-// .wrapper-for-content-outside-of-footer {
-//   min-height: 100%;
-//   height: auto !important;
-//   height: 100%;
-//   margin: 0 auto -4em;
-// }
-
-// html, body {
-//  height: 100%;
-// }
-
-// .wrapper-for-content-outside-of-footer:after {
-//   content: "";
-//   display: block;
-// }
-
-// .footer-2, .wrapper-for-content-outside-of-footer:after {
-//   height: 17em;
-
-//   @include media($lg) {
-//     height: 4em;
-//   }
-// }
-
-.footer-2 {
-  $base-spacing: 1.5em !default;
-  $action-color: #477DCA !default;
-  $md: em(640) !default;
-  $lg: em(860) !default;
-  $footer-background: desaturate(darken($action-color, 20%), 30%);
-  $footer-color: white;
-  $footer-link-color: transparentize($footer-color, 0.6);
-  $footer-disclaimer-color: transparentize($footer-color, 0.6);
-
-  background: $footer-background;
-  padding: $base-spacing;
-  width: 100%;
-  display: inline-block;
-
-  .footer-logo {
-    margin-right: 1em;
-    margin-bottom: 1em;
-
-    @include media($l-up) {
-      float: left;
-      margin-bottom: 0;
-    }
-  }
-
-  .footer-logo img {
-    height: 1.6em;
-  }
-
-  ul {
-    line-height: 1.5em;
-    margin: 0 0 1em 0;
-    padding: 0;
-
-    @include media($l-up) {
-      float: left;
-      line-height: 1.8em;
-      margin-left: 1em;
-      margin-bottom: 0;
-    }
-  }
-
-  ul li {
-    font-weight: 800;
-    list-style: none;
-    padding-right: 1em;
-
-    @include media($l-up) {
-      display: inline;
-      text-align: left;
-    }
-  }
-
-  ul li a {
-    color: $footer-link-color;
-    text-decoration: none;
-
-    &:focus,
-    &:hover {
-      color: transparentize($footer-color, 0);
-    }
-  }
-
-  .footer-secondary-links {
-    @include media($l-up) {
-      float: right;
-    }
-
-    li {
-      font-size: 0.8em;
-      font-weight: 400;
-    }
-
-    ul.footer-social {
-      margin: 1em 0 0 0;
-
-      @include media($l-up) {
-        float: right;
-        margin-top: 0;
+.footer {
+  @include pad(1rem 0 0 0);
+  padding-top: 5rem;
+  background-color: $footer-bg;
+  .footer__inner-wrapper {
+    @include span-columns(11);
+    @include shift(2);
+    .footer__alpha, .footer__omega {
+      @include span-columns(2 of 11);
+      text-align: center;
+      a {
+        font-family: $heading-font-family;
+        font-size: rem(14);
+        line-height: 1.6;
+        display: block;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #fff;
       }
-
-      li {
-        font-size: 1em;
-        float: left;
-        line-height: 0;
-        margin: 0;
-        padding-right: 0.7em;
-
-        &:last-child {
-          padding-right: 0;
+    }
+    .footer__beta {
+      @include span-columns(7 of 11);
+      text-align: center;
+      p {
+        font-family: $heading-font-family;
+        font-size: rem(14);
+        line-height: 1.6;
+        display: block;
+        text-transform: uppercase;
+        color: #fff;
+        margin-top: 0px;
+      }
+      p.footer__address {
+        margin-top: 2rem;
+        margin-bottom: 4rem;
+      }
+      .form-group {
+        .is-hidden {
+          display: none;
         }
-      }
-
-      img {
-        height: 1.6em;
-        opacity: 0.7;
-        padding: 1px;
-
-        &:focus,
-        &:hover {
-          opacity: 1;
+        input {
+          display: inline;
+          width: 50%;
+          font-family: $heading-font-family;
+          font-size: rem(14);
+          text-transform: uppercase;
+        }
+        button {
+          display: inline;
+          margin-left: .5rem;
+          border-radius: 0px;
+          color: $text;
+          font-weight: 300;
+          background-color: $blue-basic;
+          font-family: $heading-font-family;
+          font-size: rem(14);
+          line-height: 1;
+          text-transform: uppercase;
         }
       }
     }
