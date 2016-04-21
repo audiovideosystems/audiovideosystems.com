@@ -11,7 +11,7 @@
   }
 
   .mission {
-    .inner-wrapper {
+    .mission__inner-wrapper {
       @include span-columns(13);
       @include shift(1);
     }
@@ -26,7 +26,7 @@
       padding-top: 0px;
       padding-bottom: 0px;
     }
-    .inner-wrapper {
+    .absolute__inner-wrapper {
       // @include vertical-align();
       padding-top: rem(200);
     }
@@ -72,13 +72,13 @@
     }
   }
 
-  .featured-brands {
+  .featured {
     background-color: $gray-dark;
     .container {
       padding-top: rem(80);
       padding-bottom: rem(80);
     }
-    .inner-wrapper {
+    .featured__inner-wrapper {
       @include span-columns(13);
       @include shift(1);
       .one, .two {
@@ -92,10 +92,10 @@
     }
   }
 
-  .carousel {
+  .showcase {
     padding-top: rem(110);
     padding-bottom: rem(110);
-    .main-carousel {
+    .showcase_carousel {
       @include span-columns(15);
       .gallery-cell {
         height: 500px;
@@ -115,14 +115,34 @@
   }
 
   .testimonial {
-    .inner-wrapper {
-      @include span-columns(13);
-      @include shift(1);
-    }
     background-color: $rouge-basic;
     text-align: center;
     padding-top: em(100);
     padding-bottom: em(100);
+    .testimonial__carousel {
+      @include span-columns(15);
+      .testimonial__carousel__cell {
+        width: 100%;
+      }
+      .testimonial__carousel__quote {
+        @include span-columns(15);
+        font-size: rem(82);
+        text-align: center;
+        margin-top: .5em;
+        margin-bottom: 0;
+        line-height: 1em;
+      }
+      .testimonial__copy {
+        @include span-columns(13 of 15);
+        @include shift(1);
+      }
+    }
+    .flickity-prev-next-button {
+      background-color: transparent;
+      svg {
+        // display: none;
+      }
+    }
   }
 
 

@@ -24,22 +24,6 @@
     }
   });
 
-  // for flickity: this belongs in a partial
-
-    var utils = window.fizzyUIUtils;
-    var flkty = new Flickity( '.main-carousel', {
-      imagesLoaded: true,
-      percentPosition: false,
-      prevNextButtons: false,
-      autoPlay: true
-    });
-
-  var caption = document.querySelector('.caption');
-  flkty.on( 'cellSelect', function() {
-    // set image caption using img's alt
-    utils.setText( caption, flkty.selectedElement.alt );
-  });
-
 
   // centered nav
   // $(window).resize(function() {

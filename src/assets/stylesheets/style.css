@@ -558,13 +558,6 @@ h6 {
   color: rgba(0, 0, 0, 0.8);
   text-align: left; }
 
-h2.quote {
-  font-size: 5.125rem;
-  text-align: center;
-  margin-top: .5em;
-  margin-bottom: 0;
-  line-height: 1em; }
-
 p.body {
   font-family: 'Maison Neue Medium';
   font-size: 0.875rem;
@@ -1100,20 +1093,20 @@ http://flickity.metafizzy.co
   text-align: center;
   padding-top: 6.25em;
   padding-bottom: 6.25em; }
-  .home .mission .inner-wrapper {
+  .home .mission .mission__inner-wrapper {
     float: left;
     display: block;
     margin-right: 1.877269384%;
     width: 86.4163640821%;
     margin-left: 6.7918179589%; }
-    .home .mission .inner-wrapper:last-child {
+    .home .mission .mission__inner-wrapper:last-child {
       margin-right: 0; }
 
 .home .absolute .container {
   padding-top: 0px;
   padding-bottom: 0px; }
 
-.home .absolute .inner-wrapper {
+.home .absolute .absolute__inner-wrapper {
   padding-top: 12.5rem; }
 
 .home .absolute .text {
@@ -1163,51 +1156,51 @@ http://flickity.metafizzy.co
     .home .brands .brand h5 {
       padding: 1em 0; }
 
-.home .featured-brands {
+.home .featured {
   background-color: #e1dfde; }
-  .home .featured-brands .container {
+  .home .featured .container {
     padding-top: 5rem;
     padding-bottom: 5rem; }
-  .home .featured-brands .inner-wrapper {
+  .home .featured .featured__inner-wrapper {
     float: left;
     display: block;
     margin-right: 1.877269384%;
     width: 86.4163640821%;
     margin-left: 6.7918179589%; }
-    .home .featured-brands .inner-wrapper:last-child {
+    .home .featured .featured__inner-wrapper:last-child {
       margin-right: 0; }
-    .home .featured-brands .inner-wrapper .one, .home .featured-brands .inner-wrapper .two {
+    .home .featured .featured__inner-wrapper .one, .home .featured .featured__inner-wrapper .two {
       float: left;
       display: block;
       margin-right: 1.877269384%;
       width: 38.8736383696%;
       margin-left: 6.7918179589%;
       text-align: center; }
-      .home .featured-brands .inner-wrapper .one:last-child, .home .featured-brands .inner-wrapper .two:last-child {
+      .home .featured .featured__inner-wrapper .one:last-child, .home .featured .featured__inner-wrapper .two:last-child {
         margin-right: 0; }
-      .home .featured-brands .inner-wrapper .one img, .home .featured-brands .inner-wrapper .two img {
+      .home .featured .featured__inner-wrapper .one img, .home .featured .featured__inner-wrapper .two img {
         height: 1.375rem; }
 
-.home .carousel {
+.home .showcase {
   padding-top: 6.875rem;
   padding-bottom: 6.875rem; }
-  .home .carousel .main-carousel {
+  .home .showcase .showcase_carousel {
     float: left;
     display: block;
     margin-right: 1.877269384%;
     width: 100%; }
-    .home .carousel .main-carousel:last-child {
+    .home .showcase .showcase_carousel:last-child {
       margin-right: 0; }
-    .home .carousel .main-carousel .gallery-cell {
+    .home .showcase .showcase_carousel .gallery-cell {
       height: 500px; }
-  .home .carousel p.caption {
+  .home .showcase p.caption {
     clear: both;
     padding-top: 0.625rem;
     margin-bottom: 0;
     text-align: left;
     text-transform: uppercase;
     color: #ababab; }
-  .home .carousel .flickity-page-dots {
+  .home .showcase .flickity-page-dots {
     bottom: 30px; }
 
 .home .testimonial {
@@ -1215,14 +1208,37 @@ http://flickity.metafizzy.co
   text-align: center;
   padding-top: 6.25em;
   padding-bottom: 6.25em; }
-  .home .testimonial .inner-wrapper {
+  .home .testimonial .testimonial__carousel {
     float: left;
     display: block;
     margin-right: 1.877269384%;
-    width: 86.4163640821%;
-    margin-left: 6.7918179589%; }
-    .home .testimonial .inner-wrapper:last-child {
+    width: 100%; }
+    .home .testimonial .testimonial__carousel:last-child {
       margin-right: 0; }
+    .home .testimonial .testimonial__carousel .testimonial__carousel__cell {
+      width: 100%; }
+    .home .testimonial .testimonial__carousel .testimonial__carousel__quote {
+      float: left;
+      display: block;
+      margin-right: 1.877269384%;
+      width: 100%;
+      font-size: 5.125rem;
+      text-align: center;
+      margin-top: .5em;
+      margin-bottom: 0;
+      line-height: 1em; }
+      .home .testimonial .testimonial__carousel .testimonial__carousel__quote:last-child {
+        margin-right: 0; }
+    .home .testimonial .testimonial__carousel .testimonial__copy {
+      float: left;
+      display: block;
+      margin-right: 1.877269384%;
+      width: 86.4163640821%;
+      margin-left: 6.7918179589%; }
+      .home .testimonial .testimonial__carousel .testimonial__copy:last-child {
+        margin-right: 0; }
+  .home .testimonial .flickity-prev-next-button {
+    background-color: transparent; }
 
 img, aside img {
   max-width: 100%; }
