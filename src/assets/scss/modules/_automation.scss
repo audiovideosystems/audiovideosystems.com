@@ -7,75 +7,80 @@
   .hero {
     @include media($l){
       height: 462px;
-      background: url("/assets/images/cloud-hero.jpg");
+      background: url("/assets/images/automation-hero.jpg");
       background-size: cover;
     }
   }
 
-  .cloud-services {
-    .cloud-services__inner-wrapper {
+  .automation {
+    .automation__inner-wrapper {
       @include span-columns(13);
       @include shift(1);
     }
-    background-color: $putty-light;
+    background-color: $green-light;
     text-align: center;
     padding-top: em(100);
     padding-bottom: em(100);
   }
 
-  .wiring {
-    .wiring__inner-wrapper {
+  .distribution {
+    text-align: center;
+    @include media($l){
       padding-top: 110px;
-      padding-bottom: 55px;
-      @include span-columns(13);
-      @include shift(1);
-      .wiring__inner-wrapper_first{
-        @include span-columns(5 of 13);
-        @include shift(1);
-        text-align: center;
-      }
-      .wiring__inner-wrapper_last {
-        @include span-columns(5);
-        @include shift(1);
-      }
+      margin-bottom: 110px;
+    }
+    .distribution__inner-wrapper {
+      @include span-columns(7);
+      @include shift(4);
     }
   }
 
-  .wireless {
-    .wireless__inner-wrapper {
-      padding-top: 110px;
-      padding-bottom: 55px;
-      @include span-columns(13);
-      @include shift(1);
-      .wireless__inner-wrapper_first{
-        @include span-columns(5 of 13);
-        @include shift(1);
-      }
-      .wireless__inner-wrapper_last {
-        @include span-columns(5);
-        @include shift(1);
-        text-align: center;
-      }
+  .featured {
+    img {
+      padding-bottom: 110px;
     }
   }
 
-  .cloud {
-    .cloud__inner-wrapper {
+  .video-distribution {
+    text-align: center;
+    background-color: $gray-light;
+    img {
+      padding-top: 52px;
+    }
+    @include media($l){
+      padding-top: 110px;
+      margin-bottom: 110px;
+    }
+    .video-distribution__inner-wrapper {
+      @include span-columns(7);
+      @include shift(4);
+    }
+    .video-distribution__details {
+      @include span-columns(5);
       padding-top: 110px;
       padding-bottom: 110px;
-      @include span-columns(13);
-      @include shift(1);
-      .cloud__inner-wrapper_first{
-        @include span-columns(5 of 13);
-        @include shift(1);
-        text-align: center;
-      }
-      .cloud__inner-wrapper_last {
-        @include span-columns(5);
-        @include shift(1);
-      }
     }
   }
 
+  .integration {
+    text-align: center;
+    @include media($l){
+      // padding-top: 110px;
+      margin-bottom: 110px;
+    }
+    .integration__inner-wrapper {
+      @include span-columns(7);
+      @include shift(4);
+    }
+  }
+
+  .triple {
+    .triple__item {
+      @include span-columns(5);
+      text-align: center;
+      // padding-top: 110px;
+      padding-bottom: 110px;
+    }
+  }
 
 }

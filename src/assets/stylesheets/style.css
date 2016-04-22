@@ -550,6 +550,8 @@ h4 {
   color: rgba(0, 0, 0, 0.8);
   text-transform: uppercase;
   margin-bottom: 2em; }
+  h4.small {
+    font-size: 14px; }
 
 h5 {
   font-family: 'Maison Neue Medium';
@@ -1501,106 +1503,91 @@ img.logo {
 @media screen and (min-width: 48.0625em) {
   .automation .hero {
     height: 462px;
-    background: url("/assets/images/cloud-hero.jpg");
+    background: url("/assets/images/automation-hero.jpg");
     background-size: cover; } }
 
-.automation .cloud-services {
-  background-color: #efe4df;
+.automation .automation {
+  background-color: #bac8c8;
   text-align: center;
   padding-top: 6.25em;
   padding-bottom: 6.25em; }
-  .automation .cloud-services .cloud-services__inner-wrapper {
+  .automation .automation .automation__inner-wrapper {
     float: left;
     display: block;
     margin-right: 1.877269384%;
     width: 86.4163640821%;
     margin-left: 6.7918179589%; }
-    .automation .cloud-services .cloud-services__inner-wrapper:last-child {
+    .automation .automation .automation__inner-wrapper:last-child {
       margin-right: 0; }
 
-.automation .wiring .wiring__inner-wrapper {
-  padding-top: 110px;
-  padding-bottom: 55px;
-  float: left;
-  display: block;
-  margin-right: 1.877269384%;
-  width: 86.4163640821%;
-  margin-left: 6.7918179589%; }
-  .automation .wiring .wiring__inner-wrapper:last-child {
-    margin-right: 0; }
-  .automation .wiring .wiring__inner-wrapper .wiring__inner-wrapper_first {
+.automation .distribution {
+  text-align: center; }
+  @media screen and (min-width: 48.0625em) {
+    .automation .distribution {
+      padding-top: 110px;
+      margin-bottom: 110px; } }
+  .automation .distribution .distribution__inner-wrapper {
     float: left;
     display: block;
-    margin-right: 2.1723540489%;
-    width: 37.1247052007%;
-    margin-left: 7.8594118499%;
-    text-align: center; }
-    .automation .wiring .wiring__inner-wrapper .wiring__inner-wrapper_first:last-child {
+    margin-right: 1.877269384%;
+    width: 45.6654563285%;
+    margin-left: 27.1672718357%; }
+    .automation .distribution .distribution__inner-wrapper:last-child {
       margin-right: 0; }
-  .automation .wiring .wiring__inner-wrapper .wiring__inner-wrapper_last {
+
+.automation .featured img {
+  padding-bottom: 110px; }
+
+.automation .video-distribution {
+  text-align: center;
+  background-color: #f4f5f5; }
+  .automation .video-distribution img {
+    padding-top: 52px; }
+  @media screen and (min-width: 48.0625em) {
+    .automation .video-distribution {
+      padding-top: 110px;
+      margin-bottom: 110px; } }
+  .automation .video-distribution .video-distribution__inner-wrapper {
+    float: left;
+    display: block;
+    margin-right: 1.877269384%;
+    width: 45.6654563285%;
+    margin-left: 27.1672718357%; }
+    .automation .video-distribution .video-distribution__inner-wrapper:last-child {
+      margin-right: 0; }
+  .automation .video-distribution .video-distribution__details {
     float: left;
     display: block;
     margin-right: 1.877269384%;
     width: 32.0818204106%;
-    margin-left: 6.7918179589%; }
-    .automation .wiring .wiring__inner-wrapper .wiring__inner-wrapper_last:last-child {
+    padding-top: 110px;
+    padding-bottom: 110px; }
+    .automation .video-distribution .video-distribution__details:last-child {
       margin-right: 0; }
 
-.automation .wireless .wireless__inner-wrapper {
-  padding-top: 110px;
-  padding-bottom: 55px;
-  float: left;
-  display: block;
-  margin-right: 1.877269384%;
-  width: 86.4163640821%;
-  margin-left: 6.7918179589%; }
-  .automation .wireless .wireless__inner-wrapper:last-child {
-    margin-right: 0; }
-  .automation .wireless .wireless__inner-wrapper .wireless__inner-wrapper_first {
-    float: left;
-    display: block;
-    margin-right: 2.1723540489%;
-    width: 37.1247052007%;
-    margin-left: 7.8594118499%; }
-    .automation .wireless .wireless__inner-wrapper .wireless__inner-wrapper_first:last-child {
-      margin-right: 0; }
-  .automation .wireless .wireless__inner-wrapper .wireless__inner-wrapper_last {
+.automation .integration {
+  text-align: center; }
+  @media screen and (min-width: 48.0625em) {
+    .automation .integration {
+      margin-bottom: 110px; } }
+  .automation .integration .integration__inner-wrapper {
     float: left;
     display: block;
     margin-right: 1.877269384%;
-    width: 32.0818204106%;
-    margin-left: 6.7918179589%;
-    text-align: center; }
-    .automation .wireless .wireless__inner-wrapper .wireless__inner-wrapper_last:last-child {
+    width: 45.6654563285%;
+    margin-left: 27.1672718357%; }
+    .automation .integration .integration__inner-wrapper:last-child {
       margin-right: 0; }
 
-.automation .cloud .cloud__inner-wrapper {
-  padding-top: 110px;
-  padding-bottom: 110px;
+.automation .triple .triple__item {
   float: left;
   display: block;
   margin-right: 1.877269384%;
-  width: 86.4163640821%;
-  margin-left: 6.7918179589%; }
-  .automation .cloud .cloud__inner-wrapper:last-child {
+  width: 32.0818204106%;
+  text-align: center;
+  padding-bottom: 110px; }
+  .automation .triple .triple__item:last-child {
     margin-right: 0; }
-  .automation .cloud .cloud__inner-wrapper .cloud__inner-wrapper_first {
-    float: left;
-    display: block;
-    margin-right: 2.1723540489%;
-    width: 37.1247052007%;
-    margin-left: 7.8594118499%;
-    text-align: center; }
-    .automation .cloud .cloud__inner-wrapper .cloud__inner-wrapper_first:last-child {
-      margin-right: 0; }
-  .automation .cloud .cloud__inner-wrapper .cloud__inner-wrapper_last {
-    float: left;
-    display: block;
-    margin-right: 1.877269384%;
-    width: 32.0818204106%;
-    margin-left: 6.7918179589%; }
-    .automation .cloud .cloud__inner-wrapper .cloud__inner-wrapper_last:last-child {
-      margin-right: 0; }
 
 @media screen and (min-width: 48.0625em) {
   .about .hero {

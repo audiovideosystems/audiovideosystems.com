@@ -49,6 +49,9 @@ line-height: 1.4;
 color: $text;
 text-transform: uppercase;
 margin-bottom: 2em;
+ &.small {
+  font-size: 14px;
+ }
 }
 
 h5 {
