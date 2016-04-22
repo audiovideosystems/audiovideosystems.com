@@ -39,13 +39,31 @@
     }
   }
 
+  .service {
+    text-align: center;
+    @include media($l){
+      padding-top: 6rem;
+      margin-bottom: 6rem;
+    }
+    .service__inner-wrapper {
+      @include span-columns(7);
+      @include shift(4);
+    }
+    h2 {
+    font-family: 'Noe Display';
+    font-size: 26px;
+    }
+  }
+
   .featured {
     img {
-      padding-bottom: 6rem;
+      padding-bottom: 110px;
     }
   }
 
   .staff {
+    background-color: $gray-light;
+    padding-top: 110px;
     .staff__inner-wrapper {
       text-align: center;
       @include span-columns(13);
@@ -62,6 +80,7 @@
         @include shift(1);
         ul {
           margin-left: 0;
+          margin-bottom: 110px;
           li {
             list-style-type: disc;
             line-height: 1.7;
@@ -75,6 +94,7 @@
         @include shift(1);
         ul {
           margin-left: 0;
+          margin-bottom: 110px;
           li {
             list-style-type: disc;
             line-height: 1.7;
@@ -85,7 +105,19 @@
     }
   }
 
-
+  .oncall {
+    text-align: center;
+    background-color: $putty-basic;
+    padding-top: 110px;
+    padding-bottom: 110px;
+    .oncall__inner-wrapper {
+      @include span-columns(11);
+      @include shift(2);
+      h2 {
+        margin-bottom: 0;
+      }
+    }
+  }
 
 
 }

@@ -1426,52 +1426,91 @@ img.logo {
     font-family: 'Noe Display';
     font-size: 26px; }
 
-.about .featured img {
-  padding-bottom: 6rem; }
+.about .service {
+  text-align: center; }
+  @media screen and (min-width: 48.0625em) {
+    .about .service {
+      padding-top: 6rem;
+      margin-bottom: 6rem; } }
+  .about .service .service__inner-wrapper {
+    float: left;
+    display: block;
+    margin-right: 1.877269384%;
+    width: 45.6654563285%;
+    margin-left: 27.1672718357%; }
+    .about .service .service__inner-wrapper:last-child {
+      margin-right: 0; }
+  .about .service h2 {
+    font-family: 'Noe Display';
+    font-size: 26px; }
 
-.about .staff .staff__inner-wrapper {
+.about .featured img {
+  padding-bottom: 110px; }
+
+.about .staff {
+  background-color: #f4f5f5;
+  padding-top: 110px; }
+  .about .staff .staff__inner-wrapper {
+    text-align: center;
+    float: left;
+    display: block;
+    margin-right: 1.877269384%;
+    width: 86.4163640821%;
+    margin-left: 6.7918179589%; }
+    .about .staff .staff__inner-wrapper:last-child {
+      margin-right: 0; }
+    .about .staff .staff__inner-wrapper h2 {
+      margin-bottom: 80px; }
+    .about .staff .staff__inner-wrapper h4 {
+      margin-bottom: 52px; }
+    .about .staff .staff__inner-wrapper .staff__details_a {
+      text-align: left;
+      float: left;
+      display: block;
+      margin-right: 2.1723540489%;
+      width: 37.1247052007%;
+      margin-left: 7.8594118499%; }
+      .about .staff .staff__inner-wrapper .staff__details_a:last-child {
+        margin-right: 0; }
+      .about .staff .staff__inner-wrapper .staff__details_a ul {
+        margin-left: 0;
+        margin-bottom: 110px; }
+        .about .staff .staff__inner-wrapper .staff__details_a ul li {
+          list-style-type: disc;
+          line-height: 1.7;
+          margin-bottom: 1rem; }
+    .about .staff .staff__inner-wrapper .staff__details_b {
+      text-align: left;
+      float: left;
+      display: block;
+      margin-right: 2.1723540489%;
+      width: 37.1247052007%;
+      margin-left: 7.8594118499%; }
+      .about .staff .staff__inner-wrapper .staff__details_b:last-child {
+        margin-right: 0; }
+      .about .staff .staff__inner-wrapper .staff__details_b ul {
+        margin-left: 0;
+        margin-bottom: 110px; }
+        .about .staff .staff__inner-wrapper .staff__details_b ul li {
+          list-style-type: disc;
+          line-height: 1.7;
+          margin-bottom: 1rem; }
+
+.about .oncall {
   text-align: center;
-  float: left;
-  display: block;
-  margin-right: 1.877269384%;
-  width: 86.4163640821%;
-  margin-left: 6.7918179589%; }
-  .about .staff .staff__inner-wrapper:last-child {
-    margin-right: 0; }
-  .about .staff .staff__inner-wrapper h2 {
-    margin-bottom: 80px; }
-  .about .staff .staff__inner-wrapper h4 {
-    margin-bottom: 52px; }
-  .about .staff .staff__inner-wrapper .staff__details_a {
-    text-align: left;
+  background-color: #eed9c9;
+  padding-top: 110px;
+  padding-bottom: 110px; }
+  .about .oncall .oncall__inner-wrapper {
     float: left;
     display: block;
-    margin-right: 2.1723540489%;
-    width: 37.1247052007%;
-    margin-left: 7.8594118499%; }
-    .about .staff .staff__inner-wrapper .staff__details_a:last-child {
+    margin-right: 1.877269384%;
+    width: 72.8327281643%;
+    margin-left: 13.5836359179%; }
+    .about .oncall .oncall__inner-wrapper:last-child {
       margin-right: 0; }
-    .about .staff .staff__inner-wrapper .staff__details_a ul {
-      margin-left: 0; }
-      .about .staff .staff__inner-wrapper .staff__details_a ul li {
-        list-style-type: disc;
-        line-height: 1.7;
-        margin-bottom: 1rem; }
-  .about .staff .staff__inner-wrapper .staff__details_b {
-    text-align: left;
-    float: left;
-    display: block;
-    margin-right: 2.1723540489%;
-    width: 37.1247052007%;
-    margin-left: 7.8594118499%; }
-    .about .staff .staff__inner-wrapper .staff__details_b:last-child {
-      margin-right: 0; }
-    .about .staff .staff__inner-wrapper .staff__details_b ul {
-      margin-left: 0; }
-      .about .staff .staff__inner-wrapper .staff__details_b ul li {
-        list-style-type: disc;
-        line-height: 1.7;
-        margin-bottom: 1rem; }
+    .about .oncall .oncall__inner-wrapper h2 {
+      margin-bottom: 0; }
 
 body:before {
   display: none; }
