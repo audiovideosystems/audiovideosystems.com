@@ -1,4 +1,4 @@
-.about {
+.cloud {
 
   .centered-navigation ul li.nav-link a {
     color: $text;
@@ -7,20 +7,74 @@
   .hero {
     @include media($l){
       height: 462px;
-      background: url("/assets/images/about-hero.jpg");
+      background: url("/assets/images/cloud-hero.jpg");
       background-size: cover;
     }
   }
 
-  .about-us {
-    .about-us__inner-wrapper {
+  .cloud-services {
+    .cloud-services__inner-wrapper {
       @include span-columns(13);
       @include shift(1);
     }
-    background-color: $blue-basic;
+    background-color: $putty-light;
     text-align: center;
     padding-top: em(100);
     padding-bottom: em(100);
+  }
+
+  .wiring {
+    .wiring__inner-wrapper {
+      padding-top: 110px;
+      padding-bottom: 55px;
+      @include span-columns(13);
+      @include shift(1);
+      .wiring__inner-wrapper_first{
+        @include span-columns(5 of 13);
+        @include shift(1);
+        text-align: center;
+      }
+      .wiring__inner-wrapper_last {
+        @include span-columns(5);
+        @include shift(1);
+      }
+    }
+  }
+
+  .wireless {
+    .wireless__inner-wrapper {
+      padding-top: 110px;
+      padding-bottom: 55px;
+      @include span-columns(13);
+      @include shift(1);
+      .wireless__inner-wrapper_first{
+        @include span-columns(5 of 13);
+        @include shift(1);
+      }
+      .wireless__inner-wrapper_last {
+        @include span-columns(5);
+        @include shift(1);
+        text-align: center;
+      }
+    }
+  }
+
+  .cloud {
+    .cloud__inner-wrapper {
+      padding-top: 110px;
+      padding-bottom: 55px;
+      @include span-columns(13);
+      @include shift(1);
+      .cloud__inner-wrapper_first{
+        @include span-columns(5 of 13);
+        @include shift(1);
+        text-align: center;
+      }
+      .cloud__inner-wrapper_last {
+        @include span-columns(5);
+        @include shift(1);
+      }
+    }
   }
 
   .installation {
@@ -33,6 +87,10 @@
       @include span-columns(7);
       @include shift(4);
     }
+    h2 {
+    font-family: 'Noe Display';
+    font-size: 26px;
+    }
   }
 
   .service {
@@ -44,6 +102,10 @@
     .service__inner-wrapper {
       @include span-columns(7);
       @include shift(4);
+    }
+    h2 {
+    font-family: 'Noe Display';
+    font-size: 26px;
     }
   }
 

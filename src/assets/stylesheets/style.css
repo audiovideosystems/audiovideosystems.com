@@ -537,6 +537,12 @@ h2 {
   line-height: 1.4;
   color: rgba(0, 0, 0, 0.8); }
 
+h2.small {
+  font-family: 'Noe Display';
+  font-size: 26px;
+  line-height: 1.4;
+  color: rgba(0, 0, 0, 0.8); }
+
 h4 {
   font-family: 'Maison Neue Medium';
   font-size: 16px;
@@ -1385,6 +1391,217 @@ img.logo {
   .home .testimonial .flickity-prev-next-button {
     background-color: transparent; }
 
+.cloud .centered-navigation ul li.nav-link a {
+  color: rgba(0, 0, 0, 0.8); }
+
+@media screen and (min-width: 48.0625em) {
+  .cloud .hero {
+    height: 462px;
+    background: url("/assets/images/cloud-hero.jpg");
+    background-size: cover; } }
+
+.cloud .cloud-services {
+  background-color: #efe4df;
+  text-align: center;
+  padding-top: 6.25em;
+  padding-bottom: 6.25em; }
+  .cloud .cloud-services .cloud-services__inner-wrapper {
+    float: left;
+    display: block;
+    margin-right: 1.877269384%;
+    width: 86.4163640821%;
+    margin-left: 6.7918179589%; }
+    .cloud .cloud-services .cloud-services__inner-wrapper:last-child {
+      margin-right: 0; }
+
+.cloud .wiring .wiring__inner-wrapper {
+  padding-top: 110px;
+  padding-bottom: 55px;
+  float: left;
+  display: block;
+  margin-right: 1.877269384%;
+  width: 86.4163640821%;
+  margin-left: 6.7918179589%; }
+  .cloud .wiring .wiring__inner-wrapper:last-child {
+    margin-right: 0; }
+  .cloud .wiring .wiring__inner-wrapper .wiring__inner-wrapper_first {
+    float: left;
+    display: block;
+    margin-right: 2.1723540489%;
+    width: 37.1247052007%;
+    margin-left: 7.8594118499%;
+    text-align: center; }
+    .cloud .wiring .wiring__inner-wrapper .wiring__inner-wrapper_first:last-child {
+      margin-right: 0; }
+  .cloud .wiring .wiring__inner-wrapper .wiring__inner-wrapper_last {
+    float: left;
+    display: block;
+    margin-right: 1.877269384%;
+    width: 32.0818204106%;
+    margin-left: 6.7918179589%; }
+    .cloud .wiring .wiring__inner-wrapper .wiring__inner-wrapper_last:last-child {
+      margin-right: 0; }
+
+.cloud .wireless .wireless__inner-wrapper {
+  padding-top: 110px;
+  padding-bottom: 55px;
+  float: left;
+  display: block;
+  margin-right: 1.877269384%;
+  width: 86.4163640821%;
+  margin-left: 6.7918179589%; }
+  .cloud .wireless .wireless__inner-wrapper:last-child {
+    margin-right: 0; }
+  .cloud .wireless .wireless__inner-wrapper .wireless__inner-wrapper_first {
+    float: left;
+    display: block;
+    margin-right: 2.1723540489%;
+    width: 37.1247052007%;
+    margin-left: 7.8594118499%; }
+    .cloud .wireless .wireless__inner-wrapper .wireless__inner-wrapper_first:last-child {
+      margin-right: 0; }
+  .cloud .wireless .wireless__inner-wrapper .wireless__inner-wrapper_last {
+    float: left;
+    display: block;
+    margin-right: 1.877269384%;
+    width: 32.0818204106%;
+    margin-left: 6.7918179589%;
+    text-align: center; }
+    .cloud .wireless .wireless__inner-wrapper .wireless__inner-wrapper_last:last-child {
+      margin-right: 0; }
+
+.cloud .cloud .cloud__inner-wrapper {
+  padding-top: 110px;
+  padding-bottom: 55px;
+  float: left;
+  display: block;
+  margin-right: 1.877269384%;
+  width: 86.4163640821%;
+  margin-left: 6.7918179589%; }
+  .cloud .cloud .cloud__inner-wrapper:last-child {
+    margin-right: 0; }
+  .cloud .cloud .cloud__inner-wrapper .cloud__inner-wrapper_first {
+    float: left;
+    display: block;
+    margin-right: 2.1723540489%;
+    width: 37.1247052007%;
+    margin-left: 7.8594118499%;
+    text-align: center; }
+    .cloud .cloud .cloud__inner-wrapper .cloud__inner-wrapper_first:last-child {
+      margin-right: 0; }
+  .cloud .cloud .cloud__inner-wrapper .cloud__inner-wrapper_last {
+    float: left;
+    display: block;
+    margin-right: 1.877269384%;
+    width: 32.0818204106%;
+    margin-left: 6.7918179589%; }
+    .cloud .cloud .cloud__inner-wrapper .cloud__inner-wrapper_last:last-child {
+      margin-right: 0; }
+
+.cloud .installation {
+  text-align: center; }
+  @media screen and (min-width: 48.0625em) {
+    .cloud .installation {
+      padding-top: 6rem;
+      margin-bottom: 6rem; } }
+  .cloud .installation .installation__inner-wrapper {
+    float: left;
+    display: block;
+    margin-right: 1.877269384%;
+    width: 45.6654563285%;
+    margin-left: 27.1672718357%; }
+    .cloud .installation .installation__inner-wrapper:last-child {
+      margin-right: 0; }
+  .cloud .installation h2 {
+    font-family: 'Noe Display';
+    font-size: 26px; }
+
+.cloud .service {
+  text-align: center; }
+  @media screen and (min-width: 48.0625em) {
+    .cloud .service {
+      padding-top: 6rem;
+      margin-bottom: 6rem; } }
+  .cloud .service .service__inner-wrapper {
+    float: left;
+    display: block;
+    margin-right: 1.877269384%;
+    width: 45.6654563285%;
+    margin-left: 27.1672718357%; }
+    .cloud .service .service__inner-wrapper:last-child {
+      margin-right: 0; }
+  .cloud .service h2 {
+    font-family: 'Noe Display';
+    font-size: 26px; }
+
+.cloud .featured img {
+  padding-bottom: 110px; }
+
+.cloud .staff {
+  background-color: #f4f5f5;
+  padding-top: 110px; }
+  .cloud .staff .staff__inner-wrapper {
+    text-align: center;
+    float: left;
+    display: block;
+    margin-right: 1.877269384%;
+    width: 86.4163640821%;
+    margin-left: 6.7918179589%; }
+    .cloud .staff .staff__inner-wrapper:last-child {
+      margin-right: 0; }
+    .cloud .staff .staff__inner-wrapper h2 {
+      margin-bottom: 80px; }
+    .cloud .staff .staff__inner-wrapper h4 {
+      margin-bottom: 52px; }
+    .cloud .staff .staff__inner-wrapper .staff__details_a {
+      text-align: left;
+      float: left;
+      display: block;
+      margin-right: 2.1723540489%;
+      width: 37.1247052007%;
+      margin-left: 7.8594118499%; }
+      .cloud .staff .staff__inner-wrapper .staff__details_a:last-child {
+        margin-right: 0; }
+      .cloud .staff .staff__inner-wrapper .staff__details_a ul {
+        margin-left: 0;
+        margin-bottom: 110px; }
+        .cloud .staff .staff__inner-wrapper .staff__details_a ul li {
+          list-style-type: disc;
+          line-height: 1.7;
+          margin-bottom: 1rem; }
+    .cloud .staff .staff__inner-wrapper .staff__details_b {
+      text-align: left;
+      float: left;
+      display: block;
+      margin-right: 2.1723540489%;
+      width: 37.1247052007%;
+      margin-left: 7.8594118499%; }
+      .cloud .staff .staff__inner-wrapper .staff__details_b:last-child {
+        margin-right: 0; }
+      .cloud .staff .staff__inner-wrapper .staff__details_b ul {
+        margin-left: 0;
+        margin-bottom: 110px; }
+        .cloud .staff .staff__inner-wrapper .staff__details_b ul li {
+          list-style-type: disc;
+          line-height: 1.7;
+          margin-bottom: 1rem; }
+
+.cloud .oncall {
+  text-align: center;
+  background-color: #eed9c9;
+  padding-top: 110px;
+  padding-bottom: 110px; }
+  .cloud .oncall .oncall__inner-wrapper {
+    float: left;
+    display: block;
+    margin-right: 1.877269384%;
+    width: 72.8327281643%;
+    margin-left: 13.5836359179%; }
+    .cloud .oncall .oncall__inner-wrapper:last-child {
+      margin-right: 0; }
+    .cloud .oncall .oncall__inner-wrapper h2 {
+      margin-bottom: 0; }
+
 .about .centered-navigation ul li.nav-link a {
   color: rgba(0, 0, 0, 0.8); }
 
@@ -1422,9 +1639,6 @@ img.logo {
     margin-left: 27.1672718357%; }
     .about .installation .installation__inner-wrapper:last-child {
       margin-right: 0; }
-  .about .installation h2 {
-    font-family: 'Noe Display';
-    font-size: 26px; }
 
 .about .service {
   text-align: center; }
@@ -1440,9 +1654,6 @@ img.logo {
     margin-left: 27.1672718357%; }
     .about .service .service__inner-wrapper:last-child {
       margin-right: 0; }
-  .about .service h2 {
-    font-family: 'Noe Display';
-    font-size: 26px; }
 
 .about .featured img {
   padding-bottom: 110px; }
