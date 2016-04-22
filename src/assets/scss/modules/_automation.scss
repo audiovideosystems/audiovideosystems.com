@@ -1,4 +1,8 @@
-.cloud {
+.automation {
+
+  .centered-navigation ul li.nav-link a {
+    color: $text;
+    }
 
   .hero {
     @include media($l){

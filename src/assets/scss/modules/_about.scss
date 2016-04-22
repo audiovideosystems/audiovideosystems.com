@@ -1,9 +1,5 @@
 .about {
 
-  .centered-navigation ul li.nav-link a {
-    color: $text;
-    }
-
   .hero {
     @include media($l){
       height: 462px;
