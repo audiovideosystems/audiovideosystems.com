@@ -1426,6 +1426,53 @@ img.logo {
     font-family: 'Noe Display';
     font-size: 26px; }
 
+.about .featured img {
+  padding-bottom: 6rem; }
+
+.about .staff .staff__inner-wrapper {
+  text-align: center;
+  float: left;
+  display: block;
+  margin-right: 1.877269384%;
+  width: 86.4163640821%;
+  margin-left: 6.7918179589%; }
+  .about .staff .staff__inner-wrapper:last-child {
+    margin-right: 0; }
+  .about .staff .staff__inner-wrapper h2 {
+    margin-bottom: 80px; }
+  .about .staff .staff__inner-wrapper h4 {
+    margin-bottom: 52px; }
+  .about .staff .staff__inner-wrapper .staff__details_a {
+    text-align: left;
+    float: left;
+    display: block;
+    margin-right: 2.1723540489%;
+    width: 37.1247052007%;
+    margin-left: 7.8594118499%; }
+    .about .staff .staff__inner-wrapper .staff__details_a:last-child {
+      margin-right: 0; }
+    .about .staff .staff__inner-wrapper .staff__details_a ul {
+      margin-left: 0; }
+      .about .staff .staff__inner-wrapper .staff__details_a ul li {
+        list-style-type: disc;
+        line-height: 1.7;
+        margin-bottom: 1rem; }
+  .about .staff .staff__inner-wrapper .staff__details_b {
+    text-align: left;
+    float: left;
+    display: block;
+    margin-right: 2.1723540489%;
+    width: 37.1247052007%;
+    margin-left: 7.8594118499%; }
+    .about .staff .staff__inner-wrapper .staff__details_b:last-child {
+      margin-right: 0; }
+    .about .staff .staff__inner-wrapper .staff__details_b ul {
+      margin-left: 0; }
+      .about .staff .staff__inner-wrapper .staff__details_b ul li {
+        list-style-type: disc;
+        line-height: 1.7;
+        margin-bottom: 1rem; }
+
 body:before {
   display: none; }
 

@@ -37,8 +37,55 @@
     font-family: 'Noe Display';
     font-size: 26px;
     }
-
   }
+
+  .featured {
+    img {
+      padding-bottom: 6rem;
+    }
+  }
+
+  .staff {
+    .staff__inner-wrapper {
+      text-align: center;
+      @include span-columns(13);
+      @include shift(1);
+      h2 {
+        margin-bottom: 80px;
+      }
+      h4 {
+        margin-bottom: 52px;
+      }
+      .staff__details_a {
+        text-align: left;
+        @include span-columns(5 of 13);
+        @include shift(1);
+        ul {
+          margin-left: 0;
+          li {
+            list-style-type: disc;
+            line-height: 1.7;
+            margin-bottom: 1rem;
+          }
+        }
+      }
+      .staff__details_b {
+        text-align: left;
+        @include span-columns(5 of 13);
+        @include shift(1);
+        ul {
+          margin-left: 0;
+          li {
+            list-style-type: disc;
+            line-height: 1.7;
+            margin-bottom: 1rem;
+          }
+        }
+      }
+    }
+  }
+
+
 
 
 }
