@@ -30,16 +30,13 @@ $visual-grid-opacity: 0.2;
   "modules/vars",
   "modules/common",
   "modules/visual-grid",
+  "modules/dynamic-hero", // dynamically-sized
+  "modules/flickity",
+   "modules/utilities",
   "modules/footer",
   "modules/header",
-  // "modules/simple-hero", // basic hero image
-  "modules/dynamic-hero", // dynamically-sized
-  // "modules/text-section", // just text
-  // "modules/image-section", // full-width image
-  // "modules/combo-section", // image on one side, text on another
-  "modules/flickity",
   "modules/home",
-  "modules/utilities";
+  "modules/about";
 
   body:before {
     display: none;

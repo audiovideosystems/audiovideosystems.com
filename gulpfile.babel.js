@@ -19,6 +19,17 @@ import {argv} from 'yargs';
 // Bourbon & Neat
 import neat from 'node-neat';
 
+
+//
+// FOR SURGE
+//
+gulp.task('CNAME', () =>
+  gulp.src([
+    'CNAME'
+  ])
+    .pipe(gulp.dest('dist'))
+);
+
 // 'gulp clean:assets' -- deletes all assets except for images
 // 'gulp clean:images' -- deletes your images
 // 'gulp clean:dist' -- erases the dist folder
@@ -256,7 +267,7 @@ gulp.task('default', gulp.series(
 gulp.task('build', gulp.series(
   gulp.series('clean:assets', 'clean:gzip'),
   gulp.series('assets', 'inject:head', 'inject:footer'),
-  gulp.series('jekyll', 'assets:copy', 'html')
+  gulp.series('CNAME','jekyll', 'assets:copy', 'html')
 ));
 
 // 'gulp clean' -- erases your assets and gzipped files

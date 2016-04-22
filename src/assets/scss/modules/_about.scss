@@ -1,0 +1,44 @@
+.about {
+
+  .centered-navigation ul li.nav-link a {
+    color: $text;
+    }
+
+  .hero {
+    @include media($l){
+      height: 462px;
+      background: url("/assets/images/about-hero.jpg");
+      background-size: cover;
+    }
+  }
+
+  .about-us {
+    .about-us__inner-wrapper {
+      @include span-columns(13);
+      @include shift(1);
+    }
+    background-color: $blue-basic;
+    text-align: center;
+    padding-top: em(100);
+    padding-bottom: em(100);
+  }
+
+  .installation {
+    text-align: center;
+    @include media($l){
+      padding-top: 6rem;
+      margin-bottom: 6rem;
+    }
+    .installation__inner-wrapper {
+      @include span-columns(7);
+      @include shift(4);
+    }
+    h2 {
+    font-family: 'Noe Display';
+    font-size: 26px;
+    }
+
+  }
+
+
+}

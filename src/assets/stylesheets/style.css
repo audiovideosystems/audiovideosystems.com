@@ -663,273 +663,6 @@ img.logo {
   .hide-l {
     display: none; } }
 
-.footer {
-  padding: 1rem 0 0 0;
-  padding-top: 5rem;
-  background-color: #1c1c1c; }
-  .footer .footer__inner-wrapper {
-    float: left;
-    display: block;
-    margin-right: 1.877269384%;
-    width: 72.8327281643%;
-    margin-left: 13.5836359179%; }
-    .footer .footer__inner-wrapper:last-child {
-      margin-right: 0; }
-    .footer .footer__inner-wrapper .footer__alpha, .footer .footer__inner-wrapper .footer__omega {
-      float: left;
-      display: block;
-      margin-right: 2.5775079849%;
-      width: 16.0729480124%;
-      text-align: center; }
-      .footer .footer__inner-wrapper .footer__alpha:last-child, .footer .footer__inner-wrapper .footer__omega:last-child {
-        margin-right: 0; }
-      .footer .footer__inner-wrapper .footer__alpha a, .footer .footer__inner-wrapper .footer__omega a {
-        font-family: "Maison Neue Medium";
-        font-size: 0.875rem;
-        line-height: 1.6;
-        display: block;
-        text-transform: uppercase;
-        text-decoration: none;
-        color: #fff; }
-    .footer .footer__inner-wrapper .footer__beta {
-      float: left;
-      display: block;
-      margin-right: 2.5775079849%;
-      width: 62.6990880055%;
-      text-align: center; }
-      .footer .footer__inner-wrapper .footer__beta:last-child {
-        margin-right: 0; }
-      .footer .footer__inner-wrapper .footer__beta p {
-        font-family: "Maison Neue Medium";
-        font-size: 0.875rem;
-        line-height: 1.6;
-        display: block;
-        text-transform: uppercase;
-        color: #fff;
-        margin-top: 0px; }
-      .footer .footer__inner-wrapper .footer__beta p.footer__address {
-        margin-top: 2rem;
-        margin-bottom: 4rem; }
-      .footer .footer__inner-wrapper .footer__beta .form-group .is-hidden {
-        display: none; }
-      .footer .footer__inner-wrapper .footer__beta .form-group input {
-        display: inline;
-        width: 50%;
-        font-family: "Maison Neue Medium";
-        font-size: 0.875rem;
-        text-transform: uppercase; }
-      .footer .footer__inner-wrapper .footer__beta .form-group button {
-        display: inline;
-        margin-left: .5rem;
-        border-radius: 0px;
-        color: rgba(0, 0, 0, 0.8);
-        font-weight: 300;
-        background-color: #d4effc;
-        font-family: "Maison Neue Medium";
-        font-size: 0.875rem;
-        line-height: 1;
-        text-transform: uppercase; }
-
-.centered-navigation {
-  background-color: transparent;
-  border-bottom: 1px solid transparent;
-  min-height: 60px;
-  width: 100%;
-  z-index: 9999; }
-  .centered-navigation .mobile-logo {
-    display: inline;
-    float: left;
-    max-height: 60px;
-    padding-left: 1em; }
-    .centered-navigation .mobile-logo img {
-      max-height: 60px;
-      opacity: 0.6;
-      padding: 0.8em 0; }
-    @media screen and (min-width: 53.75em) {
-      .centered-navigation .mobile-logo {
-        display: none; } }
-  .centered-navigation .centered-navigation-mobile-menu {
-    color: #fff;
-    display: block;
-    float: right;
-    line-height: 60px;
-    margin: 0;
-    padding-right: 0.9375rem;
-    text-decoration: none;
-    text-transform: uppercase; }
-    @media screen and (min-width: 53.75em) {
-      .centered-navigation .centered-navigation-mobile-menu {
-        display: none; } }
-    .centered-navigation .centered-navigation-mobile-menu:focus, .centered-navigation .centered-navigation-mobile-menu:hover {
-      color: rgba(0, 0, 0, 0.8); }
-  .centered-navigation .centered-navigation-wrapper {
-    max-width: 73.75em;
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
-    z-index: 999; }
-    .centered-navigation .centered-navigation-wrapper::after {
-      clear: both;
-      content: "";
-      display: table; }
-    .centered-navigation .centered-navigation-wrapper::after {
-      clear: both;
-      content: "";
-      display: table; }
-  .centered-navigation ul.centered-navigation-menu {
-    clear: both;
-    display: none;
-    margin: 0 auto;
-    overflow: visible;
-    padding: 0;
-    -webkit-transform-style: preserve-3d;
-    width: 100%;
-    z-index: 99999; }
-    .centered-navigation ul.centered-navigation-menu.show {
-      display: block; }
-    @media screen and (min-width: 53.75em) {
-      .centered-navigation ul.centered-navigation-menu {
-        display: block;
-        text-align: center; } }
-  @media screen and (min-width: 53.75em) {
-    .centered-navigation .nav-link:first-child {
-      margin-left: 2.2em; } }
-  .centered-navigation ul li.nav-link {
-    font-family: "Maison Neue Medium";
-    font-size: 0.875rem;
-    background: transparent;
-    display: block;
-    line-height: 60px;
-    overflow: hidden;
-    padding-right: 0.9375rem;
-    text-align: right;
-    text-transform: uppercase;
-    width: 100%;
-    z-index: 9999; }
-    .centered-navigation ul li.nav-link a {
-      color: #fff;
-      display: inline-block;
-      outline: none;
-      text-decoration: none; }
-      .centered-navigation ul li.nav-link a:focus, .centered-navigation ul li.nav-link a:hover {
-        color: rgba(0, 0, 0, 0.8); }
-    @media screen and (min-width: 53.75em) {
-      .centered-navigation ul li.nav-link {
-        background: transparent;
-        display: inline;
-        line-height: 60px; }
-        .centered-navigation ul li.nav-link a {
-          padding-right: 0.9375rem; } }
-  .centered-navigation li.logo.nav-link {
-    display: none;
-    line-height: 0; }
-    @media screen and (min-width: 53.75em) {
-      .centered-navigation li.logo.nav-link {
-        display: inline; } }
-  .centered-navigation .logo img {
-    margin-bottom: -0.6666666667em;
-    max-height: 2em;
-    opacity: 0.6; }
-  .centered-navigation li.more.nav-link {
-    padding-right: 0; }
-    @media screen and (min-width: 53.75em) {
-      .centered-navigation li.more.nav-link {
-        padding-right: 0.9375rem; } }
-    .centered-navigation li.more.nav-link > ul > li:first-child a {
-      padding-top: 1em; }
-    .centered-navigation li.more.nav-link a {
-      margin-right: 0.9375rem; }
-    .centered-navigation li.more.nav-link > a {
-      padding-right: 0.6em; }
-    .centered-navigation li.more.nav-link > a::after {
-      position: absolute;
-      top: auto;
-      right: -0.4em;
-      bottom: auto;
-      left: auto;
-      color: #fff;
-      content: "\25BE"; }
-  .centered-navigation li.more {
-    overflow: visible;
-    padding-right: 0; }
-    .centered-navigation li.more a {
-      padding-right: 0.9375rem; }
-    .centered-navigation li.more > a {
-      padding-right: 1.6em;
-      position: relative; }
-      @media screen and (min-width: 53.75em) {
-        .centered-navigation li.more > a {
-          margin-right: 0.9375rem; } }
-      .centered-navigation li.more > a::after {
-        content: "›";
-        font-size: 1.2em;
-        position: absolute;
-        right: 0.46875rem; }
-    .centered-navigation li.more:focus > .submenu,
-    .centered-navigation li.more:hover > .submenu {
-      display: block; }
-    @media screen and (min-width: 53.75em) {
-      .centered-navigation li.more {
-        padding-right: 0.9375rem;
-        position: relative; } }
-  .centered-navigation ul.submenu {
-    display: none;
-    padding-left: 0; }
-    @media screen and (min-width: 53.75em) {
-      .centered-navigation ul.submenu {
-        left: -0.9375rem;
-        position: absolute;
-        top: 1.5em; } }
-    @media screen and (min-width: 53.75em) {
-      .centered-navigation ul.submenu .submenu.fly-out-right {
-        left: 11.8em;
-        top: 0; } }
-    @media screen and (min-width: 53.75em) {
-      .centered-navigation ul.submenu .submenu.fly-out-left {
-        left: -11.8em;
-        top: 0; } }
-    .centered-navigation ul.submenu li {
-      display: block;
-      padding-right: 0; }
-      @media screen and (min-width: 53.75em) {
-        .centered-navigation ul.submenu li {
-          line-height: 46.1538461538px; }
-          .centered-navigation ul.submenu li:first-child > a {
-            border-top-left-radius: 3px;
-            border-top-right-radius: 3px; }
-          .centered-navigation ul.submenu li:last-child > a {
-            border-bottom-left-radius: 3px;
-            border-bottom-right-radius: 3px;
-            padding-bottom: 0.7em; } }
-      .centered-navigation ul.submenu li a {
-        background-color: transparent;
-        display: inline-block;
-        text-align: right;
-        text-decoration: none;
-        width: 100%; }
-        @media screen and (min-width: 53.75em) {
-          .centered-navigation ul.submenu li a {
-            background-color: transparent;
-            padding-left: 0.9375rem;
-            text-align: left;
-            width: 12em; } }
-
-.nav-2 {
-  display: block;
-  position: absolute;
-  z-index: 1000;
-  top: 0;
-  right: 1.875rem; }
-  .nav-2 li {
-    font-size: 0.875em;
-    display: inline;
-    font-family: "Maison Neue Medium"; }
-    .nav-2 li a {
-      text-decoration: underline;
-      line-height: 3.75rem;
-      padding-left: 1.875rem;
-      color: #fff; }
-
 section.dynamic-hero {
   position: relative;
   height: 95vh;
@@ -1083,13 +816,422 @@ http://flickity.metafizzy.co
   /* IE8 */
   opacity: 1; }
 
-.home img.logo {
+img, aside img {
+  max-width: 100%; }
+
+hr {
+  margin: 1em auto;
+  border: 0;
+  border-top: 1px solid #EEEEEE; }
+
+sup, sub {
+  vertical-align: baseline;
+  position: relative;
+  top: -0.4em; }
+
+sub {
+  top: 0.4em; }
+
+.hidden-js, .hidden {
+  display: none; }
+
+figure {
+  box-sizing: border-box; }
+
+figure {
+  position: relative; }
+
+figcaption {
+  text-align: center;
+  line-height: 24px;
+  font-size: 16px; }
+
+figure[data-type=table] {
+  clear: both; }
+
+figure[data-type=video] {
+  position: relative;
+  margin-bottom: 24px;
+  text-align: center;
+  clear: both; }
+
+figure[data-type=video] p {
+  margin: 0; }
+
+figure[data-type=video].wy-figure-full p {
+  position: relative;
+  padding-bottom: 51%;
+  width: 100%;
+  height: 0; }
+
+figure[data-type=video].wy-figure-full iframe {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0; }
+
+figure[data-type=image] {
+  position: relative;
+  margin-bottom: 24px; }
+
+figure[data-type=image] img {
+  width: 100%; }
+
+figure[data-type=image].wy-figure-large {
+  width: 100%;
+  clear: both; }
+
+figure[data-type=image].wy-figure-medium {
+  width: 50%; }
+
+figure[data-type=image].wy-figure-small {
+  width: 33%; }
+
+figure[data-type=quote] {
+  font-family: "Georgia", serif;
+  margin-bottom: 24px;
+  margin-left: 24px;
+  font-style: italic;
+  position: relative;
+  border-left: solid 5px #404040;
+  padding-left: 24px; }
+
+figure[data-type=quote] figcaption {
+  font-weight: bold;
+  text-align: left; }
+
+figure[data-type=quote].wy-figure-medium {
+  font-size: 20px; }
+
+figure[data-type=quote].wy-figure-large {
+  font-size: 24px; }
+
+figure[data-type=quote].wy-figure-right {
+  width: 33%; }
+
+figure[data-type=quote].wy-figure-left {
+  width: 33%;
+  border-left: none;
+  border-right: solid 5px #404040;
+  padding-left: 0;
+  padding-right: 24px;
+  margin-left: 0;
+  margin-right: 24px; }
+
+figure[data-type=quote] cite {
+  display: block;
+  text-align: left;
+  font-weight: bold; }
+
+figure[data-type=quote] cite:before {
+  content: "\2014\00a0"; }
+
+.wy-figure-right {
+  float: right;
+  margin-left: 24px; }
+
+.wy-figure-right .wy-figure-controls {
+  right: 0; }
+
+.wy-figure-left {
+  float: left;
+  margin-right: 24px; }
+
+@media screen and (max-width: 480px) {
+  figure[data-type=image] {
+    width: 100% !important;
+    float: none !important;
+    margin-left: 0;
+    margin-right: 0; }
+  figure[data-type=video] iframe {
+    width: 100% !important;
+    height: auto !important; } }
+
+.footer {
+  padding: 1rem 0 0 0;
+  padding-top: 5rem;
+  background-color: #1c1c1c; }
+  .footer .footer__inner-wrapper {
+    float: left;
+    display: block;
+    margin-right: 1.877269384%;
+    width: 72.8327281643%;
+    margin-left: 13.5836359179%; }
+    .footer .footer__inner-wrapper:last-child {
+      margin-right: 0; }
+    .footer .footer__inner-wrapper .footer__alpha, .footer .footer__inner-wrapper .footer__omega {
+      float: left;
+      display: block;
+      margin-right: 2.5775079849%;
+      width: 16.0729480124%;
+      text-align: center; }
+      .footer .footer__inner-wrapper .footer__alpha:last-child, .footer .footer__inner-wrapper .footer__omega:last-child {
+        margin-right: 0; }
+      .footer .footer__inner-wrapper .footer__alpha a, .footer .footer__inner-wrapper .footer__omega a {
+        font-family: "Maison Neue Medium";
+        font-size: 0.875rem;
+        line-height: 1.6;
+        display: block;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #fff; }
+    .footer .footer__inner-wrapper .footer__beta {
+      float: left;
+      display: block;
+      margin-right: 2.5775079849%;
+      width: 62.6990880055%;
+      text-align: center; }
+      .footer .footer__inner-wrapper .footer__beta:last-child {
+        margin-right: 0; }
+      .footer .footer__inner-wrapper .footer__beta p {
+        font-family: "Maison Neue Medium";
+        font-size: 0.875rem;
+        line-height: 1.6;
+        display: block;
+        text-transform: uppercase;
+        color: #fff;
+        margin-top: 0px; }
+      .footer .footer__inner-wrapper .footer__beta p.footer__address {
+        margin-top: 2rem;
+        margin-bottom: 4rem; }
+      .footer .footer__inner-wrapper .footer__beta .form-group .is-hidden {
+        display: none; }
+      .footer .footer__inner-wrapper .footer__beta .form-group input {
+        display: inline;
+        width: 50%;
+        font-family: "Maison Neue Medium";
+        font-size: 0.875rem;
+        text-transform: uppercase; }
+      .footer .footer__inner-wrapper .footer__beta .form-group button {
+        display: inline;
+        margin-left: .5rem;
+        border-radius: 0px;
+        color: rgba(0, 0, 0, 0.8);
+        font-weight: 300;
+        background-color: #d4effc;
+        font-family: "Maison Neue Medium";
+        font-size: 0.875rem;
+        line-height: 1;
+        text-transform: uppercase; }
+
+@media screen and (min-width: 48.0625em) {
+  header {
+    height: 175px; } }
+
+.centered-navigation {
+  background-color: transparent;
+  border-bottom: 1px solid transparent;
+  min-height: 60px;
+  width: 100%;
+  z-index: 9999; }
+  .centered-navigation .mobile-logo {
+    display: inline;
+    float: left;
+    max-height: 60px;
+    padding-left: 1em; }
+    .centered-navigation .mobile-logo img {
+      max-height: 60px;
+      opacity: 0.6;
+      padding: 0.8em 0; }
+    @media screen and (min-width: 53.75em) {
+      .centered-navigation .mobile-logo {
+        display: none; } }
+  .centered-navigation .centered-navigation-mobile-menu {
+    color: rgba(0, 0, 0, 0.8);
+    display: block;
+    float: right;
+    line-height: 60px;
+    margin: 0;
+    padding-right: 0.9375rem;
+    text-decoration: none;
+    text-transform: uppercase; }
+    @media screen and (min-width: 53.75em) {
+      .centered-navigation .centered-navigation-mobile-menu {
+        display: none; } }
+    .centered-navigation .centered-navigation-mobile-menu:focus, .centered-navigation .centered-navigation-mobile-menu:hover {
+      color: rgba(0, 0, 0, 0.8); }
+  .centered-navigation .centered-navigation-wrapper {
+    max-width: 73.75em;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    z-index: 999; }
+    .centered-navigation .centered-navigation-wrapper::after {
+      clear: both;
+      content: "";
+      display: table; }
+    .centered-navigation .centered-navigation-wrapper::after {
+      clear: both;
+      content: "";
+      display: table; }
+  .centered-navigation ul.centered-navigation-menu {
+    clear: both;
+    display: none;
+    margin: 0 auto;
+    overflow: visible;
+    padding: 0;
+    -webkit-transform-style: preserve-3d;
+    width: 100%;
+    z-index: 99999; }
+    .centered-navigation ul.centered-navigation-menu.show {
+      display: block; }
+    @media screen and (min-width: 53.75em) {
+      .centered-navigation ul.centered-navigation-menu {
+        display: block;
+        text-align: center; } }
+  @media screen and (min-width: 53.75em) {
+    .centered-navigation .nav-link:first-child {
+      margin-left: 2.2em; } }
+  .centered-navigation ul li.nav-link {
+    font-family: "Maison Neue Medium";
+    font-size: 0.875rem;
+    background: transparent;
+    display: block;
+    line-height: 60px;
+    overflow: hidden;
+    padding-right: 0.9375rem;
+    text-align: right;
+    text-transform: uppercase;
+    width: 100%;
+    z-index: 9999; }
+    .centered-navigation ul li.nav-link a {
+      color: rgba(0, 0, 0, 0.8);
+      display: inline-block;
+      outline: none;
+      text-decoration: none; }
+      .centered-navigation ul li.nav-link a:focus, .centered-navigation ul li.nav-link a:hover {
+        color: rgba(0, 0, 0, 0.8); }
+    @media screen and (min-width: 53.75em) {
+      .centered-navigation ul li.nav-link {
+        background: transparent;
+        display: inline;
+        line-height: 60px; }
+        .centered-navigation ul li.nav-link a {
+          padding-right: 0.9375rem; } }
+  .centered-navigation li.logo.nav-link {
+    display: none;
+    line-height: 0; }
+    @media screen and (min-width: 53.75em) {
+      .centered-navigation li.logo.nav-link {
+        display: inline; } }
+  .centered-navigation .logo img {
+    margin-bottom: -0.6666666667em;
+    max-height: 2em;
+    opacity: 0.6; }
+  .centered-navigation li.more.nav-link {
+    padding-right: 0; }
+    @media screen and (min-width: 53.75em) {
+      .centered-navigation li.more.nav-link {
+        padding-right: 0.9375rem; } }
+    .centered-navigation li.more.nav-link > ul > li:first-child a {
+      padding-top: 1em; }
+    .centered-navigation li.more.nav-link a {
+      margin-right: 0.9375rem; }
+    .centered-navigation li.more.nav-link > a {
+      padding-right: 0.6em; }
+    .centered-navigation li.more.nav-link > a::after {
+      position: absolute;
+      top: auto;
+      right: -0.4em;
+      bottom: auto;
+      left: auto;
+      color: rgba(0, 0, 0, 0.8);
+      content: "\25BE"; }
+  .centered-navigation li.more {
+    overflow: visible;
+    padding-right: 0; }
+    .centered-navigation li.more a {
+      padding-right: 0.9375rem; }
+    .centered-navigation li.more > a {
+      padding-right: 1.6em;
+      position: relative; }
+      @media screen and (min-width: 53.75em) {
+        .centered-navigation li.more > a {
+          margin-right: 0.9375rem; } }
+      .centered-navigation li.more > a::after {
+        content: "›";
+        font-size: 1.2em;
+        position: absolute;
+        right: 0.46875rem; }
+    .centered-navigation li.more:focus > .submenu,
+    .centered-navigation li.more:hover > .submenu {
+      display: block; }
+    @media screen and (min-width: 53.75em) {
+      .centered-navigation li.more {
+        padding-right: 0.9375rem;
+        position: relative; } }
+  .centered-navigation ul.submenu {
+    display: none;
+    padding-left: 0; }
+    @media screen and (min-width: 53.75em) {
+      .centered-navigation ul.submenu {
+        left: -0.9375rem;
+        position: absolute;
+        top: 1.5em; } }
+    @media screen and (min-width: 53.75em) {
+      .centered-navigation ul.submenu .submenu.fly-out-right {
+        left: 11.8em;
+        top: 0; } }
+    @media screen and (min-width: 53.75em) {
+      .centered-navigation ul.submenu .submenu.fly-out-left {
+        left: -11.8em;
+        top: 0; } }
+    .centered-navigation ul.submenu li {
+      display: block;
+      padding-right: 0; }
+      @media screen and (min-width: 53.75em) {
+        .centered-navigation ul.submenu li {
+          line-height: 46.1538461538px; }
+          .centered-navigation ul.submenu li:first-child > a {
+            border-top-left-radius: 3px;
+            border-top-right-radius: 3px; }
+          .centered-navigation ul.submenu li:last-child > a {
+            border-bottom-left-radius: 3px;
+            border-bottom-right-radius: 3px;
+            padding-bottom: 0.7em; } }
+      .centered-navigation ul.submenu li a {
+        background-color: transparent;
+        display: inline-block;
+        text-align: right;
+        text-decoration: none;
+        width: 100%; }
+        @media screen and (min-width: 53.75em) {
+          .centered-navigation ul.submenu li a {
+            background-color: transparent;
+            padding-left: 0.9375rem;
+            text-align: left;
+            width: 12em; } }
+
+img.logo {
   position: absolute;
   top: 1.875em;
   left: 1.875em; }
 
-.home .nav-link a {
+.nav-link a {
   padding-top: 3.75em; }
+
+.nav-2 {
+  display: block;
+  position: absolute;
+  z-index: 1000;
+  top: 0;
+  right: 1.875rem; }
+  .nav-2 li {
+    font-size: 0.875em;
+    display: inline;
+    font-family: "Maison Neue Medium"; }
+    .nav-2 li a {
+      text-decoration: underline;
+      line-height: 3.75rem;
+      padding-left: 1.875rem;
+      color: rgba(0, 0, 0, 0.8); }
+
+.home .nav-2 li a {
+  color: white; }
+
+.home li.nav-link a {
+  color: white !important; }
 
 .home .mission {
   background-color: #cddac9;
@@ -1243,137 +1385,46 @@ http://flickity.metafizzy.co
   .home .testimonial .flickity-prev-next-button {
     background-color: transparent; }
 
-img, aside img {
-  max-width: 100%; }
+.about .centered-navigation ul li.nav-link a {
+  color: rgba(0, 0, 0, 0.8); }
 
-hr {
-  margin: 1em auto;
-  border: 0;
-  border-top: 1px solid #EEEEEE; }
+@media screen and (min-width: 48.0625em) {
+  .about .hero {
+    height: 462px;
+    background: url("/assets/images/about-hero.jpg");
+    background-size: cover; } }
 
-sup, sub {
-  vertical-align: baseline;
-  position: relative;
-  top: -0.4em; }
-
-sub {
-  top: 0.4em; }
-
-.hidden-js, .hidden {
-  display: none; }
-
-figure {
-  box-sizing: border-box; }
-
-figure {
-  position: relative; }
-
-figcaption {
+.about .about-us {
+  background-color: #d4effc;
   text-align: center;
-  line-height: 24px;
-  font-size: 16px; }
+  padding-top: 6.25em;
+  padding-bottom: 6.25em; }
+  .about .about-us .about-us__inner-wrapper {
+    float: left;
+    display: block;
+    margin-right: 1.877269384%;
+    width: 86.4163640821%;
+    margin-left: 6.7918179589%; }
+    .about .about-us .about-us__inner-wrapper:last-child {
+      margin-right: 0; }
 
-figure[data-type=table] {
-  clear: both; }
-
-figure[data-type=video] {
-  position: relative;
-  margin-bottom: 24px;
-  text-align: center;
-  clear: both; }
-
-figure[data-type=video] p {
-  margin: 0; }
-
-figure[data-type=video].wy-figure-full p {
-  position: relative;
-  padding-bottom: 51%;
-  width: 100%;
-  height: 0; }
-
-figure[data-type=video].wy-figure-full iframe {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  left: 0;
-  top: 0; }
-
-figure[data-type=image] {
-  position: relative;
-  margin-bottom: 24px; }
-
-figure[data-type=image] img {
-  width: 100%; }
-
-figure[data-type=image].wy-figure-large {
-  width: 100%;
-  clear: both; }
-
-figure[data-type=image].wy-figure-medium {
-  width: 50%; }
-
-figure[data-type=image].wy-figure-small {
-  width: 33%; }
-
-figure[data-type=quote] {
-  font-family: "Georgia", serif;
-  margin-bottom: 24px;
-  margin-left: 24px;
-  font-style: italic;
-  position: relative;
-  border-left: solid 5px #404040;
-  padding-left: 24px; }
-
-figure[data-type=quote] figcaption {
-  font-weight: bold;
-  text-align: left; }
-
-figure[data-type=quote].wy-figure-medium {
-  font-size: 20px; }
-
-figure[data-type=quote].wy-figure-large {
-  font-size: 24px; }
-
-figure[data-type=quote].wy-figure-right {
-  width: 33%; }
-
-figure[data-type=quote].wy-figure-left {
-  width: 33%;
-  border-left: none;
-  border-right: solid 5px #404040;
-  padding-left: 0;
-  padding-right: 24px;
-  margin-left: 0;
-  margin-right: 24px; }
-
-figure[data-type=quote] cite {
-  display: block;
-  text-align: left;
-  font-weight: bold; }
-
-figure[data-type=quote] cite:before {
-  content: "\2014\00a0"; }
-
-.wy-figure-right {
-  float: right;
-  margin-left: 24px; }
-
-.wy-figure-right .wy-figure-controls {
-  right: 0; }
-
-.wy-figure-left {
-  float: left;
-  margin-right: 24px; }
-
-@media screen and (max-width: 480px) {
-  figure[data-type=image] {
-    width: 100% !important;
-    float: none !important;
-    margin-left: 0;
-    margin-right: 0; }
-  figure[data-type=video] iframe {
-    width: 100% !important;
-    height: auto !important; } }
+.about .installation {
+  text-align: center; }
+  @media screen and (min-width: 48.0625em) {
+    .about .installation {
+      padding-top: 6rem;
+      margin-bottom: 6rem; } }
+  .about .installation .installation__inner-wrapper {
+    float: left;
+    display: block;
+    margin-right: 1.877269384%;
+    width: 45.6654563285%;
+    margin-left: 27.1672718357%; }
+    .about .installation .installation__inner-wrapper:last-child {
+      margin-right: 0; }
+  .about .installation h2 {
+    font-family: 'Noe Display';
+    font-size: 26px; }
 
 body:before {
   display: none; }

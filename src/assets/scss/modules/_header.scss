@@ -1,3 +1,9 @@
+header {
+  @include media($l){
+    height: 175px;
+  }
+}
+
 .centered-navigation {
   $base-border-radius: 3px !default;
   $dark-gray: #333 !default;
@@ -6,7 +12,7 @@
   $centered-navigation-padding: 1em;
   $centered-navigation-logo-height: 2em;
   $centered-navigation-background: transparent;
-  $centered-navigation-color: #fff;
+  $centered-navigation-color: $text;
   $centered-navigation-color-hover: rgba(0,0,0,0.8);
   $centered-navigation-height: 60px;
   $centered-navigation-item-padding: rem(15);
@@ -272,6 +278,15 @@
   }
 }
 
+img.logo {
+  position: absolute;
+  top: em(30);
+  left: em(30);
+}
+.nav-link a {
+  padding-top: em(60);
+}
+
 .nav-2 {
   display: block;
   position: absolute;
@@ -287,7 +302,7 @@
       text-decoration: underline;
       line-height: rem(60);
       padding-left: rem(30);
-      color: #fff;
+      color: $text;
     }
   }
 }
