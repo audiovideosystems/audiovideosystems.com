@@ -1707,6 +1707,206 @@ img.logo {
     .theater .exceptional .exceptional__inner-wrapper h2 {
       margin-bottom: 0; }
 
+.lutron .centered-navigation ul li.nav-link a {
+  color: rgba(0, 0, 0, 0.8); }
+
+@media screen and (min-width: 48.0625em) {
+  .lutron .hero {
+    height: 462px;
+    background: url("/assets/images/lutron-hero.jpg");
+    background-size: cover; } }
+
+.lutron .partnership {
+  text-align: center;
+  background-color: #e7c16f;
+  padding-top: 110px;
+  padding-bottom: 110px; }
+  .lutron .partnership .partnership__inner-wrapper {
+    float: left;
+    display: block;
+    margin-right: 1.877269384%;
+    width: 72.8327281643%;
+    margin-left: 13.5836359179%; }
+    .lutron .partnership .partnership__inner-wrapper:last-child {
+      margin-right: 0; }
+    .lutron .partnership .partnership__inner-wrapper h2 {
+      margin-bottom: 0; }
+    .lutron .partnership .partnership__inner-wrapper img {
+      width: 156px;
+      margin-bottom: 52px; }
+
+.lutron .integration {
+  text-align: center; }
+  @media screen and (min-width: 48.0625em) {
+    .lutron .integration {
+      padding-top: 110px;
+      padding-bottom: 110px; } }
+  .lutron .integration .integration__inner-wrapper {
+    float: left;
+    display: block;
+    margin-right: 1.877269384%;
+    width: 45.6654563285%;
+    margin-left: 27.1672718357%; }
+    .lutron .integration .integration__inner-wrapper:last-child {
+      margin-right: 0; }
+
+.lutron .featured img {
+  padding-bottom: 110px; }
+
+.lutron .convenience {
+  text-align: center;
+  background-color: #f4f5f5; }
+  @media screen and (min-width: 48.0625em) {
+    .lutron .convenience {
+      padding-top: 110px;
+      padding-bottom: 110px; } }
+  .lutron .convenience .convenience__inner-wrapper {
+    float: left;
+    display: block;
+    margin-right: 1.877269384%;
+    width: 45.6654563285%;
+    margin-left: 27.1672718357%; }
+    .lutron .convenience .convenience__inner-wrapper:last-child {
+      margin-right: 0; }
+  .lutron .convenience img {
+    padding-top: 110px; }
+
+.lutron .split .container {
+  padding-top: 0px;
+  padding-bottom: 0px; }
+
+.lutron .split .split__inner-wrapper {
+  padding-top: 12.5rem; }
+
+.lutron .split .text {
+  float: left;
+  display: block;
+  margin-right: 1.877269384%;
+  width: 32.0818204106%;
+  margin-left: 6.7918179589%;
+  text-align: left; }
+  .lutron .split .text:last-child {
+    margin-right: 0; }
+
+.lutron .split .image {
+  float: left;
+  display: block;
+  margin-right: 1.877269384%;
+  width: 59.2490922464%; }
+  .lutron .split .image:last-child {
+    margin-right: 0; }
+  .lutron .split .image img {
+    padding-top: 6.875rem;
+    padding-bottom: 6.875rem; }
+
+.lutron .split h6 a {
+  text-decoration: underline; }
+
+.lutron .aesthetics {
+  text-align: center;
+  background-color: #f4f5f5;
+  padding-top: 6.875rem;
+  padding-bottom: 6.875rem; }
+  @media screen and (min-width: 48.0625em) {
+    .lutron .aesthetics {
+      padding-bottom: 110px; } }
+  .lutron .aesthetics .aesthetics__inner-wrapper {
+    float: left;
+    display: block;
+    margin-right: 1.877269384%;
+    width: 45.6654563285%;
+    margin-left: 27.1672718357%; }
+    .lutron .aesthetics .aesthetics__inner-wrapper:last-child {
+      margin-right: 0; }
+  .lutron .aesthetics img {
+    padding-top: 6.875rem; }
+
+.lutron .security {
+  text-align: center; }
+  @media screen and (min-width: 48.0625em) {
+    .lutron .security {
+      padding-top: 110px;
+      padding-bottom: 110px; } }
+  .lutron .security .security__inner-wrapper {
+    float: left;
+    display: block;
+    margin-right: 1.877269384%;
+    width: 45.6654563285%;
+    margin-left: 27.1672718357%; }
+    .lutron .security .security__inner-wrapper:last-child {
+      margin-right: 0; }
+  .lutron .security img {
+    padding-top: 6.875rem; }
+
+.lutron .home-theater {
+  background-color: #f0f5df;
+  text-align: center;
+  padding-top: 6.25em;
+  padding-bottom: 6.25em; }
+  .lutron .home-theater .home-theater__inner-wrapper {
+    float: left;
+    display: block;
+    margin-right: 1.877269384%;
+    width: 86.4163640821%;
+    margin-left: 6.7918179589%; }
+    .lutron .home-theater .home-theater__inner-wrapper:last-child {
+      margin-right: 0; }
+
+.lutron .experts {
+  text-align: center;
+  background-color: #f0e1cf;
+  padding-top: 110px;
+  padding-bottom: 110px; }
+  .lutron .experts .experts__inner-wrapper {
+    float: left;
+    display: block;
+    margin-right: 1.877269384%;
+    width: 72.8327281643%;
+    margin-left: 13.5836359179%; }
+    .lutron .experts .experts__inner-wrapper:last-child {
+      margin-right: 0; }
+    .lutron .experts .experts__inner-wrapper h2 {
+      margin-bottom: 0; }
+
+.lutron .streamed {
+  text-align: center; }
+  @media screen and (min-width: 48.0625em) {
+    .lutron .streamed {
+      padding-top: 110px; } }
+  .lutron .streamed .streamed__inner-wrapper {
+    float: left;
+    display: block;
+    margin-right: 1.877269384%;
+    width: 45.6654563285%;
+    margin-left: 27.1672718357%; }
+    .lutron .streamed .streamed__inner-wrapper:last-child {
+      margin-right: 0; }
+  .lutron .streamed .streamed__details {
+    float: left;
+    display: block;
+    margin-right: 1.877269384%;
+    width: 32.0818204106%;
+    padding-top: 80px;
+    padding-bottom: 110px; }
+    .lutron .streamed .streamed__details:last-child {
+      margin-right: 0; }
+
+.lutron .exceptional {
+  text-align: center;
+  background-color: #bac8c8;
+  padding-top: 110px;
+  padding-bottom: 110px; }
+  .lutron .exceptional .exceptional__inner-wrapper {
+    float: left;
+    display: block;
+    margin-right: 1.877269384%;
+    width: 72.8327281643%;
+    margin-left: 13.5836359179%; }
+    .lutron .exceptional .exceptional__inner-wrapper:last-child {
+      margin-right: 0; }
+    .lutron .exceptional .exceptional__inner-wrapper h2 {
+      margin-bottom: 0; }
+
 @media screen and (min-width: 48.0625em) {
   .about .hero {
     height: 462px;

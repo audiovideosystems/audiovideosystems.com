@@ -1,0 +1,202 @@
+.lutron {
+
+  .centered-navigation ul li.nav-link a {
+    color: $text;
+    }
+
+  .hero {
+    @include media($l){
+      height: 462px;
+      background: url("/assets/images/lutron-hero.jpg");
+      background-size: cover;
+    }
+  }
+
+  .partnership {
+    text-align: center;
+    background-color: $orange-basic;
+    padding-top: 110px;
+    padding-bottom: 110px;
+    .partnership__inner-wrapper {
+      @include span-columns(11);
+      @include shift(2);
+      h2 {
+        margin-bottom: 0;
+      }
+      img {
+        width: 156px;
+        margin-bottom: 52px;
+      }
+    }
+  }
+
+  .integration {
+    text-align: center;
+    @include media($l) {
+      padding-top: 110px;
+      padding-bottom: 110px;
+    }
+    .integration__inner-wrapper {
+      @include span-columns(7);
+      @include shift(4);
+    }
+
+  }
+
+  .featured {
+    img {
+      padding-bottom: 110px;
+    }
+  }
+
+
+  .convenience {
+    text-align: center;
+    background-color: $gray-light;
+    @include media($l) {
+      padding-top: 110px;
+      padding-bottom: 110px;
+    }
+    .convenience__inner-wrapper {
+      @include span-columns(7);
+      @include shift(4);
+    }
+    img {
+      padding-top: 110px;
+    }
+  }
+
+  .split {
+    .container {
+      padding-top: 0px;
+      padding-bottom: 0px;
+    }
+    .split__inner-wrapper {
+      // @include vertical-align();
+      padding-top: rem(200);
+    }
+    .text {
+      @include span-columns(5);
+      @include shift(1);
+      text-align: left;
+      // height: 600px;
+    }
+    .image {
+      @include span-columns(9);
+      // @include shift(1);
+      // background-image: url("/assets/images/home-ipad.png");
+      // background-repeat: no-repeat;
+      // background-size: contain;
+      // background-position: 0 100%;
+      // height: 600px;
+      img {
+        padding-top: rem(110);
+        padding-bottom: rem(110);
+        // vertical-align: bottom;
+      }
+    }
+    h6 a {
+      text-decoration: underline;
+    }
+  }
+
+  .aesthetics {
+    text-align: center;
+    background-color: $gray-light;
+    padding-top: rem(110);
+    padding-bottom: rem(110);
+    @include media($l) {
+      // padding-top: 110px;
+      padding-bottom: 110px;
+    }
+    .aesthetics__inner-wrapper {
+      @include span-columns(7);
+      @include shift(4);
+    }
+    img {
+      padding-top: rem(110);
+    }
+  }
+
+  .security {
+    text-align: center;
+    @include media($l) {
+      padding-top: 110px;
+      padding-bottom: 110px;
+    }
+    .security__inner-wrapper {
+      @include span-columns(7);
+      @include shift(4);
+    }
+    img {
+      padding-top: rem(110);
+    }
+  }
+
+
+
+
+
+
+
+
+
+  .home-theater {
+    .home-theater__inner-wrapper {
+      @include span-columns(13);
+      @include shift(1);
+    }
+    background-color: $seafoam-basic;
+    text-align: center;
+    padding-top: em(100);
+    padding-bottom: em(100);
+  }
+
+
+
+  .experts {
+    text-align: center;
+    background-color: $peach-basic;
+    padding-top: 110px;
+    padding-bottom: 110px;
+    .experts__inner-wrapper {
+      @include span-columns(11);
+      @include shift(2);
+      h2 {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .streamed {
+    text-align: center;
+    @include media($l) {
+      padding-top: 110px;
+    }
+    .streamed__inner-wrapper {
+      @include span-columns(7);
+      @include shift(4);
+    }
+    .streamed__details {
+      @include span-columns(5);
+      padding-top: 80px;
+      padding-bottom: 110px;
+    }
+  }
+
+
+  .exceptional {
+    text-align: center;
+    background-color: $green-light;
+    padding-top: 110px;
+    padding-bottom: 110px;
+    .exceptional__inner-wrapper {
+      @include span-columns(11);
+      @include shift(2);
+      h2 {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+}
