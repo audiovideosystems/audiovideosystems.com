@@ -25,9 +25,8 @@
 
   .projectors {
     text-align: center;
-    @include media($l){
+    @include media($l) {
       padding-top: 110px;
-      margin-bottom: 110px;
     }
     .projectors__inner-wrapper {
       @include span-columns(7);
@@ -46,45 +45,59 @@
     }
   }
 
-  .video-distribution {
+  .experts {
     text-align: center;
-    background-color: $gray-light;
-    img {
-      padding-top: 52px;
+    background-color: $peach-basic;
+    padding-top: 110px;
+    padding-bottom: 110px;
+    .experts__inner-wrapper {
+      @include span-columns(11);
+      @include shift(2);
+      h2 {
+        margin-bottom: 0;
+      }
     }
-    @include media($l){
+  }
+
+  .streamed {
+    text-align: center;
+    @include media($l) {
       padding-top: 110px;
-      margin-bottom: 110px;
     }
-    .video-distribution__inner-wrapper {
+    .streamed__inner-wrapper {
       @include span-columns(7);
       @include shift(4);
     }
-    .video-distribution__details {
+    .streamed__details {
       @include span-columns(5);
-      padding-top: 110px;
+      padding-top: 80px;
       padding-bottom: 110px;
     }
   }
 
-  .integration {
+  .surround {
     text-align: center;
-    @include media($l){
+    @include media($l) {
       // padding-top: 110px;
-      margin-bottom: 110px;
+      padding-bottom: 110px;
     }
-    .integration__inner-wrapper {
+    .surround__inner-wrapper {
       @include span-columns(7);
       @include shift(4);
     }
   }
 
-  .triple {
-    .triple__item {
-      @include span-columns(5);
-      text-align: center;
-      // padding-top: 110px;
-      padding-bottom: 110px;
+  .exceptional {
+    text-align: center;
+    background-color: $green-light;
+    padding-top: 110px;
+    padding-bottom: 110px;
+    .exceptional__inner-wrapper {
+      @include span-columns(11);
+      @include shift(2);
+      h2 {
+        margin-bottom: 0;
+      }
     }
   }
 
