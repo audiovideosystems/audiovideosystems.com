@@ -1599,7 +1599,7 @@ img.logo {
     background-size: cover; } }
 
 .theater .home-theater {
-  background-color: #f0f5df;
+  background-color: #bac8c8;
   text-align: center;
   padding-top: 6.25em;
   padding-bottom: 6.25em; }
@@ -1693,7 +1693,7 @@ img.logo {
 
 .theater .exceptional {
   text-align: center;
-  background-color: #bac8c8;
+  background-color: #f0f5df;
   padding-top: 110px;
   padding-bottom: 110px; }
   .theater .exceptional .exceptional__inner-wrapper {
@@ -1838,74 +1838,42 @@ img.logo {
   .lutron .security img {
     padding-top: 6.875rem; }
 
-.lutron .home-theater {
-  background-color: #f0f5df;
+.work .centered-navigation ul li.nav-link a {
+  color: rgba(0, 0, 0, 0.8); }
+
+.work .projects {
+  background-color: #e2f0e7;
   text-align: center;
   padding-top: 6.25em;
   padding-bottom: 6.25em; }
-  .lutron .home-theater .home-theater__inner-wrapper {
+  .work .projects .projects__inner-wrapper {
     float: left;
     display: block;
     margin-right: 1.877269384%;
-    width: 86.4163640821%;
+    width: 59.2490922464%;
+    margin-left: 20.3754538768%; }
+    .work .projects .projects__inner-wrapper:last-child {
+      margin-right: 0; }
+
+.work .thumbnails {
+  padding-bottom: 110px; }
+  .work .thumbnails .project {
+    padding-top: 110px;
+    float: left;
+    display: block;
+    margin-right: 1.877269384%;
+    width: 38.8736383696%;
     margin-left: 6.7918179589%; }
-    .lutron .home-theater .home-theater__inner-wrapper:last-child {
+    .work .thumbnails .project:last-child {
       margin-right: 0; }
-
-.lutron .experts {
-  text-align: center;
-  background-color: #f0e1cf;
-  padding-top: 110px;
-  padding-bottom: 110px; }
-  .lutron .experts .experts__inner-wrapper {
-    float: left;
-    display: block;
-    margin-right: 1.877269384%;
-    width: 72.8327281643%;
-    margin-left: 13.5836359179%; }
-    .lutron .experts .experts__inner-wrapper:last-child {
+    .work .thumbnails .project:nth-child(2n) {
       margin-right: 0; }
-    .lutron .experts .experts__inner-wrapper h2 {
-      margin-bottom: 0; }
-
-.lutron .streamed {
-  text-align: center; }
-  @media screen and (min-width: 48.0625em) {
-    .lutron .streamed {
-      padding-top: 110px; } }
-  .lutron .streamed .streamed__inner-wrapper {
-    float: left;
-    display: block;
-    margin-right: 1.877269384%;
-    width: 45.6654563285%;
-    margin-left: 27.1672718357%; }
-    .lutron .streamed .streamed__inner-wrapper:last-child {
-      margin-right: 0; }
-  .lutron .streamed .streamed__details {
-    float: left;
-    display: block;
-    margin-right: 1.877269384%;
-    width: 32.0818204106%;
-    padding-top: 80px;
-    padding-bottom: 110px; }
-    .lutron .streamed .streamed__details:last-child {
-      margin-right: 0; }
-
-.lutron .exceptional {
-  text-align: center;
-  background-color: #bac8c8;
-  padding-top: 110px;
-  padding-bottom: 110px; }
-  .lutron .exceptional .exceptional__inner-wrapper {
-    float: left;
-    display: block;
-    margin-right: 1.877269384%;
-    width: 72.8327281643%;
-    margin-left: 13.5836359179%; }
-    .lutron .exceptional .exceptional__inner-wrapper:last-child {
-      margin-right: 0; }
-    .lutron .exceptional .exceptional__inner-wrapper h2 {
-      margin-bottom: 0; }
+    .work .thumbnails .project:nth-child(2n+1) {
+      clear: left; }
+    .work .thumbnails .project h5 {
+      margin-top: 18px;
+      text-align: center;
+      text-transform: uppercase; }
 
 @media screen and (min-width: 48.0625em) {
   .about .hero {

@@ -13,7 +13,7 @@
       @include span-columns(13);
       @include shift(1);
     }
-    background-color: $blue-basic;
+    background-color: $about-blue;
     text-align: center;
     padding-top: em(100);
     padding-bottom: em(100);
@@ -95,7 +95,7 @@
 
   .oncall {
     text-align: center;
-    background-color: $putty-basic;
+    background-color: $about-flesh;
     padding-top: 110px;
     padding-bottom: 110px;
     .oncall__inner-wrapper {
