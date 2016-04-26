@@ -1589,6 +1589,107 @@ img.logo {
   .automation .triple .triple__item:last-child {
     margin-right: 0; }
 
+.theater .centered-navigation ul li.nav-link a {
+  color: rgba(0, 0, 0, 0.8); }
+
+@media screen and (min-width: 48.0625em) {
+  .theater .hero {
+    height: 462px;
+    background: url("/assets/images/theater-hero.jpg");
+    background-size: cover; } }
+
+.theater .home-theater {
+  background-color: #f0f5df;
+  text-align: center;
+  padding-top: 6.25em;
+  padding-bottom: 6.25em; }
+  .theater .home-theater .home-theater__inner-wrapper {
+    float: left;
+    display: block;
+    margin-right: 1.877269384%;
+    width: 86.4163640821%;
+    margin-left: 6.7918179589%; }
+    .theater .home-theater .home-theater__inner-wrapper:last-child {
+      margin-right: 0; }
+
+.theater .projectors {
+  text-align: center; }
+  @media screen and (min-width: 48.0625em) {
+    .theater .projectors {
+      padding-top: 110px;
+      margin-bottom: 110px; } }
+  .theater .projectors .projectors__inner-wrapper {
+    float: left;
+    display: block;
+    margin-right: 1.877269384%;
+    width: 45.6654563285%;
+    margin-left: 27.1672718357%; }
+    .theater .projectors .projectors__inner-wrapper:last-child {
+      margin-right: 0; }
+  .theater .projectors .projectors__details {
+    float: left;
+    display: block;
+    margin-right: 1.877269384%;
+    width: 32.0818204106%;
+    padding-top: 80px;
+    padding-bottom: 110px; }
+    .theater .projectors .projectors__details:last-child {
+      margin-right: 0; }
+
+.theater .featured img {
+  padding-bottom: 110px; }
+
+.theater .video-distribution {
+  text-align: center;
+  background-color: #f4f5f5; }
+  .theater .video-distribution img {
+    padding-top: 52px; }
+  @media screen and (min-width: 48.0625em) {
+    .theater .video-distribution {
+      padding-top: 110px;
+      margin-bottom: 110px; } }
+  .theater .video-distribution .video-distribution__inner-wrapper {
+    float: left;
+    display: block;
+    margin-right: 1.877269384%;
+    width: 45.6654563285%;
+    margin-left: 27.1672718357%; }
+    .theater .video-distribution .video-distribution__inner-wrapper:last-child {
+      margin-right: 0; }
+  .theater .video-distribution .video-distribution__details {
+    float: left;
+    display: block;
+    margin-right: 1.877269384%;
+    width: 32.0818204106%;
+    padding-top: 110px;
+    padding-bottom: 110px; }
+    .theater .video-distribution .video-distribution__details:last-child {
+      margin-right: 0; }
+
+.theater .integration {
+  text-align: center; }
+  @media screen and (min-width: 48.0625em) {
+    .theater .integration {
+      margin-bottom: 110px; } }
+  .theater .integration .integration__inner-wrapper {
+    float: left;
+    display: block;
+    margin-right: 1.877269384%;
+    width: 45.6654563285%;
+    margin-left: 27.1672718357%; }
+    .theater .integration .integration__inner-wrapper:last-child {
+      margin-right: 0; }
+
+.theater .triple .triple__item {
+  float: left;
+  display: block;
+  margin-right: 1.877269384%;
+  width: 32.0818204106%;
+  text-align: center;
+  padding-bottom: 110px; }
+  .theater .triple .triple__item:last-child {
+    margin-right: 0; }
+
 @media screen and (min-width: 48.0625em) {
   .about .hero {
     height: 462px;
