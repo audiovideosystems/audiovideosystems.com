@@ -1952,6 +1952,57 @@ img.logo {
       font-size: 14px;
       text-transform: uppercase; }
 
+.contact .centered-navigation ul li.nav-link a {
+  color: rgba(0, 0, 0, 0.8); }
+
+.contact .contact {
+  background-color: #f1e2ce;
+  text-align: center;
+  padding-top: 6.25em;
+  padding-bottom: 6.25em; }
+  .contact .contact .contact__inner-wrapper {
+    float: left;
+    display: block;
+    margin-right: 1.877269384%;
+    width: 59.2490922464%;
+    margin-left: 20.3754538768%; }
+    .contact .contact .contact__inner-wrapper:last-child {
+      margin-right: 0; }
+
+.contact .form {
+  padding-top: 110px;
+  padding-bottom: 110px; }
+  .contact .form .form__info {
+    float: left;
+    display: block;
+    margin-right: 1.877269384%;
+    width: 18.4981844928%;
+    margin-left: 13.5836359179%; }
+    .contact .form .form__info:last-child {
+      margin-right: 0; }
+    .contact .form .form__info p {
+      margin: 0; }
+    .contact .form .form__info .digits {
+      margin-bottom: 52px; }
+    .contact .form .form__info .location {
+      margin-bottom: 30px; }
+  .contact .form .form__wrapper {
+    float: left;
+    display: block;
+    margin-right: 1.877269384%;
+    width: 38.8736383696%;
+    margin-left: 13.5836359179%; }
+    .contact .form .form__wrapper:last-child {
+      margin-right: 0; }
+    .contact .form .form__wrapper input {
+      border: 2px solid rgba(0, 0, 0, 0.8);
+      border-radius: 0;
+      text-transform: uppercase;
+      font-family: 'Maison Neue Medium';
+      font-size: 14px;
+      color: rgba(0, 0, 0, 0.8);
+      padding: 12px; }
+
 @media screen and (min-width: 48.0625em) {
   .about .hero {
     height: 462px;
