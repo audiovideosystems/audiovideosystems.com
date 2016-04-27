@@ -282,6 +282,7 @@ img.logo {
   position: absolute;
   top: em(30);
   left: em(30);
+  z-index: 1000;
 }
 .nav-link a {
   padding-top: em(60);

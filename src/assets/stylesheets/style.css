@@ -1214,7 +1214,8 @@ figure[data-type=quote] cite:before {
 img.logo {
   position: absolute;
   top: 1.875em;
-  left: 1.875em; }
+  left: 1.875em;
+  z-index: 1000; }
 
 .nav-link a {
   padding-top: 3.75em; }
@@ -1874,6 +1875,53 @@ img.logo {
       margin-top: 18px;
       text-align: center;
       text-transform: uppercase; }
+
+.project .showcase .info {
+  background-color: #e2f0e7; }
+
+.project .showcase div.details {
+  height: 50px;
+  text-align: center; }
+  .project .showcase div.details p {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: "Maison Neue Medium";
+    font-size: 14px;
+    text-transform: uppercase;
+    display: inline-block !important;
+    line-height: 36px;
+    margin: 0; }
+    .project .showcase div.details p.details {
+      padding-right: 50px;
+      border-right: 1px solid rgba(0, 0, 0, 0.8); }
+    .project .showcase div.details p.title {
+      padding-left: 50px;
+      padding-right: 50px;
+      border-right: 1px solid rgba(0, 0, 0, 0.8); }
+    .project .showcase div.details p.projects {
+      padding-left: 50px;
+      padding-right: 50px;
+      border-right: 1px solid rgba(0, 0, 0, 0.8); }
+    .project .showcase div.details p.number {
+      padding-left: 50px; }
+    .project .showcase div.details p img.img-all {
+      width: 18px;
+      margin-left: 18px;
+      margin-bottom: -1px; }
+    .project .showcase div.details p img.img-details {
+      width: 18px;
+      margin-right: 18px;
+      margin-bottom: -4px; }
+
+.project .flickity-prev-next-button {
+  background-color: rgba(0, 0, 0, 0.3); }
+  .project .flickity-prev-next-button path {
+    fill: #fff; }
+  .project .flickity-prev-next-button.previous {
+    left: 30px; }
+  .project .flickity-prev-next-button.next {
+    right: 30px; }
 
 @media screen and (min-width: 48.0625em) {
   .about .hero {
