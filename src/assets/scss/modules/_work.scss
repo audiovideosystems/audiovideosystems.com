@@ -1,4 +1,5 @@
 .work {
+
   .centered-navigation ul li.nav-link a {
     color: $text;
     }
@@ -31,6 +32,13 @@
 }
 
 .project {
+
+  main.load {
+    visibility: hidden;
+  }
+  main.loaded {
+    visibility: visible;
+  }
 
   .showcase {
     .info {
@@ -94,5 +102,37 @@
       right: 30px;
     }
   }
+
+  .project-info {
+    float: left;
+    .description {
+      float: left;
+      width: 50%;
+      background-color: #FFF;
+      padding: 80px 9% 110px;
+      h2 {
+        // margin-bottom: 30px;
+      }
+      p.body {
+        margin: 0;
+      }
+    }
+    .stats {
+      float: left;
+      width: 50%;
+      background-color: $gray-light;
+      padding: 85px 9% 110px;
+      p.body {
+        margin: 0 0 1rem 0;
+      }
+      p.head {
+        margin: 0;
+        font-family: $heading-font-family;
+        font-size: 14px;
+        text-transform: uppercase;
+      }
+    }
+  }
+
 
 }

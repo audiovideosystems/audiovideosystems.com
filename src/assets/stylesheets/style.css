@@ -957,6 +957,7 @@ figure[data-type=quote] cite:before {
     height: auto !important; } }
 
 .footer {
+  clear: left;
   padding: 1rem 0 0 0;
   padding-top: 5rem;
   background-color: #1c1c1c; }
@@ -1876,6 +1877,12 @@ img.logo {
       text-align: center;
       text-transform: uppercase; }
 
+.project main.load {
+  visibility: hidden; }
+
+.project main.loaded {
+  visibility: visible; }
+
 .project .showcase .info {
   background-color: #e2f0e7; }
 
@@ -1922,6 +1929,28 @@ img.logo {
     left: 30px; }
   .project .flickity-prev-next-button.next {
     right: 30px; }
+
+.project .project-info {
+  float: left; }
+  .project .project-info .description {
+    float: left;
+    width: 50%;
+    background-color: #FFF;
+    padding: 80px 9% 110px; }
+    .project .project-info .description p.body {
+      margin: 0; }
+  .project .project-info .stats {
+    float: left;
+    width: 50%;
+    background-color: #f4f5f5;
+    padding: 85px 9% 110px; }
+    .project .project-info .stats p.body {
+      margin: 0 0 1rem 0; }
+    .project .project-info .stats p.head {
+      margin: 0;
+      font-family: "Maison Neue Medium";
+      font-size: 14px;
+      text-transform: uppercase; }
 
 @media screen and (min-width: 48.0625em) {
   .about .hero {
