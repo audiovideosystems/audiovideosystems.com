@@ -2002,6 +2002,30 @@ img.logo {
       font-size: 14px;
       color: rgba(0, 0, 0, 0.8);
       padding: 12px; }
+    .contact .form .form__wrapper textarea {
+      border: 2px solid rgba(0, 0, 0, 0.8);
+      border-radius: 0;
+      text-transform: uppercase;
+      font-family: 'Maison Neue Medium';
+      font-size: 14px;
+      color: rgba(0, 0, 0, 0.8);
+      padding: 12px;
+      min-height: 140px; }
+    .contact .form .form__wrapper button {
+      border: 2px solid rgba(0, 0, 0, 0.8);
+      border-radius: 0;
+      text-transform: uppercase;
+      font-family: 'Maison Neue Medium';
+      font-size: 14px;
+      background-color: rgba(0, 0, 0, 0.8);
+      color: #fff;
+      padding: 12px 1.5rem; }
+    .contact .form .form__wrapper .alert {
+      padding: 1rem;
+      margin-top: 2rem;
+      background-color: #d4effc;
+      font-family: 'Maison Neue Medium';
+      font-size: 14px; }
 
 @media screen and (min-width: 48.0625em) {
   .about .hero {

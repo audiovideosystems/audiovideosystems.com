@@ -1,0 +1,24 @@
+<script>
+  var $contactForm = $('#contact');
+  $contactForm.submit(function(e) {
+    e.preventDefault();
+    $.ajax({
+      url: '//formspree.io/ryan@ryandeussing.com',
+      method: 'POST',
+      data: $(this).serialize(),
+      dataType: 'json',
+      beforeSend: function() {
+        $contactForm.append('<div class="alert alert--loading">Sending your message…</div>');
+      },
+      success: function(data) {
+        $contactForm.find('.alert--loading').hide();
+        $contactForm.append('<div class="alert alert--success">Thank you for contacting us. We\'ll be in touch shortly!</div>');
+        $('#contact')[0].reset();
+      },
+      error: function(err) {
+        $contactForm.find('.alert--loading').hide();
+        $contactForm.append('<div class="alert alert--error">Oops, there was an error. Try again?</div>');
+      }
+    });
+  });
+</script>
