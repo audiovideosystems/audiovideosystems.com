@@ -1,13 +1,17 @@
 header {
-  @include media($l){
-    height: 175px;
+  @include transition(all 0.2s ease-in);
+  &.short {
+    @include transition(all 0.2s ease-in);
+    @include media($l){
+      height: 175px;
+    }
   }
 }
 
 .centered-navigation {
   $base-border-radius: 3px !default;
   $dark-gray: #333 !default;
-  $large-screen: em(860) !default;
+  $large-screen: em(992) !default;
   $base-font-color: $dark-gray !default;
   $centered-navigation-padding: 1em;
   $centered-navigation-logo-height: 2em;
@@ -41,7 +45,7 @@ header {
       padding: 0.8em 0;
     }
 
-    @include media($horizontal-bar-mode) {
+    @include media($l){
       display: none;
     }
   }
@@ -91,6 +95,10 @@ header {
 
     @include media ($horizontal-bar-mode) {
       display: block;
+      text-align: right;
+    }
+    @include media ($xl) {
+      display: block;
       text-align: center;
     }
   }
@@ -115,6 +123,7 @@ header {
     text-transform: uppercase;
     width: 100%;
     z-index: 9999;
+    letter-spacing: 2px;
 
     a {
       color: $centered-navigation-color;
@@ -139,20 +148,15 @@ header {
     }
   }
 
-  li.logo.nav-link {
-    display: none;
-    line-height: 0;
+  // li.logo.nav-link {
+  //   display: none;
+  //   line-height: 0;
 
-    @include media($horizontal-bar-mode) {
-      display: inline;
-    }
-  }
+  //   @include media($horizontal-bar-mode) {
+  //     display: inline;
+  //   }
+  // }
 
-  .logo img {
-    margin-bottom: -$centered-navigation-logo-height / 3;
-    max-height: $centered-navigation-logo-height;
-    opacity: 0.6;
-  }
 
   // Sub menus
 
@@ -283,6 +287,16 @@ img.logo {
   top: em(30);
   left: em(30);
   z-index: 1000;
+  @include media($s){
+    display: none;
+  }
+  @include media(992px){
+    display: block;
+    width: 70px;
+  }
+  @include media(1030px){
+    width: 115px;
+  }
 }
 .nav-link a {
   padding-top: em(60);
@@ -298,6 +312,7 @@ img.logo {
     font-size: em(14);
     display: inline;
     font-family: $heading-font-family;
+    letter-spacing: 2px;
     a {
       // display: inline-block;
       text-decoration: underline;

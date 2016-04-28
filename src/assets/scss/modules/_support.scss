@@ -43,6 +43,7 @@
         text-transform: uppercase;
         font-family: 'Maison Neue Medium';
         font-size: 14px;
+        letter-spacing: 2px;
         color: $text;
         padding: 12px;
         margin-bottom: 25px;
@@ -60,6 +61,7 @@
           text-transform: uppercase;
           font-family: 'Maison Neue Medium';
           font-size: 14px;
+          letter-spacing: 2px;
           color: $text;
           padding-left: 1rem;
           font-weight: normal;
@@ -74,6 +76,7 @@
         text-transform: uppercase;
         font-family: 'Maison Neue Medium';
         font-size: 14px;
+        letter-spacing: 2px;
         color: $text;
         padding: 12px;
         min-height: 140px;
@@ -86,6 +89,7 @@
         text-transform: uppercase;
         font-family: 'Maison Neue Medium';
         font-size: 14px;
+        letter-spacing: 2px;
         background-color: $text;
         color: #fff;
         padding: 12px 1.5rem;
@@ -121,7 +125,6 @@
         cursor: pointer;
         display: inline-block;
         position: relative;
-        font-size: 16px;
         color: $select-color;
         width: $select-width;
         height: $select-height;
@@ -129,6 +132,7 @@
         text-transform: uppercase;
         font-family: 'Maison Neue Medium';
         font-size: 14px;
+        letter-spacing: 2px;
         color: $text;
         padding: 12px;
       }

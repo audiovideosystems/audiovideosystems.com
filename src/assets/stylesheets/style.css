@@ -549,7 +549,8 @@ h4 {
   line-height: 1.4;
   color: rgba(0, 0, 0, 0.8);
   text-transform: uppercase;
-  margin-bottom: 2em; }
+  margin-bottom: 2em;
+  letter-spacing: 2px; }
   h4.small {
     font-size: 14px; }
 
@@ -639,9 +640,6 @@ h1, h2, h3, h4, h5 {
     clear: both;
     content: "";
     display: table; }
-
-img.logo {
-  width: 7.1875em; }
 
 @media screen and (min-width: 6.25em) {
   .hide-s {
@@ -980,6 +978,7 @@ figure[data-type=quote] cite:before {
       .footer .footer__inner-wrapper .footer__alpha a, .footer .footer__inner-wrapper .footer__omega a {
         font-family: "Maison Neue Medium";
         font-size: 0.875rem;
+        letter-spacing: 2px;
         line-height: 1.6;
         display: block;
         text-transform: uppercase;
@@ -996,6 +995,7 @@ figure[data-type=quote] cite:before {
       .footer .footer__inner-wrapper .footer__beta p {
         font-family: "Maison Neue Medium";
         font-size: 0.875rem;
+        letter-spacing: 2px;
         line-height: 1.6;
         display: block;
         text-transform: uppercase;
@@ -1024,9 +1024,13 @@ figure[data-type=quote] cite:before {
         line-height: 1;
         text-transform: uppercase; }
 
-@media screen and (min-width: 48.0625em) {
-  header {
-    height: 175px; } }
+header {
+  transition: all 0.2s ease-in; }
+  header.short {
+    transition: all 0.2s ease-in; }
+    @media screen and (min-width: 48.0625em) {
+      header.short {
+        height: 175px; } }
 
 .centered-navigation {
   background-color: transparent;
@@ -1043,7 +1047,7 @@ figure[data-type=quote] cite:before {
       max-height: 60px;
       opacity: 0.6;
       padding: 0.8em 0; }
-    @media screen and (min-width: 53.75em) {
+    @media screen and (min-width: 48.0625em) {
       .centered-navigation .mobile-logo {
         display: none; } }
   .centered-navigation .centered-navigation-mobile-menu {
@@ -1055,7 +1059,7 @@ figure[data-type=quote] cite:before {
     padding-right: 0.9375rem;
     text-decoration: none;
     text-transform: uppercase; }
-    @media screen and (min-width: 53.75em) {
+    @media screen and (min-width: 62em) {
       .centered-navigation .centered-navigation-mobile-menu {
         display: none; } }
     .centered-navigation .centered-navigation-mobile-menu:focus, .centered-navigation .centered-navigation-mobile-menu:hover {
@@ -1085,11 +1089,15 @@ figure[data-type=quote] cite:before {
     z-index: 99999; }
     .centered-navigation ul.centered-navigation-menu.show {
       display: block; }
-    @media screen and (min-width: 53.75em) {
+    @media screen and (min-width: 62em) {
+      .centered-navigation ul.centered-navigation-menu {
+        display: block;
+        text-align: right; } }
+    @media screen and (min-width: 73.75em) {
       .centered-navigation ul.centered-navigation-menu {
         display: block;
         text-align: center; } }
-  @media screen and (min-width: 53.75em) {
+  @media screen and (min-width: 62em) {
     .centered-navigation .nav-link:first-child {
       margin-left: 2.2em; } }
   .centered-navigation ul li.nav-link {
@@ -1103,7 +1111,8 @@ figure[data-type=quote] cite:before {
     text-align: right;
     text-transform: uppercase;
     width: 100%;
-    z-index: 9999; }
+    z-index: 9999;
+    letter-spacing: 2px; }
     .centered-navigation ul li.nav-link a {
       color: rgba(0, 0, 0, 0.8);
       display: inline-block;
@@ -1111,26 +1120,16 @@ figure[data-type=quote] cite:before {
       text-decoration: none; }
       .centered-navigation ul li.nav-link a:focus, .centered-navigation ul li.nav-link a:hover {
         color: rgba(0, 0, 0, 0.8); }
-    @media screen and (min-width: 53.75em) {
+    @media screen and (min-width: 62em) {
       .centered-navigation ul li.nav-link {
         background: transparent;
         display: inline;
         line-height: 60px; }
         .centered-navigation ul li.nav-link a {
           padding-right: 0.9375rem; } }
-  .centered-navigation li.logo.nav-link {
-    display: none;
-    line-height: 0; }
-    @media screen and (min-width: 53.75em) {
-      .centered-navigation li.logo.nav-link {
-        display: inline; } }
-  .centered-navigation .logo img {
-    margin-bottom: -0.6666666667em;
-    max-height: 2em;
-    opacity: 0.6; }
   .centered-navigation li.more.nav-link {
     padding-right: 0; }
-    @media screen and (min-width: 53.75em) {
+    @media screen and (min-width: 62em) {
       .centered-navigation li.more.nav-link {
         padding-right: 0.9375rem; } }
     .centered-navigation li.more.nav-link > ul > li:first-child a {
@@ -1155,7 +1154,7 @@ figure[data-type=quote] cite:before {
     .centered-navigation li.more > a {
       padding-right: 1.6em;
       position: relative; }
-      @media screen and (min-width: 53.75em) {
+      @media screen and (min-width: 62em) {
         .centered-navigation li.more > a {
           margin-right: 0.9375rem; } }
       .centered-navigation li.more > a::after {
@@ -1166,30 +1165,30 @@ figure[data-type=quote] cite:before {
     .centered-navigation li.more:focus > .submenu,
     .centered-navigation li.more:hover > .submenu {
       display: block; }
-    @media screen and (min-width: 53.75em) {
+    @media screen and (min-width: 62em) {
       .centered-navigation li.more {
         padding-right: 0.9375rem;
         position: relative; } }
   .centered-navigation ul.submenu {
     display: none;
     padding-left: 0; }
-    @media screen and (min-width: 53.75em) {
+    @media screen and (min-width: 62em) {
       .centered-navigation ul.submenu {
         left: -0.9375rem;
         position: absolute;
         top: 1.5em; } }
-    @media screen and (min-width: 53.75em) {
+    @media screen and (min-width: 62em) {
       .centered-navigation ul.submenu .submenu.fly-out-right {
         left: 11.8em;
         top: 0; } }
-    @media screen and (min-width: 53.75em) {
+    @media screen and (min-width: 62em) {
       .centered-navigation ul.submenu .submenu.fly-out-left {
         left: -11.8em;
         top: 0; } }
     .centered-navigation ul.submenu li {
       display: block;
       padding-right: 0; }
-      @media screen and (min-width: 53.75em) {
+      @media screen and (min-width: 62em) {
         .centered-navigation ul.submenu li {
           line-height: 46.1538461538px; }
           .centered-navigation ul.submenu li:first-child > a {
@@ -1205,7 +1204,7 @@ figure[data-type=quote] cite:before {
         text-align: right;
         text-decoration: none;
         width: 100%; }
-        @media screen and (min-width: 53.75em) {
+        @media screen and (min-width: 62em) {
           .centered-navigation ul.submenu li a {
             background-color: transparent;
             padding-left: 0.9375rem;
@@ -1217,6 +1216,16 @@ img.logo {
   top: 1.875em;
   left: 1.875em;
   z-index: 1000; }
+  @media screen and (min-width: 6.25em) {
+    img.logo {
+      display: none; } }
+  @media screen and (min-width: 992px) {
+    img.logo {
+      display: block;
+      width: 70px; } }
+  @media screen and (min-width: 1030px) {
+    img.logo {
+      width: 115px; } }
 
 .nav-link a {
   padding-top: 3.75em; }
@@ -1230,7 +1239,8 @@ img.logo {
   .nav-2 li {
     font-size: 0.875em;
     display: inline;
-    font-family: "Maison Neue Medium"; }
+    font-family: "Maison Neue Medium";
+    letter-spacing: 2px; }
     .nav-2 li a {
       text-decoration: underline;
       line-height: 3.75rem;
@@ -1354,7 +1364,8 @@ img.logo {
     margin-bottom: 0;
     text-align: left;
     text-transform: uppercase;
-    color: #ababab; }
+    color: #ababab;
+    letter-spacing: 2px; }
   .home .showcase .flickity-page-dots {
     bottom: 30px; }
 
@@ -1875,7 +1886,8 @@ img.logo {
     .work .thumbnails .project h5 {
       margin-top: 18px;
       text-align: center;
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      letter-spacing: 2px; }
 
 .project main.load {
   visibility: hidden; }
@@ -1888,7 +1900,8 @@ img.logo {
 
 .project .showcase div.details {
   height: 50px;
-  text-align: center; }
+  text-align: center;
+  letter-spacing: 2px; }
   .project .showcase div.details p {
     position: relative;
     top: 50%;
@@ -2001,6 +2014,7 @@ img.logo {
       font-family: 'Maison Neue Medium';
       font-size: 14px;
       color: rgba(0, 0, 0, 0.8);
+      letter-spacing: 2px;
       padding: 12px;
       margin-bottom: 25px; }
     .contact .form .form__wrapper textarea {
@@ -2010,6 +2024,7 @@ img.logo {
       font-family: 'Maison Neue Medium';
       font-size: 14px;
       color: rgba(0, 0, 0, 0.8);
+      letter-spacing: 2px;
       padding: 12px;
       min-height: 140px;
       margin-bottom: 25px; }
@@ -2019,6 +2034,7 @@ img.logo {
       text-transform: uppercase;
       font-family: 'Maison Neue Medium';
       font-size: 14px;
+      letter-spacing: 2px;
       background-color: rgba(0, 0, 0, 0.8);
       color: #fff;
       padding: 12px 1.5rem; }
@@ -2084,6 +2100,7 @@ img.logo {
       text-transform: uppercase;
       font-family: 'Maison Neue Medium';
       font-size: 14px;
+      letter-spacing: 2px;
       color: rgba(0, 0, 0, 0.8);
       padding: 12px;
       margin-bottom: 25px; }
@@ -2108,6 +2125,7 @@ img.logo {
         text-transform: uppercase;
         font-family: 'Maison Neue Medium';
         font-size: 14px;
+        letter-spacing: 2px;
         color: rgba(0, 0, 0, 0.8);
         padding-left: 1rem;
         font-weight: normal; }
@@ -2119,6 +2137,7 @@ img.logo {
       text-transform: uppercase;
       font-family: 'Maison Neue Medium';
       font-size: 14px;
+      letter-spacing: 2px;
       color: rgba(0, 0, 0, 0.8);
       padding: 12px;
       min-height: 140px;
@@ -2130,6 +2149,7 @@ img.logo {
       text-transform: uppercase;
       font-family: 'Maison Neue Medium';
       font-size: 14px;
+      letter-spacing: 2px;
       background-color: rgba(0, 0, 0, 0.8);
       color: #fff;
       padding: 12px 1.5rem;
@@ -2157,7 +2177,6 @@ img.logo {
       cursor: pointer;
       display: inline-block;
       position: relative;
-      font-size: 16px;
       color: #fff;
       width: 100%;
       height: 40px;
@@ -2165,6 +2184,7 @@ img.logo {
       text-transform: uppercase;
       font-family: 'Maison Neue Medium';
       font-size: 14px;
+      letter-spacing: 2px;
       color: rgba(0, 0, 0, 0.8);
       padding: 12px; }
     .support .form .form__wrapper .select-styled {

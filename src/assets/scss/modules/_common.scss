@@ -20,10 +20,6 @@ h1, h2, h3, h4, h5 {
   @include outer-container;
 }
 
-img.logo {
-  width: em(115);
-}
-
 .hide-s {
   @include media($s){
     display: none;
