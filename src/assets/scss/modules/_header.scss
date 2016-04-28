@@ -54,11 +54,57 @@ header {
     color: $centered-navigation-color;
     display: block;
     float: right;
-    line-height: $centered-navigation-height;
+    // line-height: $centered-navigation-height;
     margin: 0;
     padding-right: $centered-navigation-submenu-padding;
     text-decoration: none;
     text-transform: uppercase;
+    position: relative;
+    right: 20px;
+    top: 10px;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    width: 48px;
+    height: 48px;
+    font-size: 0;
+    text-indent: -9999px;
+    appearance: none;
+    box-shadow: none;
+    border-radius: none;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+
+    span {
+      display: block;
+      position: absolute;
+      top: 22px;
+      left: 9px;
+      right: 9px;
+      height: 4px;
+      background: white;
+    }
+
+    span::before, span::after {
+      position: absolute;
+      display: block;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background-color: #fff;
+      content: "";
+    }
+
+    span::before {
+      top: -10px;
+    }
+
+    span::after {
+      bottom: -10px;
+    }
+
+
 
     @include media ($horizontal-bar-mode) {
       display: none;
@@ -283,6 +329,15 @@ header {
       }
     }
   }
+}
+
+.centered-navigation.bg span {
+  background-color: $text
+}
+
+.centered-navigation.bg span::before,
+.centered-navigation.bg span::after {
+  background-color: $text
 }
 
 img.logo {
