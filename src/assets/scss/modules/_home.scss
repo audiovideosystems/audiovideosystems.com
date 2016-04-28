@@ -5,6 +5,15 @@
     ul li a {
       color: $text !important;
     }
+    span, span::before, span::after {
+      background-color: $text;
+    }
+  }
+
+  .centered-navigation {
+    span, span::before, span::after {
+      background-color: #FFF;
+    }
   }
 
   .container {

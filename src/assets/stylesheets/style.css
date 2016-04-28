@@ -1084,14 +1084,14 @@ header {
       left: 9px;
       right: 9px;
       height: 4px;
-      background: white; }
+      background: rgba(0, 0, 0, 0.8); }
     .centered-navigation .centered-navigation-mobile-menu span::before, .centered-navigation .centered-navigation-mobile-menu span::after {
       position: absolute;
       display: block;
       left: 0;
       width: 100%;
       height: 4px;
-      background-color: #fff;
+      background-color: rgba(0, 0, 0, 0.8);
       content: ""; }
     .centered-navigation .centered-navigation-mobile-menu span::before {
       top: -10px; }
@@ -1252,13 +1252,6 @@ header {
             text-align: left;
             width: 12em; } }
 
-.centered-navigation.bg span {
-  background-color: rgba(0, 0, 0, 0.8); }
-
-.centered-navigation.bg span::before,
-.centered-navigation.bg span::after {
-  background-color: rgba(0, 0, 0, 0.8); }
-
 img.logo {
   position: absolute;
   top: 1.875em;
@@ -1300,6 +1293,11 @@ img.logo {
   background-color: #FFF; }
   .home .centered-navigation.bg ul li a {
     color: rgba(0, 0, 0, 0.8) !important; }
+  .home .centered-navigation.bg span, .home .centered-navigation.bg span::before, .home .centered-navigation.bg span::after {
+    background-color: rgba(0, 0, 0, 0.8); }
+
+.home .centered-navigation span, .home .centered-navigation span::before, .home .centered-navigation span::after {
+  background-color: #FFF; }
 
 .home .nav-2 li a {
   color: white; }

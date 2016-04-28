@@ -83,7 +83,7 @@ header {
       left: 9px;
       right: 9px;
       height: 4px;
-      background: white;
+      background: $text;
     }
 
     span::before, span::after {
@@ -92,7 +92,7 @@ header {
       left: 0;
       width: 100%;
       height: 4px;
-      background-color: #fff;
+      background-color: $text;
       content: "";
     }
 
@@ -329,15 +329,6 @@ header {
       }
     }
   }
-}
-
-.centered-navigation.bg span {
-  background-color: $text
-}
-
-.centered-navigation.bg span::before,
-.centered-navigation.bg span::after {
-  background-color: $text
 }
 
 img.logo {
