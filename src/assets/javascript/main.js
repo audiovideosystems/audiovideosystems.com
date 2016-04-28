@@ -85,6 +85,7 @@
       setTimeout(function(){
         $('.centered-navigation').toggleClass('short');
         $('.home .centered-navigation').toggleClass('bg');
+        $('img.arrow').toggleClass('hide');
       }, 250);
     });
   });
