@@ -1,4 +1,12 @@
 .home {
+
+  .centered-navigation.bg {
+    background-color: #FFF;
+    ul li a {
+      color: $text !important;
+    }
+  }
+
   .container {
   }
   // img.logo {

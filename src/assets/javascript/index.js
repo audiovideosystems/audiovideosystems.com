@@ -10511,8 +10511,11 @@ Kibo.prototype.lastModifiersAndKey = function() {
           $("#js-centered-navigation-menu").removeAttr("style");
         }
       });
+      // $('.home .centered-navigation').toggleClass('bg');
+      // $('.centered-navigation').toggleClass('short');
       setTimeout(function(){
         $('.centered-navigation').toggleClass('short');
+        $('.home .centered-navigation').toggleClass('bg');
       }, 250);
     });
   });

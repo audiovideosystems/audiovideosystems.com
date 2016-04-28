@@ -82,7 +82,10 @@ header {
   ul.centered-navigation-menu {
     clear: both;
     display: none;
-    margin: 0 auto;
+    margin: 0 auto 3rem;
+    @include media(993px){
+      margin: 0 auto;
+    }
     overflow: visible;
     padding: 0;
     -webkit-transform-style: preserve-3d; // stop webkit flicker
@@ -119,7 +122,7 @@ header {
     line-height: $centered-navigation-height;
     overflow: hidden;
     padding-right: $centered-navigation-submenu-padding;
-    text-align: right;
+    text-align: center;
     text-transform: uppercase;
     width: 100%;
     z-index: 9999;
@@ -290,7 +293,7 @@ img.logo {
   @include media($s){
     display: none;
   }
-  @include media(992px){
+  @include media($l){
     display: block;
     width: 70px;
   }
@@ -299,7 +302,9 @@ img.logo {
   }
 }
 .nav-link a {
-  padding-top: em(60);
+  @include media(992px){
+    padding-top: em(60);
+  }
 }
 
 .nav-2 {
