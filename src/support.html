@@ -1,0 +1,98 @@
+---
+layout: default
+class: support
+permalink: /support/
+---
+
+<main>
+
+  <section class="hero">
+  </section>
+
+  <section class="text contact">
+    <div class="container">
+      <div class="contact__inner-wrapper">
+        <h4>support</h4>
+        <h2>Our team always responds within 24 hours, even during holidays and weekends. We stand behind our installations, for the lifespan of every system.</h2>
+      </div>
+    </div>
+  </section>
+
+<section class="form">
+  <div class="container">
+    <div class="form__info">
+      <h2 class="small">24 Hour Support</h2>
+      <div class="digits">
+        <p class="body">516-739-1010</p>
+      </div>
+      <div class="location">
+        <p class="body">LONG ISLAND &amp; NEW YORK CITY<br>
+        <a href="mailto:support@audiovideosystems.com">support@audiovideosystems.com</a></p>
+      </div>
+      <div class="location">
+        <p class="body">WESTCHESTER &amp; CONNECTICUT<br>
+        <a href="mailto:avssupport@audiovideosystems.com">avssupport@audiovideosystems.com</a></p>
+      </div>
+    </div>
+    <div class="form__wrapper">
+      <form id="support" class="form-block" method="post" action="http://formspree.io/ryan@ryandeussing.com">
+        <input type="text" name="_name" id="name" placeholder="name" required>
+        <input type="text" name="_telephone" id="phone" placeholder="phone" required>
+        <input type="email" name="_email" class="" id="email" placeholder="email" required>
+        <input type="text" name="_address" class="" id="address" placeholder="address" required>
+        <textarea name="_message" placeholder="description of issue" required></textarea>
+        <input type="text" name="_room" id="room" placeholder="room">
+        <input type="text" name="_device" id="device" placeholder="device">
+        <div class="intermittent"><input type="radio" name="_type" id="radio1" value="intermittent">
+          <label for="radio1">
+              <span class="fa-stack">
+                  <i class="fa fa-circle-o fa-stack-1x"></i>
+                  <i class="fa fa-circle fa-stack-1x"></i>
+              </span>
+              intermittent
+          </label>
+        </div>
+
+
+
+        <div class="continuous"><input type="radio" name="_type" id="radio2" value="continuous">
+          <label for="radio2">
+              <span class="fa-stack">
+                  <i class="fa fa-circle-o fa-stack-1x"></i>
+                  <i class="fa fa-circle fa-stack-1x"></i>
+              </span>
+              continuous
+          </label>
+        </div>
+        <div class="select-wrapper first">
+          <select id="onset" name="_onset" required>
+              <option value="hide">ONSET OF ISSUE</option>
+              <option value="JUST HAPPENED" rel="icon-temperature">JUST HAPPENED</option>
+              <option value="STARTED RECENTLY">STARTED RECENTLY</option>
+              <option value="HAS BECOME MORE FREQUENT">HAPPENING FREQUENTLY</option>
+
+          </select>
+        </div>
+        <div class="select-wrapper second" required>
+          <select id="immediacy" name="_status">
+              <option value="hide">IMMEDIACY</option>
+              <option value="EMERGENCY">EMERGENCY</option>
+              <option value="URGENT">URGENT</option>
+              <option value="IMPORTANT">IMPORTANT</option>
+              <option value="NEEDS ATTENTION">NEEDS ATTENTION</option>
+
+          </select>
+        </div>
+
+
+        <!-- CONFIG -->
+        <input class="is-hidden" type="hidden" type="text" name="_gotcha">
+        <input id="_subject" class="is-hidden" type="hidden" name="_subject" value="Support Submission">
+        <!-- /CONFIG -->
+        <button type="submit" class="">SEND</button>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+

@@ -1,0 +1,224 @@
+.support {
+
+  .centered-navigation ul li.nav-link a {
+    color: $text;
+    }
+
+  .contact {
+    .contact__inner-wrapper {
+      @include span-columns(9);
+      @include shift(3);
+    }
+    background-color: $support-plum;
+    text-align: center;
+    padding-top: em(100);
+    padding-bottom: em(100);
+  }
+
+  .form {
+    padding-top: 110px;
+    padding-bottom: 110px;
+    .form__info {
+      @include span-columns(3);
+      @include shift(2);
+      p {
+        margin: 0;
+      }
+      .digits {
+        margin-bottom: 30px;
+      }
+      .location {
+        margin-bottom: 30px;
+        a {
+          text-decoration: underline;
+        }
+      }
+    }
+    .form__wrapper {
+      @include span-columns(6);
+      @include shift(2);
+      input {
+        border: 2px solid $text;
+        border-radius: 0;
+        text-transform: uppercase;
+        font-family: 'Maison Neue Medium';
+        font-size: 14px;
+        color: $text;
+        padding: 12px;
+        margin-bottom: 25px;
+      }
+      input#room, input#device {
+        @include span-columns(3 of 6);
+      }
+      input#device {
+        @include omega();
+      }
+      .intermittent, .continuous {
+        @include span-columns(3 of 6);
+        margin-bottom: 1rem;
+        label {
+          text-transform: uppercase;
+          font-family: 'Maison Neue Medium';
+          font-size: 14px;
+          color: $text;
+          padding-left: 1rem;
+          font-weight: normal;
+        }
+      }
+      .continuous {
+        @include omega();
+      }
+      textarea {
+        border: 2px solid $text;
+        border-radius: 0;
+        text-transform: uppercase;
+        font-family: 'Maison Neue Medium';
+        font-size: 14px;
+        color: $text;
+        padding: 12px;
+        min-height: 140px;
+        margin-bottom: 25px;
+      }
+      button {
+        clear: both;
+        border: 2px solid $text;
+        border-radius: 0;
+        text-transform: uppercase;
+        font-family: 'Maison Neue Medium';
+        font-size: 14px;
+        background-color: $text;
+        color: #fff;
+        padding: 12px 1.5rem;
+        margin-top: 25px;
+      }
+      .alert {
+        padding: 1rem;
+        margin-top: 2rem;
+        background-color: $about-blue;
+        font-family: 'Maison Neue Medium';
+        font-size: 14px;
+      }
+
+      $background: #fff;
+      $select-color: #fff;
+      $select-background: #fff;
+      $select-width: 100%;
+      $select-height: 40px;
+
+      .select-wrapper {
+        @include span-columns(3 of 6);
+        &.second {
+          @include omega();
+        }
+      }
+
+      .select-hidden {
+        display: none;
+        visibility: hidden;
+        padding-right: 10px;
+      }
+      .select {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        font-size: 16px;
+        color: $select-color;
+        width: $select-width;
+        height: $select-height;
+        border: 2px solid $text;
+        text-transform: uppercase;
+        font-family: 'Maison Neue Medium';
+        font-size: 14px;
+        color: $text;
+        padding: 12px;
+      }
+
+      .select-styled {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: $select-background;
+        padding: 8px 15px;
+        @include transition(all 0.2s ease-in);
+        &:after {
+          content:"";
+          width: 0;
+          height: 0;
+          border: 7px solid $text;
+          border-color: $text transparent transparent transparent;
+          position: absolute;
+          top: 16px;
+          right: 10px;
+        }
+        &:hover {
+          background-color: darken($select-background, 20);
+        }
+        &:active, &.active {
+          background-color: darken($select-background, 20);
+          &:after {
+            top: 9px;
+            border-color: transparent transparent $text transparent;
+          }
+        }
+      }
+
+      .select-options {
+        display: none;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        left: 0;
+        z-index: 999;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        background-color: darken($select-background, 5);
+        li {
+          margin: 0;
+          padding: 12px 0;
+          text-indent: 15px;
+          border-top: 1px solid darken($select-background, 10);
+          @include transition(all 0.15s ease-in);
+          &:hover {
+            color: $text;
+            background-color: darken($select-background, 20);
+          }
+          &[rel="hide"] {
+            display: none;
+          }
+        }
+      }
+
+      /* Hidding the radiobuttons & checkboxes */
+      input[type="radio"], input[type="checkbox"] {
+          display: none;
+      }
+      /* Hidding the "check" status of inputs */
+      input[type="radio"] + label .fa-circle,
+      input[type="checkbox"] + label .fa-check  {
+      display: none;
+      }
+      /* Styling the "check" status */
+      input[type="radio"]:checked + label .fa-circle,
+      input[type="checkbox"]:checked + label .fa-check {
+      display: block;
+      color: $text;
+      }
+      /* Styling checkboxes */
+      input[type="checkbox"]:checked + label .fa-check {
+      position: relative;
+      left: .125em;
+      bottom: .125em;
+      }
+      /* Styling radiobuttons */
+      input[type="radio"]:checked + label .fa-circle-o {
+      display: none;
+      }
+
+    }
+  }
+
+
+}
