@@ -98,8 +98,14 @@
       margin-bottom: 1em;
     }
     .brand {
-      @include span-columns(3);
-      @include omega(5n);
+      @include media($s){
+        @include span-columns(3);
+        @include omega(5n);
+      }
+      @include media($l){
+        @include span-columns(3);
+        @include omega(5n);
+      }
       text-align: center;
       h5 {
         padding: 1em 0;

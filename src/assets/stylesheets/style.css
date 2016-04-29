@@ -1392,17 +1392,31 @@ img.logo {
     text-align: center;
     margin-bottom: 1em; }
   .home .brands .brand {
-    float: left;
-    display: block;
-    margin-right: 1.877269384%;
-    width: 18.4981844928%;
     text-align: center; }
-    .home .brands .brand:last-child {
-      margin-right: 0; }
-    .home .brands .brand:nth-child(5n) {
-      margin-right: 0; }
-    .home .brands .brand:nth-child(5n+1) {
-      clear: left; }
+    @media screen and (min-width: 6.25em) {
+      .home .brands .brand {
+        float: left;
+        display: block;
+        margin-right: 1.877269384%;
+        width: 18.4981844928%; }
+        .home .brands .brand:last-child {
+          margin-right: 0; }
+        .home .brands .brand:nth-child(5n) {
+          margin-right: 0; }
+        .home .brands .brand:nth-child(5n+1) {
+          clear: left; } }
+    @media screen and (min-width: 48.0625em) {
+      .home .brands .brand {
+        float: left;
+        display: block;
+        margin-right: 1.877269384%;
+        width: 18.4981844928%; }
+        .home .brands .brand:last-child {
+          margin-right: 0; }
+        .home .brands .brand:nth-child(5n) {
+          margin-right: 0; }
+        .home .brands .brand:nth-child(5n+1) {
+          clear: left; } }
     .home .brands .brand h5 {
       padding: 1em 0; }
 
