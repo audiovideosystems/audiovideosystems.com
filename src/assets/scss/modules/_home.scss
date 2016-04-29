@@ -99,8 +99,9 @@
     }
     .brand {
       @include media($s){
-        @include span-columns(3);
-        @include omega(5n);
+        @include span-columns(6);
+        @include shift(1);
+        // @include omega(5n);
       }
       @include media($l){
         @include span-columns(3);
@@ -116,18 +117,37 @@
   .featured {
     background-color: $home-brown;
     .container {
-      padding-top: rem(80);
-      padding-bottom: rem(80);
+      @include media($s){
+        padding-top: 110px;
+        padding-bottom: 110px;
+      }
+      @include media($l){
+        padding-top: rem(80);
+        padding-bottom: rem(80);
+      }
     }
     .featured__inner-wrapper {
       @include span-columns(13);
       @include shift(1);
       .one, .two {
-        @include span-columns(6);
-        @include shift;
+        @include media($s){
+          @include span-columns(13 of 13);
+        }
+        @include media($l){
+          @include span-columns(6 of 13);
+        }
+
         text-align: center;
         img {
           height: rem(22);
+        }
+      }
+      .one {
+        @include media($s){
+          margin-bottom: 80px;
+        }
+        @include media($l){
+          margin-bottom: 0;
         }
       }
     }
@@ -136,21 +156,34 @@
   .showcase {
     padding-top: rem(110);
     padding-bottom: rem(110);
-    .showcase_carousel {
-      @include span-columns(15);
-      .gallery-cell {
-        height: 500px;
+    .showcase__carousel {
+      @include media($s){
+        @include span-columns(13);
+        @include shift(1);
+      }
+      @include media($l){
+        @include span-columns(15);
+        @include shift(0);
+        .gallery-cell {
+          height: 500px;
+        }
       }
     }
     p.caption {
       clear: both;
-      padding-top: rem(10);
+      // padding-top: rem(10);
       margin-bottom: 0;
       text-align: left;
       text-transform: uppercase;
       color: #ababab;
       letter-spacing: 2px;
       @include media($s){
+        @include span-columns(13);
+        @include shift(1);
+      }
+      @include media($l){
+        @include span-columns(15);
+        @include shift(0);
         padding-left: 1rem;
       }
       @include media(1190px){
