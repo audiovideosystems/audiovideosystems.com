@@ -53,4 +53,132 @@ $visual-grid-opacity: 0.2;
     display: block;
   }
 
+  // typography
+
+  body {
+    color: $base-font-color;
+    // font-family: $base-font-family;
+    font-feature-settings: "kern", "liga", "pnum";
+    font-size: $base-font-size;
+    line-height: $base-line-height;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    // font-family: $heading-font-family;
+    font-size: $base-font-size;
+    line-height: $heading-line-height;
+    margin: 0 0 $small-spacing;
+    font-weight: normal;
+  }
+
+  h1 {
+  font-family: 'Noe Display';
+  @include media($s){
+    font-size: 78px;
+  }
+  @include media($l){
+    font-size: 83px;
+  }
+  line-height: 1.1;
+  color: white;
+  text-align: center;
+  }
+
+
+  h2 {
+  font-family: 'Noe Display';
+  font-size: 36px;
+  line-height: 1.4;
+  color: $text;
+  }
+
+  h2.small {
+  font-family: 'Noe Display';
+  font-size: 26px;
+  line-height: 1.4;
+  color: $text;
+  }
+
+  h4 {
+  font-family: 'Maison Neue Medium';
+  @include media($s){
+    font-size: 18px
+  }
+  @include media($l){
+    font-size: 16px;
+  }
+  line-height: 1.4;
+  color: $text;
+  text-transform: uppercase;
+  margin-bottom: 2em;
+  letter-spacing: 2px;
+   &.small {
+    font-size: 14px;
+   }
+  }
+
+  h5 {
+  font-family: 'Maison Neue Medium';
+  font-size: 16px;
+  line-height: 1.4;
+  color: $text;
+  }
+
+
+  h6 {
+  font-family: 'Maison Neue Medium';
+  font-size: 14px;
+  line-height: 1.4;
+  color: $text;
+  text-align: left;
+
+  }
+
+  // h2.quote {
+  //   font-size: rem(82);
+  //   text-align: center;
+  //   margin-top: .5em;
+  //   margin-bottom: 0;
+  //   line-height: 1em;
+  // }
+
+  p.body {
+    font-family: 'Maison Neue Medium';
+    font-size: rem(14);
+    line-height: 1.7;
+    color: $text;
+  }
+
+  a {
+    color: $action-color;
+    text-decoration: none;
+    transition: color $base-duration $base-timing;
+
+    &:active,
+    &:focus,
+    &:hover {
+      color: shade($action-color, 25%);
+    }
+  }
+
+  hr {
+    border-bottom: $base-border;
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+    margin: $base-spacing 0;
+  }
+
+  img,
+  picture {
+    margin: 0;
+    max-width: 100%;
+  }
+
+
 

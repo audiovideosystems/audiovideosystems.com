@@ -1328,37 +1328,65 @@ img.logo {
   padding-top: 0px;
   padding-bottom: 0px; }
 
-.home .absolute .absolute__inner-wrapper {
-  padding-top: 12.5rem; }
+@media screen and (min-width: 6.25em) {
+  .home .absolute .absolute__inner-wrapper {
+    padding-top: 110px; } }
+
+@media screen and (min-width: 48.0625em) {
+  .home .absolute .absolute__inner-wrapper {
+    padding-top: 200px; } }
 
 .home .absolute .text {
-  float: left;
-  display: block;
-  margin-right: 1.877269384%;
-  width: 32.0818204106%;
-  margin-left: 6.7918179589%;
   text-align: left; }
-  .home .absolute .text:last-child {
-    margin-right: 0; }
+  @media screen and (min-width: 6.25em) {
+    .home .absolute .text {
+      float: left;
+      display: block;
+      margin-right: 1.877269384%;
+      width: 86.4163640821%;
+      margin-left: 6.7918179589%; }
+      .home .absolute .text:last-child {
+        margin-right: 0; } }
+  @media screen and (min-width: 48.0625em) {
+    .home .absolute .text {
+      float: left;
+      display: block;
+      margin-right: 1.877269384%;
+      width: 32.0818204106%;
+      margin-left: 6.7918179589%; }
+      .home .absolute .text:last-child {
+        margin-right: 0; } }
 
-.home .absolute .image {
-  float: left;
-  display: block;
-  margin-right: 1.877269384%;
-  width: 45.6654563285%;
-  margin-left: 6.7918179589%; }
-  .home .absolute .image:last-child {
-    margin-right: 0; }
-  .home .absolute .image img {
-    padding-top: 6.875rem;
-    vertical-align: bottom; }
+@media screen and (min-width: 6.25em) {
+  .home .absolute .image {
+    float: left;
+    display: block;
+    margin-right: 1.877269384%;
+    width: 86.4163640821%;
+    margin-left: 6.7918179589%; }
+    .home .absolute .image:last-child {
+      margin-right: 0; } }
+
+@media screen and (min-width: 48.0625em) {
+  .home .absolute .image {
+    float: left;
+    display: block;
+    margin-right: 1.877269384%;
+    width: 45.6654563285%;
+    margin-left: 6.7918179589%; }
+    .home .absolute .image:last-child {
+      margin-right: 0; } }
+
+.home .absolute .image img {
+  padding-top: 6.875rem;
+  vertical-align: bottom; }
 
 .home .absolute h6 a {
   text-decoration: underline; }
 
 .home .brands {
   background-color: #f4f5f5;
-  padding-top: 5em;
+  padding-top: 110px;
   padding-bottom: 6.25em; }
   .home .brands h2 {
     text-align: center;
@@ -1423,6 +1451,12 @@ img.logo {
     text-transform: uppercase;
     color: #ababab;
     letter-spacing: 2px; }
+    @media screen and (min-width: 6.25em) {
+      .home .showcase p.caption {
+        padding-left: 1rem; } }
+    @media screen and (min-width: 1190px) {
+      .home .showcase p.caption {
+        padding-left: 0; } }
   .home .showcase .flickity-page-dots {
     bottom: 30px; }
 
@@ -2430,5 +2464,100 @@ body:before {
 
 body.grid:before {
   display: block; }
+
+body {
+  color: rgba(0, 0, 0, 0.8);
+  font-feature-settings: "kern", "liga", "pnum";
+  font-size: 16px;
+  line-height: 1.5; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 16px;
+  line-height: 1.2;
+  margin: 0 0 0.75em;
+  font-weight: normal; }
+
+h1 {
+  font-family: 'Noe Display';
+  line-height: 1.1;
+  color: white;
+  text-align: center; }
+  @media screen and (min-width: 6.25em) {
+    h1 {
+      font-size: 78px; } }
+  @media screen and (min-width: 48.0625em) {
+    h1 {
+      font-size: 83px; } }
+
+h2 {
+  font-family: 'Noe Display';
+  font-size: 36px;
+  line-height: 1.4;
+  color: rgba(0, 0, 0, 0.8); }
+
+h2.small {
+  font-family: 'Noe Display';
+  font-size: 26px;
+  line-height: 1.4;
+  color: rgba(0, 0, 0, 0.8); }
+
+h4 {
+  font-family: 'Maison Neue Medium';
+  line-height: 1.4;
+  color: rgba(0, 0, 0, 0.8);
+  text-transform: uppercase;
+  margin-bottom: 2em;
+  letter-spacing: 2px; }
+  @media screen and (min-width: 6.25em) {
+    h4 {
+      font-size: 18px; } }
+  @media screen and (min-width: 48.0625em) {
+    h4 {
+      font-size: 16px; } }
+  h4.small {
+    font-size: 14px; }
+
+h5 {
+  font-family: 'Maison Neue Medium';
+  font-size: 16px;
+  line-height: 1.4;
+  color: rgba(0, 0, 0, 0.8); }
+
+h6 {
+  font-family: 'Maison Neue Medium';
+  font-size: 14px;
+  line-height: 1.4;
+  color: rgba(0, 0, 0, 0.8);
+  text-align: left; }
+
+p.body {
+  font-family: 'Maison Neue Medium';
+  font-size: 0.875rem;
+  line-height: 1.7;
+  color: rgba(0, 0, 0, 0.8); }
+
+a {
+  color: rgba(0, 0, 0, 0.8);
+  text-decoration: none;
+  transition: color 150ms ease; }
+  a:active, a:focus, a:hover {
+    color: rgba(0, 0, 0, 0.85); }
+
+hr {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.8);
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  margin: 1.5em 0; }
+
+img,
+picture {
+  margin: 0;
+  max-width: 100%; }
 
 /*# sourceMappingURL=style.css.map */
