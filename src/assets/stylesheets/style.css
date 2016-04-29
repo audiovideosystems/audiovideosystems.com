@@ -1276,8 +1276,13 @@ img.logo {
   display: block;
   position: absolute;
   z-index: 1000;
-  top: 0;
-  right: 1.875rem; }
+  top: 0; }
+  @media screen and (min-width: 6.25em) {
+    .nav-2 {
+      right: 5.625rem; } }
+  @media screen and (min-width: 992px) {
+    .nav-2 {
+      right: 1.875rem; } }
   .nav-2 li {
     font-size: 0.875em;
     display: inline;

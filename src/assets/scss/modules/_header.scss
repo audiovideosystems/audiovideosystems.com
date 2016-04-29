@@ -358,7 +358,12 @@ img.logo {
   position: absolute;
   z-index: 1000;
   top: 0;
-  right: rem(30);
+  @include media($s) {
+    right: rem(90);
+  }
+  @include media(992px){
+    right: rem(30);
+  }
   li {
     font-size: em(14);
     display: inline;
