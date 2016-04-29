@@ -11,7 +11,7 @@
   .cloud-services {
     .cloud-services__inner-wrapper {
       @include span-columns(13);
-      @include shift(1);
+      @include shift(1 of 13);
     }
     background-color: $cloud-peach;
     text-align: center;
@@ -20,24 +20,30 @@
   }
 
   .wiring {
+    .copy-wrapper {
+      @include vertical-align;
+    }
     .wiring__inner-wrapper {
       padding-top: 110px;
       padding-bottom: 55px;
       @include span-columns(13);
-      @include shift(1);
+      @include shift(1 of 13);
       .wiring__inner-wrapper_first{
         @include span-columns(5 of 13);
-        @include shift(1);
+        @include shift(1 of 13);
         text-align: center;
       }
       .wiring__inner-wrapper_last {
-        @include span-columns(5);
-        @include shift(1);
+        @include span-columns(5 of 13);
+        @include shift(1 of 13);
       }
     }
   }
 
   .wireless {
+    .copy-wrapper {
+      @include vertical-align;
+    }
     .wireless__inner-wrapper {
       padding-top: 110px;
       padding-bottom: 55px;
@@ -45,30 +51,33 @@
       @include shift(1);
       .wireless__inner-wrapper_first{
         @include span-columns(5 of 13);
-        @include shift(1);
+        @include shift(1 of 13);
       }
       .wireless__inner-wrapper_last {
-        @include span-columns(5);
-        @include shift(1);
+        @include span-columns(5 of 13);
+        @include shift(1 of 13);
         text-align: center;
       }
     }
   }
 
   .cloud {
+    .copy-wrapper {
+      @include vertical-align;
+    }
     .cloud__inner-wrapper {
       padding-top: 110px;
       padding-bottom: 110px;
       @include span-columns(13);
-      @include shift(1);
+      @include shift(1 of 13);
       .cloud__inner-wrapper_first{
         @include span-columns(5 of 13);
-        @include shift(1);
+        @include shift(1 of 13);
         text-align: center;
       }
       .cloud__inner-wrapper_last {
-        @include span-columns(5);
-        @include shift(1);
+        @include span-columns(5 of 13);
+        @include shift(1 of 13);
       }
     }
   }

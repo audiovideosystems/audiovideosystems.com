@@ -1660,9 +1660,14 @@ img.logo {
     display: block;
     margin-right: 1.877269384%;
     width: 86.4163640821%;
-    margin-left: 6.7918179589%; }
+    margin-left: 7.8594118499%; }
     .cloud .cloud-services .cloud-services__inner-wrapper:last-child {
       margin-right: 0; }
+
+.cloud .wiring .copy-wrapper {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%); }
 
 .cloud .wiring .wiring__inner-wrapper {
   padding-top: 110px;
@@ -1671,7 +1676,7 @@ img.logo {
   display: block;
   margin-right: 1.877269384%;
   width: 86.4163640821%;
-  margin-left: 6.7918179589%; }
+  margin-left: 7.8594118499%; }
   .cloud .wiring .wiring__inner-wrapper:last-child {
     margin-right: 0; }
   .cloud .wiring .wiring__inner-wrapper .wiring__inner-wrapper_first {
@@ -1686,11 +1691,16 @@ img.logo {
   .cloud .wiring .wiring__inner-wrapper .wiring__inner-wrapper_last {
     float: left;
     display: block;
-    margin-right: 1.877269384%;
-    width: 32.0818204106%;
-    margin-left: 6.7918179589%; }
+    margin-right: 2.1723540489%;
+    width: 37.1247052007%;
+    margin-left: 7.8594118499%; }
     .cloud .wiring .wiring__inner-wrapper .wiring__inner-wrapper_last:last-child {
       margin-right: 0; }
+
+.cloud .wireless .copy-wrapper {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%); }
 
 .cloud .wireless .wireless__inner-wrapper {
   padding-top: 110px;
@@ -1713,12 +1723,17 @@ img.logo {
   .cloud .wireless .wireless__inner-wrapper .wireless__inner-wrapper_last {
     float: left;
     display: block;
-    margin-right: 1.877269384%;
-    width: 32.0818204106%;
-    margin-left: 6.7918179589%;
+    margin-right: 2.1723540489%;
+    width: 37.1247052007%;
+    margin-left: 7.8594118499%;
     text-align: center; }
     .cloud .wireless .wireless__inner-wrapper .wireless__inner-wrapper_last:last-child {
       margin-right: 0; }
+
+.cloud .cloud .copy-wrapper {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%); }
 
 .cloud .cloud .cloud__inner-wrapper {
   padding-top: 110px;
@@ -1727,7 +1742,7 @@ img.logo {
   display: block;
   margin-right: 1.877269384%;
   width: 86.4163640821%;
-  margin-left: 6.7918179589%; }
+  margin-left: 7.8594118499%; }
   .cloud .cloud .cloud__inner-wrapper:last-child {
     margin-right: 0; }
   .cloud .cloud .cloud__inner-wrapper .cloud__inner-wrapper_first {
@@ -1742,9 +1757,9 @@ img.logo {
   .cloud .cloud .cloud__inner-wrapper .cloud__inner-wrapper_last {
     float: left;
     display: block;
-    margin-right: 1.877269384%;
-    width: 32.0818204106%;
-    margin-left: 6.7918179589%; }
+    margin-right: 2.1723540489%;
+    width: 37.1247052007%;
+    margin-left: 7.8594118499%; }
     .cloud .cloud .cloud__inner-wrapper .cloud__inner-wrapper_last:last-child {
       margin-right: 0; }
 
@@ -2558,6 +2573,9 @@ img.logo {
     .about .staff .staff__inner-wrapper h4 {
       margin-bottom: 52px; }
     .about .staff .staff__inner-wrapper .staff__details_a {
+      font-family: 'Maison Neue Medium';
+      line-height: 1.7;
+      color: rgba(0, 0, 0, 0.8);
       text-align: left;
       float: left;
       display: block;
@@ -2574,6 +2592,9 @@ img.logo {
           line-height: 1.7;
           margin-bottom: 1rem; }
     .about .staff .staff__inner-wrapper .staff__details_b {
+      font-family: 'Maison Neue Medium';
+      line-height: 1.7;
+      color: rgba(0, 0, 0, 0.8);
       text-align: left;
       float: left;
       display: block;

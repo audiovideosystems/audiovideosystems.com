@@ -21,6 +21,10 @@
 
   </body>
 
+  {% if page.class == 'cloud' %}
+    {% include scripts_cloud.html %}
+  {% endif %}
+
   {% if page.class == 'project' %}
     {% include scripts_project.html %}
   {% endif %}

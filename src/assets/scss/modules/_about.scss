@@ -63,6 +63,9 @@
         margin-bottom: 52px;
       }
       .staff__details_a {
+        font-family: 'Maison Neue Medium';
+        line-height: 1.7;
+        color: $text;
         text-align: left;
         @include span-columns(5 of 13);
         @include shift(1);
@@ -77,6 +80,9 @@
         }
       }
       .staff__details_b {
+        font-family: 'Maison Neue Medium';
+        line-height: 1.7;
+        color: $text;
         text-align: left;
         @include span-columns(5 of 13);
         @include shift(1);
