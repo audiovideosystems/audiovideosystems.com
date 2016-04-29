@@ -960,70 +960,145 @@ figure[data-type=quote] cite:before {
   padding: 1rem 0 0 0;
   padding-top: 5rem;
   background-color: #1c1c1c; }
-  .footer .footer__inner-wrapper {
+  @media screen and (min-width: 6.25em) {
+    .footer .footer__inner-wrapper {
+      float: left;
+      display: block;
+      margin-right: 1.877269384%;
+      width: 86.4163640821%;
+      margin-left: 6.7918179589%; }
+      .footer .footer__inner-wrapper:last-child {
+        margin-right: 0; } }
+  @media screen and (min-width: 48.0625em) {
+    .footer .footer__inner-wrapper {
+      float: left;
+      display: block;
+      margin-right: 1.877269384%;
+      width: 72.8327281643%;
+      margin-left: 13.5836359179%; }
+      .footer .footer__inner-wrapper:last-child {
+        margin-right: 0; } }
+  .footer .footer__inner-wrapper .footer__alpha, .footer .footer__inner-wrapper .footer__omega {
+    text-align: center; }
+    @media screen and (min-width: 6.25em) {
+      .footer .footer__inner-wrapper .footer__alpha, .footer .footer__inner-wrapper .footer__omega {
+        float: left;
+        display: block;
+        margin-right: 1.877269384%;
+        width: 86.4163640821%;
+        margin-left: 6.7918179589%; }
+        .footer .footer__inner-wrapper .footer__alpha:last-child, .footer .footer__inner-wrapper .footer__omega:last-child {
+          margin-right: 0; } }
+    @media screen and (min-width: 48.0625em) {
+      .footer .footer__inner-wrapper .footer__alpha, .footer .footer__inner-wrapper .footer__omega {
+        float: left;
+        display: block;
+        margin-right: 2.5775079849%;
+        width: 16.0729480124%; }
+        .footer .footer__inner-wrapper .footer__alpha:last-child, .footer .footer__inner-wrapper .footer__omega:last-child {
+          margin-right: 0; } }
+    .footer .footer__inner-wrapper .footer__alpha a, .footer .footer__inner-wrapper .footer__omega a {
+      font-family: "Maison Neue Medium";
+      font-size: 0.875rem;
+      letter-spacing: 2px;
+      line-height: 1.6;
+      display: block;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: #fff; }
+      @media screen and (min-width: 6.25em) {
+        .footer .footer__inner-wrapper .footer__alpha a, .footer .footer__inner-wrapper .footer__omega a {
+          margin-bottom: 36px; } }
+      @media screen and (min-width: 48.0625em) {
+        .footer .footer__inner-wrapper .footer__alpha a, .footer .footer__inner-wrapper .footer__omega a {
+          margin-bottom: 0; } }
+    .footer .footer__inner-wrapper .footer__alpha a.social, .footer .footer__inner-wrapper .footer__omega a.social {
+      display: inline-block;
+      padding-top: .5rem;
+      padding-left: 1rem; }
+      .footer .footer__inner-wrapper .footer__alpha a.social.a, .footer .footer__inner-wrapper .footer__omega a.social.a {
+        padding-left: 0; }
+  .footer .footer__inner-wrapper .footer__beta {
+    text-align: center; }
+    @media screen and (min-width: 6.25em) {
+      .footer .footer__inner-wrapper .footer__beta {
+        float: left;
+        display: block;
+        margin-right: 1.877269384%;
+        width: 86.4163640821%;
+        margin-left: 6.7918179589%; }
+        .footer .footer__inner-wrapper .footer__beta:last-child {
+          margin-right: 0; } }
+    @media screen and (min-width: 48.0625em) {
+      .footer .footer__inner-wrapper .footer__beta {
+        float: left;
+        display: block;
+        margin-right: 2.5775079849%;
+        width: 62.6990880055%; }
+        .footer .footer__inner-wrapper .footer__beta:last-child {
+          margin-right: 0; } }
+    .footer .footer__inner-wrapper .footer__beta p {
+      font-family: "Maison Neue Medium";
+      font-size: 0.875rem;
+      letter-spacing: 2px;
+      line-height: 1.6;
+      display: block;
+      text-transform: uppercase;
+      color: #fff;
+      margin-top: 0px; }
+    .footer .footer__inner-wrapper .footer__beta p.footer__address {
+      margin-top: 2rem;
+      margin-bottom: 4rem; }
+    .footer .footer__inner-wrapper .footer__beta .form-group .is-hidden {
+      display: none; }
+    .footer .footer__inner-wrapper .footer__beta .form-group input {
+      display: inline;
+      width: 50%;
+      font-family: "Maison Neue Medium";
+      font-size: 0.875rem;
+      text-transform: uppercase; }
+    .footer .footer__inner-wrapper .footer__beta .form-group button {
+      display: inline;
+      margin-left: .5rem;
+      border-radius: 0px;
+      color: rgba(0, 0, 0, 0.8);
+      font-weight: 300;
+      background-color: #d4effc;
+      font-family: "Maison Neue Medium";
+      font-size: 0.875rem;
+      line-height: 1;
+      text-transform: uppercase; }
+  .footer .footer__omega.mobile {
+    margin-bottom: 44px; }
+  .footer .footer__alpha.mobile {
+    margin-top: 80px;
+    margin-bottom: 80px; }
+    .footer .footer__alpha.mobile a {
+      margin-bottom: 0; }
+  .footer .footer__address.mobile {
     float: left;
     display: block;
     margin-right: 1.877269384%;
-    width: 72.8327281643%;
-    margin-left: 13.5836359179%; }
-    .footer .footer__inner-wrapper:last-child {
+    width: 86.4163640821%;
+    margin-left: 6.7918179589%;
+    font-family: "Maison Neue Medium";
+    text-align: center;
+    color: #fff;
+    margin-bottom: 80px; }
+    .footer .footer__address.mobile:last-child {
       margin-right: 0; }
-    .footer .footer__inner-wrapper .footer__alpha, .footer .footer__inner-wrapper .footer__omega {
-      float: left;
-      display: block;
-      margin-right: 2.5775079849%;
-      width: 16.0729480124%;
-      text-align: center; }
-      .footer .footer__inner-wrapper .footer__alpha:last-child, .footer .footer__inner-wrapper .footer__omega:last-child {
-        margin-right: 0; }
-      .footer .footer__inner-wrapper .footer__alpha a, .footer .footer__inner-wrapper .footer__omega a {
-        font-family: "Maison Neue Medium";
-        font-size: 0.875rem;
-        letter-spacing: 2px;
-        line-height: 1.6;
-        display: block;
-        text-transform: uppercase;
-        text-decoration: none;
-        color: #fff; }
-    .footer .footer__inner-wrapper .footer__beta {
-      float: left;
-      display: block;
-      margin-right: 2.5775079849%;
-      width: 62.6990880055%;
-      text-align: center; }
-      .footer .footer__inner-wrapper .footer__beta:last-child {
-        margin-right: 0; }
-      .footer .footer__inner-wrapper .footer__beta p {
-        font-family: "Maison Neue Medium";
-        font-size: 0.875rem;
-        letter-spacing: 2px;
-        line-height: 1.6;
-        display: block;
-        text-transform: uppercase;
-        color: #fff;
-        margin-top: 0px; }
-      .footer .footer__inner-wrapper .footer__beta p.footer__address {
-        margin-top: 2rem;
-        margin-bottom: 4rem; }
-      .footer .footer__inner-wrapper .footer__beta .form-group .is-hidden {
-        display: none; }
-      .footer .footer__inner-wrapper .footer__beta .form-group input {
-        display: inline;
-        width: 50%;
-        font-family: "Maison Neue Medium";
-        font-size: 0.875rem;
-        text-transform: uppercase; }
-      .footer .footer__inner-wrapper .footer__beta .form-group button {
-        display: inline;
-        margin-left: .5rem;
-        border-radius: 0px;
-        color: rgba(0, 0, 0, 0.8);
-        font-weight: 300;
-        background-color: #d4effc;
-        font-family: "Maison Neue Medium";
-        font-size: 0.875rem;
-        line-height: 1;
-        text-transform: uppercase; }
+  @media screen and (min-width: 6.25em) {
+    .footer .mobile {
+      display: block !important; } }
+  @media screen and (min-width: 48.0625em) {
+    .footer .mobile {
+      display: none !important; } }
+  @media screen and (min-width: 6.25em) {
+    .footer .desktop {
+      display: none !important; } }
+  @media screen and (min-width: 48.0625em) {
+    .footer .desktop {
+      display: block !important; } }
 
 header {
   transition: all 0.2s ease-in; }

@@ -4,10 +4,23 @@
   padding-top: 5rem;
   background-color: $footer-bg;
   .footer__inner-wrapper {
-    @include span-columns(11);
-    @include shift(2);
+    @include media($s){
+      @include span-columns(13);
+      @include shift(1);
+    }
+    @include media($l){
+      @include span-columns(11);
+      @include shift(2);
+    }
     .footer__alpha, .footer__omega {
-      @include span-columns(2 of 11);
+      @include media($s){
+        @include span-columns(13);
+        @include shift(1);
+      }
+      @include media($l){
+        @include span-columns(2 of 11);
+      }
+
       text-align: center;
       a {
         font-family: $heading-font-family;
@@ -18,10 +31,30 @@
         text-transform: uppercase;
         text-decoration: none;
         color: #fff;
+        @include media($s){
+          margin-bottom: 36px;
+        }
+        @include media($l){
+          margin-bottom: 0;
+        }
+      }
+      a.social {
+        display: inline-block;
+        padding-top: .5rem;
+        padding-left: 1rem;
+        &.a {
+          padding-left: 0;
+        }
       }
     }
     .footer__beta {
-      @include span-columns(7 of 11);
+      @include media($s){
+        @include span-columns(13);
+        @include shift(1);
+      }
+      @include media($l){
+        @include span-columns(7 of 11);
+      }
       text-align: center;
       p {
         font-family: $heading-font-family;
@@ -63,4 +96,43 @@
       }
     }
   }
+
+  .footer__omega.mobile {
+    margin-bottom: 44px;
+  }
+  .footer__alpha.mobile {
+    margin-top: 80px;
+    margin-bottom: 80px;
+    a {
+      margin-bottom: 0;
+    }
+  }
+
+  .footer__address.mobile {
+    @include span-columns(13);
+    @include shift(1);
+    font-family: $heading-font-family;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 80px;
+  }
+
+  .mobile {
+    @include media($s){
+      display: block !important;
+    }
+    @include media($l){
+      display: none !important;
+    }
+  }
+  .desktop {
+    @include media($s){
+      display: none !important;
+    }
+    @include media($l){
+      display: block !important;
+    }
+  }
+
+
 }
