@@ -167,7 +167,12 @@ header {
     display: block;
     line-height: $centered-navigation-height;
     overflow: hidden;
-    padding-right: $centered-navigation-submenu-padding;
+    @include media($s){
+      padding-right: 0px;
+    }
+    @include media($horizontal-bar-mode){
+      padding-right: $centered-navigation-submenu-padding;
+    }
     text-align: center;
     text-transform: uppercase;
     width: 100%;

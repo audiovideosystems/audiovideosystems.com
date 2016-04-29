@@ -994,7 +994,8 @@ figure[data-type=quote] cite:before {
         float: left;
         display: block;
         margin-right: 2.5775079849%;
-        width: 16.0729480124%; }
+        width: 16.0729480124%;
+        margin-left: 0%; }
         .footer .footer__inner-wrapper .footer__alpha:last-child, .footer .footer__inner-wrapper .footer__omega:last-child {
           margin-right: 0; } }
     .footer .footer__inner-wrapper .footer__alpha a, .footer .footer__inner-wrapper .footer__omega a {
@@ -1034,7 +1035,8 @@ figure[data-type=quote] cite:before {
         float: left;
         display: block;
         margin-right: 2.5775079849%;
-        width: 62.6990880055%; }
+        width: 62.6990880055%;
+        margin-left: 0%; }
         .footer .footer__inner-wrapper .footer__beta:last-child {
           margin-right: 0; } }
     .footer .footer__inner-wrapper .footer__beta p {
@@ -1070,6 +1072,8 @@ figure[data-type=quote] cite:before {
       text-transform: uppercase; }
   .footer .footer__omega.mobile {
     margin-bottom: 44px; }
+  .footer .footer__omega.desktop {
+    margin-right: 0; }
   .footer .footer__alpha.mobile {
     margin-top: 80px;
     margin-bottom: 80px; }
@@ -1223,12 +1227,17 @@ header {
     display: block;
     line-height: 60px;
     overflow: hidden;
-    padding-right: 0.9375rem;
     text-align: center;
     text-transform: uppercase;
     width: 100%;
     z-index: 9999;
     letter-spacing: 2px; }
+    @media screen and (min-width: 6.25em) {
+      .centered-navigation ul li.nav-link {
+        padding-right: 0px; } }
+    @media screen and (min-width: 62em) {
+      .centered-navigation ul li.nav-link {
+        padding-right: 0.9375rem; } }
     .centered-navigation ul li.nav-link a {
       color: rgba(0, 0, 0, 0.8);
       display: inline-block;
@@ -1482,7 +1491,8 @@ img.logo {
         float: left;
         display: block;
         margin-right: 1.877269384%;
-        width: 18.4981844928%; }
+        width: 18.4981844928%;
+        margin-left: 0%; }
         .home .brands .brand:last-child {
           margin-right: 0; }
         .home .brands .brand:nth-child(5n) {

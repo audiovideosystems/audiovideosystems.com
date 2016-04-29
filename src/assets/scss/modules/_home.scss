@@ -106,6 +106,7 @@
       @include media($l){
         @include span-columns(3);
         @include omega(5n);
+        @include shift(0);
       }
       text-align: center;
       h5 {
