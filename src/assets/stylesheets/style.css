@@ -1830,6 +1830,9 @@ img.logo {
     padding-bottom: 110px; }
     .automation .video-distribution .video-distribution__details:last-child {
       margin-right: 0; }
+    .automation .video-distribution .video-distribution__details.middle {
+      padding-left: 10px;
+      padding-right: 10px; }
 
 .automation .integration {
   text-align: center; }
@@ -1854,6 +1857,122 @@ img.logo {
   padding-bottom: 110px; }
   .automation .triple .triple__item:last-child {
     margin-right: 0; }
+  .automation .triple .triple__item.middle {
+    padding-left: 10px;
+    padding-right: 10px; }
+
+.automation .finishes {
+  background-color: #f4f5f5;
+  text-align: center; }
+  @media screen and (min-width: 48.0625em) {
+    .automation .finishes {
+      padding-top: 110px;
+      padding-bottom: 110px; } }
+  .automation .finishes .finishes__inner-wrapper {
+    float: left;
+    display: block;
+    margin-right: 1.877269384%;
+    width: 45.6654563285%;
+    margin-left: 27.1672718357%; }
+    .automation .finishes .finishes__inner-wrapper:last-child {
+      margin-right: 0; }
+
+.automation .meljac .copy-wrapper {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%); }
+
+.automation .meljac .meljac__inner-wrapper {
+  padding-top: 110px;
+  padding-bottom: 55px; }
+  .automation .meljac .meljac__inner-wrapper .meljac__inner-wrapper_first {
+    float: left;
+    display: block;
+    margin-right: 1.877269384%;
+    width: 38.8736383696%;
+    margin-left: 6.7918179589%;
+    text-align: center; }
+    .automation .meljac .meljac__inner-wrapper .meljac__inner-wrapper_first:last-child {
+      margin-right: 0; }
+  .automation .meljac .meljac__inner-wrapper .meljac__inner-wrapper_last {
+    float: left;
+    display: block;
+    margin-right: 1.877269384%;
+    width: 38.8736383696%;
+    margin-left: 6.7918179589%; }
+    .automation .meljac .meljac__inner-wrapper .meljac__inner-wrapper_last:last-child {
+      margin-right: 0; }
+
+.automation .trufig .copy-wrapper {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center; }
+
+.automation .trufig .trufig__inner-wrapper {
+  padding-top: 110px;
+  padding-bottom: 55px; }
+  .automation .trufig .trufig__inner-wrapper .trufig__inner-wrapper_first {
+    float: left;
+    display: block;
+    margin-right: 1.877269384%;
+    width: 38.8736383696%;
+    margin-left: 6.7918179589%;
+    text-align: center; }
+    .automation .trufig .trufig__inner-wrapper .trufig__inner-wrapper_first:last-child {
+      margin-right: 0; }
+  .automation .trufig .trufig__inner-wrapper .trufig__inner-wrapper_last {
+    float: left;
+    display: block;
+    margin-right: 1.877269384%;
+    width: 38.8736383696%;
+    margin-left: 6.7918179589%; }
+    .automation .trufig .trufig__inner-wrapper .trufig__inner-wrapper_last:last-child {
+      margin-right: 0; }
+
+.automation .basalte .copy-wrapper {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%); }
+
+.automation .basalte .basalte__inner-wrapper {
+  padding-top: 110px;
+  padding-bottom: 55px; }
+  .automation .basalte .basalte__inner-wrapper .basalte__inner-wrapper_first {
+    float: left;
+    display: block;
+    margin-right: 1.877269384%;
+    width: 38.8736383696%;
+    margin-left: 6.7918179589%;
+    text-align: center; }
+    .automation .basalte .basalte__inner-wrapper .basalte__inner-wrapper_first:last-child {
+      margin-right: 0; }
+  .automation .basalte .basalte__inner-wrapper .basalte__inner-wrapper_last {
+    float: left;
+    display: block;
+    margin-right: 1.877269384%;
+    width: 38.8736383696%;
+    margin-left: 6.7918179589%; }
+    .automation .basalte .basalte__inner-wrapper .basalte__inner-wrapper_last:last-child {
+      margin-right: 0; }
+
+.automation .energy {
+  text-align: center; }
+  @media screen and (min-width: 48.0625em) {
+    .automation .energy {
+      padding-top: 6rem;
+      margin-bottom: 6rem; } }
+  .automation .energy .energy__inner-wrapper {
+    float: left;
+    display: block;
+    margin-right: 1.877269384%;
+    width: 45.6654563285%;
+    margin-left: 27.1672718357%; }
+    .automation .energy .energy__inner-wrapper:last-child {
+      margin-right: 0; }
+
+.automation .featured img {
+  padding-bottom: 110px; }
 
 .theater .centered-navigation ul li.nav-link a {
   color: rgba(0, 0, 0, 0.8); }

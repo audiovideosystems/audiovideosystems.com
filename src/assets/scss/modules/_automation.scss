@@ -59,6 +59,10 @@
       @include span-columns(5);
       padding-top: 110px;
       padding-bottom: 110px;
+      &.middle {
+        padding-left: 10px;
+        padding-right: 10px;
+      }
     }
   }
 
@@ -79,6 +83,108 @@
       @include span-columns(5);
       text-align: center;
       // padding-top: 110px;
+      padding-bottom: 110px;
+      &.middle {
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+    }
+  }
+
+  .finishes {
+    background-color: $gray-light;
+    text-align: center;
+    @include media($l){
+      padding-top: 110px;
+      padding-bottom: 110px;
+    }
+    .finishes__inner-wrapper {
+      @include span-columns(7);
+      @include shift(4);
+    }
+  }
+
+  .meljac {
+    .copy-wrapper {
+      @include vertical-align;
+    }
+    .meljac__inner-wrapper {
+      padding-top: 110px;
+      padding-bottom: 55px;
+      .meljac__inner-wrapper_first{
+        @include span-columns(6);
+        @include shift(1);
+        text-align: center;
+      }
+      .meljac__inner-wrapper_last {
+        @include span-columns(6);
+        @include shift(1);
+        // img {
+        //   max-width: 100%;
+        // }
+      }
+    }
+  }
+
+  .trufig {
+    .copy-wrapper {
+      @include vertical-align;
+      text-align: center;
+    }
+    .trufig__inner-wrapper {
+      padding-top: 110px;
+      padding-bottom: 55px;
+      .trufig__inner-wrapper_first{
+        @include span-columns(6);
+        @include shift(1);
+        text-align: center;
+      }
+      .trufig__inner-wrapper_last {
+        @include span-columns(6);
+        @include shift(1);
+        // img {
+        //   max-width: 100%;
+        // }
+      }
+    }
+  }
+
+  .basalte {
+    .copy-wrapper {
+      @include vertical-align;
+    }
+    .basalte__inner-wrapper {
+      padding-top: 110px;
+      padding-bottom: 55px;
+      .basalte__inner-wrapper_first{
+        @include span-columns(6);
+        @include shift(1);
+        text-align: center;
+      }
+      .basalte__inner-wrapper_last {
+        @include span-columns(6);
+        @include shift(1);
+        // img {
+        //   max-width: 100%;
+        // }
+      }
+    }
+  }
+
+  .energy {
+    text-align: center;
+    @include media($l){
+      padding-top: 6rem;
+      margin-bottom: 6rem;
+    }
+    .energy__inner-wrapper {
+      @include span-columns(7);
+      @include shift(4);
+    }
+  }
+
+  .featured {
+    img {
       padding-bottom: 110px;
     }
   }

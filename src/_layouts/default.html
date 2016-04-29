@@ -25,6 +25,10 @@
     {% include scripts_cloud.html %}
   {% endif %}
 
+  {% if page.class == 'automation' %}
+    {% include scripts_automation.html %}
+  {% endif %}
+
   {% if page.class == 'project' %}
     {% include scripts_project.html %}
   {% endif %}
