@@ -1169,20 +1169,20 @@ header {
       top: 22px;
       left: 9px;
       right: 9px;
-      height: 4px;
+      height: 2px;
       background: rgba(0, 0, 0, 0.8); }
     .centered-navigation .centered-navigation-mobile-menu span::before, .centered-navigation .centered-navigation-mobile-menu span::after {
       position: absolute;
       display: block;
       left: 0;
       width: 100%;
-      height: 4px;
+      height: 2px;
       background-color: rgba(0, 0, 0, 0.8);
       content: ""; }
     .centered-navigation .centered-navigation-mobile-menu span::before {
-      top: -10px; }
+      top: -9px; }
     .centered-navigation .centered-navigation-mobile-menu span::after {
-      bottom: -10px; }
+      bottom: -9px; }
     @media screen and (min-width: 62em) {
       .centered-navigation .centered-navigation-mobile-menu {
         display: none; } }

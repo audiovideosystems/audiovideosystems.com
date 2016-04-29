@@ -82,7 +82,7 @@ header {
       top: 22px;
       left: 9px;
       right: 9px;
-      height: 4px;
+      height: 2px;
       background: $text;
     }
 
@@ -91,17 +91,17 @@ header {
       display: block;
       left: 0;
       width: 100%;
-      height: 4px;
+      height: 2px;
       background-color: $text;
       content: "";
     }
 
     span::before {
-      top: -10px;
+      top: -9px;
     }
 
     span::after {
-      bottom: -10px;
+      bottom: -9px;
     }
 
 
