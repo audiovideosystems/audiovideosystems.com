@@ -1007,6 +1007,8 @@ figure[data-type=quote] cite:before {
       text-transform: uppercase;
       text-decoration: none;
       color: #fff; }
+      .footer .footer__inner-wrapper .footer__alpha a:hover, .footer .footer__inner-wrapper .footer__omega a:hover {
+        color: rgba(255, 255, 255, 0.8); }
       @media screen and (min-width: 6.25em) {
         .footer .footer__inner-wrapper .footer__alpha a, .footer .footer__inner-wrapper .footer__omega a {
           margin-bottom: 36px; } }
@@ -1249,7 +1251,7 @@ header {
       outline: none;
       text-decoration: none; }
       .centered-navigation ul li.nav-link a:focus, .centered-navigation ul li.nav-link a:hover {
-        color: rgba(0, 0, 0, 0.8); }
+        color: rgba(0, 0, 0, 0.6) !important; }
     @media screen and (min-width: 62em) {
       .centered-navigation ul li.nav-link {
         background: transparent;
@@ -1378,10 +1380,12 @@ img.logo {
     font-family: "Maison Neue Medium";
     letter-spacing: 2px; }
     .nav-2 li a {
-      text-decoration: underline;
       line-height: 3.75rem;
-      padding-left: 1.875rem;
-      color: rgba(0, 0, 0, 0.8); }
+      margin-left: 1.875rem;
+      color: rgba(0, 0, 0, 0.8);
+      border-bottom: 1px solid rgba(0, 0, 0, 0.8); }
+      .nav-2 li a:hover {
+        color: rgba(0, 0, 0, 0.6); }
 
 .home .centered-navigation.bg {
   background-color: #FFF; }
@@ -1394,10 +1398,16 @@ img.logo {
   background-color: #FFF; }
 
 .home .nav-2 li a {
-  color: white; }
+  color: white;
+  border-bottom: 1px solid #fff; }
+  .home .nav-2 li a:hover {
+    color: rgba(255, 255, 255, 0.8) !important; }
 
 .home li.nav-link a {
   color: white !important; }
+
+.home .centered-navigation ul li.nav-link a:hover {
+  color: rgba(255, 255, 255, 0.8) !important; }
 
 .home .mission {
   background-color: #cddac9;
@@ -1471,7 +1481,9 @@ img.logo {
   vertical-align: bottom; }
 
 .home .absolute h6 a {
-  text-decoration: underline; }
+  border-bottom: 1px solid rgba(0, 0, 0, 0.8); }
+  .home .absolute h6 a:hover {
+    color: rgba(0, 0, 0, 0.6); }
 
 .home .brands {
   background-color: #f4f5f5;
@@ -1984,7 +1996,7 @@ img.logo {
     background-size: cover; } }
 
 .theater .home-theater {
-  background-color: #bac8c8;
+  background-color: #f0f5df;
   text-align: center;
   padding-top: 6.25em;
   padding-bottom: 6.25em; }
@@ -2019,6 +2031,9 @@ img.logo {
     padding-bottom: 110px; }
     .theater .projectors .projectors__details:last-child {
       margin-right: 0; }
+    .theater .projectors .projectors__details.middle {
+      padding-left: 10px;
+      padding-right: 10px; }
 
 .theater .featured img {
   padding-bottom: 110px; }
@@ -2061,6 +2076,9 @@ img.logo {
     padding-bottom: 110px; }
     .theater .streamed .streamed__details:last-child {
       margin-right: 0; }
+    .theater .streamed .streamed__details.middle {
+      padding-left: 10px;
+      padding-right: 10px; }
 
 .theater .surround {
   text-align: center; }
@@ -2078,7 +2096,7 @@ img.logo {
 
 .theater .exceptional {
   text-align: center;
-  background-color: #f0f5df;
+  background-color: #bac8c8;
   padding-top: 110px;
   padding-bottom: 110px; }
   .theater .exceptional .exceptional__inner-wrapper {
@@ -2118,7 +2136,7 @@ img.logo {
       margin-bottom: 0; }
     .lutron .partnership .partnership__inner-wrapper img {
       width: 156px;
-      margin-bottom: 52px; }
+      margin-bottom: 32px; }
 
 .lutron .integration {
   text-align: center; }
@@ -2307,7 +2325,9 @@ img.logo {
       margin-bottom: -4px; }
 
 .project .flickity-prev-next-button {
-  background-color: rgba(0, 0, 0, 0.3); }
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 48px;
+  height: 48px; }
   .project .flickity-prev-next-button path {
     fill: #fff; }
   .project .flickity-prev-next-button.previous {
@@ -2322,6 +2342,8 @@ img.logo {
     width: 50%;
     background-color: #FFF;
     padding: 80px 9% 110px; }
+    .project .project-info .description h2 {
+      margin-bottom: .7rem; }
     .project .project-info .description p.body {
       margin: 0; }
   .project .project-info .stats {
@@ -2389,6 +2411,8 @@ img.logo {
       letter-spacing: 2px;
       padding: 12px;
       margin-bottom: 25px; }
+      .contact .form .form__wrapper input:focus {
+        box-shadow: none; }
     .contact .form .form__wrapper textarea {
       border: 2px solid rgba(0, 0, 0, 0.8);
       border-radius: 0;
@@ -2400,6 +2424,8 @@ img.logo {
       padding: 12px;
       min-height: 140px;
       margin-bottom: 25px; }
+      .contact .form .form__wrapper textarea:focus {
+        box-shadow: none; }
     .contact .form .form__wrapper button {
       border: 2px solid rgba(0, 0, 0, 0.8);
       border-radius: 0;
@@ -2409,7 +2435,8 @@ img.logo {
       letter-spacing: 2px;
       background-color: rgba(0, 0, 0, 0.8);
       color: #fff;
-      padding: 12px 1.5rem; }
+      padding: 12px 1.5rem;
+      font-weight: normal; }
     .contact .form .form__wrapper .alert {
       padding: 1rem;
       margin-top: 2rem;
@@ -2429,8 +2456,8 @@ img.logo {
     float: left;
     display: block;
     margin-right: 1.877269384%;
-    width: 59.2490922464%;
-    margin-left: 20.3754538768%; }
+    width: 86.4163640821%;
+    margin-left: 6.7918179589%; }
     .support .contact .contact__inner-wrapper:last-child {
       margin-right: 0; }
 
@@ -2476,6 +2503,8 @@ img.logo {
       color: rgba(0, 0, 0, 0.8);
       padding: 12px;
       margin-bottom: 25px; }
+      .support .form .form__wrapper input:focus {
+        box-shadow: none; }
     .support .form .form__wrapper input#room, .support .form .form__wrapper input#device {
       float: left;
       display: block;
@@ -2514,6 +2543,8 @@ img.logo {
       padding: 12px;
       min-height: 140px;
       margin-bottom: 25px; }
+      .support .form .form__wrapper textarea:focus {
+        box-shadow: none; }
     .support .form .form__wrapper button {
       clear: both;
       border: 2px solid rgba(0, 0, 0, 0.8);
@@ -2525,7 +2556,8 @@ img.logo {
       background-color: rgba(0, 0, 0, 0.8);
       color: #fff;
       padding: 12px 1.5rem;
-      margin-top: 25px; }
+      margin-top: 25px;
+      font-weight: normal; }
     .support .form .form__wrapper .alert {
       padding: 1rem;
       margin-top: 2rem;
@@ -2707,6 +2739,7 @@ img.logo {
         margin-left: 0;
         margin-bottom: 110px; }
         .about .staff .staff__inner-wrapper .staff__details_a ul li {
+          font-size: 14px;
           list-style-type: disc;
           line-height: 1.7;
           margin-bottom: 1rem; }
@@ -2726,6 +2759,7 @@ img.logo {
         margin-left: 0;
         margin-bottom: 110px; }
         .about .staff .staff__inner-wrapper .staff__details_b ul li {
+          font-size: 14px;
           list-style-type: disc;
           line-height: 1.7;
           margin-bottom: 1rem; }
@@ -2798,7 +2832,7 @@ h4 {
   line-height: 1.4;
   color: rgba(0, 0, 0, 0.8);
   text-transform: uppercase;
-  margin-bottom: 2em;
+  margin-bottom: 25px;
   letter-spacing: 2px; }
   @media screen and (min-width: 6.25em) {
     h4 {

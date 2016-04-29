@@ -187,7 +187,7 @@ header {
 
       &:focus,
       &:hover {
-        color: $centered-navigation-color-hover;
+        color: $hovertext !important;
       }
     }
 
@@ -376,10 +376,13 @@ img.logo {
     letter-spacing: 2px;
     a {
       // display: inline-block;
-      text-decoration: underline;
       line-height: rem(60);
-      padding-left: rem(30);
+      margin-left: rem(30);
       color: $text;
+      border-bottom: 1px solid $text;
+      &:hover {
+        color: $hovertext;
+      }
     }
   }
 }

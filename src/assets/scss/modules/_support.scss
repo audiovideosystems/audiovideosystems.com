@@ -6,8 +6,8 @@
 
   .contact {
     .contact__inner-wrapper {
-      @include span-columns(9);
-      @include shift(3);
+      @include span-columns(13);
+      @include shift(1);
     }
     background-color: $support-plum;
     text-align: center;
@@ -47,6 +47,9 @@
         color: $text;
         padding: 12px;
         margin-bottom: 25px;
+        &:focus {
+          box-shadow: none;
+        }
       }
       input#room, input#device {
         @include span-columns(3 of 6);
@@ -81,6 +84,9 @@
         padding: 12px;
         min-height: 140px;
         margin-bottom: 25px;
+        &:focus {
+          box-shadow: none;
+        }
       }
       button {
         clear: both;
@@ -94,6 +100,7 @@
         color: #fff;
         padding: 12px 1.5rem;
         margin-top: 25px;
+        font-weight: normal;
       }
       .alert {
         padding: 1rem;

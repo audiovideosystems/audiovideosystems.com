@@ -29,10 +29,18 @@
 
   .nav-2 li a {
     color: white;
+    border-bottom: 1px solid #fff;
+    &:hover {
+      color: rgba(255,255,255,.8) !important;
+    }
   }
 
   li.nav-link a {
     color: white !important;
+  }
+
+  .centered-navigation ul li.nav-link a:hover {
+    color: rgba(255,255,255,.8) !important;
   }
 
   .mission {
@@ -85,7 +93,10 @@
       }
     }
     h6 a {
-      text-decoration: underline;
+      border-bottom: 1px solid $text;
+      &:hover {
+        color: $hovertext;
+      }
     }
   }
 

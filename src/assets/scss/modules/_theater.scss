@@ -17,7 +17,7 @@
       @include span-columns(13);
       @include shift(1);
     }
-    background-color: $theater-green;
+    background-color: $theater-darkgreen;
     text-align: center;
     padding-top: em(100);
     padding-bottom: em(100);
@@ -36,6 +36,10 @@
       @include span-columns(5);
       padding-top: 80px;
       padding-bottom: 110px;
+      &.middle {
+        padding-left: 10px;
+        padding-right: 10px;
+      }
     }
   }
 
@@ -72,6 +76,10 @@
       @include span-columns(5);
       padding-top: 80px;
       padding-bottom: 110px;
+      &.middle {
+        padding-left: 10px;
+        padding-right: 10px;
+      }
     }
   }
 
@@ -89,7 +97,7 @@
 
   .exceptional {
     text-align: center;
-    background-color: $theater-darkgreen;
+    background-color: $theater-green;
     padding-top: 110px;
     padding-bottom: 110px;
     .exceptional__inner-wrapper {

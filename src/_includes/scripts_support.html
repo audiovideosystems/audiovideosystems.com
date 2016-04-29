@@ -1,4 +1,12 @@
 <script>
+
+  $('input,textarea').focus(function(){
+     $(this).data('placeholder',$(this).attr('placeholder'))
+            .attr('placeholder','');
+  }).blur(function(){
+     $(this).attr('placeholder',$(this).data('placeholder'));
+  });
+
   // custom select http://codepen.io/wallaceerick/pen/ctsCz
   $('select').each(function(){
       var $this = $(this), numberOfOptions = $(this).children('option').length;

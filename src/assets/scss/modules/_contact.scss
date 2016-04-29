@@ -44,6 +44,9 @@
         letter-spacing: 2px;
         padding: 12px;
         margin-bottom: 25px;
+        &:focus {
+          box-shadow: none;
+        }
       }
       textarea {
         border: 2px solid $text;
@@ -56,6 +59,9 @@
         padding: 12px;
         min-height: 140px;
         margin-bottom: 25px;
+        &:focus {
+          box-shadow: none;
+        }
       }
       button {
         border: 2px solid $text;
@@ -67,6 +73,7 @@
         background-color: $text;
         color: #fff;
         padding: 12px 1.5rem;
+        font-weight: normal;
       }
       .alert {
         padding: 1rem;
