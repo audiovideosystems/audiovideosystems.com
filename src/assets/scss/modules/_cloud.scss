@@ -8,6 +8,15 @@
     }
   }
 
+  // .split img {
+  //   @include media($s){
+  //     margin-top: 80px;
+  //   }
+  //   @include media($l){
+  //     margin-top: 0px;
+  //   }
+  // }
+
   .cloud-services {
     .cloud-services__inner-wrapper {
       @include span-columns(13);
@@ -21,42 +30,77 @@
 
   .wiring {
     .copy-wrapper {
-      @include vertical-align;
+      @include media($l){
+        @include vertical-align;
+      }
     }
     .wiring__inner-wrapper {
-      padding-top: 110px;
-      padding-bottom: 55px;
-      @include span-columns(13);
-      @include shift(1 of 13);
-      .wiring__inner-wrapper_first{
-        @include span-columns(5 of 13);
+      @include media($s){
+       @include span-columns(13);
+       @include shift(1 of 13);
+       padding-top: 110px;
+       padding-bottom: 110px;
+      }
+      @include media($l){
+        @include span-columns(13);
         @include shift(1 of 13);
+        padding-top: 110px;
+        padding-bottom: 55px;
+      }
+
+      .wiring__inner-wrapper_first{
+        @include media($s){
+          padding-bottom: 80px;
+        }
+        @include media($l){
+          @include span-columns(5 of 13);
+          @include shift(1 of 13);
+        }
         text-align: center;
       }
       .wiring__inner-wrapper_last {
-        @include span-columns(5 of 13);
-        @include shift(1 of 13);
+        @include media($l){
+          @include span-columns(5 of 13);
+          @include shift(1 of 13);
+        }
       }
     }
   }
 
   .wireless {
     .copy-wrapper {
-      @include vertical-align;
+      @include media($l){
+        @include vertical-align;
+      }
     }
     .wireless__inner-wrapper {
-      padding-top: 110px;
-      padding-bottom: 55px;
-      @include span-columns(13);
-      @include shift(1);
-      .wireless__inner-wrapper_first{
-        @include span-columns(5 of 13);
+      @include media($s){
+       @include span-columns(13);
+       @include shift(1 of 13);
+       // padding-top: 110px;
+       padding-bottom: 110px;
+      }
+      @include media($l){
+        @include span-columns(13);
         @include shift(1 of 13);
+        padding-top: 110px;
+        padding-bottom: 55px;
+      }
+      .wireless__inner-wrapper_first{
+        @include media($s){
+          padding-bottom: 80px;
+        }
+        @include media($l){
+          @include span-columns(5 of 13);
+          @include shift(1 of 13);
+        }
+        text-align: center;
       }
       .wireless__inner-wrapper_last {
-        @include span-columns(5 of 13);
-        @include shift(1 of 13);
-        text-align: center;
+        @include media($l){
+          @include span-columns(5 of 13);
+          @include shift(1 of 13);
+        }
       }
     }
   }
@@ -64,21 +108,38 @@
   .cloud {
     // padding-bottom: 110px;
     .copy-wrapper {
-      @include vertical-align;
+      @include media($l){
+        @include vertical-align;
+      }
     }
     .cloud__inner-wrapper {
-      padding-top: 110px;
-      padding-bottom: 110px;
-      @include span-columns(13);
-      @include shift(1 of 13);
-      .cloud__inner-wrapper_first{
-        @include span-columns(5 of 13);
+      @include media($s){
+       @include span-columns(13);
+       @include shift(1 of 13);
+       // padding-top: 110px;
+       padding-bottom: 110px;
+      }
+      @include media($l){
+        @include span-columns(13);
         @include shift(1 of 13);
+        padding-top: 110px;
+        padding-bottom: 55px;
+      }
+      .cloud__inner-wrapper_first{
+        @include media($s){
+          padding-bottom: 80px;
+        }
+        @include media($l){
+          @include span-columns(5 of 13);
+          @include shift(1 of 13);
+        }
         text-align: center;
       }
       .cloud__inner-wrapper_last {
-        @include span-columns(5 of 13);
-        @include shift(1 of 13);
+        @include media($l){
+          @include span-columns(5 of 13);
+          @include shift(1 of 13);
+        }
       }
     }
   }

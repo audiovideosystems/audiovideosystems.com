@@ -188,5 +188,20 @@ $visual-grid-opacity: 0.2;
     max-width: 100%;
   }
 
-
+  .mobile {
+    @include media($s){
+      display: block !important;
+    }
+    @include media($l){
+      display: none !important;
+    }
+  }
+  .desktop {
+    @include media($s){
+      display: none !important;
+    }
+    @include media($l){
+      display: block !important;
+    }
+  }
 

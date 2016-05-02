@@ -1695,30 +1695,52 @@ img.logo {
     .cloud .cloud-services .cloud-services__inner-wrapper:last-child {
       margin-right: 0; }
 
-.cloud .wiring .copy-wrapper {
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%); }
+@media screen and (min-width: 48.0625em) {
+  .cloud .wiring .copy-wrapper {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%); } }
 
-.cloud .wiring .wiring__inner-wrapper {
-  padding-top: 110px;
-  padding-bottom: 55px;
-  float: left;
-  display: block;
-  margin-right: 1.877269384%;
-  width: 86.4163640821%;
-  margin-left: 7.8594118499%; }
-  .cloud .wiring .wiring__inner-wrapper:last-child {
-    margin-right: 0; }
-  .cloud .wiring .wiring__inner-wrapper .wiring__inner-wrapper_first {
+@media screen and (min-width: 6.25em) {
+  .cloud .wiring .wiring__inner-wrapper {
     float: left;
     display: block;
-    margin-right: 2.1723540489%;
-    width: 37.1247052007%;
+    margin-right: 1.877269384%;
+    width: 86.4163640821%;
     margin-left: 7.8594118499%;
-    text-align: center; }
-    .cloud .wiring .wiring__inner-wrapper .wiring__inner-wrapper_first:last-child {
-      margin-right: 0; }
+    padding-top: 110px;
+    padding-bottom: 110px; }
+    .cloud .wiring .wiring__inner-wrapper:last-child {
+      margin-right: 0; } }
+
+@media screen and (min-width: 48.0625em) {
+  .cloud .wiring .wiring__inner-wrapper {
+    float: left;
+    display: block;
+    margin-right: 1.877269384%;
+    width: 86.4163640821%;
+    margin-left: 7.8594118499%;
+    padding-top: 110px;
+    padding-bottom: 55px; }
+    .cloud .wiring .wiring__inner-wrapper:last-child {
+      margin-right: 0; } }
+
+.cloud .wiring .wiring__inner-wrapper .wiring__inner-wrapper_first {
+  text-align: center; }
+  @media screen and (min-width: 6.25em) {
+    .cloud .wiring .wiring__inner-wrapper .wiring__inner-wrapper_first {
+      padding-bottom: 80px; } }
+  @media screen and (min-width: 48.0625em) {
+    .cloud .wiring .wiring__inner-wrapper .wiring__inner-wrapper_first {
+      float: left;
+      display: block;
+      margin-right: 2.1723540489%;
+      width: 37.1247052007%;
+      margin-left: 7.8594118499%; }
+      .cloud .wiring .wiring__inner-wrapper .wiring__inner-wrapper_first:last-child {
+        margin-right: 0; } }
+
+@media screen and (min-width: 48.0625em) {
   .cloud .wiring .wiring__inner-wrapper .wiring__inner-wrapper_last {
     float: left;
     display: block;
@@ -1726,65 +1748,107 @@ img.logo {
     width: 37.1247052007%;
     margin-left: 7.8594118499%; }
     .cloud .wiring .wiring__inner-wrapper .wiring__inner-wrapper_last:last-child {
-      margin-right: 0; }
+      margin-right: 0; } }
 
-.cloud .wireless .copy-wrapper {
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%); }
+@media screen and (min-width: 48.0625em) {
+  .cloud .wireless .copy-wrapper {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%); } }
 
-.cloud .wireless .wireless__inner-wrapper {
-  padding-top: 110px;
-  padding-bottom: 55px;
-  float: left;
-  display: block;
-  margin-right: 1.877269384%;
-  width: 86.4163640821%;
-  margin-left: 6.7918179589%; }
-  .cloud .wireless .wireless__inner-wrapper:last-child {
-    margin-right: 0; }
-  .cloud .wireless .wireless__inner-wrapper .wireless__inner-wrapper_first {
+@media screen and (min-width: 6.25em) {
+  .cloud .wireless .wireless__inner-wrapper {
     float: left;
     display: block;
-    margin-right: 2.1723540489%;
-    width: 37.1247052007%;
-    margin-left: 7.8594118499%; }
-    .cloud .wireless .wireless__inner-wrapper .wireless__inner-wrapper_first:last-child {
-      margin-right: 0; }
+    margin-right: 1.877269384%;
+    width: 86.4163640821%;
+    margin-left: 7.8594118499%;
+    padding-bottom: 110px; }
+    .cloud .wireless .wireless__inner-wrapper:last-child {
+      margin-right: 0; } }
+
+@media screen and (min-width: 48.0625em) {
+  .cloud .wireless .wireless__inner-wrapper {
+    float: left;
+    display: block;
+    margin-right: 1.877269384%;
+    width: 86.4163640821%;
+    margin-left: 7.8594118499%;
+    padding-top: 110px;
+    padding-bottom: 55px; }
+    .cloud .wireless .wireless__inner-wrapper:last-child {
+      margin-right: 0; } }
+
+.cloud .wireless .wireless__inner-wrapper .wireless__inner-wrapper_first {
+  text-align: center; }
+  @media screen and (min-width: 6.25em) {
+    .cloud .wireless .wireless__inner-wrapper .wireless__inner-wrapper_first {
+      padding-bottom: 80px; } }
+  @media screen and (min-width: 48.0625em) {
+    .cloud .wireless .wireless__inner-wrapper .wireless__inner-wrapper_first {
+      float: left;
+      display: block;
+      margin-right: 2.1723540489%;
+      width: 37.1247052007%;
+      margin-left: 7.8594118499%; }
+      .cloud .wireless .wireless__inner-wrapper .wireless__inner-wrapper_first:last-child {
+        margin-right: 0; } }
+
+@media screen and (min-width: 48.0625em) {
   .cloud .wireless .wireless__inner-wrapper .wireless__inner-wrapper_last {
     float: left;
     display: block;
     margin-right: 2.1723540489%;
     width: 37.1247052007%;
-    margin-left: 7.8594118499%;
-    text-align: center; }
+    margin-left: 7.8594118499%; }
     .cloud .wireless .wireless__inner-wrapper .wireless__inner-wrapper_last:last-child {
-      margin-right: 0; }
+      margin-right: 0; } }
 
-.cloud .cloud .copy-wrapper {
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%); }
+@media screen and (min-width: 48.0625em) {
+  .cloud .cloud .copy-wrapper {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%); } }
 
-.cloud .cloud .cloud__inner-wrapper {
-  padding-top: 110px;
-  padding-bottom: 110px;
-  float: left;
-  display: block;
-  margin-right: 1.877269384%;
-  width: 86.4163640821%;
-  margin-left: 7.8594118499%; }
-  .cloud .cloud .cloud__inner-wrapper:last-child {
-    margin-right: 0; }
-  .cloud .cloud .cloud__inner-wrapper .cloud__inner-wrapper_first {
+@media screen and (min-width: 6.25em) {
+  .cloud .cloud .cloud__inner-wrapper {
     float: left;
     display: block;
-    margin-right: 2.1723540489%;
-    width: 37.1247052007%;
+    margin-right: 1.877269384%;
+    width: 86.4163640821%;
     margin-left: 7.8594118499%;
-    text-align: center; }
-    .cloud .cloud .cloud__inner-wrapper .cloud__inner-wrapper_first:last-child {
-      margin-right: 0; }
+    padding-bottom: 110px; }
+    .cloud .cloud .cloud__inner-wrapper:last-child {
+      margin-right: 0; } }
+
+@media screen and (min-width: 48.0625em) {
+  .cloud .cloud .cloud__inner-wrapper {
+    float: left;
+    display: block;
+    margin-right: 1.877269384%;
+    width: 86.4163640821%;
+    margin-left: 7.8594118499%;
+    padding-top: 110px;
+    padding-bottom: 55px; }
+    .cloud .cloud .cloud__inner-wrapper:last-child {
+      margin-right: 0; } }
+
+.cloud .cloud .cloud__inner-wrapper .cloud__inner-wrapper_first {
+  text-align: center; }
+  @media screen and (min-width: 6.25em) {
+    .cloud .cloud .cloud__inner-wrapper .cloud__inner-wrapper_first {
+      padding-bottom: 80px; } }
+  @media screen and (min-width: 48.0625em) {
+    .cloud .cloud .cloud__inner-wrapper .cloud__inner-wrapper_first {
+      float: left;
+      display: block;
+      margin-right: 2.1723540489%;
+      width: 37.1247052007%;
+      margin-left: 7.8594118499%; }
+      .cloud .cloud .cloud__inner-wrapper .cloud__inner-wrapper_first:last-child {
+        margin-right: 0; } }
+
+@media screen and (min-width: 48.0625em) {
   .cloud .cloud .cloud__inner-wrapper .cloud__inner-wrapper_last {
     float: left;
     display: block;
@@ -1792,7 +1856,7 @@ img.logo {
     width: 37.1247052007%;
     margin-left: 7.8594118499%; }
     .cloud .cloud .cloud__inner-wrapper .cloud__inner-wrapper_last:last-child {
-      margin-right: 0; }
+      margin-right: 0; } }
 
 .automation .centered-navigation ul li.nav-link a {
   color: rgba(0, 0, 0, 0.8); }
@@ -2956,5 +3020,21 @@ img,
 picture {
   margin: 0;
   max-width: 100%; }
+
+@media screen and (min-width: 6.25em) {
+  .mobile {
+    display: block !important; } }
+
+@media screen and (min-width: 48.0625em) {
+  .mobile {
+    display: none !important; } }
+
+@media screen and (min-width: 6.25em) {
+  .desktop {
+    display: none !important; } }
+
+@media screen and (min-width: 48.0625em) {
+  .desktop {
+    display: block !important; } }
 
 /*# sourceMappingURL=style.css.map */
