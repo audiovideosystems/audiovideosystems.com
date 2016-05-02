@@ -43,7 +43,9 @@
   }
 
   .centered-navigation ul li.nav-link a:hover {
-    color: rgba(255,255,255,.8) !important;
+    @include media($l){
+      color: rgba(255,255,255,.8) !important;
+    }
   }
 
   .mission {

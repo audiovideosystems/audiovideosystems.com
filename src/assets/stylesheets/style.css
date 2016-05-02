@@ -1133,12 +1133,11 @@ header {
   .centered-navigation .mobile-logo {
     display: inline;
     float: left;
-    max-height: 60px;
-    padding-left: 1em; }
+    padding: 30px 0 30px 40px; }
     .centered-navigation .mobile-logo img {
       max-height: 60px;
-      opacity: 0.6;
-      padding: 0.8em 0; }
+      width: 60px;
+      height: auto; }
     @media screen and (min-width: 48.0625em) {
       .centered-navigation .mobile-logo {
         display: none; } }
@@ -1413,8 +1412,9 @@ img.logo {
 .home li.nav-link a {
   color: white !important; }
 
-.home .centered-navigation ul li.nav-link a:hover {
-  color: rgba(255, 255, 255, 0.8) !important; }
+@media screen and (min-width: 48.0625em) {
+  .home .centered-navigation ul li.nav-link a:hover {
+    color: rgba(255, 255, 255, 0.8) !important; } }
 
 .home .mission {
   background-color: #cddac9;
