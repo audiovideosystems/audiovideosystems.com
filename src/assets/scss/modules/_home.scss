@@ -191,7 +191,7 @@
       text-align: left;
       text-transform: uppercase;
       color: #ababab;
-      letter-spacing: 2px;
+      letter-spacing: 1px;
       @include media($s){
         @include span-columns(13);
         @include shift(1);

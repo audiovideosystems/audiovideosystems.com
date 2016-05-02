@@ -33,7 +33,7 @@
         margin-top: 18px;
         text-align: center;
         text-transform: uppercase;
-        letter-spacing: 2px;
+        letter-spacing: 1px;
       }
     }
   }
@@ -64,7 +64,7 @@
       // @include shift(3);
       height: 50px;
       text-align: center;
-      letter-spacing: 2px;
+      letter-spacing: 1px;
       p {
         @include vertical-align;
         font-family: $heading-font-family;
@@ -92,15 +92,15 @@
         }
         img.img-all {
           // @include vertical-align;
-          width: 18px;
+          width: 20px;
           margin-left: 18px;
-          margin-bottom: -1px;
+          margin-bottom: -2px;
         }
         img.img-details {
           // @include vertical-align;
-          width: 18px;
-          margin-right: 18px;
-          margin-bottom: -4px;
+          width: 22px;
+          margin-right: 22px;
+          margin-bottom: -6px;
         }
       }
     }

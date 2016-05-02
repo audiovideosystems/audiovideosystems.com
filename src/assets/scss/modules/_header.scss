@@ -177,7 +177,7 @@ header {
     text-transform: uppercase;
     width: 100%;
     z-index: 9999;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
 
     a {
       color: $centered-navigation-color;
@@ -373,7 +373,7 @@ img.logo {
     font-size: em(14);
     display: inline;
     font-family: $heading-font-family;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     a {
       // display: inline-block;
       line-height: rem(60);

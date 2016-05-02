@@ -12,10 +12,11 @@
     }
 
   .hero {
-    @include media($l){
+    @include media($s){
       height: 462px;
       background: url("/assets/images/theater-hero.jpg");
       background-size: cover;
+      background-position: center;
     }
   }
 
