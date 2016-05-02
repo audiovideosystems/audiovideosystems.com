@@ -108,6 +108,11 @@
   }
 
   .footer__omega.mobile {
+    a {
+      @include media($s){
+        font-size: 18px;
+      }
+    }
     margin-bottom: 44px;
   }
   .footer__omega.desktop {
@@ -115,9 +120,13 @@
   }
   .footer__alpha.mobile {
     margin-top: 80px;
-    margin-bottom: 80px;
+    margin-bottom: 60px;
     a {
       margin-bottom: 0;
+      @include media($s){
+        font-size: 18px;
+        margin-bottom: .5em;
+      }
     }
   }
 

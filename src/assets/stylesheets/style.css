@@ -1079,13 +1079,20 @@ figure[data-type=quote] cite:before {
       text-transform: uppercase; }
   .footer .footer__omega.mobile {
     margin-bottom: 44px; }
+    @media screen and (min-width: 6.25em) {
+      .footer .footer__omega.mobile a {
+        font-size: 18px; } }
   .footer .footer__omega.desktop {
     margin-right: 0; }
   .footer .footer__alpha.mobile {
     margin-top: 80px;
-    margin-bottom: 80px; }
+    margin-bottom: 60px; }
     .footer .footer__alpha.mobile a {
       margin-bottom: 0; }
+      @media screen and (min-width: 6.25em) {
+        .footer .footer__alpha.mobile a {
+          font-size: 18px;
+          margin-bottom: .5em; } }
   .footer .footer__address.mobile {
     float: left;
     display: block;
@@ -2809,6 +2816,9 @@ h1 {
   color: white;
   text-align: center; }
   @media screen and (min-width: 6.25em) {
+    h1 {
+      font-size: 60px; } }
+  @media screen and (min-width: 41.6875em) {
     h1 {
       font-size: 78px; } }
   @media screen and (min-width: 48.0625em) {
