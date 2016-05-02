@@ -74,7 +74,7 @@
             display: none !important;
           }
           @include media($l){
-            display: block !important;
+            display: inline-block !important;
           }
         }
         line-height: 36px;
@@ -94,6 +94,7 @@
             padding-left: 40px;
           }
           @include media($l){
+            float: none;
             padding-left: 50px;
             padding-right: 50px;
             border-right: 1px solid $text;
@@ -105,6 +106,8 @@
             padding-right: 40px;
           }
           @include media($l){
+            float: none;
+            padding-right: 0px;
             padding-left: 50px;
           }
         }

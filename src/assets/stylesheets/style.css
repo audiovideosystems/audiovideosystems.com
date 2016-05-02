@@ -2679,7 +2679,7 @@ img.logo {
         display: none !important; } }
     @media screen and (min-width: 48.0625em) {
       .project .showcase div.details p.desktop {
-        display: block !important; } }
+        display: inline-block !important; } }
     .project .showcase div.details p.details {
       padding-right: 50px;
       border-right: 1px solid rgba(0, 0, 0, 0.8); }
@@ -2693,6 +2693,7 @@ img.logo {
         padding-left: 40px; } }
     @media screen and (min-width: 48.0625em) {
       .project .showcase div.details p.projects {
+        float: none;
         padding-left: 50px;
         padding-right: 50px;
         border-right: 1px solid rgba(0, 0, 0, 0.8); } }
@@ -2702,6 +2703,8 @@ img.logo {
         padding-right: 40px; } }
     @media screen and (min-width: 48.0625em) {
       .project .showcase div.details p.number {
+        float: none;
+        padding-right: 0px;
         padding-left: 50px; } }
     .project .showcase div.details p img.img-all {
       width: 20px;
