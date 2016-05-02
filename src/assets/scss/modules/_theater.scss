@@ -1,5 +1,12 @@
 .theater {
 
+  @include media($s){
+    visibility: hidden;
+  }
+  @include media($l){
+    visibility: visible;
+  }
+
   .centered-navigation ul li.nav-link a {
     color: $text;
     }

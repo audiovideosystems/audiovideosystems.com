@@ -1891,14 +1891,24 @@ img.logo {
     .automation .distribution {
       padding-top: 110px;
       margin-bottom: 110px; } }
-  .automation .distribution .distribution__inner-wrapper {
-    float: left;
-    display: block;
-    margin-right: 1.877269384%;
-    width: 45.6654563285%;
-    margin-left: 27.1672718357%; }
-    .automation .distribution .distribution__inner-wrapper:last-child {
-      margin-right: 0; }
+  @media screen and (min-width: 6.25em) {
+    .automation .distribution .distribution__inner-wrapper {
+      float: left;
+      display: block;
+      margin-right: 1.877269384%;
+      width: 86.4163640821%;
+      margin-left: 6.7918179589%; }
+      .automation .distribution .distribution__inner-wrapper:last-child {
+        margin-right: 0; } }
+  @media screen and (min-width: 48.0625em) {
+    .automation .distribution .distribution__inner-wrapper {
+      float: left;
+      display: block;
+      margin-right: 1.877269384%;
+      width: 45.6654563285%;
+      margin-left: 27.1672718357%; }
+      .automation .distribution .distribution__inner-wrapper:last-child {
+        margin-right: 0; } }
 
 .automation .featured img {
   padding-bottom: 110px; }
@@ -2193,6 +2203,14 @@ img.logo {
 .automation .featured img {
   padding-bottom: 110px; }
 
+@media screen and (min-width: 6.25em) {
+  .theater {
+    visibility: hidden; } }
+
+@media screen and (min-width: 48.0625em) {
+  .theater {
+    visibility: visible; } }
+
 .theater .centered-navigation ul li.nav-link a {
   color: rgba(0, 0, 0, 0.8); }
 
@@ -2316,6 +2334,14 @@ img.logo {
       margin-right: 0; }
     .theater .exceptional .exceptional__inner-wrapper h2 {
       margin-bottom: 0; }
+
+@media screen and (min-width: 6.25em) {
+  .lutron {
+    visibility: hidden; } }
+
+@media screen and (min-width: 48.0625em) {
+  .lutron {
+    visibility: visible; } }
 
 .lutron .centered-navigation ul li.nav-link a {
   color: rgba(0, 0, 0, 0.8); }
@@ -2448,6 +2474,14 @@ img.logo {
   .lutron .security img {
     padding-top: 6.875rem; }
 
+@media screen and (min-width: 6.25em) {
+  .work {
+    visibility: hidden; } }
+
+@media screen and (min-width: 48.0625em) {
+  .work {
+    visibility: visible; } }
+
 .work .centered-navigation ul li.nav-link a {
   color: rgba(0, 0, 0, 0.8); }
 
@@ -2485,6 +2519,14 @@ img.logo {
       text-align: center;
       text-transform: uppercase;
       letter-spacing: 2px; }
+
+@media screen and (min-width: 6.25em) {
+  .project {
+    visibility: hidden; } }
+
+@media screen and (min-width: 48.0625em) {
+  .project {
+    visibility: visible; } }
 
 .project main.load {
   visibility: hidden; }
@@ -2565,6 +2607,14 @@ img.logo {
       font-family: "Maison Neue Medium";
       font-size: 14px;
       text-transform: uppercase; }
+
+@media screen and (min-width: 6.25em) {
+  .contact {
+    visibility: hidden; } }
+
+@media screen and (min-width: 48.0625em) {
+  .contact {
+    visibility: visible; } }
 
 .contact .centered-navigation ul li.nav-link a {
   color: rgba(0, 0, 0, 0.8); }
@@ -2650,6 +2700,14 @@ img.logo {
       background-color: #d4effc;
       font-family: 'Maison Neue Medium';
       font-size: 14px; }
+
+@media screen and (min-width: 6.25em) {
+  .support {
+    visibility: hidden; } }
+
+@media screen and (min-width: 48.0625em) {
+  .support {
+    visibility: visible; } }
 
 .support .centered-navigation ul li.nav-link a {
   color: rgba(0, 0, 0, 0.8); }

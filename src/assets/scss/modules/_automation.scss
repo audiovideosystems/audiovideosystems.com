@@ -31,8 +31,14 @@
       margin-bottom: 110px;
     }
     .distribution__inner-wrapper {
-      @include span-columns(7);
-      @include shift(4);
+      @include media($s){
+        @include span-columns(13);
+        @include shift(1);
+      }
+      @include media($l){
+        @include span-columns(7);
+        @include shift(4);
+      }
     }
   }
 

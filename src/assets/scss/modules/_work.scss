@@ -1,5 +1,12 @@
 .work {
 
+  @include media($s){
+    visibility: hidden;
+  }
+  @include media($l){
+    visibility: visible;
+  }
+
   .centered-navigation ul li.nav-link a {
     color: $text;
     }
@@ -33,6 +40,13 @@
 }
 
 .project {
+
+  @include media($s){
+    visibility: hidden;
+  }
+  @include media($l){
+    visibility: visible;
+  }
 
   main.load {
     visibility: hidden;
