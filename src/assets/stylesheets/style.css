@@ -965,8 +965,7 @@ figure[data-type=quote] cite:before {
       float: left;
       display: block;
       margin-right: 1.877269384%;
-      width: 86.4163640821%;
-      margin-left: 6.7918179589%; }
+      width: 100%; }
       .footer .footer__inner-wrapper:last-child {
         margin-right: 0; } }
   @media screen and (min-width: 48.0625em) {
@@ -985,8 +984,7 @@ figure[data-type=quote] cite:before {
         float: left;
         display: block;
         margin-right: 1.877269384%;
-        width: 86.4163640821%;
-        margin-left: 6.7918179589%; }
+        width: 100%; }
         .footer .footer__inner-wrapper .footer__alpha:last-child, .footer .footer__inner-wrapper .footer__omega:last-child {
           margin-right: 0; } }
     @media screen and (min-width: 48.0625em) {
@@ -1028,8 +1026,7 @@ figure[data-type=quote] cite:before {
         float: left;
         display: block;
         margin-right: 1.877269384%;
-        width: 86.4163640821%;
-        margin-left: 6.7918179589%; }
+        width: 100%; }
         .footer .footer__inner-wrapper .footer__beta:last-child {
           margin-right: 0; } }
     @media screen and (min-width: 48.0625em) {
@@ -1102,7 +1099,8 @@ figure[data-type=quote] cite:before {
     font-family: "Maison Neue Medium";
     text-align: center;
     color: #fff;
-    margin-bottom: 80px; }
+    margin-bottom: 80px;
+    font-size: 14px; }
     .footer .footer__address.mobile:last-child {
       margin-right: 0; }
   @media screen and (min-width: 6.25em) {
@@ -1398,6 +1396,8 @@ img.logo {
   background-color: #FFF; }
   .home .centered-navigation.bg ul li a {
     color: rgba(0, 0, 0, 0.8) !important; }
+  .home .centered-navigation.bg ul.nav-2 li a {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.8); }
   .home .centered-navigation.bg span, .home .centered-navigation.bg span::before, .home .centered-navigation.bg span::after {
     background-color: rgba(0, 0, 0, 0.8); }
 
@@ -1662,6 +1662,18 @@ img.logo {
         margin-right: 0; }
   .home .testimonial .flickity-prev-next-button {
     background-color: transparent; }
+    @media screen and (min-width: 6.25em) {
+      .home .testimonial .flickity-prev-next-button.previous {
+        left: -7px; } }
+    @media screen and (min-width: 41.6875em) {
+      .home .testimonial .flickity-prev-next-button.previous {
+        left: 7px; } }
+    @media screen and (min-width: 6.25em) {
+      .home .testimonial .flickity-prev-next-button.next {
+        right: -7px; } }
+    @media screen and (min-width: 41.6875em) {
+      .home .testimonial .flickity-prev-next-button.next {
+        right: 7px; } }
 
 @media screen and (min-width: 48.0625em) {
   .cloud .hero {
@@ -2661,11 +2673,12 @@ img.logo {
     .support .form .form__wrapper input[type="radio"]:checked + label .fa-circle-o {
       display: none; }
 
-@media screen and (min-width: 48.0625em) {
+@media screen and (min-width: 6.25em) {
   .about .hero {
     height: 462px;
     background: url("/assets/images/about-hero.jpg");
-    background-size: cover; } }
+    background-size: cover;
+    background-position: center; } }
 
 .about .about-us {
   background-color: #d4effc;
@@ -2683,33 +2696,59 @@ img.logo {
 
 .about .installation {
   text-align: center; }
+  @media screen and (min-width: 6.25em) {
+    .about .installation {
+      padding-top: 6rem;
+      margin-bottom: 6rem; } }
   @media screen and (min-width: 48.0625em) {
     .about .installation {
       padding-top: 6rem;
       margin-bottom: 6rem; } }
-  .about .installation .installation__inner-wrapper {
-    float: left;
-    display: block;
-    margin-right: 1.877269384%;
-    width: 45.6654563285%;
-    margin-left: 27.1672718357%; }
-    .about .installation .installation__inner-wrapper:last-child {
-      margin-right: 0; }
+  @media screen and (min-width: 6.25em) {
+    .about .installation .installation__inner-wrapper {
+      float: left;
+      display: block;
+      margin-right: 2.1723540489%;
+      width: 100%;
+      padding: 0 1rem; }
+      .about .installation .installation__inner-wrapper:last-child {
+        margin-right: 0; } }
+  @media screen and (min-width: 48.0625em) {
+    .about .installation .installation__inner-wrapper {
+      float: left;
+      display: block;
+      margin-right: 1.877269384%;
+      width: 45.6654563285%;
+      margin-left: 27.1672718357%;
+      padding: 0; }
+      .about .installation .installation__inner-wrapper:last-child {
+        margin-right: 0; } }
 
 .about .service {
   text-align: center; }
-  @media screen and (min-width: 48.0625em) {
+  @media screen and (min-width: 6.25em) {
     .about .service {
       padding-top: 6rem;
       margin-bottom: 6rem; } }
-  .about .service .service__inner-wrapper {
-    float: left;
-    display: block;
-    margin-right: 1.877269384%;
-    width: 45.6654563285%;
-    margin-left: 27.1672718357%; }
-    .about .service .service__inner-wrapper:last-child {
-      margin-right: 0; }
+  @media screen and (min-width: 6.25em) {
+    .about .service .service__inner-wrapper {
+      float: left;
+      display: block;
+      margin-right: 2.1723540489%;
+      width: 100%;
+      padding: 0 1rem; }
+      .about .service .service__inner-wrapper:last-child {
+        margin-right: 0; } }
+  @media screen and (min-width: 48.0625em) {
+    .about .service .service__inner-wrapper {
+      float: left;
+      display: block;
+      margin-right: 1.877269384%;
+      width: 45.6654563285%;
+      margin-left: 27.1672718357%;
+      padding: 0; }
+      .about .service .service__inner-wrapper:last-child {
+        margin-right: 0; } }
 
 .about .featured img {
   padding-bottom: 110px; }
@@ -2734,17 +2773,29 @@ img.logo {
       font-family: 'Maison Neue Medium';
       line-height: 1.7;
       color: rgba(0, 0, 0, 0.8);
-      text-align: left;
-      float: left;
-      display: block;
-      margin-right: 2.1723540489%;
-      width: 37.1247052007%;
-      margin-left: 7.8594118499%; }
-      .about .staff .staff__inner-wrapper .staff__details_a:last-child {
-        margin-right: 0; }
+      text-align: left; }
+      @media screen and (min-width: 6.25em) {
+        .about .staff .staff__inner-wrapper .staff__details_a {
+          float: left;
+          display: block;
+          margin-right: 2.1723540489%;
+          width: 100%; }
+          .about .staff .staff__inner-wrapper .staff__details_a:last-child {
+            margin-right: 0; } }
+      @media screen and (min-width: 48.0625em) {
+        .about .staff .staff__inner-wrapper .staff__details_a {
+          float: left;
+          display: block;
+          margin-right: 2.1723540489%;
+          width: 37.1247052007%;
+          margin-left: 7.8594118499%; }
+          .about .staff .staff__inner-wrapper .staff__details_a:last-child {
+            margin-right: 0; } }
       .about .staff .staff__inner-wrapper .staff__details_a ul {
-        margin-left: 0;
-        margin-bottom: 110px; }
+        margin-left: 0; }
+        @media screen and (min-width: 48.0625em) {
+          .about .staff .staff__inner-wrapper .staff__details_a ul {
+            margin-bottom: 110px; } }
         .about .staff .staff__inner-wrapper .staff__details_a ul li {
           font-size: 14px;
           list-style-type: disc;
@@ -2754,14 +2805,24 @@ img.logo {
       font-family: 'Maison Neue Medium';
       line-height: 1.7;
       color: rgba(0, 0, 0, 0.8);
-      text-align: left;
-      float: left;
-      display: block;
-      margin-right: 2.1723540489%;
-      width: 37.1247052007%;
-      margin-left: 7.8594118499%; }
-      .about .staff .staff__inner-wrapper .staff__details_b:last-child {
-        margin-right: 0; }
+      text-align: left; }
+      @media screen and (min-width: 6.25em) {
+        .about .staff .staff__inner-wrapper .staff__details_b {
+          float: left;
+          display: block;
+          margin-right: 2.1723540489%;
+          width: 100%; }
+          .about .staff .staff__inner-wrapper .staff__details_b:last-child {
+            margin-right: 0; } }
+      @media screen and (min-width: 48.0625em) {
+        .about .staff .staff__inner-wrapper .staff__details_b {
+          float: left;
+          display: block;
+          margin-right: 2.1723540489%;
+          width: 37.1247052007%;
+          margin-left: 7.8594118499%; }
+          .about .staff .staff__inner-wrapper .staff__details_b:last-child {
+            margin-right: 0; } }
       .about .staff .staff__inner-wrapper .staff__details_b ul {
         margin-left: 0;
         margin-bottom: 110px; }

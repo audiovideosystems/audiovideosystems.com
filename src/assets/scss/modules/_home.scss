@@ -5,6 +5,9 @@
     ul li a {
       color: $text !important;
     }
+    ul.nav-2 li a {
+      border-bottom: 1px solid $text;
+    }
     span, span::before, span::after {
       background-color: $text;
     }
@@ -234,6 +237,22 @@
       background-color: transparent;
       svg {
         // display: none;
+      }
+      &.previous {
+        @include media($s){
+          left: -7px;
+        }
+        @include media($m){
+          left: 7px;
+        }
+      }
+      &.next {
+        @include media($s){
+          right: -7px;
+        }
+        @include media($m){
+          right: 7px;
+        }
       }
     }
   }

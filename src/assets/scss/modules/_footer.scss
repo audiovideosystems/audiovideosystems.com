@@ -5,8 +5,8 @@
   background-color: $footer-bg;
   .footer__inner-wrapper {
     @include media($s){
-      @include span-columns(13);
-      @include shift(1);
+      @include span-columns(15);
+      // @include shift(1);
     }
     @include media($l){
       @include span-columns(11);
@@ -14,8 +14,8 @@
     }
     .footer__alpha, .footer__omega {
       @include media($s){
-        @include span-columns(13);
-        @include shift(1);
+        @include span-columns(15 of 15);
+        // @include shift(1);
       }
       @include media($l){
         @include span-columns(2 of 11);
@@ -53,8 +53,8 @@
     }
     .footer__beta {
       @include media($s){
-        @include span-columns(13);
-        @include shift(1);
+        @include span-columns(15 of 15);
+        // @include shift(1);
       }
       @include media($l){
         @include span-columns(7 of 11);
@@ -137,6 +137,7 @@
     text-align: center;
     color: #fff;
     margin-bottom: 80px;
+    font-size: 14px;
   }
 
   .mobile {

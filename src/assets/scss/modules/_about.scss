@@ -1,10 +1,16 @@
 .about {
 
   .hero {
-    @include media($l){
+    // @include media($l){
+    //   height: 462px;
+    //   background: url("/assets/images/about-hero.jpg");
+    //   background-size: cover;
+    // }
+    @include media($s){
       height: 462px;
       background: url("/assets/images/about-hero.jpg");
       background-size: cover;
+      background-position: center;
     }
   }
 
@@ -21,25 +27,43 @@
 
   .installation {
     text-align: center;
+    @include media($s){
+      padding-top: 6rem;
+      margin-bottom: 6rem;
+    }
     @include media($l){
       padding-top: 6rem;
       margin-bottom: 6rem;
     }
     .installation__inner-wrapper {
-      @include span-columns(7);
-      @include shift(4);
+      @include media($s){
+        @include span-columns(13 of 13);
+        @include pad(0 1rem);
+      }
+      @include media($l){
+        @include span-columns(7);
+        @include shift(4);
+        @include pad(0);
+      }
     }
   }
 
   .service {
     text-align: center;
-    @include media($l){
+    @include media($s){
       padding-top: 6rem;
       margin-bottom: 6rem;
     }
     .service__inner-wrapper {
-      @include span-columns(7);
-      @include shift(4);
+      @include media($s){
+        @include span-columns(13 of 13);
+        @include pad(0 1rem);
+      }
+      @include media($l){
+        @include span-columns(7);
+        @include shift(4);
+        @include pad(0);
+      }
     }
   }
 
@@ -67,11 +91,19 @@
         line-height: 1.7;
         color: $text;
         text-align: left;
-        @include span-columns(5 of 13);
-        @include shift(1);
+        @include media($s){
+          @include span-columns(13 of 13);
+          // @include shift(1 of 13);
+        }
+        @include media($l){
+          @include span-columns(5 of 13);
+          @include shift(1 of 13);
+        }
         ul {
           margin-left: 0;
-          margin-bottom: 110px;
+          @include media($l){
+            margin-bottom: 110px;
+          }
           li {
             font-size: 14px;
             list-style-type: disc;
@@ -85,8 +117,14 @@
         line-height: 1.7;
         color: $text;
         text-align: left;
-        @include span-columns(5 of 13);
-        @include shift(1);
+        @include media($s){
+          @include span-columns(13 of 13);
+          // @include shift(1 of 13);
+        }
+        @include media($l){
+          @include span-columns(5 of 13);
+          @include shift(1 of 13);
+        }
         ul {
           margin-left: 0;
           margin-bottom: 110px;
