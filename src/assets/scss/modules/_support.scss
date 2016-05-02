@@ -1,12 +1,5 @@
 .support {
 
-  @include media($s){
-    visibility: hidden;
-  }
-  @include media($l){
-    visibility: visible;
-  }
-
   .centered-navigation ul li.nav-link a {
     color: $text;
     }
@@ -26,8 +19,18 @@
     padding-top: 110px;
     padding-bottom: 110px;
     .form__info {
-      @include span-columns(3);
-      @include shift(2);
+      @include media($s){
+        @include span-columns(13);
+        @include shift(1);
+        text-align: center;
+        padding-bottom: 80px;
+      }
+      @include media($l){
+        @include span-columns(3);
+        @include shift(2);
+        text-align: left;
+        padding-bottom: 0px;
+      }
       p {
         margin: 0;
       }
@@ -42,8 +45,14 @@
       }
     }
     .form__wrapper {
-      @include span-columns(6);
-      @include shift(2);
+      @include media($s){
+        @include span-columns(13);
+        @include shift(1);
+      }
+      @include media($l){
+        @include span-columns(6);
+        @include shift(2);
+      }
       input {
         border: 2px solid $text;
         border-radius: 0;
@@ -59,13 +68,29 @@
         }
       }
       input#room, input#device {
-        @include span-columns(3 of 6);
+        @include media($s){
+          @include span-columns(6 of 13);
+        }
+        @include media($l){
+          @include span-columns(3 of 6);
+        }
       }
       input#device {
         @include omega();
+        @include media($s){
+          @include shift(1 of 13);
+        }
+        @include media($l){
+          @include shift(0);
+        }
       }
       .intermittent, .continuous {
-        @include span-columns(3 of 6);
+        @include media($s){
+          @include span-columns(6 of 13);
+        }
+        @include media($l){
+          @include span-columns(3 of 6);
+        }
         margin-bottom: 1rem;
         label {
           text-transform: uppercase;
@@ -73,12 +98,23 @@
           font-size: 14px;
           letter-spacing: 1px;
           color: $text;
-          padding-left: 1rem;
+          @include media($s){
+            padding-left: 0px;
+          }
+          @include media($l){
+            padding-left: 1rem;
+          }
           font-weight: normal;
         }
       }
       .continuous {
         @include omega();
+        @include media($s) {
+          @include shift(1 of 13);
+        }
+        @include media($l) {
+          @include shift(0);
+        }
       }
       textarea {
         border: 2px solid $text;
@@ -124,9 +160,20 @@
       $select-height: 40px;
 
       .select-wrapper {
-        @include span-columns(3 of 6);
+        @include media($s){
+          @include span-columns(6 of 13);
+        }
+        @include media($l){
+          @include span-columns(3 of 6);
+        }
         &.second {
           @include omega();
+          @include media($s){
+            @include shift(1 of 13);
+          }
+          @include media($l){
+            @include shift(0);
+          }
         }
       }
 

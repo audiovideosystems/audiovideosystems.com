@@ -1,20 +1,19 @@
 .contact {
 
-  @include media($s){
-    visibility: hidden;
-  }
-  @include media($l){
-    visibility: visible;
-  }
-
   .centered-navigation ul li.nav-link a {
     color: $text;
     }
 
   .contact {
     .contact__inner-wrapper {
-      @include span-columns(9);
-      @include shift(3);
+      @include media($s){
+        @include span-columns(13);
+        @include shift(1);
+      }
+      @include media($l){
+        @include span-columns(9);
+        @include shift(3);
+      }
     }
     background-color: $contact-flesh;
     text-align: center;
@@ -26,8 +25,18 @@
     padding-top: 110px;
     padding-bottom: 110px;
     .form__info {
-      @include span-columns(3);
-      @include shift(2);
+      @include media($s){
+        @include span-columns(13);
+        @include shift(1);
+        padding-bottom: 80px;
+        text-align: center;
+      }
+      @include media($l){
+        @include span-columns(3);
+        @include shift(2);
+        padding-bottom: 0px;
+        text-align: left;
+      }
       p {
         margin: 0;
       }
@@ -39,8 +48,14 @@
       }
     }
     .form__wrapper {
-      @include span-columns(6);
-      @include shift(2);
+      @include media($s){
+        @include span-columns(13);
+        @include shift(1);
+      }
+      @include media($l){
+        @include span-columns(6);
+        @include shift(2);
+      }
       input {
         border: 2px solid $text;
         border-radius: 0;

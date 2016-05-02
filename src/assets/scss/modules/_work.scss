@@ -46,6 +46,15 @@
 
 .project {
 
+  .desktop {
+    @include media($s){
+      display: none !important;
+    }
+    @include media($l){
+      display: inline-block !important;
+    }
+  }
+
   main.load {
     visibility: hidden;
   }
