@@ -1,20 +1,19 @@
 .work {
 
-  @include media($s){
-    visibility: hidden;
-  }
-  @include media($l){
-    visibility: visible;
-  }
-
   .centered-navigation ul li.nav-link a {
     color: $text;
     }
 
   .projects {
     .projects__inner-wrapper {
-      @include span-columns(9);
-      @include shift(3);
+      @include media($s){
+        @include span-columns(13);
+        @include shift(1);
+      }
+      @include media($l){
+        @include span-columns(9);
+        @include shift(3);
+      }
     }
     background-color: $work-green;
     text-align: center;
@@ -26,9 +25,15 @@
     padding-bottom: 110px;
     .project {
       padding-top: 110px;
-      @include span-columns(6);
-      @include shift(1);
-      @include omega(2n);
+      @include media($s){
+        @include span-columns(13);
+        @include shift(1);
+      }
+      @include media($l){
+        @include span-columns(6);
+        @include shift(1);
+        @include omega(2n);
+      }
       h5 {
         margin-top: 18px;
         text-align: center;
@@ -40,13 +45,6 @@
 }
 
 .project {
-
-  @include media($s){
-    visibility: hidden;
-  }
-  @include media($l){
-    visibility: visible;
-  }
 
   main.load {
     visibility: hidden;
@@ -71,6 +69,14 @@
         font-size: 14px;
         text-transform: uppercase;
         display: inline-block !important;
+        &.desktop {
+          @include media($s){
+            display: none !important;
+          }
+          @include media($l){
+            display: block !important;
+          }
+        }
         line-height: 36px;
         margin: 0;
         &.details {
@@ -83,12 +89,24 @@
           border-right: 1px solid $text;
         }
         &.projects {
-          padding-left: 50px;
-          padding-right: 50px;
-          border-right: 1px solid $text;
+          @include media($s){
+            float: left;
+            padding-left: 40px;
+          }
+          @include media($l){
+            padding-left: 50px;
+            padding-right: 50px;
+            border-right: 1px solid $text;
+          }
         }
         &.number {
-          padding-left: 50px;
+          @include media($s){
+            float: right;
+            padding-right: 40px;
+          }
+          @include media($l){
+            padding-left: 50px;
+          }
         }
         img.img-all {
           // @include vertical-align;
@@ -114,20 +132,32 @@
       fill: #fff;
     }
     &.previous {
-      left: 30px;
+      @include media($l){
+        left: 30px;
+      }
     }
     &.next {
-      right: 30px;
+      @include media($l){
+        right: 30px;
+      }
     }
   }
 
   .project-info {
-    float: left;
-    .description {
+    @include media($l){
       float: left;
-      width: 50%;
-      background-color: #FFF;
-      padding: 80px 9% 110px;
+    }
+    .description {
+      @include media($s){
+        text-align: center;
+        padding: 110px 40px;
+      }
+      @include media($l){
+        float: left;
+        width: 50%;
+        background-color: #FFF;
+        padding: 80px 9% 110px;
+      }
       h2 {
         margin-bottom: .7rem;
       }
@@ -136,17 +166,34 @@
       }
     }
     .stats {
-      float: left;
-      width: 50%;
       background-color: $gray-light;
-      padding: 85px 9% 110px;
+      @include media($s){
+        text-align: center;
+        padding: 110px 40px;
+      }
+      @include media($l){
+        float: left;
+        width: 50%;
+        padding: 85px 9% 110px;
+      }
       p.body {
-        margin: 0 0 1rem 0;
+        @include media($s){
+          font-size: 18px;
+        }
+        @include media($l){
+          font-size: 14px;
+        }
+        margin: 0 0 52px 0;
       }
       p.head {
         margin: 0;
         font-family: $heading-font-family;
-        font-size: 14px;
+        @include media($s){
+          font-size: 18px;
+        }
+        @include media($l){
+          font-size: 14px;
+        }
         text-transform: uppercase;
       }
     }

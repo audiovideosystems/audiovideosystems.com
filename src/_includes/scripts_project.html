@@ -47,7 +47,12 @@
     enquire.register("screen and (max-width: 768px)", {
 
       match : function() {
-        console.log('up to 768px wide')
+        console.log('up to 768px wide');
+
+        var main = $('main');
+        setTimeout(function(){
+          $(main).fadeIn().removeClass('load').addClass('loaded');
+        }, 250);
       },
 
       unmatch : function() {

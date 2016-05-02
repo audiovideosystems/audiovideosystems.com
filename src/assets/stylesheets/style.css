@@ -2394,22 +2394,15 @@ img.logo {
     .theater .exceptional .exceptional__inner-wrapper h2 {
       margin-bottom: 0; }
 
-@media screen and (min-width: 6.25em) {
-  .lutron {
-    visibility: hidden; } }
-
-@media screen and (min-width: 48.0625em) {
-  .lutron {
-    visibility: visible; } }
-
 .lutron .centered-navigation ul li.nav-link a {
   color: rgba(0, 0, 0, 0.8); }
 
-@media screen and (min-width: 48.0625em) {
+@media screen and (min-width: 6.25em) {
   .lutron .hero {
     height: 462px;
     background: url("/assets/images/lutron-hero.jpg");
-    background-size: cover; } }
+    background-size: cover;
+    background-position: center; } }
 
 .lutron .partnership {
   text-align: center;
@@ -2432,18 +2425,28 @@ img.logo {
 
 .lutron .integration {
   text-align: center; }
-  @media screen and (min-width: 48.0625em) {
+  @media screen and (min-width: 6.25em) {
     .lutron .integration {
       padding-top: 110px;
       padding-bottom: 110px; } }
-  .lutron .integration .integration__inner-wrapper {
-    float: left;
-    display: block;
-    margin-right: 1.877269384%;
-    width: 45.6654563285%;
-    margin-left: 27.1672718357%; }
-    .lutron .integration .integration__inner-wrapper:last-child {
-      margin-right: 0; }
+  @media screen and (min-width: 6.25em) {
+    .lutron .integration .integration__inner-wrapper {
+      float: left;
+      display: block;
+      margin-right: 1.877269384%;
+      width: 86.4163640821%;
+      margin-left: 6.7918179589%; }
+      .lutron .integration .integration__inner-wrapper:last-child {
+        margin-right: 0; } }
+  @media screen and (min-width: 48.0625em) {
+    .lutron .integration .integration__inner-wrapper {
+      float: left;
+      display: block;
+      margin-right: 1.877269384%;
+      width: 45.6654563285%;
+      margin-left: 27.1672718357%; }
+      .lutron .integration .integration__inner-wrapper:last-child {
+        margin-right: 0; } }
 
 .lutron .featured img {
   padding-bottom: 110px; }
@@ -2451,48 +2454,84 @@ img.logo {
 .lutron .convenience {
   text-align: center;
   background-color: #f4f5f5; }
-  @media screen and (min-width: 48.0625em) {
+  @media screen and (min-width: 6.25em) {
     .lutron .convenience {
       padding-top: 110px;
       padding-bottom: 110px; } }
-  .lutron .convenience .convenience__inner-wrapper {
-    float: left;
-    display: block;
-    margin-right: 1.877269384%;
-    width: 45.6654563285%;
-    margin-left: 27.1672718357%; }
-    .lutron .convenience .convenience__inner-wrapper:last-child {
-      margin-right: 0; }
+  @media screen and (min-width: 6.25em) {
+    .lutron .convenience .convenience__inner-wrapper {
+      float: left;
+      display: block;
+      margin-right: 1.877269384%;
+      width: 86.4163640821%;
+      margin-left: 6.7918179589%; }
+      .lutron .convenience .convenience__inner-wrapper:last-child {
+        margin-right: 0; } }
+  @media screen and (min-width: 48.0625em) {
+    .lutron .convenience .convenience__inner-wrapper {
+      float: left;
+      display: block;
+      margin-right: 1.877269384%;
+      width: 45.6654563285%;
+      margin-left: 27.1672718357%; }
+      .lutron .convenience .convenience__inner-wrapper:last-child {
+        margin-right: 0; } }
   .lutron .convenience img {
     padding-top: 110px; }
+
+@media screen and (min-width: 6.25em) {
+  .lutron .split {
+    padding-top: 110px;
+    padding-bottom: 110px; } }
 
 .lutron .split .container {
   padding-top: 0px;
   padding-bottom: 0px; }
 
-.lutron .split .split__inner-wrapper {
-  padding-top: 12.5rem; }
+@media screen and (min-width: 6.25em) {
+  .lutron .split .text {
+    float: left;
+    display: block;
+    margin-right: 1.877269384%;
+    width: 86.4163640821%;
+    margin-left: 6.7918179589%;
+    text-align: center;
+    padding-bottom: 52px; }
+    .lutron .split .text:last-child {
+      margin-right: 0; } }
 
-.lutron .split .text {
-  float: left;
-  display: block;
-  margin-right: 1.877269384%;
-  width: 32.0818204106%;
-  margin-left: 6.7918179589%;
-  text-align: left; }
-  .lutron .split .text:last-child {
-    margin-right: 0; }
+@media screen and (min-width: 48.0625em) {
+  .lutron .split .text {
+    float: left;
+    display: block;
+    margin-right: 1.877269384%;
+    width: 32.0818204106%;
+    margin-left: 6.7918179589%;
+    text-align: left;
+    padding-top: 85px;
+    padding-bottom: 0px; }
+    .lutron .split .text:last-child {
+      margin-right: 0; } }
 
-.lutron .split .image {
-  float: left;
-  display: block;
-  margin-right: 1.877269384%;
-  width: 59.2490922464%; }
-  .lutron .split .image:last-child {
-    margin-right: 0; }
-  .lutron .split .image img {
-    padding-top: 6.875rem;
-    padding-bottom: 6.875rem; }
+@media screen and (min-width: 6.25em) {
+  .lutron .split .image {
+    float: left;
+    display: block;
+    margin-right: 1.877269384%;
+    width: 86.4163640821%;
+    margin-left: 6.7918179589%; }
+    .lutron .split .image:last-child {
+      margin-right: 0; } }
+
+@media screen and (min-width: 48.0625em) {
+  .lutron .split .image {
+    float: left;
+    display: block;
+    margin-right: 1.877269384%;
+    width: 59.2490922464%;
+    margin-left: 0%; }
+    .lutron .split .image:last-child {
+      margin-right: 0; } }
 
 .lutron .split h6 a {
   text-decoration: underline; }
@@ -2500,46 +2539,58 @@ img.logo {
 .lutron .aesthetics {
   text-align: center;
   background-color: #f4f5f5;
-  padding-top: 6.875rem;
-  padding-bottom: 6.875rem; }
+  padding-top: 110px;
+  padding-bottom: 110px; }
   @media screen and (min-width: 48.0625em) {
     .lutron .aesthetics {
       padding-bottom: 110px; } }
-  .lutron .aesthetics .aesthetics__inner-wrapper {
-    float: left;
-    display: block;
-    margin-right: 1.877269384%;
-    width: 45.6654563285%;
-    margin-left: 27.1672718357%; }
-    .lutron .aesthetics .aesthetics__inner-wrapper:last-child {
-      margin-right: 0; }
+  @media screen and (min-width: 6.25em) {
+    .lutron .aesthetics .aesthetics__inner-wrapper {
+      float: left;
+      display: block;
+      margin-right: 1.877269384%;
+      width: 86.4163640821%;
+      margin-left: 6.7918179589%; }
+      .lutron .aesthetics .aesthetics__inner-wrapper:last-child {
+        margin-right: 0; } }
+  @media screen and (min-width: 48.0625em) {
+    .lutron .aesthetics .aesthetics__inner-wrapper {
+      float: left;
+      display: block;
+      margin-right: 1.877269384%;
+      width: 45.6654563285%;
+      margin-left: 27.1672718357%; }
+      .lutron .aesthetics .aesthetics__inner-wrapper:last-child {
+        margin-right: 0; } }
   .lutron .aesthetics img {
     padding-top: 6.875rem; }
 
 .lutron .security {
   text-align: center; }
-  @media screen and (min-width: 48.0625em) {
+  @media screen and (min-width: 6.25em) {
     .lutron .security {
       padding-top: 110px;
       padding-bottom: 110px; } }
-  .lutron .security .security__inner-wrapper {
-    float: left;
-    display: block;
-    margin-right: 1.877269384%;
-    width: 45.6654563285%;
-    margin-left: 27.1672718357%; }
-    .lutron .security .security__inner-wrapper:last-child {
-      margin-right: 0; }
+  @media screen and (min-width: 6.25em) {
+    .lutron .security .security__inner-wrapper {
+      float: left;
+      display: block;
+      margin-right: 1.877269384%;
+      width: 86.4163640821%;
+      margin-left: 6.7918179589%; }
+      .lutron .security .security__inner-wrapper:last-child {
+        margin-right: 0; } }
+  @media screen and (min-width: 48.0625em) {
+    .lutron .security .security__inner-wrapper {
+      float: left;
+      display: block;
+      margin-right: 1.877269384%;
+      width: 45.6654563285%;
+      margin-left: 27.1672718357%; }
+      .lutron .security .security__inner-wrapper:last-child {
+        margin-right: 0; } }
   .lutron .security img {
     padding-top: 6.875rem; }
-
-@media screen and (min-width: 6.25em) {
-  .work {
-    visibility: hidden; } }
-
-@media screen and (min-width: 48.0625em) {
-  .work {
-    visibility: visible; } }
 
 .work .centered-navigation ul li.nav-link a {
   color: rgba(0, 0, 0, 0.8); }
@@ -2549,43 +2600,56 @@ img.logo {
   text-align: center;
   padding-top: 6.25em;
   padding-bottom: 6.25em; }
-  .work .projects .projects__inner-wrapper {
-    float: left;
-    display: block;
-    margin-right: 1.877269384%;
-    width: 59.2490922464%;
-    margin-left: 20.3754538768%; }
-    .work .projects .projects__inner-wrapper:last-child {
-      margin-right: 0; }
+  @media screen and (min-width: 6.25em) {
+    .work .projects .projects__inner-wrapper {
+      float: left;
+      display: block;
+      margin-right: 1.877269384%;
+      width: 86.4163640821%;
+      margin-left: 6.7918179589%; }
+      .work .projects .projects__inner-wrapper:last-child {
+        margin-right: 0; } }
+  @media screen and (min-width: 48.0625em) {
+    .work .projects .projects__inner-wrapper {
+      float: left;
+      display: block;
+      margin-right: 1.877269384%;
+      width: 59.2490922464%;
+      margin-left: 20.3754538768%; }
+      .work .projects .projects__inner-wrapper:last-child {
+        margin-right: 0; } }
 
 .work .thumbnails {
   padding-bottom: 110px; }
   .work .thumbnails .project {
-    padding-top: 110px;
-    float: left;
-    display: block;
-    margin-right: 1.877269384%;
-    width: 38.8736383696%;
-    margin-left: 6.7918179589%; }
-    .work .thumbnails .project:last-child {
-      margin-right: 0; }
-    .work .thumbnails .project:nth-child(2n) {
-      margin-right: 0; }
-    .work .thumbnails .project:nth-child(2n+1) {
-      clear: left; }
+    padding-top: 110px; }
+    @media screen and (min-width: 6.25em) {
+      .work .thumbnails .project {
+        float: left;
+        display: block;
+        margin-right: 1.877269384%;
+        width: 86.4163640821%;
+        margin-left: 6.7918179589%; }
+        .work .thumbnails .project:last-child {
+          margin-right: 0; } }
+    @media screen and (min-width: 48.0625em) {
+      .work .thumbnails .project {
+        float: left;
+        display: block;
+        margin-right: 1.877269384%;
+        width: 38.8736383696%;
+        margin-left: 6.7918179589%; }
+        .work .thumbnails .project:last-child {
+          margin-right: 0; }
+        .work .thumbnails .project:nth-child(2n) {
+          margin-right: 0; }
+        .work .thumbnails .project:nth-child(2n+1) {
+          clear: left; } }
     .work .thumbnails .project h5 {
       margin-top: 18px;
       text-align: center;
       text-transform: uppercase;
       letter-spacing: 1px; }
-
-@media screen and (min-width: 6.25em) {
-  .project {
-    visibility: hidden; } }
-
-@media screen and (min-width: 48.0625em) {
-  .project {
-    visibility: visible; } }
 
 .project main.load {
   visibility: hidden; }
@@ -2610,6 +2674,12 @@ img.logo {
     display: inline-block !important;
     line-height: 36px;
     margin: 0; }
+    @media screen and (min-width: 6.25em) {
+      .project .showcase div.details p.desktop {
+        display: none !important; } }
+    @media screen and (min-width: 48.0625em) {
+      .project .showcase div.details p.desktop {
+        display: block !important; } }
     .project .showcase div.details p.details {
       padding-right: 50px;
       border-right: 1px solid rgba(0, 0, 0, 0.8); }
@@ -2617,12 +2687,22 @@ img.logo {
       padding-left: 50px;
       padding-right: 50px;
       border-right: 1px solid rgba(0, 0, 0, 0.8); }
-    .project .showcase div.details p.projects {
-      padding-left: 50px;
-      padding-right: 50px;
-      border-right: 1px solid rgba(0, 0, 0, 0.8); }
-    .project .showcase div.details p.number {
-      padding-left: 50px; }
+    @media screen and (min-width: 6.25em) {
+      .project .showcase div.details p.projects {
+        float: left;
+        padding-left: 40px; } }
+    @media screen and (min-width: 48.0625em) {
+      .project .showcase div.details p.projects {
+        padding-left: 50px;
+        padding-right: 50px;
+        border-right: 1px solid rgba(0, 0, 0, 0.8); } }
+    @media screen and (min-width: 6.25em) {
+      .project .showcase div.details p.number {
+        float: right;
+        padding-right: 40px; } }
+    @media screen and (min-width: 48.0625em) {
+      .project .showcase div.details p.number {
+        padding-left: 50px; } }
     .project .showcase div.details p img.img-all {
       width: 20px;
       margin-left: 18px;
@@ -2638,34 +2718,64 @@ img.logo {
   height: 48px; }
   .project .flickity-prev-next-button path {
     fill: #fff; }
-  .project .flickity-prev-next-button.previous {
-    left: 30px; }
-  .project .flickity-prev-next-button.next {
-    right: 30px; }
+  @media screen and (min-width: 48.0625em) {
+    .project .flickity-prev-next-button.previous {
+      left: 30px; } }
+  @media screen and (min-width: 48.0625em) {
+    .project .flickity-prev-next-button.next {
+      right: 30px; } }
 
-.project .project-info {
-  float: left; }
+@media screen and (min-width: 48.0625em) {
+  .project .project-info {
+    float: left; } }
+
+@media screen and (min-width: 6.25em) {
+  .project .project-info .description {
+    text-align: center;
+    padding: 110px 40px; } }
+
+@media screen and (min-width: 48.0625em) {
   .project .project-info .description {
     float: left;
     width: 50%;
     background-color: #FFF;
-    padding: 80px 9% 110px; }
-    .project .project-info .description h2 {
-      margin-bottom: .7rem; }
-    .project .project-info .description p.body {
-      margin: 0; }
-  .project .project-info .stats {
-    float: left;
-    width: 50%;
-    background-color: #f4f5f5;
-    padding: 85px 9% 110px; }
-    .project .project-info .stats p.body {
-      margin: 0 0 1rem 0; }
-    .project .project-info .stats p.head {
-      margin: 0;
-      font-family: "Maison Neue Medium";
-      font-size: 14px;
-      text-transform: uppercase; }
+    padding: 80px 9% 110px; } }
+
+.project .project-info .description h2 {
+  margin-bottom: .7rem; }
+
+.project .project-info .description p.body {
+  margin: 0; }
+
+.project .project-info .stats {
+  background-color: #f4f5f5; }
+  @media screen and (min-width: 6.25em) {
+    .project .project-info .stats {
+      text-align: center;
+      padding: 110px 40px; } }
+  @media screen and (min-width: 48.0625em) {
+    .project .project-info .stats {
+      float: left;
+      width: 50%;
+      padding: 85px 9% 110px; } }
+  .project .project-info .stats p.body {
+    margin: 0 0 52px 0; }
+    @media screen and (min-width: 6.25em) {
+      .project .project-info .stats p.body {
+        font-size: 18px; } }
+    @media screen and (min-width: 48.0625em) {
+      .project .project-info .stats p.body {
+        font-size: 14px; } }
+  .project .project-info .stats p.head {
+    margin: 0;
+    font-family: "Maison Neue Medium";
+    text-transform: uppercase; }
+    @media screen and (min-width: 6.25em) {
+      .project .project-info .stats p.head {
+        font-size: 18px; } }
+    @media screen and (min-width: 48.0625em) {
+      .project .project-info .stats p.head {
+        font-size: 14px; } }
 
 @media screen and (min-width: 6.25em) {
   .contact {
