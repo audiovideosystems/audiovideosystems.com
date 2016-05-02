@@ -55,6 +55,7 @@
         @include media($l){
           @include span-columns(5 of 13);
           @include shift(1 of 13);
+          padding-bottom: 0px;
         }
         text-align: center;
       }
@@ -93,6 +94,7 @@
         @include media($l){
           @include span-columns(5 of 13);
           @include shift(1 of 13);
+          padding-bottom: 0px;
         }
         text-align: center;
       }
@@ -132,6 +134,7 @@
         @include media($l){
           @include span-columns(5 of 13);
           @include shift(1 of 13);
+          padding-bottom: 0px;
         }
         text-align: center;
       }
