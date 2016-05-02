@@ -1,12 +1,5 @@
 .theater {
 
-  @include media($s){
-    visibility: hidden;
-  }
-  @include media($l){
-    visibility: visible;
-  }
-
   .centered-navigation ul li.nav-link a {
     color: $text;
     }
@@ -33,20 +26,46 @@
 
   .projectors {
     text-align: center;
-    @include media($l) {
+    @include media($s) {
       padding-top: 110px;
     }
     .projectors__inner-wrapper {
-      @include span-columns(7);
-      @include shift(4);
+      @include media($s){
+        @include span-columns(13);
+        @include shift(1);
+        p {
+          margin-bottom: 0;
+        }
+        padding-bottom: 52px;
+      }
+      @include media($l){
+        @include span-columns(7);
+        @include shift(4);
+        padding-bottom: 0px;
+      }
+
     }
     .projectors__details {
-      @include span-columns(5);
-      padding-top: 80px;
-      padding-bottom: 110px;
+      @include media($s){
+        @include span-columns(13);
+        @include shift(1);
+        padding-top: 0px;
+        padding-bottom: 52px;
+        &:last-of-type {
+          padding-bottom: 110px;
+        }
+      }
+      @include media($l){
+        @include span-columns(5);
+        @include shift(0);
+        padding-top: 80px;
+        padding-bottom: 110px;
+      }
       &.middle {
-        padding-left: 10px;
-        padding-right: 10px;
+        @include media($l){
+          padding-left: 10px;
+          padding-right: 10px;
+        }
       }
     }
   }
@@ -73,33 +92,58 @@
 
   .streamed {
     text-align: center;
-    @include media($l) {
+    @include media($s) {
       padding-top: 110px;
     }
     .streamed__inner-wrapper {
-      @include span-columns(7);
-      @include shift(4);
+      @include media($s){
+        @include span-columns(13);
+        @include shift(1);
+        padding-bottom: 52px;
+      }
+      @include media($l){
+        @include span-columns(7);
+        @include shift(4);
+      }
     }
     .streamed__details {
-      @include span-columns(5);
-      padding-top: 80px;
-      padding-bottom: 110px;
-      &.middle {
-        padding-left: 10px;
-        padding-right: 10px;
+      @include media($s){
+        @include span-columns(13);
+        @include shift(1);
+        padding-top: 0px;
+        padding-bottom: 52px;
+        &:last-of-type {
+          padding-bottom: 110px;
+        }
+      }
+      @include media($l){
+        @include span-columns(5);
+        @include shift(0);
+        padding-top: 80px;
+        padding-bottom: 110px;
+        &.middle {
+          padding-left: 10px;
+          padding-right: 10px;
+        }
       }
     }
   }
 
   .surround {
     text-align: center;
-    @include media($l) {
+    @include media($s) {
       // padding-top: 110px;
       padding-bottom: 110px;
     }
     .surround__inner-wrapper {
-      @include span-columns(7);
-      @include shift(4);
+      @include media($s){
+        @include span-columns(13);
+        @include shift(1);
+      }
+      @include media($l){
+        @include span-columns(7);
+        @include shift(4);
+      }
     }
   }
 

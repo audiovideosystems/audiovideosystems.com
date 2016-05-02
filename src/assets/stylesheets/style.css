@@ -2203,14 +2203,6 @@ img.logo {
 .automation .featured img {
   padding-bottom: 110px; }
 
-@media screen and (min-width: 6.25em) {
-  .theater {
-    visibility: hidden; } }
-
-@media screen and (min-width: 48.0625em) {
-  .theater {
-    visibility: visible; } }
-
 .theater .centered-navigation ul li.nav-link a {
   color: rgba(0, 0, 0, 0.8); }
 
@@ -2237,29 +2229,59 @@ img.logo {
 
 .theater .projectors {
   text-align: center; }
-  @media screen and (min-width: 48.0625em) {
+  @media screen and (min-width: 6.25em) {
     .theater .projectors {
       padding-top: 110px; } }
-  .theater .projectors .projectors__inner-wrapper {
-    float: left;
-    display: block;
-    margin-right: 1.877269384%;
-    width: 45.6654563285%;
-    margin-left: 27.1672718357%; }
-    .theater .projectors .projectors__inner-wrapper:last-child {
-      margin-right: 0; }
-  .theater .projectors .projectors__details {
-    float: left;
-    display: block;
-    margin-right: 1.877269384%;
-    width: 32.0818204106%;
-    padding-top: 80px;
-    padding-bottom: 110px; }
-    .theater .projectors .projectors__details:last-child {
-      margin-right: 0; }
+  @media screen and (min-width: 6.25em) {
+    .theater .projectors .projectors__inner-wrapper {
+      float: left;
+      display: block;
+      margin-right: 1.877269384%;
+      width: 86.4163640821%;
+      margin-left: 6.7918179589%;
+      padding-bottom: 52px; }
+      .theater .projectors .projectors__inner-wrapper:last-child {
+        margin-right: 0; }
+      .theater .projectors .projectors__inner-wrapper p {
+        margin-bottom: 0; } }
+  @media screen and (min-width: 48.0625em) {
+    .theater .projectors .projectors__inner-wrapper {
+      float: left;
+      display: block;
+      margin-right: 1.877269384%;
+      width: 45.6654563285%;
+      margin-left: 27.1672718357%;
+      padding-bottom: 0px; }
+      .theater .projectors .projectors__inner-wrapper:last-child {
+        margin-right: 0; } }
+  @media screen and (min-width: 6.25em) {
+    .theater .projectors .projectors__details {
+      float: left;
+      display: block;
+      margin-right: 1.877269384%;
+      width: 86.4163640821%;
+      margin-left: 6.7918179589%;
+      padding-top: 0px;
+      padding-bottom: 52px; }
+      .theater .projectors .projectors__details:last-child {
+        margin-right: 0; }
+      .theater .projectors .projectors__details:last-of-type {
+        padding-bottom: 110px; } }
+  @media screen and (min-width: 48.0625em) {
+    .theater .projectors .projectors__details {
+      float: left;
+      display: block;
+      margin-right: 1.877269384%;
+      width: 32.0818204106%;
+      margin-left: 0%;
+      padding-top: 80px;
+      padding-bottom: 110px; }
+      .theater .projectors .projectors__details:last-child {
+        margin-right: 0; } }
+  @media screen and (min-width: 48.0625em) {
     .theater .projectors .projectors__details.middle {
       padding-left: 10px;
-      padding-right: 10px; }
+      padding-right: 10px; } }
 
 .theater .featured img {
   padding-bottom: 110px; }
@@ -2282,43 +2304,79 @@ img.logo {
 
 .theater .streamed {
   text-align: center; }
-  @media screen and (min-width: 48.0625em) {
+  @media screen and (min-width: 6.25em) {
     .theater .streamed {
       padding-top: 110px; } }
-  .theater .streamed .streamed__inner-wrapper {
-    float: left;
-    display: block;
-    margin-right: 1.877269384%;
-    width: 45.6654563285%;
-    margin-left: 27.1672718357%; }
-    .theater .streamed .streamed__inner-wrapper:last-child {
-      margin-right: 0; }
-  .theater .streamed .streamed__details {
-    float: left;
-    display: block;
-    margin-right: 1.877269384%;
-    width: 32.0818204106%;
-    padding-top: 80px;
-    padding-bottom: 110px; }
-    .theater .streamed .streamed__details:last-child {
-      margin-right: 0; }
-    .theater .streamed .streamed__details.middle {
-      padding-left: 10px;
-      padding-right: 10px; }
+  @media screen and (min-width: 6.25em) {
+    .theater .streamed .streamed__inner-wrapper {
+      float: left;
+      display: block;
+      margin-right: 1.877269384%;
+      width: 86.4163640821%;
+      margin-left: 6.7918179589%;
+      padding-bottom: 52px; }
+      .theater .streamed .streamed__inner-wrapper:last-child {
+        margin-right: 0; } }
+  @media screen and (min-width: 48.0625em) {
+    .theater .streamed .streamed__inner-wrapper {
+      float: left;
+      display: block;
+      margin-right: 1.877269384%;
+      width: 45.6654563285%;
+      margin-left: 27.1672718357%; }
+      .theater .streamed .streamed__inner-wrapper:last-child {
+        margin-right: 0; } }
+  @media screen and (min-width: 6.25em) {
+    .theater .streamed .streamed__details {
+      float: left;
+      display: block;
+      margin-right: 1.877269384%;
+      width: 86.4163640821%;
+      margin-left: 6.7918179589%;
+      padding-top: 0px;
+      padding-bottom: 52px; }
+      .theater .streamed .streamed__details:last-child {
+        margin-right: 0; }
+      .theater .streamed .streamed__details:last-of-type {
+        padding-bottom: 110px; } }
+  @media screen and (min-width: 48.0625em) {
+    .theater .streamed .streamed__details {
+      float: left;
+      display: block;
+      margin-right: 1.877269384%;
+      width: 32.0818204106%;
+      margin-left: 0%;
+      padding-top: 80px;
+      padding-bottom: 110px; }
+      .theater .streamed .streamed__details:last-child {
+        margin-right: 0; }
+      .theater .streamed .streamed__details.middle {
+        padding-left: 10px;
+        padding-right: 10px; } }
 
 .theater .surround {
   text-align: center; }
-  @media screen and (min-width: 48.0625em) {
+  @media screen and (min-width: 6.25em) {
     .theater .surround {
       padding-bottom: 110px; } }
-  .theater .surround .surround__inner-wrapper {
-    float: left;
-    display: block;
-    margin-right: 1.877269384%;
-    width: 45.6654563285%;
-    margin-left: 27.1672718357%; }
-    .theater .surround .surround__inner-wrapper:last-child {
-      margin-right: 0; }
+  @media screen and (min-width: 6.25em) {
+    .theater .surround .surround__inner-wrapper {
+      float: left;
+      display: block;
+      margin-right: 1.877269384%;
+      width: 86.4163640821%;
+      margin-left: 6.7918179589%; }
+      .theater .surround .surround__inner-wrapper:last-child {
+        margin-right: 0; } }
+  @media screen and (min-width: 48.0625em) {
+    .theater .surround .surround__inner-wrapper {
+      float: left;
+      display: block;
+      margin-right: 1.877269384%;
+      width: 45.6654563285%;
+      margin-left: 27.1672718357%; }
+      .theater .surround .surround__inner-wrapper:last-child {
+        margin-right: 0; } }
 
 .theater .exceptional {
   text-align: center;
