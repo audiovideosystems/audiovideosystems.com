@@ -87,6 +87,7 @@
       .intermittent, .continuous {
         @include media($s){
           @include span-columns(6 of 13);
+          padding-left: 1.5rem;
         }
         @include media($l){
           @include span-columns(3 of 6);
@@ -99,12 +100,15 @@
           letter-spacing: 1px;
           color: $text;
           @include media($s){
-            padding-left: 0px;
+            padding-left: 2.5rem;
           }
           @include media($l){
-            padding-left: 1rem;
           }
           font-weight: normal;
+        }
+        .styledRadio {
+          float: left;
+          background-size: 25px;
         }
       }
       .continuous {
@@ -256,31 +260,32 @@
         }
       }
 
-      /* Hidding the radiobuttons & checkboxes */
-      input[type="radio"], input[type="checkbox"] {
-          display: none;
-      }
-      /* Hidding the "check" status of inputs */
-      input[type="radio"] + label .fa-circle,
-      input[type="checkbox"] + label .fa-check  {
-      display: none;
-      }
-      /* Styling the "check" status */
-      input[type="radio"]:checked + label .fa-circle,
-      input[type="checkbox"]:checked + label .fa-check {
-      display: block;
-      color: $text;
-      }
-      /* Styling checkboxes */
-      input[type="checkbox"]:checked + label .fa-check {
-      position: relative;
-      left: .125em;
-      bottom: .125em;
-      }
-      /* Styling radiobuttons */
-      input[type="radio"]:checked + label .fa-circle-o {
-      display: none;
-      }
+      // /* Hidding the radiobuttons & checkboxes  http://cssdeck.com/labs/custom-radiobutton-and-checkbox-with-fontawesome-full-style-solution */
+      // input[type="radio"], input[type="checkbox"] {
+      //     display: none;
+      // }
+      // /* Hidding the "check" status of inputs */
+      // input[type="radio"] + label .fa-circle,
+      // input[type="checkbox"] + label .fa-check  {
+      // display: none;
+      // }
+      // /* Styling the "check" status */
+      // input[type="radio"]:checked + label .fa-circle,
+      // input[type="checkbox"]:checked + label .fa-check {
+      // display: block;
+      // color: $text;
+      // }
+      // /* Styling checkboxes */
+      // input[type="checkbox"]:checked + label .fa-check {
+      // position: relative;
+      // left: .125em;
+      // bottom: .125em;
+      // }
+      // /* Styling radiobuttons */
+      // input[type="radio"]:checked + label .fa-circle-o {
+      // display: none;
+      // }
+
 
     }
   }
