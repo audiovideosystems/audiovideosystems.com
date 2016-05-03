@@ -46,6 +46,14 @@
 
 .project {
 
+  @include media($l){
+    main {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+    }
+  }
+
   .desktop {
     @include media($s){
       display: none !important;
