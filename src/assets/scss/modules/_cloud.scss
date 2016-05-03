@@ -103,6 +103,7 @@
           @include span-columns(5 of 13);
           @include shift(1 of 13);
         }
+        text-align: center;
       }
     }
   }

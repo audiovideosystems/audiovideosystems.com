@@ -167,6 +167,11 @@
           margin-bottom: 0;
         }
       }
+      .two {
+        @include media($l){
+          @include shift(1);
+        }
+      }
     }
   }
 

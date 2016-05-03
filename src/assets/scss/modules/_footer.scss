@@ -88,8 +88,9 @@
           font-size: rem(14);
           text-transform: uppercase;
           border-radius: 0;
-          padding-top: 9px;
-          padding-bottom: 9px;
+          padding-top: 13px;
+          padding-bottom: 13px;
+          margin-bottom: 0px;
         }
         button {
           display: inline;
@@ -100,8 +101,12 @@
           background-color: $footer-blue;
           font-family: $heading-font-family;
           font-size: rem(14);
-          line-height: 1;
+          padding: .68rem 1.3rem;
+          line-height: 1.5;
           text-transform: uppercase;
+          &:focus {
+            outline: 0;
+          }
         }
       }
     }

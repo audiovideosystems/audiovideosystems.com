@@ -1061,8 +1061,9 @@ figure[data-type=quote] cite:before {
       font-size: 0.875rem;
       text-transform: uppercase;
       border-radius: 0;
-      padding-top: 9px;
-      padding-bottom: 9px; }
+      padding-top: 13px;
+      padding-bottom: 13px;
+      margin-bottom: 0px; }
     .footer .footer__inner-wrapper .footer__beta .form-group button {
       display: inline;
       margin-left: .5rem;
@@ -1072,8 +1073,11 @@ figure[data-type=quote] cite:before {
       background-color: #d4effc;
       font-family: "Maison Neue Medium";
       font-size: 0.875rem;
-      line-height: 1;
+      padding: .68rem 1.3rem;
+      line-height: 1.5;
       text-transform: uppercase; }
+      .footer .footer__inner-wrapper .footer__beta .form-group button:focus {
+        outline: 0; }
   .footer .footer__omega.mobile {
     margin-bottom: 44px; }
     @media screen and (min-width: 6.25em) {
@@ -1570,6 +1574,9 @@ img.logo {
     @media screen and (min-width: 48.0625em) {
       .home .featured .featured__inner-wrapper .one {
         margin-bottom: 0; } }
+    @media screen and (min-width: 48.0625em) {
+      .home .featured .featured__inner-wrapper .two {
+        margin-left: 7.8594118499%; } }
 
 .home .showcase {
   padding-top: 6.875rem;
@@ -1796,15 +1803,17 @@ img.logo {
       .cloud .wireless .wireless__inner-wrapper .wireless__inner-wrapper_first:last-child {
         margin-right: 0; } }
 
-@media screen and (min-width: 48.0625em) {
-  .cloud .wireless .wireless__inner-wrapper .wireless__inner-wrapper_last {
-    float: left;
-    display: block;
-    margin-right: 2.1723540489%;
-    width: 37.1247052007%;
-    margin-left: 7.8594118499%; }
-    .cloud .wireless .wireless__inner-wrapper .wireless__inner-wrapper_last:last-child {
-      margin-right: 0; } }
+.cloud .wireless .wireless__inner-wrapper .wireless__inner-wrapper_last {
+  text-align: center; }
+  @media screen and (min-width: 48.0625em) {
+    .cloud .wireless .wireless__inner-wrapper .wireless__inner-wrapper_last {
+      float: left;
+      display: block;
+      margin-right: 2.1723540489%;
+      width: 37.1247052007%;
+      margin-left: 7.8594118499%; }
+      .cloud .wireless .wireless__inner-wrapper .wireless__inner-wrapper_last:last-child {
+        margin-right: 0; } }
 
 @media screen and (min-width: 48.0625em) {
   .cloud .cloud .copy-wrapper {
