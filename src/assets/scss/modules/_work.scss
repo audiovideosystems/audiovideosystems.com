@@ -71,6 +71,16 @@
   }
 
   .showcase {
+
+    .gallery-cell {
+      width: 100%;
+      line-height: 0px;
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
     .info {
       background-color: $project-green;
     }

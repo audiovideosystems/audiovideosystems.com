@@ -2689,6 +2689,13 @@ img.logo {
 .project main.loaded {
   visibility: visible; }
 
+.project .showcase .gallery-cell {
+  width: 100%;
+  line-height: 0px; }
+  .project .showcase .gallery-cell img {
+    width: 100%;
+    height: auto; }
+
 .project .showcase .info {
   background-color: #e2f0e7; }
 
