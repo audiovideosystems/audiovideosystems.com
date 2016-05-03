@@ -46,12 +46,33 @@
 
 .project {
 
+
+
   @include media($l){
     main {
       position: absolute;
       top: 0px;
       left: 0px;
     }
+
+    .nav-2 li a {
+      color: white;
+      border-bottom: 1px solid #fff;
+      &:hover {
+        color: rgba(255,255,255,.8) !important;
+      }
+    }
+
+    li.nav-link a {
+      color: white !important;
+    }
+
+    .centered-navigation ul li.nav-link a:hover {
+      @include media($l){
+        color: rgba(255,255,255,.8) !important;
+      }
+    }
+
   }
 
   .desktop {

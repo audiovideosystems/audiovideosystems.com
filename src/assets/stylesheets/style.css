@@ -2673,7 +2673,18 @@ img.logo {
   .project main {
     position: absolute;
     top: 0px;
-    left: 0px; } }
+    left: 0px; }
+  .project .nav-2 li a {
+    color: white;
+    border-bottom: 1px solid #fff; }
+    .project .nav-2 li a:hover {
+      color: rgba(255, 255, 255, 0.8) !important; }
+  .project li.nav-link a {
+    color: white !important; } }
+
+@media screen and (min-width: 48.0625em) and (min-width: 48.0625em) {
+  .project .centered-navigation ul li.nav-link a:hover {
+    color: rgba(255, 255, 255, 0.8) !important; } }
 
 @media screen and (min-width: 6.25em) {
   .project .desktop {
