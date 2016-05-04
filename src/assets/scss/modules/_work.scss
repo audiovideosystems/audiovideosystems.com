@@ -201,7 +201,14 @@
     .description {
       @include media($s){
         text-align: center;
-        padding: 110px 40px;
+        @include media($s){
+          @include media($s){
+            padding: 80px 40px;
+          }
+        }
+        @include media($l){
+          padding: 110px 40px;
+        }
       }
       @include media($l){
         float: left;

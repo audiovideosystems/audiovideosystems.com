@@ -22,33 +22,35 @@
     // enquire: media queries, but for javascript
     enquire.register("screen and (max-width: 768px)", {
       match : function() {
-        console.log('up to 768px wide')
+        // console.log('up to 768px wide')
       },
       unmatch : function() {
       }
     })
     .register("screen and (min-width: 769px)", {
       match : function() {
-        console.log('over 768px wide');
+        // console.log('over 768px wide');
         var windowWidth = $(window).width(); // for resize function
 
-        var wiringHeights = $('.wiring__inner-wrapper').children().map(function() {
-          return $(this).height();
-        }).get();
-        var maxWiringHeight = Math.max.apply(null, wiringHeights);
-        $('.wiring__inner-wrapper').children().height(maxWiringHeight);
+        setTimeout(function(){
+          var wiringHeights = $('.wiring__inner-wrapper').children().map(function() {
+            return $(this).height();
+          }).get();
+          var maxWiringHeight = Math.max.apply(null, wiringHeights);
+          $('.wiring__inner-wrapper').children().height(maxWiringHeight);
 
-        var wirelessHeights = $('.wireless__inner-wrapper').children().map(function() {
-          return $(this).height();
-        }).get();
-        var maxWirelessHeight = Math.max.apply(null, wirelessHeights);
-        $('.wireless__inner-wrapper').children().height(maxWirelessHeight);
+          var wirelessHeights = $('.wireless__inner-wrapper').children().map(function() {
+            return $(this).height();
+          }).get();
+          var maxWirelessHeight = Math.max.apply(null, wirelessHeights);
+          $('.wireless__inner-wrapper').children().height(maxWirelessHeight);
 
-        var cloudHeights = $('.cloud__inner-wrapper').children().map(function() {
-          return $(this).height();
-        }).get();
-        var maxcloudHeight = Math.max.apply(null, cloudHeights);
-        $('.cloud__inner-wrapper').children().height(maxcloudHeight);
+          var cloudHeights = $('.cloud__inner-wrapper').children().map(function() {
+            return $(this).height();
+          }).get();
+          var maxcloudHeight = Math.max.apply(null, cloudHeights);
+          $('.cloud__inner-wrapper').children().height(maxcloudHeight);
+        },200);
 
         // on resize
         window.onresize = debounce(function(){

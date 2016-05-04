@@ -1,6 +1,12 @@
 .cloud {
 
   .hero {
+    @include media($s){
+      height: 330px;
+      background: url("/assets/images/cloud-hero.jpg");
+      background-size: cover;
+      background-position: center;
+    }
     @include media($l){
       height: 462px;
       background: url("/assets/images/cloud-hero.jpg");

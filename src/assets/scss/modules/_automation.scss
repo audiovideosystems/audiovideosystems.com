@@ -6,6 +6,12 @@
 
   .hero {
     @include media($s){
+      height: 330px;
+      background: url("/assets/images/automation-hero.jpg");
+      background-size: cover;
+      background-position: center;
+    }
+    @include media($l){
       height: 462px;
       background: url("/assets/images/automation-hero.jpg");
       background-size: cover;
@@ -59,12 +65,18 @@
       margin-bottom: 110px;
     }
     .video-distribution__inner-wrapper {
-      @include span-columns(7);
-      @include shift(4);
+      @include media($s){
+        @include span-columns(13);
+        @include shift(1);
+      }
+      @include media($l){
+        @include span-columns(7);
+        @include shift(4);
+      }
     }
     .container.details {
       @include media($s){
-        padding-top: 110px;
+        padding-top: 80px;
         padding-bottom: 110px
       }
       @include media($l){
@@ -102,8 +114,14 @@
       margin-bottom: 110px;
     }
     .integration__inner-wrapper {
-      @include span-columns(7);
-      @include shift(4);
+      @include media($s){
+        @include span-columns(13);
+        @include shift(1);
+      }
+      @include media($l){
+        @include span-columns(7);
+        @include shift(4);
+      }
     }
   }
 
@@ -278,8 +296,14 @@
       margin-bottom: 110px;
     }
     .energy__inner-wrapper {
-      @include span-columns(7);
-      @include shift(4);
+      @include media($s){
+        @include span-columns(13);
+        @include shift(1);
+      }
+      @include media($l){
+        @include span-columns(7);
+        @include shift(4);
+      }
     }
   }
 

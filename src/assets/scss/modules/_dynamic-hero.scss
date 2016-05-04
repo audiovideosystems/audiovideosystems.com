@@ -8,7 +8,12 @@ section.dynamic-hero {
   h1 {
     margin-bottom: 0;
     position: relative;
-    top: 35%;
+    @include media($s){
+      top: 20%;
+    }
+    @include media($l){
+      top: 35%;
+    }
     padding-left: 5%;
     padding-right: 5%;
     -webkit-transform: translateY(-35%);

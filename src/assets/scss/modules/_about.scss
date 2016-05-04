@@ -1,12 +1,13 @@
 .about {
 
   .hero {
-    // @include media($l){
-    //   height: 462px;
-    //   background: url("/assets/images/about-hero.jpg");
-    //   background-size: cover;
-    // }
     @include media($s){
+      height: 330px;
+      background: url("/assets/images/about-hero.jpg");
+      background-size: cover;
+      background-position: center;
+    }
+    @include media($l){
       height: 462px;
       background: url("/assets/images/about-hero.jpg");
       background-size: cover;
@@ -100,9 +101,12 @@
           @include shift(1 of 13);
         }
         ul {
-          margin-left: 0;
+          @include media($s){
+            margin-left: 1rem;
+          }
           @include media($l){
             margin-bottom: 110px;
+            margin-left: 0;
           }
           li {
             font-size: 14px;
@@ -126,7 +130,13 @@
           @include shift(1 of 13);
         }
         ul {
-          margin-left: 0;
+          @include media($s){
+            margin-left: 1rem;
+          }
+          @include media($l){
+            margin-bottom: 110px;
+            margin-left: 0;
+          }
           margin-bottom: 110px;
           li {
             font-size: 14px;

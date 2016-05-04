@@ -6,6 +6,12 @@
 
   .hero {
     @include media($s){
+      height: 330px;
+      background: url("/assets/images/lutron-hero.jpg");
+      background-size: cover;
+      background-position: center;
+    }
+    @include media($l){
       height: 462px;
       background: url("/assets/images/lutron-hero.jpg");
       background-size: cover;
@@ -75,7 +81,12 @@
       }
     }
     img {
-      padding-top: 110px;
+      @include media($s){
+        padding-top: 80px;
+      }
+      @include media($l){
+        padding-top: 110px;
+      }
     }
   }
 
@@ -141,7 +152,12 @@
       }
     }
     img {
-      padding-top: rem(110);
+      @include media($s){
+        padding-top: 80px;
+      }
+      @include media($l){
+        padding-top: 110px;
+      }
     }
   }
 

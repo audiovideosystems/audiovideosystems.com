@@ -10440,7 +10440,12 @@ Kibo.prototype.lastModifiersAndKey = function() {
 
 (function() {
 
-
+  $('input,textarea').focus(function(){
+     $(this).data('placeholder',$(this).attr('placeholder'))
+            .attr('placeholder','');
+  }).blur(function(){
+     $(this).attr('placeholder',$(this).data('placeholder'));
+  });
 
   // visual grid: use 'g' key to toggle body class
   var k = new Kibo();
@@ -10460,7 +10465,19 @@ Kibo.prototype.lastModifiersAndKey = function() {
   })
   .register("screen and (min-width: 48.1em)", {
     match : function() {
-      console.log('over 768px wide')
+      console.log('over 768px wide');
+      var windowWidth = $(window).width(); // for resize function
+
+      // on resize
+        window.onresize = function(){
+          // actual resize? http://tinyurl.com/qaoajzu
+          if ($(window).width() != windowWidth) {
+            window.location.reload()
+          }
+        };
+
+
+
     },
     unmatch : function() {
     }

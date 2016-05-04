@@ -91,6 +91,12 @@
       &:hover {
         color: $hovertext;
       }
+      @include media($s){
+        font-size: 18px;
+      }
+      @include media($l){
+        font-size: 16px;
+      }
     }
   }
 
@@ -181,6 +187,7 @@
       }
     }
     p.caption {
+      font-size: 14px;
       clear: both;
       // padding-top: rem(10);
       margin-bottom: 0;

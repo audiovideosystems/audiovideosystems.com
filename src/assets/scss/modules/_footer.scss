@@ -23,6 +23,16 @@
       }
 
       text-align: center;
+      p {
+        font-family: $heading-font-family;
+        font-size: rem(14);
+        letter-spacing: 1px;
+        line-height: 1.6;
+        display: block;
+        text-transform: uppercase;
+        margin-bottom: 0;
+        color: #fff;
+      }
       a {
         font-family: $heading-font-family;
         font-size: rem(14);
@@ -131,6 +141,11 @@
       @include media($s){
         font-size: 18px;
         margin-bottom: .5em;
+      }
+    }
+    p {
+      @include media($s){
+        font-size: 18px;
       }
     }
   }

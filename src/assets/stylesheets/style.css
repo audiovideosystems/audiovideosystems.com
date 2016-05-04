@@ -533,7 +533,7 @@ h1 {
 
 h2 {
   font-family: 'Noe Display';
-  font-size: 36px;
+  font-size: 35px;
   line-height: 1.4;
   color: rgba(0, 0, 0, 0.8); }
 
@@ -678,10 +678,15 @@ section.dynamic-hero {
   section.dynamic-hero h1 {
     margin-bottom: 0;
     position: relative;
-    top: 35%;
     padding-left: 5%;
     padding-right: 5%;
     transform: translateY(-35%); }
+    @media screen and (min-width: 6.25em) {
+      section.dynamic-hero h1 {
+        top: 20%; } }
+    @media screen and (min-width: 48.0625em) {
+      section.dynamic-hero h1 {
+        top: 35%; } }
   section.dynamic-hero img.arrow {
     width: 48px;
     height: 48px;
@@ -996,6 +1001,15 @@ figure[data-type=quote] cite:before {
         margin-left: 0%; }
         .footer .footer__inner-wrapper .footer__alpha:last-child, .footer .footer__inner-wrapper .footer__omega:last-child {
           margin-right: 0; } }
+    .footer .footer__inner-wrapper .footer__alpha p, .footer .footer__inner-wrapper .footer__omega p {
+      font-family: "Maison Neue Medium";
+      font-size: 0.875rem;
+      letter-spacing: 1px;
+      line-height: 1.6;
+      display: block;
+      text-transform: uppercase;
+      margin-bottom: 0;
+      color: #fff; }
     .footer .footer__inner-wrapper .footer__alpha a, .footer .footer__inner-wrapper .footer__omega a {
       font-family: "Maison Neue Medium";
       font-size: 0.875rem;
@@ -1094,6 +1108,9 @@ figure[data-type=quote] cite:before {
         .footer .footer__alpha.mobile a {
           font-size: 18px;
           margin-bottom: .5em; } }
+    @media screen and (min-width: 6.25em) {
+      .footer .footer__alpha.mobile p {
+        font-size: 18px; } }
   .footer .footer__address.mobile {
     float: left;
     display: block;
@@ -1137,7 +1154,7 @@ header {
   .centered-navigation .mobile-logo {
     display: inline;
     float: left;
-    padding: 30px 0 30px 40px; }
+    padding: 24px 0 30px 30px; }
     .centered-navigation .mobile-logo img {
       max-height: 60px;
       width: 60px;
@@ -1495,6 +1512,12 @@ img.logo {
   border-bottom: 1px solid rgba(0, 0, 0, 0.8); }
   .home .absolute h6 a:hover {
     color: rgba(0, 0, 0, 0.6); }
+  @media screen and (min-width: 6.25em) {
+    .home .absolute h6 a {
+      font-size: 18px; } }
+  @media screen and (min-width: 48.0625em) {
+    .home .absolute h6 a {
+      font-size: 16px; } }
 
 .home .brands {
   background-color: #f4f5f5;
@@ -1602,6 +1625,7 @@ img.logo {
       .home .showcase .showcase__carousel .gallery-cell {
         height: 500px; } }
   .home .showcase p.caption {
+    font-size: 14px;
     clear: both;
     margin-bottom: 0;
     text-align: left;
@@ -1681,6 +1705,13 @@ img.logo {
     @media screen and (min-width: 41.6875em) {
       .home .testimonial .flickity-prev-next-button.next {
         right: 7px; } }
+
+@media screen and (min-width: 6.25em) {
+  .cloud .hero {
+    height: 330px;
+    background: url("/assets/images/cloud-hero.jpg");
+    background-size: cover;
+    background-position: center; } }
 
 @media screen and (min-width: 48.0625em) {
   .cloud .hero {
@@ -1878,6 +1909,13 @@ img.logo {
 
 @media screen and (min-width: 6.25em) {
   .automation .hero {
+    height: 330px;
+    background: url("/assets/images/automation-hero.jpg");
+    background-size: cover;
+    background-position: center; } }
+
+@media screen and (min-width: 48.0625em) {
+  .automation .hero {
     height: 462px;
     background: url("/assets/images/automation-hero.jpg");
     background-size: cover;
@@ -1934,17 +1972,27 @@ img.logo {
     .automation .video-distribution {
       padding-top: 110px;
       margin-bottom: 110px; } }
-  .automation .video-distribution .video-distribution__inner-wrapper {
-    float: left;
-    display: block;
-    margin-right: 1.877269384%;
-    width: 45.6654563285%;
-    margin-left: 27.1672718357%; }
-    .automation .video-distribution .video-distribution__inner-wrapper:last-child {
-      margin-right: 0; }
+  @media screen and (min-width: 6.25em) {
+    .automation .video-distribution .video-distribution__inner-wrapper {
+      float: left;
+      display: block;
+      margin-right: 1.877269384%;
+      width: 86.4163640821%;
+      margin-left: 6.7918179589%; }
+      .automation .video-distribution .video-distribution__inner-wrapper:last-child {
+        margin-right: 0; } }
+  @media screen and (min-width: 48.0625em) {
+    .automation .video-distribution .video-distribution__inner-wrapper {
+      float: left;
+      display: block;
+      margin-right: 1.877269384%;
+      width: 45.6654563285%;
+      margin-left: 27.1672718357%; }
+      .automation .video-distribution .video-distribution__inner-wrapper:last-child {
+        margin-right: 0; } }
   @media screen and (min-width: 6.25em) {
     .automation .video-distribution .container.details {
-      padding-top: 110px;
+      padding-top: 80px;
       padding-bottom: 110px; } }
   @media screen and (min-width: 48.0625em) {
     .automation .video-distribution .container.details {
@@ -1983,14 +2031,24 @@ img.logo {
   @media screen and (min-width: 6.25em) {
     .automation .integration {
       margin-bottom: 110px; } }
-  .automation .integration .integration__inner-wrapper {
-    float: left;
-    display: block;
-    margin-right: 1.877269384%;
-    width: 45.6654563285%;
-    margin-left: 27.1672718357%; }
-    .automation .integration .integration__inner-wrapper:last-child {
-      margin-right: 0; }
+  @media screen and (min-width: 6.25em) {
+    .automation .integration .integration__inner-wrapper {
+      float: left;
+      display: block;
+      margin-right: 1.877269384%;
+      width: 86.4163640821%;
+      margin-left: 6.7918179589%; }
+      .automation .integration .integration__inner-wrapper:last-child {
+        margin-right: 0; } }
+  @media screen and (min-width: 48.0625em) {
+    .automation .integration .integration__inner-wrapper {
+      float: left;
+      display: block;
+      margin-right: 1.877269384%;
+      width: 45.6654563285%;
+      margin-left: 27.1672718357%; }
+      .automation .integration .integration__inner-wrapper:last-child {
+        margin-right: 0; } }
 
 .automation .triple {
   padding-bottom: 110px; }
@@ -2209,14 +2267,24 @@ img.logo {
     .automation .energy {
       padding-top: 110px;
       margin-bottom: 110px; } }
-  .automation .energy .energy__inner-wrapper {
-    float: left;
-    display: block;
-    margin-right: 1.877269384%;
-    width: 45.6654563285%;
-    margin-left: 27.1672718357%; }
-    .automation .energy .energy__inner-wrapper:last-child {
-      margin-right: 0; }
+  @media screen and (min-width: 6.25em) {
+    .automation .energy .energy__inner-wrapper {
+      float: left;
+      display: block;
+      margin-right: 1.877269384%;
+      width: 86.4163640821%;
+      margin-left: 6.7918179589%; }
+      .automation .energy .energy__inner-wrapper:last-child {
+        margin-right: 0; } }
+  @media screen and (min-width: 48.0625em) {
+    .automation .energy .energy__inner-wrapper {
+      float: left;
+      display: block;
+      margin-right: 1.877269384%;
+      width: 45.6654563285%;
+      margin-left: 27.1672718357%; }
+      .automation .energy .energy__inner-wrapper:last-child {
+        margin-right: 0; } }
 
 .automation .featured img {
   padding-bottom: 110px; }
@@ -2225,6 +2293,13 @@ img.logo {
   color: rgba(0, 0, 0, 0.8); }
 
 @media screen and (min-width: 6.25em) {
+  .theater .hero {
+    height: 330px;
+    background: url("/assets/images/theater-hero.jpg");
+    background-size: cover;
+    background-position: center; } }
+
+@media screen and (min-width: 48.0625em) {
   .theater .hero {
     height: 462px;
     background: url("/assets/images/theater-hero.jpg");
@@ -2417,6 +2492,13 @@ img.logo {
 
 @media screen and (min-width: 6.25em) {
   .lutron .hero {
+    height: 330px;
+    background: url("/assets/images/lutron-hero.jpg");
+    background-size: cover;
+    background-position: center; } }
+
+@media screen and (min-width: 48.0625em) {
+  .lutron .hero {
     height: 462px;
     background: url("/assets/images/lutron-hero.jpg");
     background-size: cover;
@@ -2494,8 +2576,12 @@ img.logo {
       margin-left: 27.1672718357%; }
       .lutron .convenience .convenience__inner-wrapper:last-child {
         margin-right: 0; } }
-  .lutron .convenience img {
-    padding-top: 110px; }
+  @media screen and (min-width: 6.25em) {
+    .lutron .convenience img {
+      padding-top: 80px; } }
+  @media screen and (min-width: 48.0625em) {
+    .lutron .convenience img {
+      padding-top: 110px; } }
 
 @media screen and (min-width: 6.25em) {
   .lutron .split {
@@ -2580,8 +2666,12 @@ img.logo {
       margin-left: 27.1672718357%; }
       .lutron .aesthetics .aesthetics__inner-wrapper:last-child {
         margin-right: 0; } }
-  .lutron .aesthetics img {
-    padding-top: 6.875rem; }
+  @media screen and (min-width: 6.25em) {
+    .lutron .aesthetics img {
+      padding-top: 80px; } }
+  @media screen and (min-width: 48.0625em) {
+    .lutron .aesthetics img {
+      padding-top: 110px; } }
 
 .lutron .security {
   text-align: center; }
@@ -2784,8 +2874,14 @@ img.logo {
 
 @media screen and (min-width: 6.25em) {
   .project .project-info .description {
-    text-align: center;
-    padding: 110px 40px; } }
+    text-align: center; } }
+
+@media screen and (min-width: 6.25em) and (min-width: 6.25em) and (min-width: 6.25em) {
+  .project .project-info .description {
+    padding: 80px 40px; } }
+  @media screen and (min-width: 6.25em) and (min-width: 48.0625em) {
+    .project .project-info .description {
+      padding: 110px 40px; } }
 
 @media screen and (min-width: 48.0625em) {
   .project .project-info .description {
@@ -3217,6 +3313,13 @@ img.logo {
 
 @media screen and (min-width: 6.25em) {
   .about .hero {
+    height: 330px;
+    background: url("/assets/images/about-hero.jpg");
+    background-size: cover;
+    background-position: center; } }
+
+@media screen and (min-width: 48.0625em) {
+  .about .hero {
     height: 462px;
     background: url("/assets/images/about-hero.jpg");
     background-size: cover;
@@ -3333,16 +3436,18 @@ img.logo {
           margin-left: 7.8594118499%; }
           .about .staff .staff__inner-wrapper .staff__details_a:last-child {
             margin-right: 0; } }
-      .about .staff .staff__inner-wrapper .staff__details_a ul {
-        margin-left: 0; }
-        @media screen and (min-width: 48.0625em) {
-          .about .staff .staff__inner-wrapper .staff__details_a ul {
-            margin-bottom: 110px; } }
-        .about .staff .staff__inner-wrapper .staff__details_a ul li {
-          font-size: 14px;
-          list-style-type: disc;
-          line-height: 1.7;
-          margin-bottom: 1rem; }
+      @media screen and (min-width: 6.25em) {
+        .about .staff .staff__inner-wrapper .staff__details_a ul {
+          margin-left: 1rem; } }
+      @media screen and (min-width: 48.0625em) {
+        .about .staff .staff__inner-wrapper .staff__details_a ul {
+          margin-bottom: 110px;
+          margin-left: 0; } }
+      .about .staff .staff__inner-wrapper .staff__details_a ul li {
+        font-size: 14px;
+        list-style-type: disc;
+        line-height: 1.7;
+        margin-bottom: 1rem; }
     .about .staff .staff__inner-wrapper .staff__details_b {
       font-family: 'Maison Neue Medium';
       line-height: 1.7;
@@ -3366,8 +3471,14 @@ img.logo {
           .about .staff .staff__inner-wrapper .staff__details_b:last-child {
             margin-right: 0; } }
       .about .staff .staff__inner-wrapper .staff__details_b ul {
-        margin-left: 0;
         margin-bottom: 110px; }
+        @media screen and (min-width: 6.25em) {
+          .about .staff .staff__inner-wrapper .staff__details_b ul {
+            margin-left: 1rem; } }
+        @media screen and (min-width: 48.0625em) {
+          .about .staff .staff__inner-wrapper .staff__details_b ul {
+            margin-bottom: 110px;
+            margin-left: 0; } }
         .about .staff .staff__inner-wrapper .staff__details_b ul li {
           font-size: 14px;
           list-style-type: disc;
@@ -3430,7 +3541,7 @@ h1 {
 
 h2 {
   font-family: 'Noe Display';
-  font-size: 36px;
+  font-size: 35px;
   line-height: 1.4;
   color: rgba(0, 0, 0, 0.8); }
 
@@ -3476,9 +3587,14 @@ h6 {
 
 p.body {
   font-family: 'Maison Neue Medium';
-  font-size: 0.875rem;
   line-height: 1.7;
   color: rgba(0, 0, 0, 0.8); }
+  @media screen and (min-width: 6.25em) {
+    p.body {
+      font-size: 1.125rem; } }
+  @media screen and (min-width: 48.0625em) {
+    p.body {
+      font-size: 0.875rem; } }
 
 a {
   color: rgba(0, 0, 0, 0.8);
