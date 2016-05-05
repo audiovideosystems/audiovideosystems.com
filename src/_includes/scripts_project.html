@@ -88,6 +88,7 @@
         var main = $('main');
         setTimeout(function(){
           $(main).fadeIn().removeClass('load').addClass('loaded');
+          $gallery.resize();
         }, 250);
 
         // on resize
