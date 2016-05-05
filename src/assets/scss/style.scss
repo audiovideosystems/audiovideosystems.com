@@ -121,7 +121,12 @@ $visual-grid-opacity: 0.2;
   margin-bottom: 25px;
   letter-spacing: 1px;
    &.small {
-    font-size: 14px;
+    @include media($s){
+      font-size: 18px;
+    }
+    @include media($l){
+      font-size: 14px;
+    }
    }
   }
 

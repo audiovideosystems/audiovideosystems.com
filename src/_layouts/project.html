@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+  {% include global/head.html %}
+
+  <body class="{% if page.class %}{{ page.class }}{% endif %}">
+
+    {% include global/header.html %}
+
+
+      {{ content }}
+
+
+
+
+
+  <!-- JS -->
+  <!-- inject:js -->
+  <script src="/assets/javascript/index.js"></script>
+  <!-- endinject -->
+
+  </body>
+
+  {% include scripts_project.html %}
+
+</html>

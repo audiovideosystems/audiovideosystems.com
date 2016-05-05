@@ -162,7 +162,12 @@ header {
 
   ul li.nav-link {
     font-family: $heading-font-family;
-    font-size: rem(14);
+    @include media($s){
+      font-size: 18px;
+    }
+    @include media($l){
+      font-size: 14px;
+    }
     background: $centered-navigation-background;
     display: block;
     line-height: $centered-navigation-height;
