@@ -1,3 +1,13 @@
+.lutron .load {
+  @include transition(all 0.3s ease-in);
+  opacity: 0;
+}
+
+.lutron .loaded {
+  @include transition(all 0.3s ease-in);
+  opacity: 1;
+}
+
 .lutron {
 
   .centered-navigation ul li.nav-link a {

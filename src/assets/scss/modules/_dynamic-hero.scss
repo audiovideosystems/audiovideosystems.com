@@ -1,3 +1,13 @@
+.load .dynamic-hero {
+  @include transition(all 0.3s ease-in);
+  opacity: 0;
+}
+
+.loaded .dynamic-hero {
+  @include transition(all 0.3s ease-in);
+  opacity: 1;
+}
+
 section.dynamic-hero {
   position: relative;
   height: 95vh;

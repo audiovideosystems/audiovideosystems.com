@@ -1,3 +1,13 @@
+.automation .load {
+  @include transition(all 0.3s ease-in);
+  opacity: 0;
+}
+
+.automation .loaded {
+  @include transition(all 0.3s ease-in);
+  opacity: 1;
+}
+
 .automation {
 
   .centered-navigation ul li.nav-link a {

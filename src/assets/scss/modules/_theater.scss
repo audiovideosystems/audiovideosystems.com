@@ -1,3 +1,13 @@
+.theater .load {
+  @include transition(all 0.3s ease-in);
+  opacity: 0;
+}
+
+.theater .loaded {
+  @include transition(all 0.3s ease-in);
+  opacity: 1;
+}
+
 .theater {
 
   .centered-navigation ul li.nav-link a {

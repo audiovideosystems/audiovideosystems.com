@@ -669,6 +669,14 @@ h1, h2, h3, h4, h5 {
   .hide-l {
     display: none; } }
 
+.load .dynamic-hero {
+  transition: all 0.3s ease-in;
+  opacity: 0; }
+
+.loaded .dynamic-hero {
+  transition: all 0.3s ease-in;
+  opacity: 1; }
+
 section.dynamic-hero {
   position: relative;
   height: 95vh;
@@ -1711,6 +1719,14 @@ img.logo {
       .home .testimonial .flickity-prev-next-button.next {
         right: 7px; } }
 
+.cloud .load {
+  transition: all 0.3s ease-in;
+  opacity: 0; }
+
+.cloud .loaded {
+  transition: all 0.3s ease-in;
+  opacity: 1; }
+
 @media screen and (min-width: 6.25em) {
   .cloud .hero {
     height: 330px;
@@ -1908,6 +1924,14 @@ img.logo {
     margin-right: 0; }
     .cloud .cloud .cloud__inner-wrapper .cloud__inner-wrapper_last:last-child {
       margin-right: 0; } }
+
+.automation .load {
+  transition: all 0.3s ease-in;
+  opacity: 0; }
+
+.automation .loaded {
+  transition: all 0.3s ease-in;
+  opacity: 1; }
 
 .automation .centered-navigation ul li.nav-link a {
   color: rgba(0, 0, 0, 0.8); }
@@ -2294,6 +2318,14 @@ img.logo {
 .automation .featured img {
   padding-bottom: 110px; }
 
+.theater .load {
+  transition: all 0.3s ease-in;
+  opacity: 0; }
+
+.theater .loaded {
+  transition: all 0.3s ease-in;
+  opacity: 1; }
+
 .theater .centered-navigation ul li.nav-link a {
   color: rgba(0, 0, 0, 0.8); }
 
@@ -2491,6 +2523,14 @@ img.logo {
       margin-right: 0; }
     .theater .exceptional .exceptional__inner-wrapper h2 {
       margin-bottom: 0; }
+
+.lutron .load {
+  transition: all 0.3s ease-in;
+  opacity: 0; }
+
+.lutron .loaded {
+  transition: all 0.3s ease-in;
+  opacity: 1; }
 
 .lutron .centered-navigation ul li.nav-link a {
   color: rgba(0, 0, 0, 0.8); }
@@ -2705,6 +2745,14 @@ img.logo {
   .lutron .security img {
     padding-top: 6.875rem; }
 
+.work .load {
+  transition: all 0.3s ease-in;
+  opacity: 0; }
+
+.work .loaded {
+  transition: all 0.3s ease-in;
+  opacity: 1; }
+
 .work .centered-navigation ul li.nav-link a {
   color: rgba(0, 0, 0, 0.8); }
 
@@ -2763,6 +2811,14 @@ img.logo {
       text-align: center;
       text-transform: uppercase;
       letter-spacing: 1px; }
+
+.project .load {
+  transition: all 0.3s ease-in;
+  opacity: 0; }
+
+.project .loaded {
+  transition: all 0.3s ease-in;
+  opacity: 1; }
 
 @media screen and (min-width: 48.0625em) {
   .project main {
@@ -3315,6 +3371,14 @@ img.logo {
         background-color: #cccccc; }
       .support .form .form__wrapper .select-options li[rel="hide"] {
         display: none; }
+
+.about .load {
+  transition: all 0.3s ease-in;
+  opacity: 0; }
+
+.about .loaded {
+  transition: all 0.3s ease-in;
+  opacity: 1; }
 
 @media screen and (min-width: 6.25em) {
   .about .hero {

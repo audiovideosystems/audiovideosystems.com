@@ -1,3 +1,13 @@
+.about .load {
+  @include transition(all 0.3s ease-in);
+  opacity: 0;
+}
+
+.about .loaded {
+  @include transition(all 0.3s ease-in);
+  opacity: 1;
+}
+
 .about {
 
   .hero {

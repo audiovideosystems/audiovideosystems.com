@@ -10448,17 +10448,21 @@ Kibo.prototype.lastModifiersAndKey = function() {
   });
 
   // visual grid: use 'g' key to toggle body class
-  var k = new Kibo();
-  k.down(['g'], function() {
-    $('body').addClass('grid');
-  }).up('g', function() {
-    $('body').removeClass('grid');
-  });
+  // var k = new Kibo();
+  // k.down(['g'], function() {
+  //   $('body').addClass('grid');
+  // }).up('g', function() {
+  //   $('body').removeClass('grid');
+  // });
 
   // enquire: media queries, but for javascript
   enquire.register("screen and (max-width: 48em)", {
     match : function() {
-      console.log('up to 768px wide')
+      console.log('up to 768px wide');
+      var main = $('main');
+      setTimeout(function(){
+        $(main).fadeIn().removeClass('load').addClass('loaded');
+      }, 250);
     },
     unmatch : function() {
     }
@@ -10466,6 +10470,12 @@ Kibo.prototype.lastModifiersAndKey = function() {
   .register("screen and (min-width: 48.1em)", {
     match : function() {
       console.log('over 768px wide');
+
+      var main = $('main');
+      setTimeout(function(){
+        $(main).fadeIn().removeClass('load').addClass('loaded');
+      }, 250);
+
       var windowWidth = $(window).width(); // for resize function
 
       // on resize
