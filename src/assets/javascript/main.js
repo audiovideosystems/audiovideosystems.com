@@ -42,13 +42,12 @@
         window.onresize = function(){
           // actual resize? http://tinyurl.com/qaoajzu
           if ($(window).width() != windowWidth) {
-            if (window.location.href.indexOf('client_editor') === -1) { // not in cloud-cannon editor
-              console.log('gonna reload!');
+            unless (window.location !== window.parent.location) {
+              console.log('not iframe');
               window.location.reload();
             }
           }
         };
-
 
     },
     unmatch : function() {
