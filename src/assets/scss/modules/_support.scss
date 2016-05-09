@@ -179,6 +179,15 @@
             @include shift(0);
           }
         }
+        &.area {
+          @include media($s){
+            @include span-columns(6 of 13);
+          }
+          @include media($l){
+            @include span-columns(6 of 6);
+            margin-bottom: 18px;
+          }
+        }
       }
 
       .select-hidden {

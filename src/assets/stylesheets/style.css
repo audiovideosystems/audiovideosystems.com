@@ -3307,6 +3307,23 @@ img.logo {
     @media screen and (min-width: 48.0625em) {
       .support .form .form__wrapper .select-wrapper.second {
         margin-left: 0%; } }
+  @media screen and (min-width: 6.25em) {
+    .support .form .form__wrapper .select-wrapper.area {
+      float: left;
+      display: block;
+      margin-right: 2.1723540489%;
+      width: 44.9841170506%; }
+      .support .form .form__wrapper .select-wrapper.area:last-child {
+        margin-right: 0; } }
+  @media screen and (min-width: 48.0625em) {
+    .support .form .form__wrapper .select-wrapper.area {
+      float: left;
+      display: block;
+      margin-right: 4.8291579146%;
+      width: 100%;
+      margin-bottom: 18px; }
+      .support .form .form__wrapper .select-wrapper.area:last-child {
+        margin-right: 0; } }
   .support .form .form__wrapper .select-hidden {
     display: none;
     visibility: hidden;

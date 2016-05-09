@@ -35,7 +35,16 @@ permalink: /support/
       </div>
     </div>
     <div class="form__wrapper">
-      <form id="support" class="form-block" method="post" action="http://formspree.io/ryan@ryandeussing.com">
+      <form id="support" class="form-block" method="post" action="http://formspree.io/support@audiovideosystems.com">
+
+        <div class="select-wrapper area">
+          <select id="area" name="_area">
+            <option value="hide">LOCATION</option>
+            <option value="NYC/Long Island">NYC/Long Island</option>
+            <option value="Westchester/CT">Westchester/CT</option>
+          </select>
+        </div>
+
         <input type="text" name="_name" id="name" placeholder="name" required>
         <input type="text" name="_telephone" id="phone" placeholder="phone" required>
         <input type="email" name="_email" class="" id="email" placeholder="email" required>
@@ -56,13 +65,13 @@ permalink: /support/
               continuous
           </label>
         </div>
+
         <div class="select-wrapper first">
           <select id="onset" name="_onset">
               <option value="hide">ONSET</option>
               <option value="JUST HAPPENED">JUST HAPPENED</option>
               <option value="STARTED RECENTLY">STARTED RECENTLY</option>
               <option value="HAS BECOME MORE FREQUENT">HAPPENING FREQUENTLY</option>
-
           </select>
         </div>
         <div class="select-wrapper second">
@@ -72,7 +81,6 @@ permalink: /support/
               <option value="URGENT">URGENT</option>
               <option value="IMPORTANT">IMPORTANT</option>
               <option value="NEEDS ATTENTION">NEEDS ATTENTION</option>
-
           </select>
         </div>
 

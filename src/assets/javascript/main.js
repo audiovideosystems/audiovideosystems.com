@@ -8,12 +8,12 @@
   });
 
   // visual grid: use 'g' key to toggle body class
-  // var k = new Kibo();
-  // k.down(['g'], function() {
-  //   $('body').addClass('grid');
-  // }).up('g', function() {
-  //   $('body').removeClass('grid');
-  // });
+  var k = new Kibo();
+  k.down(['g'], function() {
+    $('body').addClass('grid');
+  }).up('g', function() {
+    $('body').removeClass('grid');
+  });
 
   // enquire: media queries, but for javascript
   enquire.register("screen and (max-width: 48em)", {

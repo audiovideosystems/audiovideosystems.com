@@ -53,6 +53,19 @@
 
   });
 
+  // change form action based on selection
+  var sel = document.getElementById('area');
+  var form = document.getElementById('support');
+
+  $( "#name" ).blur(function() {
+    if (sel.value == "NYC/Long Island") {
+      form.action = 'http://formspree.io/support@audiovideosystems.com';
+    }
+    if (sel.value == "Westchester/CT") {
+      form.action = 'http://formspree.io/avssupport@audiovideosystems.com';
+    }
+  });
+
   // formspree
   var $supportForm = $('#support');
   $supportForm.submit(function(e) {
