@@ -45,10 +45,6 @@ permalink: /support/
         <input type="text" name="_device" id="device" placeholder="device">
         <div class="intermittent"><input type="radio" name="_type" id="radio1" value="intermittent">
           <label for="radio1">
-<!--               <span class="fa-stack">
-                  <i class="fa fa-circle-o fa-stack-1x"></i>
-                  <i class="fa fa-circle fa-stack-1x"></i>
-              </span> -->
               intermittent
           </label>
         </div>
@@ -57,23 +53,19 @@ permalink: /support/
 
         <div class="continuous"><input type="radio" name="_type" id="radio2" value="continuous">
           <label for="radio2">
-<!--               <span class="fa-stack">
-                  <i class="fa fa-circle-o fa-stack-1x"></i>
-                  <i class="fa fa-circle fa-stack-1x"></i>
-              </span> -->
               continuous
           </label>
         </div>
         <div class="select-wrapper first">
-          <select id="onset" name="_onset" required>
+          <select id="onset" name="_onset">
               <option value="hide">ONSET</option>
-              <option value="JUST HAPPENED" rel="icon-temperature">JUST HAPPENED</option>
+              <option value="JUST HAPPENED">JUST HAPPENED</option>
               <option value="STARTED RECENTLY">STARTED RECENTLY</option>
               <option value="HAS BECOME MORE FREQUENT">HAPPENING FREQUENTLY</option>
 
           </select>
         </div>
-        <div class="select-wrapper second" required>
+        <div class="select-wrapper second">
           <select id="immediacy" name="_status">
               <option value="hide">IMMEDIACY</option>
               <option value="EMERGENCY">EMERGENCY</option>

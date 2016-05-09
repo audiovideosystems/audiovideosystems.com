@@ -36,7 +36,6 @@
     var $gallery = $('.showcase__carousel').flickity({
       imagesLoaded: true,
       percentPosition: false,
-      // prevNextButtons: false,
       pageDots: false,
       autoPlay: false,
       wrapAround: true,
@@ -76,20 +75,28 @@
     .register("screen and (min-width: 769px)", {
 
       match : function() {
-        console.log('over 768px wide');
+        // console.log('over 768px wide');
+
         var windowWidth = $(window).width(); // for resize function
         var elementHeights = $('.project-info__inner').map(function() {
           return $(this).height();
         }).get();
-        console.log(elementHeights);
+        // console.log(elementHeights);
         var maxHeight = Math.max.apply(null, elementHeights);  // http://stackoverflow.com/questions/6781031/use-jquery-css-to-find-the-tallest-of-all-elements
         $('.project-info__inner').height(maxHeight);
 
         var main = $('main');
         setTimeout(function(){
           $(main).fadeIn().removeClass('load').addClass('loaded');
-          $gallery.resize();
         }, 250);
+
+        setTimeout(function(){
+          var galleryHeight = $('.gallery-cell').first().height();
+          $('.flickity-viewport').css({
+            'height' : galleryHeight
+          });
+          // console.log('flickity-viewport should be:' + galleryHeight);
+        }, 450);
 
         // on resize
         window.onresize = debounce(function(){
@@ -102,7 +109,7 @@
               var elementHeights = $('.project-info__inner').map(function() {
                 return $(this).height();
               }).get();
-              console.log(elementHeights);
+              // console.log(elementHeights);
               var maxHeight = Math.max.apply(null, elementHeights);  // `Math.max takes a variable number of arguments, apply` is equivalent to passing each height as an argumentain
               $('.project-info__inner').height(maxHeight); // Set each height to the max height
 

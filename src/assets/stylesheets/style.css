@@ -2853,7 +2853,8 @@ img.logo {
 
 .project .showcase .gallery-cell {
   width: 100%;
-  line-height: 0px; }
+  line-height: 0px;
+  max-height: 95vh; }
   .project .showcase .gallery-cell img {
     width: 100%;
     height: auto; }
