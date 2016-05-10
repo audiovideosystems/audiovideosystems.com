@@ -13,25 +13,14 @@
   .hero {
     @include media($s){
       height: 330px;
-      background: url("/assets/images/cloud-hero.jpg");
       background-size: cover;
       background-position: center;
     }
     @include media($l){
       height: 462px;
-      background: url("/assets/images/cloud-hero.jpg");
-      background-size: cover;
     }
   }
 
-  // .split img {
-  //   @include media($s){
-  //     margin-top: 80px;
-  //   }
-  //   @include media($l){
-  //     margin-top: 0px;
-  //   }
-  // }
 
   .cloud-services {
     .cloud-services__inner-wrapper {

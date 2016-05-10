@@ -1,19 +1,18 @@
 ---
-layout: default
-class: about
-permalink: /about/
+Header_Image_path: /assets/images/about-hero.jpg
+Featured_Image_path: /assets/images/about-golf.jpg
 ---
 
 <main class="load">
 
-  <section class="hero">
+  <section class="hero" style="background-image: url({{ page.Header_Image_path }})">
   </section>
 
   <section class="text about-us">
     <div class="container">
       <div class="about-us__inner-wrapper">
         <h4>about us</h4>
-        <h2>We will custom tailor a high-quality home system to meet your specific taste and lifestyle.</h2>
+        <h2 class="editable">We will custom tailor a high-quality home system to meet your specific taste and lifestyle.</h2>
       </div>
     </div>
   </section>
@@ -22,23 +21,23 @@ permalink: /about/
     <div class="container">
       <div class="installation__inner-wrapper">
         <h2 class="small">Worldwide Installation</h2>
-        <p class="body">Though we are headquartered in Plainview, Long Island, with additional offices in Manhattan and Armonk, NY, we regularly deliver best-in-class design and installation services for clients around the world. </p>
+        <p class="editable body">Though we are headquartered in Plainview, Long Island, with additional offices in Manhattan and Armonk, NY, we regularly deliver best-in-class design and installation services for clients around the world. </p>
       </div>
     </div>
   </section>
 
   <section class="image featured">
     <div class="container">
-      <img src="/assets/images/about-golf.jpg" />
+      <img src="{{ page.Featured_Image_path }}" />
     </div>
   </section>
 
   <section class="text staff">
     <div class="container">
       <div class="staff__inner-wrapper">
-        <h2>Our talented team of more than seventy professionals has decades of experience delivering the highest quality home system solutions.</h2>
+        <h2 class="editable">Our talented team of more than seventy professionals has decades of experience delivering the highest quality home system solutions.</h2>
         <h4>our staff includes:</h4>
-        <div class="staff__details_a">
+        <div class="editable staff__details_a">
           <ul>
             <li>A 24-hour customer service department.</li>
             <li>A CISCO certified IT division that creates wireless networking systems and infrastructures.</li>
@@ -46,7 +45,7 @@ permalink: /about/
             <li>An ISF-certified home theater design department.</li>
           </ul>
         </div>
-        <div class="staff__details_b">
+        <div class="editable staff__details_b">
           <ul>
             <li>A Lutron division that designs and installs the best lighting control system available.</li>
             <li>A programming department.</li>
@@ -61,8 +60,8 @@ permalink: /about/
     <div class="container">
       <div class="service__inner-wrapper">
         <h2 class="small">Service Commitment</h2>
-        <p class="body">Our commitment to service doesn’t end with the final installation. We stand behind our installations for the lifespan of every system.</p>
-        <p class="body">All AVS projects are covered by a one-year service warranty, which addresses any issue related to our installation, including the expediting of manufacturers’ warranties on any products we provide.</p>
+        <p class="editable body">Our commitment to service doesn’t end with the final installation. We stand behind our installations for the lifespan of every system.</p>
+        <p class="editable body">All AVS projects are covered by a one-year service warranty, which addresses any issue related to our installation, including the expediting of manufacturers’ warranties on any products we provide.</p>
       </div>
     </div>
   </section>
@@ -71,7 +70,7 @@ permalink: /about/
   <section class="text oncall">
     <div class="container">
       <div class="oncall__inner-wrapper">
-        <h2>We have 24/7 service response, and always have a technician on call.</h2>
+        <h2 class="editable">We have 24/7 service response, and always have a technician on call.</h2>
       </div>
     </div>
   </section>

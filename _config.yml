@@ -12,6 +12,68 @@ source: src
 destination: dist
 exclude: ['assets']
 
+collections:
+  work:
+    output: true
+    permalink: /our-work/:slug/
+
+defaults:
+  -
+    scope:
+      path: "index.html"
+    values:
+      layout: "home"
+      class: "home"
+  -
+    scope:
+      path: "about.html"
+    values:
+      layout: "default"
+      class: "about"
+      permalink: "/about/"
+  -
+    scope:
+      path: "it-and-cloud-services.html"
+    values:
+      layout: "default"
+      class: "cloud"
+      permalink: "/it-and-cloud-services/"
+  -
+    scope:
+      path: "home-automation.html"
+    values:
+      layout: "default"
+      class: "automation"
+      permalink: "/home-automation/"
+  -
+    scope:
+      path: "home-theater.html"
+    values:
+      layout: "default"
+      class: "theater"
+      permalink: "/home-theater/"
+  -
+    scope:
+      path: "lutron.html"
+    values:
+      layout: "default"
+      class: "lutron"
+      permalink: "/lutron/"
+  -
+    scope:
+      path: ""
+      type: "work"
+    values:
+      layout: "project"
+      class: "project"
+
+
+careers: http://www.indeed.com/cmp/Audio-Video-Systems-1
+facebook: https://www.facebook.com/AudioVideoSystemsInc
+linkedin: https://www.linkedin.com/company/2491544
+
+
+
 # _config.build.yml overwrites these options when you run `gulp build`
 # Enables future posts (posts with dates in the future) and drafts
 # future: true

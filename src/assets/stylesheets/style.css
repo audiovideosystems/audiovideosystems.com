@@ -680,7 +680,6 @@ h1, h2, h3, h4, h5 {
 section.dynamic-hero {
   position: relative;
   height: 95vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("/assets/images/home-hero.jpg");
   background-size: cover;
   background-position: center; }
   section.dynamic-hero h1 {
@@ -1730,15 +1729,12 @@ img.logo {
 @media screen and (min-width: 6.25em) {
   .cloud .hero {
     height: 330px;
-    background: url("/assets/images/cloud-hero.jpg");
     background-size: cover;
     background-position: center; } }
 
 @media screen and (min-width: 48.0625em) {
   .cloud .hero {
-    height: 462px;
-    background: url("/assets/images/cloud-hero.jpg");
-    background-size: cover; } }
+    height: 462px; } }
 
 .cloud .cloud-services {
   background-color: #efe4df;
@@ -2538,16 +2534,12 @@ img.logo {
 @media screen and (min-width: 6.25em) {
   .lutron .hero {
     height: 330px;
-    background: url("/assets/images/lutron-hero.jpg");
     background-size: cover;
     background-position: center; } }
 
 @media screen and (min-width: 48.0625em) {
   .lutron .hero {
-    height: 462px;
-    background: url("/assets/images/lutron-hero.jpg");
-    background-size: cover;
-    background-position: center; } }
+    height: 462px; } }
 
 .lutron .partnership {
   text-align: center;
@@ -3028,7 +3020,9 @@ img.logo {
       padding-bottom: 80px;
       text-align: center; }
       .contact .form .form__info:last-child {
-        margin-right: 0; } }
+        margin-right: 0; }
+      .contact .form .form__info p {
+        margin-bottom: 0px; } }
   @media screen and (min-width: 48.0625em) {
     .contact .form .form__info {
       float: left;
@@ -3401,16 +3395,12 @@ img.logo {
 @media screen and (min-width: 6.25em) {
   .about .hero {
     height: 330px;
-    background: url("/assets/images/about-hero.jpg");
     background-size: cover;
     background-position: center; } }
 
 @media screen and (min-width: 48.0625em) {
   .about .hero {
-    height: 462px;
-    background: url("/assets/images/about-hero.jpg");
-    background-size: cover;
-    background-position: center; } }
+    height: 462px; } }
 
 .about .about-us {
   background-color: #d4effc;

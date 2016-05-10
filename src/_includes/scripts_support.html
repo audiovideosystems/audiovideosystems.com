@@ -59,10 +59,12 @@
 
   $( "#name" ).blur(function() {
     if (sel.value == "NYC/Long Island") {
-      form.action = 'http://formspree.io/support@avs-ny.com';
+      // form.action = 'http://formspree.io/support@avs-ny.com';
+      form.action = 'http://formspree.io/ryan@ryandeussing.com';
     }
     if (sel.value == "Westchester/CT") {
-      form.action = 'http://formspree.io/avssupport@avs-ny.com';
+      // form.action = 'http://formspree.io/avssupport@avs-ny.com';
+      form.action = 'http://formspree.io/ryan@ryandeussing.com';
     }
   });
 
@@ -71,7 +73,7 @@
   $supportForm.submit(function(e) {
     e.preventDefault();
     $.ajax({
-      url: '//formspree.io/ryan@ryandeussing.com',
+      url: form.action,
       method: 'POST',
       data: $(this).serialize(),
       dataType: 'json',

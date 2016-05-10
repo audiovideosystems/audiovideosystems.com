@@ -1,19 +1,22 @@
 ---
-layout: default
-class: lutron
-permalink: /lutron/
+Header_Image_path: /assets/images/lutron-hero.jpg
+Automation_Featured_Image_path: /assets/images/lutron-automation.jpg
+Convenience_Featured_Image_path: /assets/images/lutron-remotes.jpg
+Control_Featured_Image_path: /assets/images/lutron-ipad.png
+Aesthetics_Featured_Image_path: /assets/images/lutron-keypad.jpg
+Security_Featured_Image_path: /assets/images/lutron-security.jpg
 ---
 
 <main class="load">
 
-  <section class="hero">
+  <section class="hero" style="background-image: url({{ page.Header_Image_path }})">
   </section>
 
   <section class="text partnership">
     <div class="container">
       <div class="partnership__inner-wrapper">
         <img src="/assets/images/lutron-logo.png">
-        <h2>Our partnership with Lutron means we can create the perfect lighting system for any home.</h2>
+        <h2 class="editable">Our partnership with Lutron means we can create the perfect lighting system for any home</h2>
       </div>
     </div>
   </section>
@@ -21,27 +24,27 @@ permalink: /lutron/
   <section class="text integration">
     <div class="container">
       <div class="integration__inner-wrapper">
-        <h2 class="small">Integration &amp; Home Automation</h2>
-        <p class="body">From simple incorporation into a single system to sophisticated high-level integration, we design our Lutron controls to work reliably and intuituvely with other audio, video, and HVAC systems in your home.</p>
+        <h2 class="editable small">Integration &amp; Home Automation</h2>
+        <p class="editable body">From simple incorporation into a single system to sophisticated high-level integration, we design our Lutron controls to work reliably and intuituvely with other audio, video, and HVAC systems in your home.</p>
       </div>
     </div>
   </section>
 
   <section class="image featured">
     <div class="container">
-      <img src="/assets/images/lutron-automation.jpg" />
+      <img src="{{ page.Automation_Featured_Image_path }}" />
     </div>
   </section>
 
   <section class="text convenience">
     <div class="container">
       <div class="convenience__inner-wrapper">
-        <h2 class="small">Convenience</h2>
-        <p class="body">Our lighting systems can be controlled through a variety of devices and interfaces, including IR remote controls, wireless tabletop controls, smartphone applications or even an astronomic time clock for automatic adjustment.</p>
+        <h2 class="editable small">Convenience</h2>
+        <p class="editable body">Our lighting systems can be controlled through a variety of devices and interfaces, including IR remote controls, wireless tabletop controls, smartphone applications or even an astronomic time clock for automatic adjustment.</p>
       </div>
     </div>
     <div class="container">
-      <img src="/assets/images/lutron-remotes.jpg" alt="">
+      <img src="{{ page.Convenience_Featured_Image_path }}" alt="">
     </div>
 
   </section>
@@ -50,10 +53,10 @@ permalink: /lutron/
     <div class="container">
       <div class="split__inner-wrapper">
         <div class="text">
-          <h2>Complete control over the atmosphere and mood of any room.</h2>
+          <h2 class="editable">Complete control over the atmosphere and mood of any room.</h2>
         </div>
         <div class="image">
-          <img src="/assets/images/lutron-ipad.png">
+          <img src="{{ page.Control_Featured_Image_path }}">
         </div>
       </div>
     </div>
@@ -62,22 +65,22 @@ permalink: /lutron/
   <section class="text aesthetics">
     <div class="container">
       <div class="aesthetics__inner-wrapper">
-        <h2 class="small">Aesthetics</h2>
-        <p class="body">Stylish control and fabric options coupled with innovative technology elegantly transition a space to create the right amount of light for any activity.</p>
+        <h2 class="editable small">Aesthetics</h2>
+        <p class="editable body">Stylish control and fabric options coupled with innovative technology elegantly transition a space to create the right amount of light for any activity.</p>
       </div>
     </div>
     <div class="container">
-      <img src="/assets/images/lutron-keypad.jpg" alt="">
+      <img src="{{ page.Aesthetics_Featured_Image_path }}" alt="">
     </div>
   </section>
 
   <section class="text security">
     <div class="container">
       <div class="security__inner-wrapper">
-        <h2 class="small">Safety &amp; Security</h2>
-        <p class="body">Our systems can easily adjust the lighting and shade position, restricting the view inside your home while you're there or when you are away.</p>
+        <h2 class="editable small">Safety &amp; Security</h2>
+        <p class="editable body">Our systems can easily adjust the lighting and shade position, restricting the view inside your home while you're there or when you are away.</p>
       </div>
-      <img src="/assets/images/lutron-security.jpg" alt="">
+      <img src="{{ page.Security_Featured_Image_path }}" alt="">
     </div>
   </section>
 

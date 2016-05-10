@@ -30,6 +30,9 @@
         @include shift(1);
         padding-bottom: 80px;
         text-align: center;
+        p {
+            margin-bottom: 0px;
+        }
       }
       @include media($l){
         @include span-columns(3);

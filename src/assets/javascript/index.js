@@ -10483,15 +10483,15 @@ Kibo.prototype.lastModifiersAndKey = function() {
       var windowWidth = $(window).width(); // for resize function
 
       // on resize
-        window.onresize = function(){
-          // actual resize? http://tinyurl.com/qaoajzu
-          if ($(window).width() != windowWidth) {
-            unless (window.location !== window.parent.location) {
-              console.log('not iframe');
-              window.location.reload();
-            }
-          }
-        };
+        // window.onresize = function(){
+        //   // actual resize? http://tinyurl.com/qaoajzu
+        //   if ($(window).width() != windowWidth) {
+        //     unless (window.location !== window.parent.location) {
+        //       console.log('not iframe');
+        //       window.location.reload();
+        //     }
+        //   }
+        // };
 
     },
     unmatch : function() {
@@ -10500,15 +10500,17 @@ Kibo.prototype.lastModifiersAndKey = function() {
 
   // email signups
   var $emailList = $('#email-list');
+  var $formGroup = $('#email-list .form-group');
   $emailList.submit(function(e) {
     e.preventDefault();
     $.ajax({
-      url: '//formspree.io/test@test.com',
+      // url: '//formspree.io/fkarp@avs-ny.com',
+      url: '//formspree.io/ryan@ryandeussing.com',
       method: 'POST',
       data: $(this).serialize(),
       dataType: 'json',
       beforeSend: function() {
-        $emailList.append('<div class="alert alert--loading">Sending…</div>');
+        $formGroup.append('<div class="alert alert--loading">Sending…</div>');
       },
       success: function(data) {
         $emailList.find('.alert--loading').hide();
@@ -10516,8 +10518,8 @@ Kibo.prototype.lastModifiersAndKey = function() {
         $emailList.append('<div class="alert alert--success">All set, you\'re subscribed!</div>');
       },
       error: function(err) {
-        $contactForm.find('.alert--loading').hide();
-        $contactForm.append('<div class="alert alert--error">Oops, there was an error. Try again?</div>');
+        $formGroup.find('.alert--loading').hide();
+        $formGroup.append('<div class="alert alert--error">Oops, there was an error. Try again?</div>');
       }
     });
   });
