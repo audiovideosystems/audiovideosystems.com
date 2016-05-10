@@ -1143,6 +1143,11 @@ figure[data-type=quote] cite:before {
   @media screen and (min-width: 48.0625em) {
     .footer .desktop {
       display: block !important; } }
+  .footer .alert {
+    padding: 1rem;
+    background-color: #d4effc;
+    font-family: 'Maison Neue Medium';
+    font-size: 14px; }
 
 header {
   transition: all 0.2s ease-in; }
@@ -2328,16 +2333,12 @@ img.logo {
 @media screen and (min-width: 6.25em) {
   .theater .hero {
     height: 330px;
-    background: url("/assets/images/theater-hero.jpg");
     background-size: cover;
     background-position: center; } }
 
 @media screen and (min-width: 48.0625em) {
   .theater .hero {
-    height: 462px;
-    background: url("/assets/images/theater-hero.jpg");
-    background-size: cover;
-    background-position: center; } }
+    height: 462px; } }
 
 .theater .home-theater {
   background-color: #f0f5df;
@@ -3131,7 +3132,9 @@ img.logo {
       text-align: center;
       padding-bottom: 80px; }
       .support .form .form__info:last-child {
-        margin-right: 0; } }
+        margin-right: 0; }
+      .support .form .form__info p {
+        margin-bottom: 0px; } }
   @media screen and (min-width: 48.0625em) {
     .support .form .form__info {
       float: left;

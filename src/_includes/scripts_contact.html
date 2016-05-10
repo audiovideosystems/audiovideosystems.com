@@ -3,8 +3,7 @@
   $contactForm.submit(function(e) {
     e.preventDefault();
     $.ajax({
-      // url: '//formspree.io/info@audiovideosystems.com',
-      url: '//formspree.io/ryan@ryandeussing.com',
+      url: '//formspree.io/info@audiovideosystems.com',
       method: 'POST',
       data: $(this).serialize(),
       dataType: 'json',

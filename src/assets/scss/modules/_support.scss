@@ -227,4 +227,54 @@
           content:"";
           width: 0;
           height: 0;
-          border
+          border: 7px solid $text;
+          border-color: $text transparent transparent transparent;
+          position: absolute;
+          top: 16px;
+          right: 10px;
+        }
+        &:hover {
+          background-color: darken($select-background, 20);
+        }
+        &:active, &.active {
+          background-color: darken($select-background, 20);
+          &:after {
+            top: 9px;
+            border-color: transparent transparent $text transparent;
+          }
+        }
+      }
+
+      .select-options {
+        display: none;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        left: 0;
+        z-index: 999;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        background-color: darken($select-background, 5);
+        li {
+          margin: 0;
+          padding: 12px 0;
+          text-indent: 15px;
+          border-top: 1px solid darken($select-background, 10);
+          @include transition(all 0.15s ease-in);
+          &:hover {
+            color: $text;
+            background-color: darken($select-background, 20);
+          }
+          &[rel="hide"] {
+            display: none;
+          }
+        }
+      }
+
+
+      }
+    }
+
+
+  }

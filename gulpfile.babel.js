@@ -103,7 +103,7 @@ gulp.task('styles', () =>
       showFiles: true
     })))
     .pipe(gulp.dest('.tmp/assets/stylesheets'))
-    .pipe(gulp.dest('src/assets/stylesheets')) // for cloud cannon
+    // .pipe(gulp.dest('src/assets/stylesheets')) // for cloud cannon
     .pipe($.if(!argv.prod, browserSync.stream({match: '**/*.css'})))
 );
 
@@ -117,11 +117,9 @@ gulp.task('scripts', () =>
   gulp.src([
     'node_modules/jquery/dist/jquery.js',
     'node_modules/enquire.js/dist/enquire.js',
-    'src/assets/javascript/flickity.min.js',
-    'src/assets/javascript/jquery.validate.min.js',
-    'src/assets/javascript/jquery.screwdefaultbuttonsV2.min.js',
-    'src/assets/javascript/vendor.js',
-    'src/assets/javascript/main.js'
+    'src/assets/javascript/dev/flickity.min.js',
+    'src/assets/javascript/dev/vendor.js',
+    'src/assets/javascript/dev/main.js'
   ])
     .pipe($.newer('.tmp/assets/javascript/index.js', {dest: '.tmp/assets/javascript', ext: '.js'}))
     .pipe($.if(!argv.prod, $.sourcemaps.init()))
@@ -288,15 +286,15 @@ gulp.task('check', gulp.series('jekyll:doctor', 'lint'));
 // FOR CLOUDCANNON
 //
 
-// 'gulp src:cloudcannon' -- copy to dropbox (or another dir/repo) for cloud cannon
-gulp.task('src:cloudcannon', () =>
-  gulp.src('src/**/*')
-    .pipe(gulp.dest('/Users/ryanaponte/Dropbox/Apps/Cloud\ Cannon/audiovideosystems.com'))
+// 'gulp deploy' -- copy to dropbox (or another dir/repo) for cloud cannon
+gulp.task('deploy', () =>
+  gulp.src(['src/**/*', '!src/assets/scss', '!src/assets/scss/**/*', '!src/assets/javascript/dev', '!src/assets/javascript/dev/**/*'])
+    .pipe(gulp.dest('/Users/ryanaponte/Dropbox/Apps/Cloud\ Cannon/audiovideosystems'))
 );
 
 // 'gulp deploy' -- build and copy to dropbox for cloud cannon
-gulp.task('deploy', gulp.series(
-  gulp.series('clean:assets', 'clean:gzip'),
-  gulp.series('assets', 'inject:head', 'inject:footer'),
-  gulp.series('jekyll', 'src:cloudcannon')
-));
+// gulp.task('deploy', gulp.series(
+//   gulp.series('clean:assets', 'clean:gzip'),
+//   gulp.series('assets', 'inject:head', 'inject:footer'),
+//   gulp.series('jekyll', 'src:cloudcannon')
+// ));
