@@ -1,0 +1,48 @@
+<script>
+  (function() {
+
+    // smooth scroll
+    $('a[href*="#"]:not([href="#"])').click(function() {
+      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+        if (target.length) {
+          $('html, body').animate({
+            scrollTop: target.offset().top
+          }, 500);
+          return false;
+        }
+      }
+    });
+
+    // carousel
+    var utils = window.fizzyUIUtils;
+    var carousel1 = new Flickity( '.showcase__carousel', {
+      imagesLoaded: true,
+      percentPosition: false,
+      prevNextButtons: false,
+      autoPlay: true,
+      wrapAround: true
+    });
+
+    var carousel2 = new Flickity( '.testimonial__carousel', {
+      imagesLoaded: true,
+      percentPosition: false,
+      pageDots: false,
+      autoPlay: false,
+      wrapAround: true,
+      arrowShape: {
+        x0: 10,
+        x1: 55, y1: 45,
+        x2: 60, y2: 40,
+        x3: 20
+      }
+    });
+
+    var caption = document.querySelector('.caption');
+    carousel1.on( 'cellSelect', function() {
+      // set image caption using img's alt
+      utils.setText( caption, carousel1.selectedElement.alt );
+    });
+  })();
+</script>
