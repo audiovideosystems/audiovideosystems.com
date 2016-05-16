@@ -694,6 +694,8 @@ section.dynamic-hero {
     @media screen and (min-width: 48.0625em) {
       section.dynamic-hero h1 {
         top: 35%; } }
+    section.dynamic-hero h1.hide {
+      opacity: 0; }
   section.dynamic-hero img.arrow {
     width: 48px;
     height: 48px;
@@ -3039,6 +3041,8 @@ img.logo {
     margin: 0; }
   .contact .form .form__info .digits {
     margin-bottom: 52px; }
+    .contact .form .form__info .digits p a {
+      text-decoration: underline; }
   .contact .form .form__info .location {
     margin-bottom: 30px; }
   @media screen and (min-width: 6.25em) {
@@ -3068,11 +3072,13 @@ img.logo {
     color: rgba(0, 0, 0, 0.8);
     letter-spacing: 1px;
     padding: 12px;
+    box-shadow: none !important;
     margin-bottom: 25px; }
     .contact .form .form__wrapper input:focus {
       box-shadow: none; }
   .contact .form .form__wrapper textarea {
     border: 2px solid rgba(0, 0, 0, 0.8);
+    box-shadow: none !important;
     border-radius: 0;
     text-transform: uppercase;
     font-family: 'Maison Neue Medium';
@@ -3181,7 +3187,8 @@ img.logo {
     letter-spacing: 1px;
     color: rgba(0, 0, 0, 0.8);
     padding: 12px;
-    margin-bottom: 25px; }
+    margin-bottom: 25px;
+    box-shadow: none !important; }
     .support .form .form__wrapper input:focus {
       box-shadow: none; }
   @media screen and (min-width: 6.25em) {
@@ -3256,6 +3263,7 @@ img.logo {
     font-size: 14px;
     letter-spacing: 1px;
     color: rgba(0, 0, 0, 0.8);
+    box-shadow: none !important;
     padding: 12px;
     min-height: 140px;
     margin-bottom: 25px; }
@@ -3309,7 +3317,8 @@ img.logo {
       float: left;
       display: block;
       margin-right: 2.1723540489%;
-      width: 44.9841170506%; }
+      width: 100%;
+      margin-bottom: 18px; }
       .support .form .form__wrapper .select-wrapper.area:last-child {
         margin-right: 0; } }
   @media screen and (min-width: 48.0625em) {

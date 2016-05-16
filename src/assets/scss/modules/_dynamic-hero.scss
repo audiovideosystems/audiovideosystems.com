@@ -22,6 +22,9 @@ section.dynamic-hero {
     @include media($l){
       top: 35%;
     }
+    &.hide {
+      opacity: 0;
+    }
     padding-left: 5%;
     padding-right: 5%;
     -webkit-transform: translateY(-35%);

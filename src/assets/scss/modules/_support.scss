@@ -66,6 +66,7 @@
         color: $text;
         padding: 12px;
         margin-bottom: 25px;
+        box-shadow: none !important;
         &:focus {
           box-shadow: none;
         }
@@ -131,6 +132,7 @@
         font-size: 14px;
         letter-spacing: 1px;
         color: $text;
+        box-shadow: none !important;
         padding: 12px;
         min-height: 140px;
         margin-bottom: 25px;
@@ -184,7 +186,8 @@
         }
         &.area {
           @include media($s){
-            @include span-columns(6 of 13);
+            @include span-columns(13 of 13);
+            margin-bottom: 18px;
           }
           @include media($l){
             @include span-columns(6 of 6);

@@ -103,7 +103,7 @@ gulp.task('styles', () =>
       showFiles: true
     })))
     .pipe(gulp.dest('.tmp/assets/stylesheets'))
-    // .pipe(gulp.dest('src/assets/stylesheets')) // for cloud cannon
+    .pipe(gulp.dest('src/assets/stylesheets')) // for cloud cannon
     .pipe($.if(!argv.prod, browserSync.stream({match: '**/*.css'})))
 );
 

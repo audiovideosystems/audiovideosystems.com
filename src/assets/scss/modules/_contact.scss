@@ -45,6 +45,9 @@
       }
       .digits {
         margin-bottom: 52px;
+        p a {
+          text-decoration: underline;
+        }
       }
       .location {
         margin-bottom: 30px;
@@ -68,6 +71,7 @@
         color: $text;
         letter-spacing: 1px;
         padding: 12px;
+        box-shadow: none !important;
         margin-bottom: 25px;
         &:focus {
           box-shadow: none;
@@ -75,6 +79,7 @@
       }
       textarea {
         border: 2px solid $text;
+        box-shadow: none !important;
         border-radius: 0;
         text-transform: uppercase;
         font-family: 'Maison Neue Medium';
