@@ -90,18 +90,18 @@ linkedin: https://www.linkedin.com/company/2491544
 # excerpt_separator: '<!--more-->'
 
 # Markdown library and options
-markdown: redcarpet
-redcarpet:
-  extensions: ['no_intra_emphasis', 'tables', 'fenced_code_blocks', 'autolink', 'smart',
-              'strikethrough', 'superscript', 'underline', 'highlight', 'footnotes']
-highlighter: true
+# markdown: redcarpet
+# redcarpet:
+#   extensions: ['no_intra_emphasis', 'tables', 'fenced_code_blocks', 'autolink', 'smart',
+#               'strikethrough', 'superscript', 'underline', 'highlight', 'footnotes']
+# highlighter: true
 
 # Extending Jekyll
 gems:
   # - jekyll-archives
   # - jekyll-feed
   # - jekyll-gist
-  - jekyll-paginate
+  # - jekyll-paginate
   # - jekyll-sitemap
   # - jekyll-seo-tag
 
