@@ -1,11 +1,11 @@
 {
-  "name": "good-jobs",
+  "name": "audiovideosystems",
   "version": "0.0.0",
-  "description": "GoodJobs is the best place to post and find jobs with companies and nonprofits using technology as a force for good.",
-  "homepage": "goodjobs.org",
+  "description": "",
+  "homepage": "",
   "author": {
     "name": "Ryan Deussing",
-    "email": "ryan@goodjobs.org"
+    "email": ""
   },
   "devDependencies": {
     "autoprefixer": "^6.2.3",
