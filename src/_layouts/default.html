@@ -14,10 +14,11 @@
     {% include global/footer.html %}
 
 
-  <!-- JS -->
-  <!-- inject:js -->
-  <script src="/assets/javascript/index.js"></script>
-  <!-- endinject -->
+  {% if jekyll.environment == "cms" %}
+  <script type="text/javascript" src="{{ 'https://www.audiovideosystems.com/assets/javascript/main.js' }}"></script>
+  {% else %}
+  <script type="text/javascript" src="{{ '/assets/javascript/main.js' }}"></script>
+  {% endif %}
 
   </body>
 
