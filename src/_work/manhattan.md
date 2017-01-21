@@ -2,11 +2,11 @@
 name: Manhattan Apartment
 slug: manhattan-apartment
 slides:
-  - image_path: /assets/images/manhattan-carousel-1.jpg
-  - image_path: /assets/images/manhattan-carousel-2.jpg
-  - image_path: /assets/images/manhattan-carousel-3.jpg
-  - image_path: /assets/images/manhattan-carousel-4.jpg
-  - image_path: /assets/images/manhattan-carousel-5.jpg
+  - image_path: /uploads/manhattan-carousel-1.jpg
+  - image_path: /uploads/manhattan-carousel-2.jpg
+  - image_path: /uploads/manhattan-carousel-3.jpg
+  - image_path: /uploads/manhattan-carousel-4.jpg
+  - image_path: /uploads/manhattan-carousel-5.jpg
 
 date_completed: 'Spring 2010'
 property_size: '4,500 SF'
