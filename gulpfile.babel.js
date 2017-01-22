@@ -148,6 +148,22 @@ gulp.task('scripts', () =>
     .pipe($.if(!argv.prod, browserSync.stream({match: '**/*.js'})))
 );
 
+// 'gulp inject:head' -- injects our style.css file into the head of our HTML
+gulp.task('inject:head', () =>
+  gulp.src('src/_includes/global/head.html')
+    .pipe($.inject(gulp.src('.tmp/assets/stylesheets/*.css',
+                            {read: false}), {ignorePath: '.tmp'}))
+    .pipe(gulp.dest('src/_includes/global'))
+);
+
+// 'gulp inject:footer' -- injects our index.js file into the end of our HTML
+gulp.task('inject:footer', () =>
+  gulp.src('src/_layouts/default.html')
+    .pipe($.inject(gulp.src('.tmp/assets/javascript/*.js',
+                            {read: false}), {ignorePath: '.tmp'}))
+    .pipe(gulp.dest('src/_layouts'))
+);
+
 // 'gulp images' -- optimizes and caches your images
 gulp.task('images', () =>
   gulp.src('src/assets/images/**/*')
@@ -241,7 +257,7 @@ gulp.task('assets:copy', () =>
 // 'gulp --prod' -- same as above but with production settings
 gulp.task('default', gulp.series(
   gulp.series('clean:assets', 'clean:gzip'),
-  gulp.series('assets'),
+  gulp.series('assets', 'inject:head', 'inject:footer'),
   gulp.series('jekyll', 'assets:copy', 'html'),
   gulp.series('serve')
 ));
@@ -250,7 +266,7 @@ gulp.task('default', gulp.series(
 // 'gulp build --prod' -- same as above but with production settings
 gulp.task('build', gulp.series(
   gulp.series('clean:assets', 'clean:gzip'),
-  gulp.series('assets'),
+  gulp.series('assets', 'inject:head', 'inject:footer'),
   gulp.series('CNAME','jekyll', 'assets:copy', 'html')
 ));
 
@@ -276,4 +292,9 @@ gulp.task('deploy', () =>
     .pipe(gulp.dest('/Users/ryanaponte/Dropbox/Apps/Cloud\ Cannon/audiovideosystems'))
 );
 
-
+// 'gulp deploy' -- build and copy to dropbox for cloud cannon
+// gulp.task('deploy', gulp.series(
+//   gulp.series('clean:assets', 'clean:gzip'),
+//   gulp.series('assets', 'inject:head', 'inject:footer'),
+//   gulp.series('jekyll', 'src:cloudcannon')
+// ));

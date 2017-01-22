@@ -1171,6 +1171,7 @@ header {
     padding: 24px 0 30px 30px; }
     .centered-navigation .mobile-logo img {
       max-height: 60px;
+      width: 60px;
       height: auto; }
     @media screen and (min-width: 48.0625em) {
       .centered-navigation .mobile-logo {
@@ -1941,14 +1942,14 @@ img.logo {
 @media screen and (min-width: 6.25em) {
   .automation .hero {
     height: 330px;
-    background: url("/uploads/automation-hero.jpg");
+    background: url("/assets/images/automation-hero.jpg");
     background-size: cover;
     background-position: center; } }
 
 @media screen and (min-width: 48.0625em) {
   .automation .hero {
     height: 462px;
-    background: url("/uploads/automation-hero.jpg");
+    background: url("/assets/images/automation-hero.jpg");
     background-size: cover;
     background-position: center; } }
 
