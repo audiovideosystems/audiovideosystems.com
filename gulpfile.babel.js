@@ -96,6 +96,7 @@ gulp.task('styles', () =>
     // .pipe($.if(argv.prod, $.rev()))
     .pipe($.if(!argv.prod, $.sourcemaps.write('.')))
     .pipe($.if(argv.prod, gulp.dest('.tmp/assets/stylesheets')))
+    .pipe($.if(argv.prod, gulp.dest('src/assets/stylesheets'))) // for cloud cannon
     .pipe($.if(argv.prod, $.if('*.css', $.gzip({append: true}))))
     .pipe($.if(argv.prod, $.size({
       title: 'gzipped styles',
@@ -137,6 +138,7 @@ gulp.task('scripts', () =>
     // .pipe($.if(argv.prod, $.rev()))
     .pipe($.if(!argv.prod, $.sourcemaps.write('.')))
     .pipe($.if(argv.prod, gulp.dest('.tmp/assets/javascript')))
+    .pipe($.if(argv.prod, gulp.dest('src/assets/javascript'))) // for cloud cannon
     .pipe($.if(argv.prod, $.if('*.js', $.gzip({append: true}))))
     .pipe($.if(argv.prod, $.size({
       title: 'gzipped scripts',
