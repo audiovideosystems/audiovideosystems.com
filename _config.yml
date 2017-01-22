@@ -10,7 +10,7 @@ url: www.audiovideosystems.com
 # Used so Jekyll outputs the site correctly so Gulp can do what it wants
 source: src
 destination: dist
-exclude: ['assets']
+exclude:
 
 collections:
   work:
