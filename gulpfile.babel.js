@@ -81,7 +81,7 @@ gulp.task('styles', () =>
       includePaths: neat.includePaths
     }).on('error', $.sass.logError))
     .pipe($.postcss([
-      autoprefixer({browsers: 'last 1 version'})
+      autoprefixer({browsers: 'last 2 versions'})
     ]))
     .pipe($.size({
       title: 'styles',
@@ -93,7 +93,7 @@ gulp.task('styles', () =>
       title: 'minified styles',
       showFiles: true
     })))
-    .pipe($.if(argv.prod, $.rev()))
+    // .pipe($.if(argv.prod, $.rev()))
     .pipe($.if(!argv.prod, $.sourcemaps.write('.')))
     .pipe($.if(argv.prod, gulp.dest('.tmp/assets/stylesheets')))
     .pipe($.if(argv.prod, $.if('*.css', $.gzip({append: true}))))
@@ -134,7 +134,7 @@ gulp.task('scripts', () =>
       title: 'minified scripts',
       showFiles: true
     })))
-    .pipe($.if(argv.prod, $.rev()))
+    // .pipe($.if(argv.prod, $.rev()))
     .pipe($.if(!argv.prod, $.sourcemaps.write('.')))
     .pipe($.if(argv.prod, gulp.dest('.tmp/assets/javascript')))
     .pipe($.if(argv.prod, $.if('*.js', $.gzip({append: true}))))
