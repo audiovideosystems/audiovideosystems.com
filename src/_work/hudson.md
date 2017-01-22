@@ -2,17 +2,17 @@
 name: Hudson House
 slug: hudson-house
 slides:
-  - image_path: /assets/images/hudson-carousel-1.jpg
-  - image_path: /assets/images/hudson-carousel-2.jpg
-  - image_path: /assets/images/hudson-carousel-3.jpg
-  - image_path: /assets/images/hudson-carousel-4.jpg
-  - image_path: /assets/images/hudson-carousel-5.jpg
-  - image_path: /assets/images/hudson-carousel-6.jpg
-  - image_path: /assets/images/hudson-carousel-7.jpg
-  - image_path: /assets/images/hudson-carousel-8.jpg
-  - image_path: /assets/images/hudson-carousel-9.jpg
-  - image_path: /assets/images/hudson-carousel-10.jpg
-  - image_path: /assets/images/hudson-carousel-11.jpg
+  - image_path: /uploads/hudson-carousel-1.jpg
+  - image_path: /uploads/hudson-carousel-2.jpg
+  - image_path: /uploads/hudson-carousel-3.jpg
+  - image_path: /uploads/hudson-carousel-4.jpg
+  - image_path: /uploads/hudson-carousel-5.jpg
+  - image_path: /uploads/hudson-carousel-6.jpg
+  - image_path: /uploads/hudson-carousel-7.jpg
+  - image_path: /uploads/hudson-carousel-8.jpg
+  - image_path: /uploads/hudson-carousel-9.jpg
+  - image_path: /uploads/hudson-carousel-10.jpg
+  - image_path: /uploads/hudson-carousel-11.jpg
 date_completed: Spring 2012
 property_size: '13,000 SF Main House<br>4,000 SF Guesthouse'
 products_used: 'Crestron, Lutron Lighting and motorized shades, Future Automation lifts, Sonance, pool control, integration with player piano, gate control, and a wireless network system.'

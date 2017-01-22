@@ -7,6 +7,16 @@ title: Audio Video Systems
 description: Audio Video Systems has been the trusted audio/video source for discerning clients since we opened our doors in 1977.
 url: www.audiovideosystems.com
 
+# jekyll.environment
+# change to https when deployed with https
+development:
+  assets_url: "/assets"
+  uploads_url: "/uploads"
+production:
+  assets_url: "http://avs.netlify.com/assets"
+  uploads_url: "http://avs.netlify.com/uploads"
+
+
 # Used so Jekyll outputs the site correctly so Gulp can do what it wants
 source: src
 destination: dist
