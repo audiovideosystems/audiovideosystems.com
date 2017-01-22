@@ -156,9 +156,21 @@ gulp.task('inject:head', () =>
     .pipe(gulp.dest('src/_includes/global'))
 );
 
-// 'gulp inject:footer' -- injects our index.js file into the end of our HTML
-gulp.task('inject:footer', () =>
+// inject index.js to necessary layouts
+gulp.task('inject:default', () =>
   gulp.src('src/_layouts/default.html')
+    .pipe($.inject(gulp.src('.tmp/assets/javascript/*.js',
+                            {read: false}), {ignorePath: '.tmp'}))
+    .pipe(gulp.dest('src/_layouts'))
+);
+gulp.task('inject:home', () =>
+  gulp.src('src/_layouts/home.html')
+    .pipe($.inject(gulp.src('.tmp/assets/javascript/*.js',
+                            {read: false}), {ignorePath: '.tmp'}))
+    .pipe(gulp.dest('src/_layouts'))
+);
+gulp.task('inject:project', () =>
+  gulp.src('src/_layouts/project.html')
     .pipe($.inject(gulp.src('.tmp/assets/javascript/*.js',
                             {read: false}), {ignorePath: '.tmp'}))
     .pipe(gulp.dest('src/_layouts'))
@@ -257,7 +269,7 @@ gulp.task('assets:copy', () =>
 // 'gulp --prod' -- same as above but with production settings
 gulp.task('default', gulp.series(
   gulp.series('clean:assets', 'clean:gzip'),
-  gulp.series('assets', 'inject:head', 'inject:footer'),
+  gulp.series('assets', 'inject:head', 'inject:default', 'inject:home', 'inject:project'),
   gulp.series('jekyll', 'assets:copy', 'html'),
   gulp.series('serve')
 ));
@@ -266,7 +278,7 @@ gulp.task('default', gulp.series(
 // 'gulp build --prod' -- same as above but with production settings
 gulp.task('build', gulp.series(
   gulp.series('clean:assets', 'clean:gzip'),
-  gulp.series('assets', 'inject:head', 'inject:footer'),
+  gulp.series('assets', 'inject:head', 'inject:default', 'inject:home', 'inject:project'),
   gulp.series('CNAME','jekyll', 'assets:copy', 'html')
 ));
 
