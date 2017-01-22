@@ -58,7 +58,7 @@ gulp.task('jekyll', done => {
     shell.exec('jekyll build');
     done();
   } else if (argv.prod) {
-    shell.exec('jekyll build --config _config.yml,_config.build.yml');
+    shell.exec('JEKYLL_ENV=production jekyll build --config _config.yml,_config.build.yml');
     done();
   }
 });
