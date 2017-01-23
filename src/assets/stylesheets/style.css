@@ -2817,6 +2817,7 @@ img.logo {
 @media screen and (min-width: 48.0625em) {
   .project main {
     position: absolute;
+    width: 100%;
     top: 0px;
     left: 0px; }
   .project .nav-2 li a {
@@ -2926,6 +2927,7 @@ img.logo {
 
 @media screen and (min-width: 48.0625em) {
   .project .project-info {
+    width: 100%;
     float: left; } }
 
 @media screen and (min-width: 6.25em) {
