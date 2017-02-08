@@ -96,7 +96,7 @@ gulp.task('styles', () =>
     // .pipe($.if(argv.prod, $.rev()))
     .pipe($.if(!argv.prod, $.sourcemaps.write('.')))
     .pipe($.if(argv.prod, gulp.dest('.tmp/assets/stylesheets')))
-    .pipe($.if(argv.prod, gulp.dest('src/assets/stylesheets'))) // for cloud cannon
+    .pipe($.if(argv.prod, gulp.dest('src/assets/stylesheets'))) // for cloudcannon
     .pipe($.if(argv.prod, $.if('*.css', $.gzip({append: true}))))
     .pipe($.if(argv.prod, $.size({
       title: 'gzipped styles',
@@ -104,7 +104,7 @@ gulp.task('styles', () =>
       showFiles: true
     })))
     .pipe(gulp.dest('.tmp/assets/stylesheets'))
-    .pipe(gulp.dest('src/assets/stylesheets')) // for cloud cannon
+    .pipe(gulp.dest('src/assets/stylesheets')) // for cloudcannon
     .pipe($.if(!argv.prod, browserSync.stream({match: '**/*.css'})))
 );
 
@@ -301,10 +301,10 @@ gulp.task('check', gulp.series('jekyll:doctor', 'lint'));
 //
 
 // 'gulp deploy' -- copy to dropbox (or another dir/repo) for cloud cannon
-gulp.task('deploy', () =>
-  gulp.src(['src/**/*', '!src/assets/scss', '!src/assets/scss/**/*', '!src/assets/javascript/dev', '!src/assets/javascript/dev/**/*'])
-    .pipe(gulp.dest('/Users/ryanaponte/Dropbox/Apps/Cloud\ Cannon/audiovideosystems'))
-);
+// gulp.task('deploy', () =>
+//   gulp.src(['src/**/*', '!src/assets/scss', '!src/assets/scss/**/*', '!src/assets/javascript/dev', '!src/assets/javascript/dev/**/*'])
+//     .pipe(gulp.dest('/Users/ryanaponte/Dropbox/Apps/Cloud\ Cannon/audiovideosystems'))
+// );
 
 // 'gulp deploy' -- build and copy to dropbox for cloud cannon
 // gulp.task('deploy', gulp.series(
