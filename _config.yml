@@ -54,6 +54,13 @@ defaults:
       permalink: "/home-theater/"
   -
     scope:
+      path: "outdoor.html"
+    values:
+      layout: "default"
+      class: "outdoor"
+      permalink: "/outdoor/"
+  -
+    scope:
       path: "lutron.html"
     values:
       layout: "default"

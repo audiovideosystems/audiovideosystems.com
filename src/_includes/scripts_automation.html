@@ -72,6 +72,11 @@
               }).get();
               var maxbasalteHeight = Math.max.apply(null, basalteHeights);
               $('.basalte__inner-wrapper').children().height(maxbasalteHeight);
+
+              if (window.location == window.parent.location) {
+                // console.log('i will reload now');
+                window.location.reload();
+              }
             }
           };
         }, 250);

@@ -1,0 +1,103 @@
+.outdoor .load {
+  @include transition(all 0.3s ease-in);
+  opacity: 0;
+}
+
+.outdoor .loaded {
+  @include transition(all 0.3s ease-in);
+  opacity: 1;
+}
+
+.outdoor {
+
+  .centered-navigation ul li.nav-link a {
+    color: $text;
+    }
+
+  .hero {
+    @include media($s){
+      height: 330px;
+      background: url("/assets/images/automation-hero.jpg");
+      background-size: cover;
+      background-position: center;
+    }
+    @include media($l){
+      height: 462px;
+      background: url("/assets/images/automation-hero.jpg");
+      background-size: cover;
+      background-position: center;
+    }
+  }
+
+  .entertainment {
+    .entertainment__inner-wrapper {
+      @include span-columns(13);
+      @include shift(1);
+    }
+    background-color: $outdoor-yellow;
+    text-align: center;
+    padding-top: em(100);
+    padding-bottom: em(100);
+  }
+
+  .sonance {
+    text-align: center;
+    @include media($s){
+      padding-top: 110px;
+      margin-bottom: 110px;
+    }
+    .sonance__inner-wrapper {
+      @include media($s){
+        @include span-columns(13);
+        @include shift(1);
+      }
+      @include media($l){
+        @include span-columns(7);
+        @include shift(4);
+      }
+    }
+  }
+
+  .featured {
+    img {
+      padding-bottom: 110px;
+    }
+  }
+
+  .seura {
+    text-align: center;
+    @include media($s){
+      // padding-top: 110px;
+      margin-bottom: 110px;
+    }
+    .seura__inner-wrapper {
+      @include media($s){
+        @include span-columns(13);
+        @include shift(1);
+      }
+      @include media($l){
+        @include span-columns(7);
+        @include shift(4);
+      }
+    }
+  }
+
+  .coastal {
+    text-align: center;
+    @include media($s){
+      // padding-top: 110px;
+      margin-bottom: 110px;
+    }
+    .coastal__inner-wrapper {
+      @include media($s){
+        @include span-columns(13);
+        @include shift(1);
+      }
+      @include media($l){
+        @include span-columns(7);
+        @include shift(4);
+      }
+    }
+  }
+
+}

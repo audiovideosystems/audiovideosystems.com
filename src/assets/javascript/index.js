@@ -10457,7 +10457,7 @@ Kibo.prototype.lastModifiersAndKey = function() {
           // actual resize? http://tinyurl.com/qaoajzu
           if ($(window).width() != windowWidth) {
             if (window.location == window.parent.location) {
-              // console.log('not iframe');
+              console.log('i will reload now');
               window.location.reload();
             }
           }

@@ -2320,6 +2320,121 @@ img.logo {
 .automation .featured img {
   padding-bottom: 110px; }
 
+.outdoor .load {
+  transition: all 0.3s ease-in;
+  opacity: 0; }
+
+.outdoor .loaded {
+  transition: all 0.3s ease-in;
+  opacity: 1; }
+
+.outdoor .centered-navigation ul li.nav-link a {
+  color: rgba(0, 0, 0, 0.8); }
+
+@media screen and (min-width: 6.25em) {
+  .outdoor .hero {
+    height: 330px;
+    background: url("/assets/images/automation-hero.jpg");
+    background-size: cover;
+    background-position: center; } }
+
+@media screen and (min-width: 48.0625em) {
+  .outdoor .hero {
+    height: 462px;
+    background: url("/assets/images/automation-hero.jpg");
+    background-size: cover;
+    background-position: center; } }
+
+.outdoor .entertainment {
+  background-color: #e7d5b3;
+  text-align: center;
+  padding-top: 6.25em;
+  padding-bottom: 6.25em; }
+  .outdoor .entertainment .entertainment__inner-wrapper {
+    float: left;
+    display: block;
+    margin-right: 1.877269384%;
+    width: 86.4163640821%;
+    margin-left: 6.7918179589%; }
+    .outdoor .entertainment .entertainment__inner-wrapper:last-child {
+      margin-right: 0; }
+
+.outdoor .sonance {
+  text-align: center; }
+  @media screen and (min-width: 6.25em) {
+    .outdoor .sonance {
+      padding-top: 110px;
+      margin-bottom: 110px; } }
+  @media screen and (min-width: 6.25em) {
+    .outdoor .sonance .sonance__inner-wrapper {
+      float: left;
+      display: block;
+      margin-right: 1.877269384%;
+      width: 86.4163640821%;
+      margin-left: 6.7918179589%; }
+      .outdoor .sonance .sonance__inner-wrapper:last-child {
+        margin-right: 0; } }
+  @media screen and (min-width: 48.0625em) {
+    .outdoor .sonance .sonance__inner-wrapper {
+      float: left;
+      display: block;
+      margin-right: 1.877269384%;
+      width: 45.6654563285%;
+      margin-left: 27.1672718357%; }
+      .outdoor .sonance .sonance__inner-wrapper:last-child {
+        margin-right: 0; } }
+
+.outdoor .featured img {
+  padding-bottom: 110px; }
+
+.outdoor .seura {
+  text-align: center; }
+  @media screen and (min-width: 6.25em) {
+    .outdoor .seura {
+      margin-bottom: 110px; } }
+  @media screen and (min-width: 6.25em) {
+    .outdoor .seura .seura__inner-wrapper {
+      float: left;
+      display: block;
+      margin-right: 1.877269384%;
+      width: 86.4163640821%;
+      margin-left: 6.7918179589%; }
+      .outdoor .seura .seura__inner-wrapper:last-child {
+        margin-right: 0; } }
+  @media screen and (min-width: 48.0625em) {
+    .outdoor .seura .seura__inner-wrapper {
+      float: left;
+      display: block;
+      margin-right: 1.877269384%;
+      width: 45.6654563285%;
+      margin-left: 27.1672718357%; }
+      .outdoor .seura .seura__inner-wrapper:last-child {
+        margin-right: 0; } }
+
+.outdoor .coastal {
+  text-align: center; }
+  @media screen and (min-width: 6.25em) {
+    .outdoor .coastal {
+      margin-bottom: 110px; } }
+  @media screen and (min-width: 6.25em) {
+    .outdoor .coastal .coastal__inner-wrapper {
+      float: left;
+      display: block;
+      margin-right: 1.877269384%;
+      width: 86.4163640821%;
+      margin-left: 6.7918179589%; }
+      .outdoor .coastal .coastal__inner-wrapper:last-child {
+        margin-right: 0; } }
+  @media screen and (min-width: 48.0625em) {
+    .outdoor .coastal .coastal__inner-wrapper {
+      float: left;
+      display: block;
+      margin-right: 1.877269384%;
+      width: 45.6654563285%;
+      margin-left: 27.1672718357%; }
+      .outdoor .coastal .coastal__inner-wrapper:last-child {
+        margin-right: 0; } }
+
 .theater .load {
   transition: all 0.3s ease-in;
   opacity: 0; }

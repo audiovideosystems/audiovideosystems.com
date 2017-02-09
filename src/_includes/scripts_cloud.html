@@ -74,6 +74,12 @@
               }).get();
               var maxcloudHeight = Math.max.apply(null, cloudHeights);
               $('.cloud__inner-wrapper').children().height(maxcloudHeight);
+
+              if (window.location == window.parent.location) {
+                // console.log('i will reload now');
+                window.location.reload();
+              }
+
             }
           };
         }, 250);
