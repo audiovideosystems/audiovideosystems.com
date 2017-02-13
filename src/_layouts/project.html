@@ -13,8 +13,19 @@
           <section class="showcase projects">
             <div class="showcase__carousel">
                 {% for image in page.slides %}
-                    <div class="gallery-cell"><img src="{{ image.image_path }}" /></div>
+                    <div class="gallery-cell">
+                      <img
+                        ix-path="{{ image.image_path }}"
+                        ix-params='{
+                          "fit": "max",
+                          "auto": "compress",
+                          "q": 65
+                        }'
+                        sizes="100vw"
+                      >
+                    </div>
                 {% endfor %}
+
             </div>
             <div class="info">
               <div class="container">

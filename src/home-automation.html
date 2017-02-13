@@ -1,22 +1,22 @@
 ---
-Header_Image_path: /assets/images/automation-hero.jpg
-Audio_Featured_Image_path: /assets/images/automation-sonos.jpg
-Video_Featured_Image_path: /assets/images/automation-crestron.jpg
-Integration_Featured_Image_path: /assets/images/automation-integration.jpg
-Automation_Featured_Image_path: /assets/images/automation-iwatch.jpg
-Efficiency_Featured_Image_path: /assets/images/automation-lutron.jpg
+Header_Image_path: /uploads/automation-hero-min.jpg
+Audio_Featured_Image_path: /uploads/automation-sonos.jpg
+Video_Featured_Image_path: /uploads/automation-crestron.jpg
+Integration_Featured_Image_path: /uploads/automation-integration.jpg
+Automation_Featured_Image_path: /uploads/automation-iwatch.jpg
+Efficiency_Featured_Image_path: /uploads/automation-lutron.jpg
 meljac:
  name: Meljac
  info: Meljac provides eye-catchingly beautiful electronics hardware for lighting control and other automated systems. Their brass switch plates are available in twenty-five finishes and blend aesthetics with technology to perfectly complement the elegance of our client’s homes.
- image_path: /assets/images/automation-meljac.jpg
+ image_path: /uploads/automation-meljac.jpg
 trufig:
  name: Trufig
  info: Specializing in flush-mount solutions for keypads, dimmers and outlets, Trufig delivers beautifully elegant finishes ranging from basic drywall to granite or wood. TruFig can also accommodate devices from industry leaders such as Lutron and Crestron, and has even developed the first flush mount architectural series speaker system with its sister company Sonance.
- image_path: /assets/images/automation-trufig.jpg
+ image_path: /uploads/automation-trufig.jpg
 basalte:
  name: Basalte
  info: Belgian-based Basalte has developed a unique and intuitive interface for our Lutron lighting control systems, and our home climate control systems. Like AVS, Basalte strives for simplicity in effect. Instead of standard keypad finishes, Basalte provides a stylish modern aesthetic.
- image_path: /assets/images/automation-basalte.jpg
+ image_path: /uploads/automation-basalte.jpg
 ---
 
 <main class="load">
@@ -44,7 +44,14 @@ basalte:
 
   <section class="image featured">
     <div class="container">
-      <img src="{{ page.Audio_Featured_Image_path }}" />
+    <img
+      ix-path="{{ page.Audio_Featured_Image_path }}"
+      ix-params='{
+        "fit": "max",
+        "auto": "compress"
+      }',
+      sizes="(min-width: 1180px) 1180px, 100vw"
+    >
     </div>
   </section>
 
@@ -56,7 +63,16 @@ basalte:
         <p class="editable body">Our experienced team can provide you with a multitude of solutions.</p>
       </div>
     </div>
-    <div class="container"><img src="{{ page.Video_Featured_Image_path }}" alt=""></div>
+    <div class="container">
+        <img
+        ix-path="{{ page.Video_Featured_Image_path }}"
+        ix-params='{
+          "fit": "max",
+          "auto": "compress"
+        }',
+        sizes="(min-width: 1180px) 1180px, 100vw"
+      >
+    </div>
 
     <div class="container details">
       <div class="video-distribution__details">
@@ -85,7 +101,14 @@ basalte:
 
   <section class="image featured">
     <div class="container">
-      <img src="{{ page.Integration_Featured_Image_path }}" />
+          <img
+        ix-path="{{ page.Integration_Featured_Image_path }}"
+        ix-params='{
+          "fit": "max",
+          "auto": "compress"
+        }',
+        sizes="(min-width: 1180px) 1180px, 100vw"
+      >
     </div>
   </section>
 
@@ -108,7 +131,14 @@ basalte:
 
   <section class="image featured">
     <div class="container">
-      <img src="{{ page.Automation_Featured_Image_path }}" />
+      <img
+        ix-path="{{ page.Automation_Featured_Image_path }}"
+        ix-params='{
+          "fit": "max",
+          "auto": "compress"
+        }',
+        sizes="(min-width: 1180px) 1180px, 100vw"
+      >
     </div>
   </section>
 
@@ -204,7 +234,15 @@ basalte:
 
   <section class="image featured">
     <div class="container">
-      <img src="{{ page.Efficiency_Featured_Image_path }}" />
+          <img
+        ix-path="{{ page.Efficiency_Featured_Image_path }}"
+        ix-params='{
+          "w": 1180,
+          "fit": "max",
+          "auto": "compress"
+        }',
+        sizes="(min-width: 1180px) 1180px, 100vw"
+      >
     </div>
   </section>
 

@@ -1,8 +1,8 @@
 ---
-Header_Image_path: /assets/images/theater-hero.jpg
-Projectors_Featured_Image_path: /assets/images/theater-projectors.jpg
-Content_Featured_Image_path: /assets/images/theater-kaleidescape.jpg
-Surround_Featured_Image_path: /assets/images/theater-surround.jpg
+Header_Image_path: /uploads/theater-hero-min.jpg
+Projectors_Featured_Image_path: /uploads/theater-projectors.jpg
+Content_Featured_Image_path: /uploads/theater-kaleidescape.jpg
+Surround_Featured_Image_path: /uploads/theater-surround.jpg
 ---
 
 <main class="load">
@@ -44,7 +44,14 @@ Surround_Featured_Image_path: /assets/images/theater-surround.jpg
 
   <section class="image featured">
     <div class="container">
-      <img src="{{ page.Projectors_Featured_Image_path }}" />
+      <img
+        ix-path="{{ page.Projectors_Featured_Image_path }}"
+        ix-params='{
+          "fit": "max",
+          "auto": "compress"
+        }',
+        sizes="(min-width: 1180px) 1180px, 100vw"
+      >
     </div>
   </section>
 
@@ -81,7 +88,14 @@ Surround_Featured_Image_path: /assets/images/theater-surround.jpg
 
   <section class="image featured">
     <div class="container">
-      <img src="{{ page.Content_Featured_Image_path }}" />
+      <img
+        ix-path="{{ page.Content_Featured_Image_path }}"
+        ix-params='{
+          "fit": "max",
+          "auto": "compress"
+        }',
+        sizes="(min-width: 1180px) 1180px, 100vw"
+      >
     </div>
   </section>
 
@@ -96,7 +110,14 @@ Surround_Featured_Image_path: /assets/images/theater-surround.jpg
 
   <section class="image featured">
     <div class="container">
-      <img src="{{ page.Surround_Featured_Image_path }}" />
+    <img
+        ix-path="{{ page.Surround_Featured_Image_path }}"
+        ix-params='{
+          "fit": "max",
+          "auto": "compress"
+        }',
+        sizes="(min-width: 1180px) 1180px, 100vw"
+      >
     </div>
   </section>
 

@@ -1,5 +1,5 @@
 ---
-Header_Image_path: /uploads/images/home-hero.jpg
+Header_Image_path: /uploads/home-hero-min.jpg
 brands:
   - Autonomic
   - Crestron
@@ -61,7 +61,7 @@ testimonials:
 <main class="load">
 
   <section class="dynamic-hero" style="background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
-                    url(https://avs.ingix.net/{{ page.Header_Image_path }})">
+                    url({{ page.Header_Image_path }})">
     {% include global/header.html %}
     <h1 id="homepage-headline" class="editable">Your life. Your home. Your technology. Simplified.</h1>
     <a href="#mission"><img class="arrow" src="/assets/images/home-down.png" alt="" /></a>
@@ -118,7 +118,14 @@ testimonials:
     <div class="container">
       <div class="showcase__carousel">
          {% for image in page.slides %}
-           <img src="{{ image.image_path }}" alt="{{ image.caption }}" />
+           <img
+             ix-path="{{ image.image_path }}"
+             ix-params='{
+               "auto": "compress"
+             }'
+             sizes="(min-width: 1180px) 1180px, 100vw"
+             alt="{{ image.caption }}"
+           >
          {% endfor %}
       </div>
       <p class="caption body">&nbsp;</p>

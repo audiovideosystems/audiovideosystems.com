@@ -1,6 +1,6 @@
 ---
-Header_Image_path: /assets/images/about-hero.jpg
-Featured_Image_path: /assets/images/about-golf.jpg
+Header_Image_path: /uploads/about-hero-min.jpg
+Featured_Image_path: /uploads/about-golf.jpg
 ---
 
 <main class="load">
@@ -28,7 +28,14 @@ Featured_Image_path: /assets/images/about-golf.jpg
 
   <section class="image featured">
     <div class="container">
-      <img src="{{ page.Featured_Image_path }}" />
+      <img
+        ix-path="{{ page.Featured_Image_path }}"
+        ix-params='{
+          "fit": "max",
+          "auto": "compress"
+        }',
+        sizes="(min-width: 1180px) 1180px, 100vw"
+      >
     </div>
   </section>
 

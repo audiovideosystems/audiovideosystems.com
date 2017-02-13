@@ -19,12 +19,24 @@ permalink: /our-work/
     <div class="container">
       {% for project in site.work %}
         <div class="project">
-            <a href="{{ project.url }}"><img src="{{ project.slides[0].image_path }}" alt=""></a>
+            <a href="{{ project.url }}">
+              <img
+                ix-path="{{ project.slides[0].image_path }}"
+                ix-params='{
+                  "w": 460,
+                  "fit": "max",
+                  "auto": "compress"
+                }',
+                sizes="(min-width: 769px) 460px, 95vw"
+              >
+            </a>
         <h5>{{ project.name }}</h5>
       </div>
       {% endfor %}
     </div>
   </section>
+
+
 
 
 </main>

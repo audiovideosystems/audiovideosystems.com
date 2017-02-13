@@ -1,5 +1,5 @@
 ---
-Header_Image_path: /uploads/outdoor-hero.jpg
+Header_Image_path: /uploads/outdoor-hero-min.jpg
 Sonance_Image_path: /uploads/sonance.jpg
 Seura_Image_path: /uploads/seura.jpg
 Coastalsource_Image_path: /uploads/coastalsource.jpg
@@ -30,7 +30,15 @@ Coastalsource_Image_path: /uploads/coastalsource.jpg
 
   <section class="image featured">
     <div class="container">
-      <img src="{{ page.Sonance_Image_path }}" />
+    <img
+        ix-path="{{ page.Sonance_Image_path }}"
+        ix-params='{
+          "w": 600,
+          "fit": "max",
+          "auto": "compress"
+        }',
+        sizes="(min-width: 1180px) 1180px, 100vw"
+      >
     </div>
   </section>
 
@@ -45,7 +53,15 @@ Coastalsource_Image_path: /uploads/coastalsource.jpg
 
   <section class="image featured">
     <div class="container">
-      <img src="{{ page.Seura_Image_path }}" />
+    <img
+        ix-path="{{ page.Seura_Image_path }}"
+        ix-params='{
+          "w": 1180,
+          "fit": "max",
+          "auto": "compress"
+        }',
+        sizes="(min-width: 1180px) 1180px, 100vw"
+      >
     </div>
   </section>
 
@@ -62,7 +78,16 @@ Coastalsource_Image_path: /uploads/coastalsource.jpg
 
   <section class="image featured">
     <div class="container">
-      <img src="{{ page.Coastalsource_Image_path }}" />
+      <!-- <img src="{{ page.Coastalsource_Image_path }}" /> -->
+      <img
+        ix-path="{{ page.Coastalsource_Image_path }}"
+        ix-params='{
+          "w": 1180,
+          "fit": "max",
+          "auto": "compress"
+        }',
+        sizes="(min-width: 1180px) 1180px, 100vw"
+      >
     </div>
   </section>
 

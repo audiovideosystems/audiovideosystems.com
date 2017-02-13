@@ -44,5 +44,8 @@
     "normalize.scss": "^0.1.0",
     "shelljs": "^0.6.0",
     "yargs": "^4.3.2"
+  },
+  "dependencies": {
+    "imgix.js": "^3.0.4"
   }
 }

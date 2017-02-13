@@ -120,6 +120,7 @@ gulp.task('scripts', () =>
   // top to bottom, so you want vendor scripts etc on top
   gulp.src([
     'node_modules/jquery/dist/jquery.js',
+    'node_modules/imgix.js/dist/imgix.js',
     'node_modules/enquire.js/dist/enquire.js',
     'src/assets/javascript/dev/flickity.min.js',
     'src/assets/javascript/dev/vendor.js',
