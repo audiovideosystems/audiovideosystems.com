@@ -41,6 +41,9 @@ gulp.task('clean:assets', () => {
 gulp.task('clean:images', () => {
   return del(['.tmp/assets/images', 'dist/assets/images']);
 });
+gulp.task('clean:uploads', () => {
+  return del(['.tmp/uploads', 'dist/uploads']);
+});
 gulp.task('clean:dist', () => {
   return del(['dist/']);
 });
@@ -190,6 +193,13 @@ gulp.task('images', () =>
     // .pipe($.size({title: 'images'}))
 );
 
+// 'gulp uploads' -- copies uploads
+gulp.task('uploads', () =>
+  gulp.src('src/uploads/**/*')
+    .pipe(gulp.dest('.tmp/uploads'))
+    .pipe(gulp.dest('src/uploads')) // for cloud cannon
+);
+
 // 'gulp fonts' -- copies your fonts to the temporary assets folder
 gulp.task('fonts', () =>
   gulp.src('src/assets/fonts/**/*')
@@ -248,14 +258,15 @@ gulp.task('serve', () => {
   gulp.watch('src/assets/javascript/**/*.js', gulp.series('scripts'));
   gulp.watch('src/assets/scss/**/*.scss', gulp.series('styles'));
   gulp.watch('src/assets/images/**/*', reload);
+  gulp.watch('src/uploads/**/*', reload);
 });
 
 // 'gulp assets' -- cleans out your assets and rebuilds them
 // 'gulp assets --prod' -- cleans out your assets and rebuilds them with
 // production settings
 gulp.task('assets', gulp.series(
-  gulp.series('clean:assets'),
-  gulp.parallel('styles', 'scripts', 'fonts', 'images')
+  gulp.series('clean:assets', 'clean:uploads'),
+  gulp.parallel('styles', 'scripts', 'fonts', 'images', 'uploads')
 ));
 
 // 'gulp assets:copy' -- copies the assets into the dist folder, needs to be
@@ -290,7 +301,7 @@ gulp.task('clean', gulp.series('clean:assets', 'clean:gzip'));
 // 'gulp rebuild' -- WARNING: Erases your assets and built site, use only when
 // you need to do a complete rebuild
 gulp.task('rebuild', gulp.series('clean:dist', 'clean:assets',
-'clean:images', 'clean:metadata'));
+'clean:images', 'clean:uploads', 'clean:metadata'));
 
 // 'gulp check' -- checks your Jekyll configuration for errors and lint your JS
 gulp.task('check', gulp.series('jekyll:doctor', 'lint'));
