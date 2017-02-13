@@ -2,12 +2,12 @@
 name: Scarsdale House
 slug: scarsdale-house
 slides:
-  - image_path: /assets/images/scarsdale-carousel-1.jpg
-  - image_path: /assets/images/scarsdale-carousel-2.jpg
-  - image_path: /assets/images/scarsdale-carousel-3.jpg
-  - image_path: /assets/images/scarsdale-carousel-4.jpg
-  - image_path: /assets/images/scarsdale-carousel-5.jpg
-  - image_path: /assets/images/scarsdale-carousel-6.jpg
+  - image_path: /uploads/scarsdale-carousel-1.jpg
+  - image_path: /uploads/scarsdale-carousel-2.jpg
+  - image_path: /uploads/scarsdale-carousel-3.jpg
+  - image_path: /uploads/scarsdale-carousel-4.jpg
+  - image_path: /uploads/scarsdale-carousel-5.jpg
+  - image_path: /uploads/scarsdale-carousel-6.jpg
 date_completed: 'Spring 2013 Main House<br>Spring 2015 Barn &amp; Riding Area'
 property_size: '20,000 SF'
 products_used: 'Crestron, Lutron lighting, McIntosh, B&W, Sonance'

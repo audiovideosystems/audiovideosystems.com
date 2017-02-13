@@ -1941,14 +1941,12 @@ img.logo {
 @media screen and (min-width: 6.25em) {
   .automation .hero {
     height: 330px;
-    background: url("/assets/images/automation-hero.jpg");
     background-size: cover;
     background-position: center; } }
 
 @media screen and (min-width: 48.0625em) {
   .automation .hero {
     height: 462px;
-    background: url("/assets/images/automation-hero.jpg");
     background-size: cover;
     background-position: center; } }
 
@@ -2334,14 +2332,12 @@ img.logo {
 @media screen and (min-width: 6.25em) {
   .outdoor .hero {
     height: 330px;
-    background: url("/assets/images/automation-hero.jpg");
     background-size: cover;
     background-position: center; } }
 
 @media screen and (min-width: 48.0625em) {
   .outdoor .hero {
     height: 462px;
-    background: url("/assets/images/automation-hero.jpg");
     background-size: cover;
     background-position: center; } }
 

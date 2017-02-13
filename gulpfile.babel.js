@@ -181,13 +181,13 @@ gulp.task('inject:project', () =>
 // 'gulp images' -- optimizes and caches your images
 gulp.task('images', () =>
   gulp.src('src/assets/images/**/*')
-    .pipe($.cache($.imagemin({
-      progressive: true,
-      interlaced: true
-    })))
+    // .pipe($.cache($.imagemin({
+    //   progressive: true,
+    //   interlaced: true
+    // })))
     .pipe(gulp.dest('.tmp/assets/images'))
     .pipe(gulp.dest('src/assets/images')) // for cloud cannon
-    .pipe($.size({title: 'images'}))
+    // .pipe($.size({title: 'images'}))
 );
 
 // 'gulp fonts' -- copies your fonts to the temporary assets folder
