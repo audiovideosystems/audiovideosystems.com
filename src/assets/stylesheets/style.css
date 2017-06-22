@@ -3599,6 +3599,14 @@ img.logo {
 .about .featured img {
   padding-bottom: 110px; }
 
+@media screen and (min-width: 6.25em) {
+  .about .video .embed {
+    padding-top: 6rem; } }
+
+@media screen and (min-width: 48.0625em) {
+  .about .video .embed {
+    padding-top: 6rem; } }
+
 .about .staff {
   background-color: #f4f5f5;
   padding-top: 110px; }
