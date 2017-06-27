@@ -1,5 +1,14 @@
 ---
 Header_Image_path: /uploads/lutron-hero-min.jpg
+slides:
+  - caption: Trufig recessed frame for Lutron receptacle
+    image_path: /uploads/home-carousel-1.jpg
+  - caption: Meljac European retro light switches
+    image_path: /uploads/home-carousel-2.jpg
+  - caption: Lutron shades with side channels
+    image_path: /uploads/home-carousel-3.jpg
+  - caption: 'Sonos Sub and PLAY:5'
+    image_path: /uploads/home-carousel-4.jpg
 Automation_Featured_Image_path: /uploads/lutron-automation.jpg
 Convenience_Featured_Image_path: /uploads/lutron-remotes.jpg
 Control_Featured_Image_path: /uploads/lutron-ipad.png
@@ -20,6 +29,26 @@ Security_Featured_Image_path: /uploads/lutron-security.jpg
       </div>
     </div>
   </section>
+
+  {% if page.slides.size > 0 %}
+  <section class="showcase">
+    <div class="container">
+      <div class="showcase__carousel">
+         {% for image in page.slides %}
+           <img
+             ix-path="{{ image.image_path }}"
+             ix-params='{
+               "auto": "compress"
+             }'
+             sizes="(min-width: 1180px) 1180px, 100vw"
+             alt="{{ image.caption }}"
+           >
+         {% endfor %}
+      </div>
+      <p class="caption body">&nbsp;</p>
+    </div>
+  </section>
+  {% endif %}
 
   <section class="text integration">
     <div class="container">

@@ -43,6 +43,49 @@
     }
   }
 
+  .showcase {
+    padding-top: rem(110);
+    padding-bottom: 0;
+    .showcase__carousel {
+      @include media($s){
+        @include span-columns(13);
+        @include shift(1);
+      }
+      @include media($l){
+        @include span-columns(15);
+        @include shift(0);
+        .gallery-cell {
+          height: 500px;
+        }
+      }
+    }
+    p.caption {
+      font-size: 14px;
+      clear: both;
+      // padding-top: rem(10);
+      margin-bottom: 0;
+      text-align: left;
+      text-transform: uppercase;
+      color: #ababab;
+      letter-spacing: 1px;
+      @include media($s){
+        @include span-columns(13);
+        @include shift(1);
+      }
+      @include media($l){
+        @include span-columns(15);
+        @include shift(0);
+        padding-left: 1rem;
+      }
+      @include media(1190px){
+        padding-left: 0;
+      }
+    }
+    .flickity-page-dots {
+      bottom: 30px;
+    }
+  }
+
   .integration {
     text-align: center;
     @include media($s) {

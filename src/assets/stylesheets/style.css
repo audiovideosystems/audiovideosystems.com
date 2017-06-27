@@ -2673,6 +2673,62 @@ img.logo {
       width: 156px;
       margin-bottom: 32px; }
 
+.lutron .showcase {
+  padding-top: 6.875rem;
+  padding-bottom: 0; }
+  @media screen and (min-width: 6.25em) {
+    .lutron .showcase .showcase__carousel {
+      float: left;
+      display: block;
+      margin-right: 1.877269384%;
+      width: 86.4163640821%;
+      margin-left: 6.7918179589%; }
+      .lutron .showcase .showcase__carousel:last-child {
+        margin-right: 0; } }
+  @media screen and (min-width: 48.0625em) {
+    .lutron .showcase .showcase__carousel {
+      float: left;
+      display: block;
+      margin-right: 1.877269384%;
+      width: 100%;
+      margin-left: 0%; }
+      .lutron .showcase .showcase__carousel:last-child {
+        margin-right: 0; }
+      .lutron .showcase .showcase__carousel .gallery-cell {
+        height: 500px; } }
+  .lutron .showcase p.caption {
+    font-size: 14px;
+    clear: both;
+    margin-bottom: 0;
+    text-align: left;
+    text-transform: uppercase;
+    color: #ababab;
+    letter-spacing: 1px; }
+    @media screen and (min-width: 6.25em) {
+      .lutron .showcase p.caption {
+        float: left;
+        display: block;
+        margin-right: 1.877269384%;
+        width: 86.4163640821%;
+        margin-left: 6.7918179589%; }
+        .lutron .showcase p.caption:last-child {
+          margin-right: 0; } }
+    @media screen and (min-width: 48.0625em) {
+      .lutron .showcase p.caption {
+        float: left;
+        display: block;
+        margin-right: 1.877269384%;
+        width: 100%;
+        margin-left: 0%;
+        padding-left: 1rem; }
+        .lutron .showcase p.caption:last-child {
+          margin-right: 0; } }
+    @media screen and (min-width: 1190px) {
+      .lutron .showcase p.caption {
+        padding-left: 0; } }
+  .lutron .showcase .flickity-page-dots {
+    bottom: 30px; }
+
 .lutron .integration {
   text-align: center; }
   @media screen and (min-width: 6.25em) {
