@@ -1,14 +1,8 @@
 ---
 Header_Image_path: /uploads/lutron-hero-min.jpg
 slides:
-  - caption: Trufig recessed frame for Lutron receptacle
-    image_path: /uploads/home-carousel-1.jpg
-  - caption: Meljac European retro light switches
-    image_path: /uploads/home-carousel-2.jpg
-  - caption: Lutron shades with side channels
-    image_path: /uploads/home-carousel-3.jpg
-  - caption: 'Sonos Sub and PLAY:5'
-    image_path: /uploads/home-carousel-4.jpg
+  - caption:
+    image_path:
 Automation_Featured_Image_path: /uploads/lutron-automation.jpg
 Convenience_Featured_Image_path: /uploads/lutron-remotes.jpg
 Control_Featured_Image_path: /uploads/lutron-ipad.png
@@ -24,7 +18,7 @@ Security_Featured_Image_path: /uploads/lutron-security.jpg
   <section class="text partnership">
     <div class="container">
       <div class="partnership__inner-wrapper">
-        <img src="/uploads/lutron-logo.png">
+        <img src="/uploads/lutron-logo.png" />
         <h2 class="editable">Our partnership with Lutron means we can create the perfect lighting system for any home</h2>
       </div>
     </div>
@@ -35,14 +29,9 @@ Security_Featured_Image_path: /uploads/lutron-security.jpg
     <div class="container">
       <div class="showcase__carousel">
          {% for image in page.slides %}
-           <img
-             ix-path="{{ image.image_path }}"
-             ix-params='{
+           <img ix-path="{{ image.image_path }}" ix-params='{
                "auto": "compress"
-             }'
-             sizes="(min-width: 1180px) 1180px, 100vw"
-             alt="{{ image.caption }}"
-           >
+             }' sizes="(min-width: 1180px) 1180px, 100vw" alt="{{ image.caption }}" />
          {% endfor %}
       </div>
       <p class="caption body">&nbsp;</p>
@@ -61,14 +50,10 @@ Security_Featured_Image_path: /uploads/lutron-security.jpg
 
   <section class="image featured">
     <div class="container">
-      <img
-        ix-path="{{ page.Automation_Featured_Image_path }}"
-        ix-params='{
+      <img ix-path="{{ page.Automation_Featured_Image_path }}" ix-params='{
           "fit": "max",
           "auto": "compress"
-        }',
-        sizes="(min-width: 1180px) 1180px, 100vw"
-      >
+        }' , sizes="(min-width: 1180px) 1180px, 100vw" />
     </div>
   </section>
 
@@ -80,14 +65,10 @@ Security_Featured_Image_path: /uploads/lutron-security.jpg
       </div>
     </div>
     <div class="container">
-      <img
-        ix-path="{{ page.Convenience_Featured_Image_path }}"
-        ix-params='{
+      <img ix-path="{{ page.Convenience_Featured_Image_path }}" ix-params='{
           "fit": "max",
           "auto": "compress"
-        }',
-        sizes="(min-width: 1180px) 1180px, 100vw"
-      >
+        }' , sizes="(min-width: 1180px) 1180px, 100vw" />
     </div>
 
   </section>
@@ -99,14 +80,10 @@ Security_Featured_Image_path: /uploads/lutron-security.jpg
           <h2 class="editable">Complete control over the atmosphere and mood of any room.</h2>
         </div>
         <div class="image">
-          <img
-            ix-path="{{ page.Control_Featured_Image_path }}"
-            ix-params='{
+          <img ix-path="{{ page.Control_Featured_Image_path }}" ix-params='{
               "fit": "max",
               "auto": "compress"
-            }',
-            sizes="(min-width: 1180px) 1180px, 100vw"
-          >
+            }' , sizes="(min-width: 1180px) 1180px, 100vw" />
         </div>
       </div>
     </div>
@@ -120,14 +97,10 @@ Security_Featured_Image_path: /uploads/lutron-security.jpg
       </div>
     </div>
     <div class="container">
-      <img
-        ix-path="{{ page.Aesthetics_Featured_Image_path }}"
-        ix-params='{
+      <img ix-path="{{ page.Aesthetics_Featured_Image_path }}" ix-params='{
           "fit": "max",
           "auto": "compress"
-        }',
-        sizes="(min-width: 1180px) 1180px, 100vw"
-      >
+        }' , sizes="(min-width: 1180px) 1180px, 100vw" />
     </div>
   </section>
 
@@ -137,14 +110,10 @@ Security_Featured_Image_path: /uploads/lutron-security.jpg
         <h2 class="editable small">Safety &amp; Security</h2>
         <p class="editable body">Our systems can easily adjust the lighting and shade position, restricting the view inside your home while you're there or when you are away.</p>
       </div>
-      <img
-        ix-path="{{ page.Security_Featured_Image_path }}"
-        ix-params='{
+      <img ix-path="{{ page.Security_Featured_Image_path }}" ix-params='{
           "fit": "max",
           "auto": "compress"
-        }',
-        sizes="(min-width: 1180px) 1180px, 100vw"
-      >
+        }' , sizes="(min-width: 1180px) 1180px, 100vw" />
     </div>
   </section>
 
