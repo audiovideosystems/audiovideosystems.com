@@ -81,14 +81,15 @@
   }
 
   .video {
+    background-color: #f4f5f5;
     .embed {
       @include media($s){
         padding-top: 6rem;
-        // margin-bottom: 6rem;
+        margin-bottom: 6rem;
       }
       @include media($l){
         padding-top: 6rem;
-        // margin-bottom: 6rem;
+        margin-bottom: 6rem;
       }
     }
   }
