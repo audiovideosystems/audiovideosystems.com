@@ -43,13 +43,13 @@ brands:
   - Coastal Source
 slides:
   - caption: Trufig recessed frame for Lutron receptacle
-    image_path: /uploads/home-carousel-1.jpg
+    slide_image_path: /uploads/home-carousel-1.jpg
   - caption: Meljac European retro light switches
-    image_path: /uploads/home-carousel-2.jpg
+    slide_image_path: /uploads/home-carousel-2.jpg
   - caption: Lutron shades with side channels
-    image_path: /uploads/home-carousel-3.jpg
+    slide_image_path: /uploads/home-carousel-3.jpg
   - caption: 'Sonos Sub and PLAY:5'
-    image_path: /uploads/home-carousel-4.jpg
+    slide_image_path: /uploads/home-carousel-4.jpg
 testimonials:
   - 'It&rsquo;s been a pleasure to work with AVS personnel on our client&rsquo;s residence. Their team&rsquo;s technical breadth and depth, leadership and teamwork approach are very admirable traits. I hope I have the opportunity to work together again.'
   - 'There is simply no other audio/video/lighting control group that I would entrust my clients’ homes with. The entire team—from the owners to the technicians in the field—possesses the decency, honesty and integrity that I require in order to do business.'
@@ -118,7 +118,7 @@ testimonials:
       <div class="showcase__carousel">
          {% for image in page.slides %}
            <img
-             ix-path="{{ image.image_path }}"
+             ix-path="{{ image.slide_image_path }}"
              ix-params='{
                "auto": "compress"
              }'

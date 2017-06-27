@@ -81,6 +81,9 @@ defaults:
       permalink: "/cms/"
       _hide_content: true
 
+_comments:
+  lutron_image_path: Carousel will appear when there are 2 or more slides
+  slide_image_path: Carousel will appear when there are 2 or more slides
 
 careers: http://www.indeed.com/cmp/Audio-Video-Systems-1
 facebook: https://www.facebook.com/AudioVideoSystemsInc

@@ -2,7 +2,7 @@
 Header_Image_path: /uploads/lutron-hero-min.jpg
 slides:
   - caption:
-    image_path:
+    lutron_image_path:
 Automation_Featured_Image_path: /uploads/lutron-automation.jpg
 Convenience_Featured_Image_path: /uploads/lutron-remotes.jpg
 Control_Featured_Image_path: /uploads/lutron-ipad.png
@@ -29,7 +29,7 @@ Security_Featured_Image_path: /uploads/lutron-security.jpg
     <div class="container">
       <div class="showcase__carousel">
          {% for image in page.slides %}
-           <img ix-path="{{ image.image_path }}" ix-params='{
+           <img ix-path="{{ image.lutron_image_path }}" ix-params='{
                "auto": "compress"
              }' sizes="(min-width: 1180px) 1180px, 100vw" alt="{{ image.caption }}" />
          {% endfor %}
