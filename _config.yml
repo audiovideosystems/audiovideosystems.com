@@ -82,8 +82,8 @@ defaults:
       _hide_content: true
 
 _comments:
-  lutron_image_path: Carousel will appear when there are 2 or more slides
-  slide_image_path: Carousel will appear when there are 2 or more slides
+  lutron_image_path: Images must be 2400px wide - make them all the same height. 2 or more images required.
+  slide_image_path: Images must be 2400px wide - make them all the same height. 2 or more images required.
 
 careers: http://www.indeed.com/cmp/Audio-Video-Systems-1
 facebook: https://www.facebook.com/AudioVideoSystemsInc
