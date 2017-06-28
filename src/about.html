@@ -1,9 +1,9 @@
 ---
 Header_Image_path: /uploads/about-hero-min.jpg
 Featured_Image_path: /uploads/about-golf.jpg
-youtube_video_id: 3aQn5gdw7DI
+youtube_video_id:
 _comments:
-  youtube_video_id: just the id, e.g. '3aQn5gdw7DI' if the url is https://www.youtube.com/watch?v=3aQn5gdw7DI
+  youtube_video_id: "just the id, e.g. '3aQn5gdw7DI' if the url is https://www.youtube.com/watch?v=3aQn5gdw7DI"
 ---
 
 <main class="load">
@@ -20,6 +20,7 @@ _comments:
     </div>
   </section>
 
+  {% if page.youtube_video_id.size > 2 %}
   <section class="video">
     <div class="container">
       <div class="embed">
@@ -27,6 +28,7 @@ _comments:
       </div>
     </div>
   </section>
+  {% endif %}
 
   <section class="text installation">
     <div class="container">
