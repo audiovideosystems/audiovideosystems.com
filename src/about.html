@@ -1,7 +1,7 @@
 ---
 Header_Image_path: /uploads/about-hero-min.jpg
 Featured_Image_path: /uploads/about-golf.jpg
-youtube_video_id:
+youtube_video_id: aBoluR4VQts
 _comments:
   youtube_video_id: "just the id, e.g. '3aQn5gdw7DI' if the url is https://www.youtube.com/watch?v=3aQn5gdw7DI"
 ---
@@ -41,14 +41,10 @@ _comments:
 
   <section class="image featured">
     <div class="container">
-      <img
-        ix-path="{{ page.Featured_Image_path }}"
-        ix-params='{
+      <img ix-path="{{ page.Featured_Image_path }}" ix-params='{
           "fit": "max",
           "auto": "compress"
-        }',
-        sizes="(min-width: 1180px) 1180px, 100vw"
-      >
+        }' , sizes="(min-width: 1180px) 1180px, 100vw" />
     </div>
   </section>
 
