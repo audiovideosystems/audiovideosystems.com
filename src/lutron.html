@@ -2,23 +2,23 @@
 Header_Image_path: /uploads/lutron-hero-min.jpg
 slides:
   - caption:
-    lutron_image_path: /uploads/GT-150-TP_Chavy_White Wall-resized.jpg
+    lutron_image_path: /uploads/GT-150-TP_Chavy_WhiteWall-resized.jpg
   - caption:
-    lutron_image_path: /uploads/GT-150-WH_Chavy_4Gang_Wood Wall-resized.jpg
+    lutron_image_path: /uploads/GT-150-WH_Chavy_4Gang_WoodWall-resized.jpg
   - caption:
-    lutron_image_path: /uploads/Billiard Room_Chavy_Dark-resized.jpg
+    lutron_image_path: /uploads/BilliardRoom_Chavy_Dark-resized.jpg
   - caption:
-    lutron_image_path: /uploads/GT-150-WH_Chavy_White Wall_1-resized.jpg
+    lutron_image_path: /uploads/GT-150-WH_Chavy_WhiteWall_1-resized.jpg
   - caption:
-    lutron_image_path: /uploads/Chavy_Teal Wall_With Palladiom-resized.jpg
+    lutron_image_path: /uploads/Chavy_TealWall_WithPalladiom-resized.jpg
   - caption:
-    lutron_image_path: /uploads/Chavy_Angle_With Palladiom-resized.jpg
+    lutron_image_path: /uploads/Chavy_Angle_WithPalladiom-resized.jpg
   - caption:
-    lutron_image_path: /uploads/Kit_Chavy_with Palladiom_3-resized.jpg
+    lutron_image_path: /uploads/Kit_Chavy_withPalladiom_3-resized.jpg
   - caption:
-    lutron_image_path: /uploads/Kit_Chavy_With Palladiom2-resized.jpg
+    lutron_image_path: /uploads/Kit_Chavy_WithPalladiom2-resized.jpg
   - caption:
-    lutron_image_path: /uploads/Palladiom_Chavy_Nook in Background_3-resized.jpg
+    lutron_image_path: /uploads/Palladiom_Chavy_NookinBackground_3-resized.jpg
   - caption:
     lutron_image_path: /uploads/BedRm_Astor-3237-resized.jpg
   - caption:
@@ -26,11 +26,11 @@ slides:
   - caption:
     lutron_image_path: /uploads/BedRm_Astor-3244-resized.jpg
   - caption:
-    lutron_image_path: /uploads/BedRm_Astor-3285 bright-resized.jpg
+    lutron_image_path: /uploads/BedRm_Astor-3285bright-resized.jpg
   - caption:
-    lutron_image_path: /uploads/FamRm_Breissinger open.jpg
+    lutron_image_path: /uploads/FamRm_Breissingeropen.jpg
   - caption:
-    lutron_image_path: /uploads/FamRm_Breissinger Preset1.jpg
+    lutron_image_path: /uploads/FamRm_BreissingerPreset1.jpg
   - caption:
     lutron_image_path: /uploads/LivRm_Astor-DR-9160-resized.jpg
   - caption:
@@ -69,9 +69,12 @@ Security_Featured_Image_path: /uploads/lutron-security.jpg
     <div class="container">
       <div class="showcase__carousel">
          {% for image in page.slides %}
-           <img ix-path="{{ image.lutron_image_path }}" ix-params='{
-               "auto": "compress"
-             }' sizes="(min-width: 1180px) 1180px, 100vw" alt="{{ image.caption }}" />
+           <img ix-path="{{ image.lutron_image_path }}"
+                ix-params='{
+                  "auto": "compress"
+                }'
+                sizes="(min-width: 1180px) 1180px, 100vw"
+                alt="{{ image.caption }}" />
          {% endfor %}
       </div>
       <p class="caption body">&nbsp;</p>
