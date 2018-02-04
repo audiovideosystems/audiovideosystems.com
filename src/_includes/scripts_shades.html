@@ -1,0 +1,20 @@
+<script>
+  (function() {
+    // carousel
+    var utils = window.fizzyUIUtils;
+    var carousel1 = new Flickity( '.showcase__carousel', {
+      imagesLoaded: true,
+      percentPosition: false,
+      prevNextButtons: false,
+      autoPlay: true,
+      wrapAround: true
+    });
+
+
+    var caption = document.querySelector('.caption');
+    carousel1.on( 'cellSelect', function() {
+      // set image caption using img's alt
+      utils.setText( caption, carousel1.selectedElement.alt );
+    });
+  })();
+</script>

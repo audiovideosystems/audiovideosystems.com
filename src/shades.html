@@ -1,0 +1,73 @@
+---
+Header_Image_path: /uploads/shades-4.jpg
+slides:
+  - caption:
+    lutron_image_path: /uploads/shades-1.jpg
+  - caption:
+    lutron_image_path: /uploads/shades-2.jpg
+  - caption:
+    lutron_image_path: /uploads/shades-3.png
+  - caption:
+    lutron_image_path: /uploads/shades-5.png
+Automation_Featured_Image_path: /uploads/lutron-automation.jpg
+Convenience_Featured_Image_path: /uploads/lutron-remotes.jpg
+Control_Featured_Image_path: /uploads/lutron-ipad.png
+Aesthetics_Featured_Image_path: /uploads/lutron-keypad.jpg
+Security_Featured_Image_path: /uploads/lutron-security.jpg
+---
+
+<main class="load">
+
+  <section class="hero" style="background-image: url({{ page.Header_Image_path }})">
+  </section>
+
+  <section class="text partnership">
+    <div class="container">
+      <div class="partnership__inner-wrapper">
+        <h4 class="editable">Motorized Shades</h4>
+        <h2 class="editable">AVS is proud to introduce our own, in house Motorized Shades department. </h2>
+      </div>
+    </div>
+  </section>
+
+  <section class="text integration">
+    <div class="container">
+      <div class="integration__inner-wrapper">
+        <!-- <h2 class="editable small">Integration &amp; Home Automation</h2> -->
+        <p class="editable body">
+          Given the importance of window treatments to many of our projects, this was a critical expansion to our operation. Controlling ambient light can be critical to the success of a Home Theater reinstallation, and elegant window treatments that can be raised or lowered at the touch a button are a perfect solution.
+        </p>
+        <p class="editable body">
+          Our talented shade team has years of experience in this filed. Design is done right in house, and we procure the shades and support materials directly from our trade partners, such as Lutron. Shade installation technicians from the department work side by side with our other installers under the direction of your project manager for a seamless, custom installation of your project’s window treatments. With no shade sub contractor involved, our in house department simplifies solutions and cuts down on cost.
+        </p>
+        <p class="editable body">
+          AVS is proud of our shade personnel’s professionalism and talent and we are confident you will be thrilled with the energy saving, light controlling window treatments AVS will provide.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  {% if page.slides.size > 1 %}
+  <section class="showcase">
+    <div class="container">
+      <div class="showcase__carousel">
+         {% for image in page.slides %}
+           <img ix-path="{{ image.lutron_image_path }}"
+                ix-params='{
+                  "auto": "compress"
+                }'
+                sizes="(min-width: 1180px) 1180px, 100vw"
+                alt="{{ image.caption }}" />
+         {% endfor %}
+      </div>
+      <p class="caption body">&nbsp;</p>
+    </div>
+  </section>
+  {% endif %}
+
+
+
+
+
+
+</main>

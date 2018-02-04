@@ -2906,6 +2906,279 @@ img.logo {
   .lutron .security img {
     padding-top: 6.875rem; }
 
+.shades .load {
+  transition: all 0.3s ease-in;
+  opacity: 0; }
+
+.shades .loaded {
+  transition: all 0.3s ease-in;
+  opacity: 1; }
+
+.shades .centered-navigation ul li.nav-link a {
+  color: rgba(0, 0, 0, 0.8); }
+
+@media screen and (min-width: 6.25em) {
+  .shades .hero {
+    height: 330px;
+    background-size: cover;
+    background-position: center; } }
+
+@media screen and (min-width: 48.0625em) {
+  .shades .hero {
+    height: 462px; } }
+
+.shades .partnership {
+  text-align: center;
+  background-color: #e7c16f;
+  padding-top: 110px;
+  padding-bottom: 110px; }
+  .shades .partnership .partnership__inner-wrapper {
+    float: left;
+    display: block;
+    margin-right: 1.877269384%;
+    width: 72.8327281643%;
+    margin-left: 13.5836359179%; }
+    .shades .partnership .partnership__inner-wrapper:last-child {
+      margin-right: 0; }
+    .shades .partnership .partnership__inner-wrapper h2 {
+      margin-bottom: 0; }
+    .shades .partnership .partnership__inner-wrapper img {
+      width: 156px;
+      margin-bottom: 32px; }
+
+.shades .showcase {
+  padding-top: 6.875rem;
+  padding-bottom: 0; }
+  @media screen and (min-width: 6.25em) {
+    .shades .showcase .showcase__carousel {
+      float: left;
+      display: block;
+      margin-right: 1.877269384%;
+      width: 86.4163640821%;
+      margin-left: 6.7918179589%; }
+      .shades .showcase .showcase__carousel:last-child {
+        margin-right: 0; } }
+  @media screen and (min-width: 48.0625em) {
+    .shades .showcase .showcase__carousel {
+      float: left;
+      display: block;
+      margin-right: 1.877269384%;
+      width: 100%;
+      margin-left: 0%; }
+      .shades .showcase .showcase__carousel:last-child {
+        margin-right: 0; }
+      .shades .showcase .showcase__carousel .gallery-cell {
+        height: 500px; } }
+  .shades .showcase p.caption {
+    font-size: 14px;
+    clear: both;
+    margin-bottom: 0;
+    text-align: left;
+    text-transform: uppercase;
+    color: #ababab;
+    letter-spacing: 1px; }
+    @media screen and (min-width: 6.25em) {
+      .shades .showcase p.caption {
+        float: left;
+        display: block;
+        margin-right: 1.877269384%;
+        width: 86.4163640821%;
+        margin-left: 6.7918179589%; }
+        .shades .showcase p.caption:last-child {
+          margin-right: 0; } }
+    @media screen and (min-width: 48.0625em) {
+      .shades .showcase p.caption {
+        float: left;
+        display: block;
+        margin-right: 1.877269384%;
+        width: 100%;
+        margin-left: 0%;
+        padding-left: 1rem; }
+        .shades .showcase p.caption:last-child {
+          margin-right: 0; } }
+    @media screen and (min-width: 1190px) {
+      .shades .showcase p.caption {
+        padding-left: 0; } }
+  .shades .showcase .flickity-page-dots {
+    bottom: 30px; }
+
+.shades .integration {
+  text-align: center; }
+  @media screen and (min-width: 6.25em) {
+    .shades .integration {
+      padding-top: 110px;
+      padding-bottom: 110px; } }
+  @media screen and (min-width: 6.25em) {
+    .shades .integration .integration__inner-wrapper {
+      float: left;
+      display: block;
+      margin-right: 1.877269384%;
+      width: 86.4163640821%;
+      margin-left: 6.7918179589%; }
+      .shades .integration .integration__inner-wrapper:last-child {
+        margin-right: 0; } }
+  @media screen and (min-width: 48.0625em) {
+    .shades .integration .integration__inner-wrapper {
+      float: left;
+      display: block;
+      margin-right: 1.877269384%;
+      width: 45.6654563285%;
+      margin-left: 27.1672718357%; }
+      .shades .integration .integration__inner-wrapper:last-child {
+        margin-right: 0; } }
+
+.shades .featured img {
+  padding-bottom: 110px; }
+
+.shades .convenience {
+  text-align: center;
+  background-color: #f4f5f5; }
+  @media screen and (min-width: 6.25em) {
+    .shades .convenience {
+      padding-top: 110px;
+      padding-bottom: 110px; } }
+  @media screen and (min-width: 6.25em) {
+    .shades .convenience .convenience__inner-wrapper {
+      float: left;
+      display: block;
+      margin-right: 1.877269384%;
+      width: 86.4163640821%;
+      margin-left: 6.7918179589%; }
+      .shades .convenience .convenience__inner-wrapper:last-child {
+        margin-right: 0; } }
+  @media screen and (min-width: 48.0625em) {
+    .shades .convenience .convenience__inner-wrapper {
+      float: left;
+      display: block;
+      margin-right: 1.877269384%;
+      width: 45.6654563285%;
+      margin-left: 27.1672718357%; }
+      .shades .convenience .convenience__inner-wrapper:last-child {
+        margin-right: 0; } }
+  @media screen and (min-width: 6.25em) {
+    .shades .convenience img {
+      padding-top: 80px; } }
+  @media screen and (min-width: 48.0625em) {
+    .shades .convenience img {
+      padding-top: 110px; } }
+
+@media screen and (min-width: 6.25em) {
+  .shades .split {
+    padding-top: 110px;
+    padding-bottom: 110px; } }
+
+.shades .split .container {
+  padding-top: 0px;
+  padding-bottom: 0px; }
+
+@media screen and (min-width: 6.25em) {
+  .shades .split .text {
+    float: left;
+    display: block;
+    margin-right: 1.877269384%;
+    width: 86.4163640821%;
+    margin-left: 6.7918179589%;
+    text-align: center;
+    padding-bottom: 52px; }
+    .shades .split .text:last-child {
+      margin-right: 0; } }
+
+@media screen and (min-width: 48.0625em) {
+  .shades .split .text {
+    float: left;
+    display: block;
+    margin-right: 1.877269384%;
+    width: 32.0818204106%;
+    margin-left: 6.7918179589%;
+    text-align: left;
+    padding-top: 85px;
+    padding-bottom: 0px; }
+    .shades .split .text:last-child {
+      margin-right: 0; } }
+
+@media screen and (min-width: 6.25em) {
+  .shades .split .image {
+    float: left;
+    display: block;
+    margin-right: 1.877269384%;
+    width: 86.4163640821%;
+    margin-left: 6.7918179589%; }
+    .shades .split .image:last-child {
+      margin-right: 0; } }
+
+@media screen and (min-width: 48.0625em) {
+  .shades .split .image {
+    float: left;
+    display: block;
+    margin-right: 1.877269384%;
+    width: 59.2490922464%;
+    margin-left: 0%; }
+    .shades .split .image:last-child {
+      margin-right: 0; } }
+
+.shades .split h6 a {
+  text-decoration: underline; }
+
+.shades .aesthetics {
+  text-align: center;
+  background-color: #f4f5f5;
+  padding-top: 110px;
+  padding-bottom: 110px; }
+  @media screen and (min-width: 48.0625em) {
+    .shades .aesthetics {
+      padding-bottom: 110px; } }
+  @media screen and (min-width: 6.25em) {
+    .shades .aesthetics .aesthetics__inner-wrapper {
+      float: left;
+      display: block;
+      margin-right: 1.877269384%;
+      width: 86.4163640821%;
+      margin-left: 6.7918179589%; }
+      .shades .aesthetics .aesthetics__inner-wrapper:last-child {
+        margin-right: 0; } }
+  @media screen and (min-width: 48.0625em) {
+    .shades .aesthetics .aesthetics__inner-wrapper {
+      float: left;
+      display: block;
+      margin-right: 1.877269384%;
+      width: 45.6654563285%;
+      margin-left: 27.1672718357%; }
+      .shades .aesthetics .aesthetics__inner-wrapper:last-child {
+        margin-right: 0; } }
+  @media screen and (min-width: 6.25em) {
+    .shades .aesthetics img {
+      padding-top: 80px; } }
+  @media screen and (min-width: 48.0625em) {
+    .shades .aesthetics img {
+      padding-top: 110px; } }
+
+.shades .security {
+  text-align: center; }
+  @media screen and (min-width: 6.25em) {
+    .shades .security {
+      padding-top: 110px;
+      padding-bottom: 110px; } }
+  @media screen and (min-width: 6.25em) {
+    .shades .security .security__inner-wrapper {
+      float: left;
+      display: block;
+      margin-right: 1.877269384%;
+      width: 86.4163640821%;
+      margin-left: 6.7918179589%; }
+      .shades .security .security__inner-wrapper:last-child {
+        margin-right: 0; } }
+  @media screen and (min-width: 48.0625em) {
+    .shades .security .security__inner-wrapper {
+      float: left;
+      display: block;
+      margin-right: 1.877269384%;
+      width: 45.6654563285%;
+      margin-left: 27.1672718357%; }
+      .shades .security .security__inner-wrapper:last-child {
+        margin-right: 0; } }
+  .shades .security img {
+    padding-top: 6.875rem; }
+
 .work .load {
   transition: all 0.3s ease-in;
   opacity: 0; }

@@ -68,6 +68,13 @@ defaults:
       permalink: "/lutron/"
   -
     scope:
+      path: "shades.html"
+    values:
+      layout: "default"
+      class: "shades"
+      permalink: "/shades/"
+  -
+    scope:
       path: ""
       type: "work"
     values:

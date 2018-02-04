@@ -1,0 +1,244 @@
+.shades .load {
+  @include transition(all 0.3s ease-in);
+  opacity: 0;
+}
+
+.shades .loaded {
+  @include transition(all 0.3s ease-in);
+  opacity: 1;
+}
+
+.shades {
+
+  .centered-navigation ul li.nav-link a {
+    color: $text;
+    }
+
+  .hero {
+    @include media($s){
+      height: 330px;
+      background-size: cover;
+      background-position: center;
+    }
+    @include media($l){
+      height: 462px;
+    }
+  }
+
+  .partnership {
+    text-align: center;
+    background-color: $lutron-orange;
+    padding-top: 110px;
+    padding-bottom: 110px;
+    .partnership__inner-wrapper {
+      @include span-columns(11);
+      @include shift(2);
+      h2 {
+        margin-bottom: 0;
+      }
+      img {
+        width: 156px;
+        margin-bottom: 32px;
+      }
+    }
+  }
+
+  .showcase {
+    padding-top: rem(110);
+    padding-bottom: 0;
+    .showcase__carousel {
+      @include media($s){
+        @include span-columns(13);
+        @include shift(1);
+      }
+      @include media($l){
+        @include span-columns(15);
+        @include shift(0);
+        .gallery-cell {
+          height: 500px;
+        }
+      }
+    }
+    p.caption {
+      font-size: 14px;
+      clear: both;
+      // padding-top: rem(10);
+      margin-bottom: 0;
+      text-align: left;
+      text-transform: uppercase;
+      color: #ababab;
+      letter-spacing: 1px;
+      @include media($s){
+        @include span-columns(13);
+        @include shift(1);
+      }
+      @include media($l){
+        @include span-columns(15);
+        @include shift(0);
+        padding-left: 1rem;
+      }
+      @include media(1190px){
+        padding-left: 0;
+      }
+    }
+    .flickity-page-dots {
+      bottom: 30px;
+    }
+  }
+
+  .integration {
+    text-align: center;
+    @include media($s) {
+      padding-top: 110px;
+      padding-bottom: 110px;
+    }
+    .integration__inner-wrapper {
+      @include media($s){
+        @include span-columns(13);
+        @include shift(1);
+      }
+      @include media($l){
+        @include span-columns(7);
+        @include shift(4);
+      }
+    }
+
+  }
+
+  .featured {
+    img {
+      padding-bottom: 110px;
+    }
+  }
+
+
+  .convenience {
+    text-align: center;
+    background-color: $gray-light;
+    @include media($s) {
+      padding-top: 110px;
+      padding-bottom: 110px;
+    }
+    .convenience__inner-wrapper {
+      @include media($s){
+        @include span-columns(13);
+        @include shift(1);
+      }
+      @include media($l){
+        @include span-columns(7);
+        @include shift(4);
+      }
+    }
+    img {
+      @include media($s){
+        padding-top: 80px;
+      }
+      @include media($l){
+        padding-top: 110px;
+      }
+    }
+  }
+
+  .split {
+    @include media($s){
+      padding-top: 110px;
+      padding-bottom: 110px;
+    }
+    .container {
+      padding-top: 0px;
+      padding-bottom: 0px;
+    }
+    .split__inner-wrapper {
+    }
+    .text {
+      @include media($s){
+        @include span-columns(13);
+        @include shift(1);
+        text-align: center;
+        padding-bottom: 52px;
+      }
+      @include media($l){
+        @include span-columns(5);
+        @include shift(1);
+        text-align: left;
+        padding-top: 85px;
+        padding-bottom: 0px;
+      }
+
+    }
+    .image {
+      @include media($s){
+        @include span-columns(13);
+        @include shift(1);
+      }
+      @include media($l){
+        @include span-columns(9);
+        @include shift(0);
+      }
+    }
+    h6 a {
+      text-decoration: underline;
+    }
+  }
+
+  .aesthetics {
+    text-align: center;
+    background-color: $gray-light;
+    padding-top: 110px;
+    padding-bottom: 110px;
+    @include media($l) {
+      // padding-top: 110px;
+      padding-bottom: 110px;
+    }
+    .aesthetics__inner-wrapper {
+      @include media($s){
+        @include span-columns(13);
+        @include shift(1);
+      }
+      @include media($l){
+        @include span-columns(7);
+        @include shift(4);
+      }
+    }
+    img {
+      @include media($s){
+        padding-top: 80px;
+      }
+      @include media($l){
+        padding-top: 110px;
+      }
+    }
+  }
+
+  .security {
+    text-align: center;
+    @include media($s) {
+      padding-top: 110px;
+      padding-bottom: 110px;
+    }
+    .security__inner-wrapper {
+      @include media($s){
+        @include span-columns(13);
+        @include shift(1);
+      }
+      @include media($l){
+        @include span-columns(7);
+        @include shift(4);
+      }
+    }
+    img {
+      padding-top: rem(110);
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+}
