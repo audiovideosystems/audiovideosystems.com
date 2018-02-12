@@ -6,7 +6,7 @@ brands:
   - LG
   - Panamax Bluebolt
   - Sonus Faber
-  - 'Bang & Olufsen'
+  - Bang & Olufsen
   - Digital Projection
   - Lutron
   - Panasonic
@@ -16,7 +16,7 @@ brands:
   - Marantz
   - Prima Cinema
   - Sony
-  - 'Bowers & Wilkins'
+  - Bowers & Wilkins
   - Integra
   - McIntosh
   - Rotel
@@ -25,7 +25,7 @@ brands:
   - James Loudspeaker
   - Meljac
   - Samsung
-  - Vizio
+  - Ketra
   - Classe
   - Kaleidescape
   - Millson Custom Solutions
@@ -51,10 +51,43 @@ slides:
   - caption: 'Sonos Sub and PLAY:5'
     slide_image_path: /uploads/home-carousel-4.jpg
 testimonials:
-  - 'It&rsquo;s been a pleasure to work with AVS personnel on our client&rsquo;s residence. Their team&rsquo;s technical breadth and depth, leadership and teamwork approach are very admirable traits. I hope I have the opportunity to work together again.'
-  - 'There is simply no other audio/video/lighting control group that I would entrust my clients’ homes with. The entire team—from the owners to the technicians in the field—possesses the decency, honesty and integrity that I require in order to do business.'
-  - 'My biggest positive has been the level of service after the installation was complete. There&rsquo;s a lot of tweaking, fine-tuning that normally happens (with home renovations), and AVS was right there every day, whenever we wanted, to adjust things.'
-  - 'When my CATV music system was giving me problems late on a Saturday night, I wasn&rsquo;t sure how long it would take to get it back. AVS’ programming team responded almost instantly. By the middle of Sunday morning everything was working to my satisfaction.'
+  - >-
+    It&rsquo;s been a pleasure to work with AVS personnel on our client&rsquo;s
+    residence. Their team&rsquo;s technical breadth and depth, leadership and
+    teamwork approach are very admirable traits. I hope I have the opportunity
+    to work together again.
+  - >-
+    There is simply no other audio/video/lighting control group that I would
+    entrust my clients’ homes with. The entire team—from the owners to the
+    technicians in the field—possesses the decency, honesty and integrity that I
+    require in order to do business.
+  - >-
+    My biggest positive has been the level of service after the installation was
+    complete. There&rsquo;s a lot of tweaking, fine-tuning that normally happens
+    (with home renovations), and AVS was right there every day, whenever we
+    wanted, to adjust things.
+  - >-
+    When my CATV music system was giving me problems late on a Saturday night, I
+    wasn&rsquo;t sure how long it would take to get it back. AVS’ programming
+    team responded almost instantly. By the middle of Sunday morning everything
+    was working to my satisfaction.
+  - >-
+    I am glad we had a chance to chat before I left, but I just want to reaffirm
+    how much I appreciate all of the help, attention and support you have given
+    me over the years.  I have one more thing to ask.
+
+
+    Please pass along to everyone at AVS my sincerest thanks for everything you
+    all have done for me.  From my very first call for help until Irving's
+    service visit the week before I left, I have always felt like anyone and
+    everyone there treated me as if my question or need for assistance or
+    explanation was the most important thing they had to do at that moment.    I
+    could always reply on the patience, understanding, professionalism and
+    expertise of anyone who happened to field my calls or visit the residence. 
+    I could never sing your praises enough to any colleague, co-worker or
+    associate (and will continue to do so whenever the opportunity presents
+    itself) and I need to make sure everyone there knows how special you were to
+    me and maybe will be in the future, whatever it may hold.
 ---
 
 
@@ -117,14 +150,9 @@ testimonials:
     <div class="container">
       <div class="showcase__carousel">
          {% for image in page.slides %}
-           <img
-             ix-path="{{ image.slide_image_path }}"
-             ix-params='{
+           <img ix-path="{{ image.slide_image_path }}" ix-params='{
                "auto": "compress"
-             }'
-             sizes="(min-width: 1180px) 1180px, 100vw"
-             alt="{{ image.caption }}"
-           >
+             }' sizes="(min-width: 1180px) 1180px, 100vw" alt="{{ image.caption }}" />
          {% endfor %}
       </div>
       <p class="caption body">&nbsp;</p>
